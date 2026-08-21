@@ -1,0 +1,65 @@
+% ---------------------------------------------------------------------------
+% TWT foundational paper — LuaLaTeX preamble
+%
+% The problem this solves: the paper carries almost all of its mathematical
+% notation inside Markdown code spans, so the MONOSPACE font must cover a large
+% Unicode set (Greek, super/subscripts, set symbols, arrows, relations).
+% Measured coverage against the paper's actual character census:
+%     Cambria   0 code gaps / 1 prose gap (misses only U+2713 CHECK MARK)
+%     Consolas 35 code gaps  <- best monospace available, still insufficient
+% So: keep Consolas for the monospace *look*, and register a fallback chain so
+% any glyph Consolas lacks is drawn from Cambria, then Segoe UI Symbol.
+% Without this, ~3,500 notation characters render as missing-glyph boxes.
+% ---------------------------------------------------------------------------
+
+\usepackage{luaotfload}
+
+\directlua{
+  luaotfload.add_fallback("twtmonofb", {
+    "Cambria:mode=harf;",
+    "Segoe UI Symbol:mode=harf;",
+  })
+  luaotfload.add_fallback("twtmainfb", {
+    "Segoe UI Symbol:mode=harf;",
+    "Consolas:mode=harf;",
+  })
+}
+
+\setmainfont{Cambria}[RawFeature={fallback=twtmainfb}]
+\setsansfont{Calibri}[RawFeature={fallback=twtmainfb}]
+\setmonofont{Consolas}[Scale=0.86,RawFeature={fallback=twtmonofb}]
+
+% Tables: the falsifier and result tables are wide and long. Let them break
+% across pages, shrink slightly, and wrap rather than overflow the margin.
+\usepackage{longtable,booktabs,array,ragged2e}
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\footnotesize}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+
+% Long unbroken tokens (primitive names, URLs) must wrap, not run off the page.
+\usepackage{seqsplit}
+\sloppy
+\emergencystretch=3em
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=[HTML]{1A4E8A},
+  urlcolor=[HTML]{1A4E8A},
+  citecolor=[HTML]{1A4E8A},
+  pdftitle={Time-Wave Theory — Foundational Paper (V3)},
+  pdfauthor={Yaer Aharon Haddad Fennech},
+  bookmarksnumbered=true,
+}
+\urlstyle{same}
+
+% Headings a touch tighter — the paper has a lot of them.
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{2.0ex plus 1ex minus .2ex}{1.0ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.6ex plus 1ex minus .2ex}{0.8ex plus .2ex}
+
+% Keep code spans from being broken awkwardly mid-token.
+\usepackage{fvextra}
+\fvset{breaklines=true,breakanywhere=true}
