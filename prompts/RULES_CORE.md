@@ -107,6 +107,13 @@ Every rule carries a **CLASS** and a **WHY**.
 - **COST, STATED:** this is the only core rule that can move something from INPUT to DERIVED. Treat a menu you closed yourself with the suspicion the record says it has earned.
 - <sub>added 2026-08-21 · R10 of the restriction analysis, human coordinator "adopt all" · gate = inventory row 19 · binds all · enforcement: prose-only</sub>
 
+**C-33.** Every claim about an object with **multiple realizations** names WHICH realization in the same sentence — the **module and the side** for a representation, chirality, singlet or doublet claim; the **grading** for a chirality claim; the **basis, frame or layer** wherever those vary. Checkers verify the claim **on the named realization**. A claim with no named realization is **returned, not adjudicated**.
+
+- **ABSOLUTE**
+- **WHY:** Three instances in three days, all the same shape — a label transplanted across realizations with no bridge: the §4-bis cost-table error, the r3 reviewer's step (b), K2's misclassification. The canon §0 grain/cell and inside/outside layer rules are this same duty at coarser grain; C-33 is its sentence-level form.
+- **WHAT IT DOES NOT DO:** it does not decide which realization is right. Naming one is the cost of being adjudicable, not a pick — and where the realization is genuinely open, the sentence names the branch node.
+- <sub>added 2026-08-23 · RUL-094 Q6, human coordinator "ADOPT. And maybe generalize?" · binds all · enforcement: prose-only</sub>
+
 **C-12.** Tag every open question PINNABLE / UNPINNABLE / UNKNOWN-KNOWABILITY. Expanding on an unpinnable one is DEPRIORITIZED, not forbidden — a worker who expands anyway must state, in the same pass, the **would-change-if**: what observation or structure would make the question pinnable after all (softened from a ban by the human coordinator, 2026-08-21, RUL-076 — the ban was one of the adverse reviews' named self-issued stop orders).
 
 - **DEFEASIBLE** — **break when:** a dedicated inquiry into whether an item classed UNPINNABLE really is unpinnable — that tests the classification rather than expanding the answer · **record the break and its reason where the work lands.** (The former stamp on this clause is discharged by the same ruling.)
@@ -252,7 +259,7 @@ Every rule carries a **CLASS** and a **WHY**.
 
 ## The one number to carry
 
-**About 172 of the 202 rules have no mechanical enforcement, and every one of the four banking-stoppers is in that set.** *(The inventory's §E headline says 169; a recount off its own table gives 15 fully enforced · 15 partial · 170 prose-only, and the two rules added 2026-08-21 — C-31, C-32 — are both prose-only, giving 15 · 15 · 172 = 202. The discrepancy is bookkeeping and changes nothing: every banking-stopper is prose-only under either count. See the architecture report §6.)* The suites verify the mathematics. Almost nothing verifies that you followed the method. **The method runs on you** — which is why the classification above matters: an absolute rule you break silently is invisible, and a defeasible rule you break in the open costs nothing.
+**About 173 of the 203 rules have no mechanical enforcement, and every one of the four banking-stoppers is in that set.** *(The inventory's §E headline says 169; a recount off its own table gives 15 fully enforced · 15 partial · 170 prose-only, and the three rules added since — C-31, C-32 (2026-08-21) and C-33 (2026-08-23) — are all prose-only, giving 15 · 15 · 173 = 203. The discrepancy is bookkeeping and changes nothing: every banking-stopper is prose-only under either count. See the architecture report §6.)* The suites verify the mathematics. Almost nothing verifies that you followed the method. **The method runs on you** — which is why the classification above matters: an absolute rule you break silently is invisible, and a defeasible rule you break in the open costs nothing.
 
 ## Where to go next
 

@@ -90,6 +90,25 @@ RETURN A VERDICT — specific and tuning-immune:
 - UNDER-CLAIM — real and the scope is too WEAK: the derivation supports a stronger tier or wider
   scope than claimed; state the correct, larger claim and what licenses it (RUL-076, 2026-08-21).
 
+★ **ATTACK BOTH DIRECTIONS — the symmetric duty (2026-08-27, folded in here rather than given its own
+role, deliberately: the corpus was measured to be recursing into self-audit, and the answer to that is
+not a fifteenth instrument).** Your default target is a claim, and a claim is made in the programme's
+favour — so the roster has always pointed at the favourable direction. Two objects it has never
+pointed at, and both are also made in the programme's favour:
+  1. **STANDING ADVERSE NUMBERS.** A figure that hurts the programme is re-checked by nobody, because
+     every prosecutorial role reads it as already-conceded ground. **The measured case:** a
+     dimension-six exclusion quoted for a month as "three to nine orders" had its nine-order corner
+     resting on a *projected* bound its own authors labelled "not real constraints", contingent on an
+     observation that has not happened — banked as if real, and it survived four review rounds
+     BECAUSE it counted against us. An adverse number is a claim and inherits a claim's burden.
+  2. **DECLINES.** When the programme declines an external finding, that decline is a claim made in
+     its own favour, and nothing in the roster is briefed to attack it. A wrong decline survives for
+     exactly the reason the nine-order corner did.
+**So: when you are handed a claim, also ask what adverse figure or decline sits beside it, and give
+that the same suspicion.** Report such findings as UNDER-CLAIM (the corpus asserts less than its own
+evidence supports) — and note that this direction is the one where a *computation* is most likely to
+be missing entirely, because nobody ever demanded one.
+
 ★ A REFUTING VERDICT MUST COMPUTE (C-16's CHECK-block extension, 2026-08-21). A REFUTED / OVER-CLAIM
 verdict on a claim that is ENGINE-REACHABLE carries an engine counter-computation; a refutation resting
 on argument alone is labeled ARGUED, not COMPUTED, and arbitration weights it accordingly. All four

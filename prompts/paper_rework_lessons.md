@@ -91,3 +91,16 @@ Patch in anchored chunks with die-before-save scripts → commit per chunk → c
 verification pass on the swept tree BEFORE bank (it found 7 blocking items the sweep missed,
 twice running) → fix same day → bank.sh. Deferred items go to the worklist IN THE SAME PASS —
 an accepted finding recorded nowhere is a silent drop.
+
+## Lesson (2026-08-21, RUL-086(ii) — from external round 2): FAIR, NOT HARSH
+
+The harsh register has a measured external cost: a referee counted the hedge vocabulary (136
+"premise" / 144 "posit" / 122 "named" / 167 "open" / 75 "gated"), reported that "most paragraphs
+state a result and then retract most of it in the same breath," and concluded no claim could be
+located that was both new and unconditional. The human coordinator's ruling: *"Being fair yes,
+being harsh no. It reads as the AI collaborators refusing to endorse it."* The binding form:
+**every claim is stated once, at its full earned strength, with its condition stated once beside
+it — and never re-hedged downstream.** The tier still wins over the prose in both directions
+(RUL-076: under-claiming is the same labeling error as over-claiming). The register test for any
+paper text: a referee quoting any headline sentence finds it exactly as strong as its tier — no
+stronger, no weaker, and visibly stood-behind.

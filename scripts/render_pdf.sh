@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Render the foundational paper + companion to provenance-stamped PDFs.
+# Render the Core paper (the primary, front-facing artifact) + the instance dossier
+# + the companion to provenance-stamped PDFs.
 #
 #   scripts/render_pdf.sh              # -> knowledge/corpus/pdf/*.pdf
 #   scripts/render_pdf.sh /some/dir    # custom output directory
@@ -57,6 +58,31 @@ command -v pandoc   >/dev/null || { echo "pandoc not found — https://pandoc.or
 command -v lualatex >/dev/null || { echo "lualatex not found — install MiKTeX or TeX Live"; exit 1; }
 [ -f "$HEADER" ]              || { echo "missing $HEADER"; exit 1; }
 
+# ---------------------------------------------------------------------------
+# RELEASE PRE-FLIGHT: no OPEN release-blocker ships.
+# This script IS the release path — it builds the reviewer-facing PDFs and then
+# syncs and pushes the public mirror — so it is where the release gate belongs.
+# The LOGIC lives in scripts/check_records.py (Python, negative-testable, already
+# the record-invariants gate); this is the call site. bank.sh calls the same
+# script WITHOUT --release, so ordinary banking is unaffected: only a release is
+# blocked. Motivating measurement: external-review round 2 reproduced two defects
+# our own blind probe had already filed, in a release that shipped with them,
+# because nothing connected the calibration ledger's FOUND-LATER table to this
+# path. Set TWT_SKIP_RELEASE_GATE=1 only for a deliberate draft render.
+# ---------------------------------------------------------------------------
+if [ "${TWT_SKIP_RELEASE_GATE:-0}" = "1" ]; then
+  echo "RELEASE-BLOCKER gate SKIPPED (TWT_SKIP_RELEASE_GATE=1) — draft render, do not tag or send."
+else
+  echo "Release pre-flight: checking RELEASE-BLOCKERS (knowledge/ledgers/TWT_CHECKER_CALIBRATION.md)..."
+  if ! PYTHONUTF8=1 python scripts/check_records.py --release; then
+    echo ""
+    echo ">>> RELEASE REFUSED. A recorded, engine-sited defect is still OPEN (named above)."
+    echo ">>> Fix it and mark the row FIXED, or record a WAIVED row with its discharge reason,"
+    echo ">>> in knowledge/ledgers/TWT_CHECKER_CALIBRATION.md under RELEASE-BLOCKERS."
+    exit 1
+  fi
+fi
+
 HASH="$(git rev-parse --short HEAD 2>/dev/null || echo 'no-git')"
 TODAY="$(date +%Y-%m-%d)"
 # The check count is read by RUNNING the suite, never by grepping source. (Fixed 2026-08-02:
@@ -95,17 +121,34 @@ render () {           # render <src.md> <out.pdf> <title> <geometry> <fontsize> 
 }
 
 echo "Rendering (stamp: $STAMP)"
-# The 6th arg is the cover SUBTITLE. It is an A/B variable in the external-review
-# loop (knowledge/prompts/external_review_loop.md, Standing A/B items): the metric
-# is the cold-read reference-class assignment rate per variant, so the two arms are
-# this subtitle and a no-subtitle control (drop the 6th arg for the control). The
-# TITLE string is deliberately unchanged between arms — the subtitle is additive, so
-# no identity site (TOC, mirror README, cover note) moves and no sweep is triggered.
+
+# ---------------------------------------------------------------------------
+# THE PRIMARY ARTIFACT is the CORE PAPER. It is what a cold reader reads first
+# and the document the external-review loop samples on; the dossier and the
+# companion are the depth behind it and still ship. Order here is the order the
+# package is meant to be met in, and it is deliberately not alphabetical.
+# ---------------------------------------------------------------------------
+render knowledge/corpus/TWT_core_paper.md \
+       "$OUTDIR/TWT_core_paper.pdf" \
+       "TWT-Core" \
+       "margin=2.1cm" "10pt" \
+       "A family of substrate theories, what it derives, and its first candidate"
+
+# The 6th arg is the cover SUBTITLE. It WAS an A/B variable in the external-review
+# loop (knowledge/prompts/external_review_loop.md, Standing A/B items), the two arms
+# being this subtitle and a no-subtitle control, with the metric the cold-read
+# reference-class assignment rate per variant. That arm's own invariant was "the
+# TITLE string is deliberately unchanged between arms", and the title HAS now
+# changed: this file is the instance dossier, not the entry document, and the
+# reference class is assigned at the Core paper instead. The arm is therefore
+# CLOSED on this document, not silently carried; whether to re-base it on the Core
+# paper's cover is a coordinator call and is recorded in the round's relocation
+# record rather than assumed here.
 render knowledge/corpus/TWT_foundational_paper.md \
        "$OUTDIR/TWT_foundational_paper.pdf" \
-       "Time-Wave Theory — Foundational Paper (V3)" \
+       "Time-Wave Theory — the V3 Instance Dossier" \
        "margin=2.1cm" "10pt" \
-       "Standard-Model structure from a single wave medium"
+       "The first candidate of TWT-Core, at full technical depth"
 
 # The companion is bookkeeping: very wide tables (result index, import registry).
 # Landscape + smaller type keeps them readable instead of clipped.
@@ -132,15 +175,33 @@ elif [ ! -d "$MIRROR/.git" ]; then
 else
   echo
   echo "Syncing public mirror: $MIRROR"
-  cp knowledge/corpus/TWT_foundational_paper.md \
+  # THE SYNC LIST IS PART OF THE ARTIFACT. Two additions at the 2026-08-21
+  # relocation leg, both pinned in scripts/check_records.py section 4 so the
+  # omission cannot recur silently:
+  #   TWT_core_paper.md          — the front-facing entry document. A mirror
+  #                                without it hands a stranger the dossier.
+  #   TWT_COMPARATIVE_LEDGER.md  — the evidence behind the Core paper's §3
+  #                                separator grading. The paper promised it and
+  #                                the mirror did not carry it, two rounds running.
+  #   twt_core.py / twt_candidate_v3.py — the two halves of the MAIN engine after
+  #                                the 2026-08-23 family split (RUL-093/RUL-095).
+  #                                twt.py STAYS in the list: it is the facade every
+  #                                probe and both harnesses still import, and a
+  #                                mirror carrying only the facade would ship an
+  #                                engine with no primitives in it.
+  cp knowledge/corpus/TWT_core_paper.md \
+     knowledge/corpus/TWT_foundational_paper.md \
      knowledge/corpus/TWT_foundational_paper_companion.md \
      knowledge/corpus/twt.py \
+     knowledge/corpus/twt_core.py \
+     knowledge/corpus/twt_candidate_v3.py \
      knowledge/corpus/twt_test.py \
      knowledge/corpus/twt_companion.py \
      knowledge/corpus/twt_companion_test.py \
      knowledge/corpus/D4_lattice_quartic_isotropy.md \
      knowledge/ledgers/TWT_NEGATIVES_LEDGER.md \
      knowledge/ledgers/TWT_FAMILY_TREE.md \
+     knowledge/ledgers/TWT_COMPARATIVE_LEDGER.md \
      knowledge/reviewer_package/COVER_NOTE.md \
      "$MIRROR/"
   # Suite-count drift guard. The README QUOTES each harness's own pass line for a

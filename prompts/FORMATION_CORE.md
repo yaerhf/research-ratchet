@@ -1,11 +1,12 @@
-# FORMATION CORE — v1.5 (2026-08-21; **MICRO-BUMP, RUL-082 DEPENDENT-LIST EXECUTION.** The
-weak = SD promotion's `FORMATION_CORE`-at-reversion list (keeper items F1–F3) is executed HERE
-rather than deferred to the next arc-close, on the F-A lesson: **an unexecuted dependent list is
-the drift class**, and this file is the formation channel — left stale it actively teaches the
-withdrawn state to every worker formed from it, who then collide with the paper and the engine.
-The human coordinator has ruled the promotion; this is execution, not a new position. Content
-delta is three sites in §0/§1 plus one worked example; everything else is v1.4 verbatim.
-v1.4 was: 2026-08-21; consolidation event — the 2026-08-21 consolidation's close. Carries: the symmetric consensus duties (worker steelmans, checker computes — the reviewer's verdict now goes to the worker DIRECTLY for the consensus loop, coordinator receives the outcome; RUL-075/077/079); the UNDER-CLAIM verdict + tier-raise pass; the class-dispatch policy (RUL-079: Fable/Opus pairs by default, Sonnet only where creativity is the asset, Haiku clerk); two new traps and two new worked examples from the J,D/Γ round. v1.3 was a mid-arc amendment; this is the re-version.)
+# FORMATION CORE — v1.6 (2026-08-25; consolidation event — the 2026-08-25 consolidation's close.
+**CHANGE LOG, one line:** ADDS the hedge-loss-at-restatement duty (this window's dominant measured
+failure, now partly mechanized), the two external-loop register measurements (ER-16 / ER-18), the
+widened falsifier channel (RUL-106), the freeze-solo-commit convention, publish-on-cite (RUL-103)
+and the ξ/ζ docket pointer; PRUNES the v1.4/v1.5 header narrative (its content lives in §0), the R2
+adoption narrative (now a bank gate), the weak = SD block's restatement of what §0 already says, and
+one duplicated split invariant; REFRESHES the suite total by counting and the this-consolidation
+pointer. Prior versions — v1.5 (2026-08-21, RUL-082/RUL-084 dependent-list execution), v1.4
+(2026-08-21 consolidation close), v1.3 (mid-arc amendment) — carried in §0–§6, not in this header.)
 
 > **What this is:** the shared formation prefix for FLUENT WORKER instances — the distillate
 > of the HARD (banked) content, ordered shared-first for prompt caching. It is versioned;
@@ -49,7 +50,8 @@ isotropy residual vanishes where the cubic lattice's does not — a group-theore
 check against lattice literature without trusting anyone here. The same call reports the
 order-1152 point group, that anisotropy first appears at **dimension eight**, and — in the same
 returned dict, beside the number — that the framework's naive value for a Lorentz-violation
-coefficient is *"NOT a prediction — excluded by published n=4 limits by 3-9 orders"*. **It ships
+coefficient is *"NOT a prediction"* with its exclusion split by conditioning (~1 order
+unconditional, 6–7 conditional — the E21 re-cut lives in the same returned string). **It ships
 the place it is losing.** No crank leads with its own worst result.
 
 **3 → `GatedError`. IT REFUSES TO GUESS.** The fine-structure constant will not return a value. Nor
@@ -72,7 +74,8 @@ to any unbuilt object** — every other result's residual cost routes into one o
 this one's does not.
 
 It is honest about its own conditions too — read the `tier` and `headline` fields of that same
-returned dict, which name three structural premises rather than claiming more than they have.
+returned dict, which name **four** structural premises (P4–P7) rather than claiming more than
+they have.
 **But do not let the hedging obscure the result: this is a thing the framework worked out for
 itself, it is checkable in one line, and it explains something the incumbent postulates.**
 
@@ -109,8 +112,10 @@ evolving version. Diagnosis: `knowledge/audit/pivot_2026-08-17/PIVOT_RECORD_2026
 advancing wavefront + the lock, observers are slices, a preferred foliation exists ·
 **S4** matter = defect · **S5** the medium is DRIVEN · **B-6** the preferred foliation IS the
 cosmic (CMB) rest frame, *which is the family's kill condition*. **LS** entered later by
-signed amendment (RUL-057): the local state at each site is a **4D orientation — six real
-parameters**, inherited unchanged by the continuum field; **whether its ℤ₂ sign lives in the
+signed amendment (RUL-057; restated witness-free by RUL-083 — stated for **any grain
+structure** a member realizes, each member re-witnessing on its own grain): the local state at
+each site is a **4D orientation — six real parameters**, inherited unchanged by the continuum
+field; **whether its ℤ₂ sign lives in the
 state or in the emergent covering sector is a deliberately OPEN branch** (family-tree node
 LS-ℤ₂). **THE REFUSAL:** the substrate is a material medium, **not** a field — so the rotor
 field of the paper and the engine is **instance-level description, not the ontology**, and an
@@ -126,28 +131,35 @@ description is **"an emergent pattern."**
 here, not in the Core.** Its picks are nodes **V3-1…V3-11** in
 `knowledge/ledgers/TWT_FAMILY_TREE.md`, each with its menu, its why, its revert clause.
 Stamping tally (RUL-047, stamping sheet authoritative): **6 CORE + the refusal / 8 ENDORSED /
-10 PINNED**. **The tree carries ELEVEN nodes (plus sub-node V3-2a, the e₄-only DM support pick, added at
-the J,D/Γ rework) and the RUL-047 tally says TEN — both are correct, at different dates:**
+10 PINNED**. **The tree carries ELEVEN V3 nodes (plus THREE sub-nodes — V3-2a, the e₄-only DM support pick; V3-1a,
+the drive-axis alignment, granted RUL-107(2) 2026-08-25; and V3-10a, the cell-scale target
+space, named 2026-08-26 on the round-5 report — and
+`V4-ASD`, entered OPEN with NO pick — RUL-097) and the RUL-047 tally says
+TEN — both are correct, at different dates:**
 V3-11 (fermionic quantization = the Finkelstein–Rubinstein scheme) was added after the
 stamping by the keeper sweep's finding F4, which caught a load-bearing pick carrying **no
 stamp at all**; it has since been **stamped PINNED (RUL-063)**. Quote the tally as *at
 stamping* and the node count as *current*.
-ENDORSED = preferred directions family members may diverge on — **eight as stamped, SEVEN as now
-standing** (grain discreteness · Skyrmion-class defects · carrier structure · measured-`G` anchor
-practice · Koide `c = √2` · `m = E₀` · generations = ℍ-triple + associativity).
-**★ weak = SD WAS THE EIGHTH AND IS PROMOTED OUT (RUL-082, 2026-08-21 — C-32's first live case).**
-Do not carry it as an endorsement. The complete menu of 3-dim `su(2)` hosts inside grade-2 `so(4)`
-is **COMPUTED closed at three conjugacy classes** {SD, ASD, the diagonal `so(3)` class of which the
-L-orbit is one member} — `weak_su2_menu_exhaustion`, R-171 — and both alternatives are refuted:
-ASD is the same assignment under a mirrored orientation (the `I₄` sign is convention-mobile), and
-the diagonal class charges the right-handed fermions, which are observed to be weak-isospin
-**singlets**. So R-079 is **DERIVED-given-{A-P2 + that datum}**, not an INPUT bit and not a pick.
-**Two things travel with it, always.** (i) **A-P2** — that weak isospin is a 3-dim `su(2)` inside
-the substrate's rotation algebra *at all* — is the surviving conditioning premise; it is FRAMING
-in the engine, **stamped nowhere**, and its stamp is an OWED HUMAN RULING. Quote `weak = SD` with
-A-P2 attached or do not quote it. (ii) The old ground is **WITHDRAWN**: *"a single-Weyl neutrino
-excludes the L-orbit"* is FALSE — on the neutrino's own Weyl half the L-orbit and SD span the SAME
-algebra. The discriminator is the right-handed half (RV-7).
+ENDORSED = preferred directions family members may diverge on — **eight as stamped, EIGHT as now
+standing, with ONE SUBSTITUTION** (grain discreteness · Skyrmion-class defects · carrier structure ·
+measured-`G` anchor practice · Koide `c = √2` · `m = E₀` · generations = ℍ-triple + associativity ·
+**`A-P2`, the weak-hosting premise — stamped ENDORSED 2026-08-21, RUL-084, into the slot `weak = SD`
+vacated**).
+**★ weak = SD WAS THE EIGHTH AND IS PROMOTED OUT (RUL-082 — C-32's first live case).** Do not carry
+it as an endorsement. The complete menu of 3-dim `su(2)` hosts inside grade-2 `so(4)` is **COMPUTED
+closed at three conjugacy classes** {SD, ASD, the diagonal `so(3)` class of which the L-orbit is one
+member} — `weak_su2_menu_exhaustion`, R-171 — and both alternatives are refuted: ASD is the same
+assignment under a mirrored orientation (the `I₄` sign is convention-mobile), and the diagonal class
+charges the right-handed fermions, which are observed to be weak-isospin **singlets**. So R-079 is
+**DERIVED-given-{A-P2 + that datum}**, not an INPUT bit and not a pick. **Two things travel with it,
+always.** (i) **A-P2** — that weak isospin is a 3-dim `su(2)` inside the substrate's rotation algebra
+*at all* — is the surviving conditioning premise; FRAMING in the engine and stamped **ENDORSED
+(RUL-084)**, so `weak = SD` is forced **given an ENDORSED premise + the right-handed-singlet datum**,
+and divergence happens one level down, at A-P2, exactly as at any other preferred direction. Quote
+`weak = SD` with A-P2 attached or do not quote it: the stamp moved A-P2's bookkeeping, never the
+conditioning. (ii) The old ground is **WITHDRAWN**: *"a single-Weyl neutrino excludes the L-orbit"*
+is FALSE — on the neutrino's own Weyl half the L-orbit and SD span the SAME algebra. The
+discriminator is the right-handed half (RV-7).
 
 **THE DELIVERABLE IS A LIST, NOT A WINNER (RUL-051).** At family level the program delivers
 the **list of surviving candidates** — self-coherent, empirically plausible Core members —
@@ -202,8 +214,11 @@ evaluation at v ≠ 0 fires it); the (iii)-era gapless-mode duty is VOID; the tw
 (dark head; N58). **THE TWO-LAWS/NESS ONTOLOGY (coordinator-endorsed; the R1 ground):** the
 vacuum is a driven steady state (H8/NESS); the FIRST law is the NESS's STEADINESS read through
 the lock (conservation = stationarity of the drive; the drive is common-mode), the SECOND law
-is its DRIVENNESS (entropy production > 0 defines a NESS; the one-way advance is the arrow —
-no past-hypothesis). Discriminating faces: arrow ↔ CP/T share the driven-kernel root (Θ_rel;
+is its DRIVENNESS (entropy production > 0 defines a NESS, so the SUBSTRATE'S OWN entropy
+production has a direction with no past hypothesis — the drive supplies it). **Whether that
+substrate arrow IS the observed cosmological thermodynamic arrow is NOT derived: §B.7.2 governs
+and the low-entropy past stays a separate cosmological input; the bridge is OPEN.**
+Discriminating faces: arrow ↔ CP/T share the driven-kernel root (Θ_rel;
 GATED); cosmological non-conservation = the first law's jurisdiction edge. **Gravity: no
 independent inter-front texture route in the banked action class; Sakharov remains THE route,
 computed in the first-order formulation (§B.6.7) — N51 reopeners stand.** **TWO SCALES:**
@@ -291,6 +306,19 @@ the value, **never** about its provenance. *(characterizations, MERGE_PLAN R1, A
 checkers' summaries. Open the source.** Measured: three instances in one round, two of them
 about citations, one in a banked governing document.
 
+**★ THE HEDGE MUST SURVIVE THE RESTATEMENT — this window's DOMINANT measured failure (~9 instances,
+twice INSIDE repair passes and once inside a banked proof text).** A conditioned result is restated
+at far more sites than it is derived at, and the conditioning is what falls off in transit. **Every
+restatement carries its conditioning or points at the row that holds it.** Partly MECHANIZED now —
+`check_records.py` §11b(W) forces every REGISTERED premise to resolve to a paper-side use-site, on a
+floor relative to the registry's size so the slack shrinks as the registry grows — but the machine
+reaches registered premises only; for everything else the duty is yours, and the sites most at risk
+are the ones you are *repairing*. **Measured case, R-184:** the arc's own F1 finding (a constant
+survives the 7-term operator, so the (T1) theorem needs a no-slit-independent-monomial hypothesis)
+was flattened out of the banked proof sentence at three sites — docstring, suite-check text,
+companion row — while both the arc record and the reviewer verdict carried the correct fact two
+sections away. Caught only by the closing review.
+
 **EVERY DEAD END, AND EVERY NECESSITY CLAIM, CARRIES ITS ESCAPE HATCH.** Dead ends: *tried X →
 failed because Y → would change if Z*; never "impossible." **Mirror rule (RUL-049):** never
 "the only way" either — every necessity claim ("the only route," "forced," "guaranteed,"
@@ -338,14 +366,14 @@ FREE · CHEAP · COSTLY-but-independently-motivated · **CONVOLUTED** (a new com
 only motivation is making this result work — a demotion candidate). Shared premises *are* the
 ontology; per-result-exclusive premises are the fitting.
 
-**EVERY NEW CHECK SHIPS WITH ITS FAILURE DEMONSTRATION (R2, adopted 2026-08-19).** Prove the
-check CAN fail — run it against the broken state, show it exits non-zero for the named
-reason, then fix and show it pass. **A check banked without a demonstrated failure mode is a
-phantom-cite of the gate class.** This is not a new standard; it operationalizes the canon's
-own vacuous-check tell. It earns its keep immediately: the ten checks added at the 2026-08-18
-consolidation were negative-tested, and the testing found **two defects in the new checks
-themselves** — a regex that silently skipped a row, and a count that passed only on tolerance
-while measuring the wrong thing.
+**EVERY NEW CHECK SHIPS WITH ITS FAILURE DEMONSTRATION (R2).** Prove the check CAN fail — run it
+against the broken state, show it exits non-zero for the named reason, then fix and show it pass.
+**A check banked without a demonstrated failure mode is a phantom-cite of the gate class.** It
+operationalizes the canon's own vacuous-check tell, and it is now ENFORCED rather than owed:
+`bank.sh` gate `[2/4]` runs `check_records.py --self-test` before the gate it certifies and refuses
+the bank if any demonstration misbehaves — so every record-invariant's non-vacuity claim is
+re-measured at every bank, and a refactor that quietly broke a predicate can no longer leave the
+gate green.
 
 **A CORRECT DIAGNOSIS DOES NOT LICENSE ITS PROPOSED CURE (R7, adopted 2026-08-19).** A
 reviewer — internal or external — can be right that a tension exists and wrong about the
@@ -371,6 +399,20 @@ or because the handles came off; comprehension up with findings down is failure.
 (3) **Branch separation** — answering a substantive finding with a presentational fix is the
 sanding failure. (4) **Cross-class placement** — independence belongs at the CORRECTION step,
 where self-preference bites; the MEASUREMENT step is chosen for ecological validity.
+
+**TWO REGISTER MEASUREMENTS FROM THAT LOOP, both 2026-08-24/25 (ER-16, ER-18).** **(i) A
+SELF-DESCRIBED HONESTY FLAG IS A TARGET DESIGNATOR.** The one paragraph a shipped note nominated as
+its *"single most important honesty point"* is the one paragraph the cold expert opened and closed
+on — and he was right, and the error ran **in the paper's favour**. Disclosure does not merely avoid
+the crank match; it *directs* expert attention onto the disclosed spot. **So a flagged caveat must
+be the MOST-checked sentence in the document, never the least: a caveat is a claim and inherits the
+claim's burden.** **(ii) A FACT-REGISTER ANSWER SURVIVES BEING AN ANSWER AGAINST THE READER** — the
+register discriminator's strongest confirmation yet. Both round-4 warm reviewers accepted every
+adjudication-against once its engine verification was on the table (one re-ran the primitive at
+public HEAD; the other declined to adjudicate *himself*, on correlation grounds — a correctness
+move, not a rejection), and no verdict-level degradation followed from being ruled against. **The
+one finding neither class conceded was the one whose evidence could not be reached.** Fact-register
+answers work exactly as far as the facts are reachable, and no further; stance-register answers fail.
 
 **CROSS-CLASS IS REQUIRED FOR INTERNAL CHECKING (RUL-045 as scope-corrected by RUL-065).** The
 §8a roles run on a **different class than whoever AUTHORED the work** — keyed on authorship, not
@@ -424,6 +466,11 @@ free-defect arguments break. The lock-or-slip energetic teeth are a located nega
 the carrier-relative mass reading is refuted at face value (N59). **§D.3.2's Spin(3) local
 state was DRIFT and is repaired** — the local state is the six-parameter 4D orientation (LS);
 2-/3-parameter readings survive only as explicitly stated L-orbit-sector reductions.
+**The Born-deviation falsifier channel is WIDENED (RUL-106):** Core §4.1 (and foundational §A.6.2)
+name the **finite-grain / bounded-amplitude ROUTE FAMILY**, with the two sources' different scaling
+laws stated as what the protocol must separate. Restate it by the family name — never as
+"finite-grain" alone, the withdrawn wording — because a falsifier row ambiguous about its own
+scaling law is not a falsifier row.
 **Gate A read out BRANCH 1 (2026-08-18):** the convergence hook leads and §C.2 is the payoff —
 with the binding rider that the hook's cheapness is **borrowed against two unbuilt objects**
 (N53; the §D.5 kernel) and must be presented as such.
@@ -432,6 +479,11 @@ with the binding rider that the hook's cheapness is **borrowed against two unbui
 
 ## 4. TRAPS AND CONVENTIONS (each cost real time)
 
+**THE FREEZE IS A SOLO COMMIT.** A probe's pre-registration is committed **ALONE — before any script
+exists and before any empirical fetch** — so the witness is cryptographic instead of a filesystem
+mtime the author can set at will (two clean outings: `3bef8a6`, `7e162d5`). **And the freeze covers
+the CITATIONS, not only the tests:** the Geiger–Nuttall probe's one leak was a licence line the
+frozen file got right and the reporting memo dropped.
 `PYTHONUTF8=1 bash scripts/bank.sh "msg"` — no backticks in messages (the shell eats the
 content; use `git commit -F` for anything with them); **`bank.sh` verifies the tree as it
 stands when it STARTS, not when it commits** — never edit files while it runs; **verify the
@@ -466,11 +518,20 @@ producing a giant phantom diff.
 
 ## 5. THE MAP (where things live; the two content layers)
 
-**HARD (banked):** `CLAUDE.md` (canon), `knowledge/corpus/{twt.py, twt_companion.py,
-twt_test.py, twt_companion_test.py, paper, companion}`, the ledgers, and
-the two suites (427 + 87 = 514 as of 2026-08-21) — MAIN never calls COMPANION, suite-guarded.
+**HARD (banked):** `CLAUDE.md` (canon), `knowledge/corpus/{twt.py, twt_core.py,
+twt_candidate_v3.py, twt_companion.py, twt_test.py, twt_companion_test.py, paper, companion}`,
+the ledgers, and
+the two suites (510 + 87 = 597 as of 2026-08-26).
+**TWO SPLITS, TWO INVARIANTS (the second new 2026-08-23, RUL-093/RUL-095):** MAIN never calls
+COMPANION; and **CORE never consumes CANDIDATE** — `twt.py` is a pure import FACADE over
+`twt_core.py` (family level) and `twt_candidate_v3.py` (everything consuming a V3 pick), with an
+AST guard in `twt_test.py`. `import twt` is unchanged, so no probe or simulator moved. **Choose a
+new primitive's file by what it CONSUMES, not by where it feels foundational** — and if it is CORE
+while riding an entered datum or a posited premise, add its row to `CORE_PROVENANCE` in
+`twt_core.py` in the same pass (the third commitment class: the charge anchor + P4–P7, the
+RH-singlet datum, A-P2′). CORE is not a synonym for unconditional.
 *(That parenthesis is PINNED by `check_records.py`'s "FORMATION_CORE map totals" invariant —
-keep the literal `two suites (M + C = T` form when you refresh it, or the bank gate fails.)* **THE STANDING LEDGERS — all fourteen, `knowledge/ledgers/`, so nothing is missed by a
+keep the literal `two suites (M + C = T` form when you refresh it, or the bank gate fails.)* **THE STANDING LEDGERS — all fifteen, `knowledge/ledgers/`, so nothing is missed by a
 too-narrow search (a measured failure, three times; the roster is bidirectionally pinned by
 `check_records.py`, so a new ledger that is not named here fails the bank gate):**
 `TWT_NEGATIVES_LEDGER.md` (through
@@ -485,7 +546,8 @@ revert lists) · `TWT_CHECKER_CALIBRATION.md` · `TWT_EDIT_REACTION_LEDGER.md` �
 `TWT_COMPARATIVE_LEDGER.md` · `TWT_FAMILY_TREE.md` · `TWT_PHILOSOPHER_LOG.md` ·
 `TWT_REVERSAL_LEDGER.md` (**positions the programme changed and what changed them — read it early; it is the fastest way to learn how this programme actually corrects itself**) ·
 `TWT_EOM_MAP.md` (**missed for a whole sweep round once — include it**) ·
-`TWT_DEFECT_CKM_GLUON.md`. **IN FORMATION (CANDIDATE):**
+`TWT_DEFECT_CKM_GLUON.md` ·
+**`TWT_REDUCTIONS_LEDGER.md`** (**founded 2026-08-26 on an external proposal — the FORWARD object, dual to the negatives ledger: *if antecedent A holds, then C1...Cn follow, by argument P*. The bar is that the implication is PROVED, not asserted; every entry carries a PROOF STATUS and an inadmissible entry is retained as such rather than quietly upgraded. Nothing here is banked physics and no R-number issues from it**). **IN FORMATION (CANDIDATE):**
 `knowledge/candidates/**`, the worklist's dated blocks, unbanked definitions.
 
 **GOVERNING RECORDS by arc:** the Core/Instance split →
@@ -495,8 +557,25 @@ PRIOR_ART_FOLDIN · JD_INVARIANT_MENU + its §8a verdict · CORE_INSTANCE_SWEEP)
 the gravity/mass arc → `probes_2026-08-02/ADJUDICATION{,2,3}`; τ₅ and K-O1 →
 `probes_2026-08-13/`; the external-review loop → `knowledge/audit/external_review_2026-08-13/`
 (INDEX is the governing record; MERGE_PLAN Part III is the execution order); the philosopher's
-founding audit → `knowledge/audit/philosopher_founding_audit_2026-08-16/`; this consolidation →
-`knowledge/audit/consolidation_2026-08-18/`. Per-directory `INDEX.md` files exist.
+founding audit → `knowledge/audit/philosopher_founding_audit_2026-08-16/`; the Sorkin arc and the
+ceiling triad → `knowledge/audit/{sorkin_arc, ae_ceiling_probe, gn_ceiling_probe}_2026-08-25/`;
+this consolidation → `knowledge/audit/consolidation_2026-08-25/`. Per-directory `INDEX.md` files
+exist.
+
+**PUBLISH-ON-CITE (RUL-103).** A `knowledge/` path cited as the basis of a status in a public-facing
+artifact **qualifies for the public mirror, quarantine markers preserved** — citation is the
+curation trigger, so the tree stays curated and partial by design. **Citing an audit path from a
+shipped artifact therefore CREATES A PUBLICATION OBLIGATION**; which records actually ship stays the
+human's call, and the outstanding queue is reported (WARN, not FAIL) by `check_records.py` §11f.
+The mirror's `knowledge/` tree diverges **silently** — measured: a cited route memo shipped without
+its entire 44-line quarantine annotation, so a reader following the public pointer took unverified
+figures as operative — which is why §7b(ii) now byte-diffs every published file against its working
+twin and names the resync duty.
+
+**★ THE ξ/ζ CONVERGENCE (docket pointer).** The `a_e` probe's `ζ` and the Geiger–Nuttall probe's
+`ξ` (N69's would-change-if (a)) are **one substrate saturation-response repair in two sectors** — a
+single argument moves both, and until it exists **every `ρ_sat` bound is a bracket**. The
+highest-leverage single open item the ceiling triad produced; docketed in `TWT_worklist.md`.
 
 **THE OUTER CYCLE.** The external-review loop is the program's outer cycle
 (`knowledge/prompts/external_review_loop.md`); the coordinator is its executive; §8a is the
