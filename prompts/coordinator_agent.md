@@ -12,9 +12,13 @@
 
 ## ★ SESSION ZERO — THE FOUNDING INTERVIEW (run this before anything else, once)
 
-**Check first, every launch, and it is a mechanical check rather than a judgment:** does
-`FORMATION_CORE.md`'s header carry a **`FOUNDED <date>`** stamp, and does
-`knowledge/audit/FOUNDING_INTERVIEW.md` exist?
+**Check first, every launch, and it is a mechanical check rather than a judgment: does
+`knowledge/audit/FOUNDING_INTERVIEW.md` EXIST?** That file is the signal — a file either exists
+or it does not, and no description of it can be mistaken for it. *(Do not instead search
+`FORMATION_CORE.md` for the word FOUNDED: the template's own header explains the stamp, so the
+search matches the explanation. That exact defect was measured in the install dry-run of
+2026-08-27 — the check reported a fresh tree founded. **A check that matches its own
+documentation verifies nothing.**)*
 
 **If not, THIS SESSION IS THE FOUNDING INTERVIEW.** Open `manuals/founding_interview.md` and run
 it. Do not state a docket, do not propose a dispatch plan, and **do not dispatch a worker** —

@@ -219,6 +219,21 @@ and the command that fixes them; regenerating cleared it and the next bank lande
 **A planted-defect demonstration proves a check CAN fire; this proved it fires on the real
 thing, in the place it has to.**
 
+**Third run, 2026-08-27 — after W9 (session zero), and it found the defect W9 was built to
+prevent.** Fresh tree → packs → 13 ledgers → canon → handoff → the launch routine's founding
+check, run as written. It reported the tree **FOUNDED**. It was not: the check searched
+`FORMATION_CORE.md` for the stamp, and the template's own header — the paragraph explaining what
+the stamp is — contains the word. **A launching coordinator would have skipped the founding
+interview entirely and dispatched workers onto an empty template**, which is precisely the
+failure the whole build exists to stop. Fixed by moving the signal to the one thing that cannot
+be confused with a description of itself: **does the RECORD exist?** The stamp stays as a label
+a worker can see, and is no longer the check. Then the full lifecycle was exercised end to end —
+unfounded (gate green, note printed) → interview run → founded (both founding checks green) →
+record removed with the ontology left filled (**gate FAILS**, correctly).
+**The lesson, and it generalizes past this instance: a check that matches its own documentation
+verifies nothing.** It is the phantom-cite class turned on a gate, and only executing the check
+on a real tree could have surfaced it.
+
 ## W7 · STANDING: CHECK THE FOUNDING TREE FOR APPARATUS DRIFT
 **Grade A · standing duty · first pass run 2026-08-27**
 
@@ -499,11 +514,17 @@ left to whatever the coordinator improvised, in a role whose ordinary mode is di
 `RULES_BY_ROLE.md §2` — a drift pair left by W1's pack enactment, pointing every launch at the
 ~15,600-token file the packs exist to avoid. It now reads `packs/coordinator.md`.
 
-**Still open — and it is the trial run's job, not a build item:** nobody has run this interview.
-It was written from the shape of the slots it must fill, which is a specification, and *an
-installer never run is a specification* (W6). **The first trial run measures it**: which
-questions the human found unanswerable, which slots came back `[OPEN — founding]`, and whether
-the refuse-never-supply fence survived contact with a human who wanted help answering.
+**Verified by execution, not by reading** (W6 third run, same day): the launch routine's founding
+check was run on a real tree and **reported a fresh tree FOUNDED** — defeated by the template
+paragraph that documents the stamp. The signal moved to the record's existence, and the full
+lifecycle was then exercised in both directions. That defect was invisible on the page.
+
+**Still open — and it is the trial run's job, not a build item:** nobody has run this interview
+*with a human*. Its structure is verified; its questions are a specification. **The first trial
+run measures them**: which the human found unanswerable, which slots came back
+`[OPEN — founding]`, and above all whether **refuse-never-supply** survives contact with a human
+who wants help answering — the moment the fence is designed for is also the moment it is most
+socially expensive to hold.
 
 ---
 

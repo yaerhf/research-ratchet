@@ -135,8 +135,13 @@ header that `scripts/gen_negatives_index.py` generates it once entries exist.)
 In `worklist.md`, write the founding docket — the object-slot work, in this order, each as one
 line with an empty status column:
 
-1. Write `knowledge/prompts/FORMATION_CORE.md` §1 (the ontology) from the object paragraph —
-   the programme's first real session, with the human.
+1. **THE FOUNDING INTERVIEW** — `/coordinator`'s session zero, run with the human coordinator
+   present (`manuals/founding_interview.md`). It settles the object, the commitment
+   architecture, success and its falsifier, what is settled, the traps, and the first graded
+   docket item, and it writes `knowledge/audit/FOUNDING_INTERVIEW.md` plus
+   `FORMATION_CORE.md` §§0/1/3/4. **Until it has run, no worker may be dispatched** — the
+   formation prefix is still the template. Items 2 and 4 below are often discharged in the
+   same session; leave them listed, and strike them if they are.
 2. Fill `RULES_CORE.md` §A — the two-to-five ontological invariants (C-1..C-4 slots).
 3. **Seed the engine — `manuals/engine.md` is the manual for this item.** Order matters: the
    **gate list first** (every quantity the programme cannot yet earn, wired to raise — a gate
@@ -220,9 +225,11 @@ path; do not remove it. Visibility: <answer 7>.
 Form as the AI COORDINATOR of this programme and run a work session.
 
 ★ THE FOUNDING CHECK — run this FIRST, every launch. It is mechanical, not a judgment:
-   Does knowledge/prompts/FORMATION_CORE.md's header carry a `FOUNDED <date>` stamp, and
-   does knowledge/audit/FOUNDING_INTERVIEW.md exist?
-   IF EITHER IS ABSENT, THIS SESSION IS THE FOUNDING INTERVIEW. Read
+   Does the file knowledge/audit/FOUNDING_INTERVIEW.md EXIST?
+   That file is the signal. Do NOT instead search FORMATION_CORE.md for the word FOUNDED —
+   its template header explains the stamp, so the search matches the explanation and
+   reports a fresh tree founded (measured, install dry-run 2026-08-27).
+   IF THE RECORD IS ABSENT, THIS SESSION IS THE FOUNDING INTERVIEW. Read
    knowledge/prompts/manuals/founding_interview.md and run it with the human coordinator:
    the object, the commitment architecture, success and its falsifier, what is settled,
    the traps, the first graded docket item. Do not state a docket, do not propose a

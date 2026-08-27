@@ -219,8 +219,14 @@ human's actual words. Write as you go.
    Nothing enters a slot that is not in the record.
 3. **`[OPEN — founding]` rows** → the worklist, each with its promotion condition.
 4. **The first fork** → `knowledge/ledgers/PATHS_LEDGER.md`.
-5. **The stamp** — `FOUNDED <date>` in `FORMATION_CORE`'s header block. This is what makes
-   first-launch detection **mechanical rather than a judgment**: no stamp, no founding.
+5. **The stamp** — a `FOUNDED` comment carrying the date, written into `FORMATION_CORE`'s
+   header block so that any instance reading the formation prefix sees the state at a glance.
+   **The stamp is a label, not the check.** What makes first-launch detection *mechanical* is
+   artifact 1: **the record either exists or it does not**, and no description of it can be
+   mistaken for it. The first version of this check searched the header for the word and
+   reported a fresh tree founded, because the template's own header explains the stamp —
+   **a check that matches its own documentation verifies nothing** (install dry-run,
+   2026-08-27).
 6. **The handoff top block**, rewritten: what was settled, what is open, what the first dispatch
    is.
 7. **Bank it** (`manuals/banking.md`). `check_records.py` verifies that a tree whose ontology is

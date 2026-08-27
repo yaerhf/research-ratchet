@@ -8,8 +8,16 @@ this document describes what belongs in them and why.
 
 **They are filled in the FOUNDING INTERVIEW** — the coordinator's session zero, run with the
 human coordinator present, before any worker is dispatched (`manuals/founding_interview.md`).
-**A tree that has been founded stamps this header `FOUNDED <date>`**, and that stamp is what a
-launching coordinator checks: no stamp, no founding, and the next session is the interview.
+
+**★ HOW A LAUNCHING COORDINATOR TELLS WHETHER THIS TREE HAS BEEN FOUNDED — and the check is the
+RECORD, never a word search.** The authoritative signal is: **does `audit/FOUNDING_INTERVIEW.md`
+exist?** A file either exists or it does not, and no description of it can be mistaken for it.
+A founded tree *also* stamps a `FOUNDED` comment into this header so that any instance reading
+the formation prefix can see the state at a glance — but **do not test for founding by searching
+this document for the word**, because the paragraph you are reading contains it. *(Measured in
+the install dry-run of 2026-08-27: the first version of this check grepped for the stamp and
+reported PRESENT on a tree nobody had founded — defeated by the sentence documenting it. A
+check that matches its own documentation verifies nothing.)*
 
 *(Derived from the founding programme's v1.6, 2026-08-25 —
 [github.com/yaerhf/TWT](https://github.com/yaerhf/TWT) — whose incident citations and register
