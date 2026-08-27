@@ -13,7 +13,7 @@ named object elsewhere.
 ---
 
 ## W1 · THE EFFICIENCY AUDIT — duplicate activity across roles, and the cost per pass
-**Grade B · opened 2026-08-27 on the human coordinator's directive · not started**
+**Grade B · opened 2026-08-27 on the human coordinator's directive · FIRST PASS RUN 2026-08-27; the build it recommends is not started**
 
 > *"Research for duplicate activity in the different roles. And other ways to reduce process
 > time and token consumption."*
@@ -70,6 +70,73 @@ each with its measured cost per pass and what breaks if it goes. **Report, do no
 deletion decision is the human coordinator's, and N1's founding finding stands: *a cut that
 evaluates structures on recorded catches will remove exactly the invisible-benefit class and
 nothing else.*
+
+### FIRST PASS — measured 2026-08-27 · REPORT ONLY, nothing cut
+
+**What each instance loads, in approximate tokens** (chars/4):
+
+| document | tokens | who loads it |
+|---|---|---|
+| `RULES_BY_ROLE.md` | **15,571** | every role — **and nobody needs more than one pack of it** |
+| `FORMATION_CORE.md` | 7,668 | workers only |
+| `coordinator_agent.md` | 7,719 | the coordinator, every session |
+| `RULES_CORE.md` | 6,527 | every agent, correctly — it is the universal core |
+| `removal_auditor_agent.md` | 6,115 | once per consolidation |
+| a checker's own role file | 1,400–4,200 | that role |
+
+**★ FINDING 1 — WASTE, and it is the largest single item by a wide margin.**
+`RULES_BY_ROLE.md` is **15.5k tokens** and is read whole by every dispatch that needs a pack —
+because a file path handed to an agent gets read as a file. A role's actual pack is **2–3k**.
+So roughly **12k tokens per dispatch** are spent delivering rules that bind somebody else.
+Against the recorded baseline of ~20k fixed overhead per probe-scale dispatch, **this one item
+is over half of it.**
+*The fix is not deletion — it is GENERATION*: emit a per-role pack (core + that role's rules +
+its activity blocks) the way `gen_worker_agent.py` already emits the cached worker prefix.
+**What breaks if done badly:** a generated pack that drifts from its source is a drift pair with
+a build step in front of it. Mitigations already in the apparatus: regenerate at consolidation,
+and add a records-gate invariant that each generated pack matches its source.
+
+**★ FINDING 2 — RECLASSIFIED, and this corrects the framing of this item as it was written.**
+The ~5.7k tokens of blocks duplicated across role files — retrieval (9 files), refuting-verdict
+(3), cross-class independence (3), self-persistence (3), cross-domain reach (4) — **cost nothing
+per dispatch.** Each role loads only its own file, so a block appearing in nine files is
+delivered once. **The duplication is a MAINTENANCE and DRIFT cost, not a token cost**, and W1's
+opening framing implied otherwise.
+The maintenance cost is real and was measured *in the act of creating it*: adding the retrieval
+block this week meant editing nine files, and a later correction to the diet bound meant editing
+them again. **The drift risk is the serious half** — nine copies of a rule is nine chances for
+one to fall behind, which is the corpus's named failure mode.
+**Do NOT centralize behind a pointer.** Each copy is load-bearing *at the point of use*: a role
+that has to follow a pointer to learn its own diet bound is a role that will sometimes not
+follow it, and the manuals principle is explicit that a document must be COMPLETE for its
+activity. **The correct fix is the same as Finding 1: one source, generated into place.**
+
+**★ FINDING 3 — REDUNDANCY. Do not touch, and the audit should say so in writing.**
+Four diets reading one claim; the re-derivation agent proving independently what the reviewer
+checked; the keeper re-examining what per-claim review already passed. These *look* like
+duplicate activity and are the opposite: **the convergence of two independent routes is the
+measurement.** The founding record shows what it buys — the same result produced by the worker
+numerically, derived analytically by a referee briefed to break it, and reproduced from the bare
+statement by an agent that had seen none of it, which returned two upgrades nobody had.
+
+**★ FINDING 4 — RITUAL: already addressed, worth re-measuring rather than re-solving.**
+The light path exists (`coordinator_agent.md`, dispatch tiers) and prescribes loading
+`RULES_CORE.md` + the role pack instead of the full prefix. **It is unmeasured.** Whether
+dispatches actually mark a tier, and whether the light path is used at all, is exactly the kind
+of "available and unused" outcome the retrieval layer already suffered. A tier field in the
+brief is cheap to count once a live programme is running.
+
+**NOT YET MEASURED — needs a live programme, not this repository:**
+re-reads across a session (the register clerk's whole justification, still an unmeasured PILOT);
+verdict-routing volume; retrieval adoption (queries per session vs bulk reads). Each needs
+dispatch-side logging that does not exist yet, and inventing it here would be guessing.
+
+**RECOMMENDATION — one build, two guards.** Generate per-role packs; keep every block inline
+where it is used; make the generator the single source for the shared blocks; gate the generated
+artifacts against their sources in `check_records.py`. Expected saving **~12k tokens per
+dispatch** with no structure removed, no role merged and no redundancy lost. **This is a
+proposal, not an enactment** — the build touches how every role loads its rules, and that is the
+human coordinator's call.
 
 ---
 
