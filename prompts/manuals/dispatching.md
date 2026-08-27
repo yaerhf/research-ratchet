@@ -10,6 +10,17 @@ you need nothing else.
 
 ---
 
+## 0-bis · ★ BEFORE THE FIRST BRIEF OF ALL — has this programme been FOUNDED?
+
+**Check once, mechanically:** does `FORMATION_CORE.md`'s header carry a `FOUNDED <date>` stamp,
+and does `audit/FOUNDING_INTERVIEW.md` exist? **If not, no brief may be composed yet.** The
+formation prefix every worker receives is still the TEMPLATE — its ontology, its architecture,
+its settled list and its traps are all `[OBJECT-SLOT]` — so a worker dispatched now is fluent in
+nothing and **every result it returns is about nothing.** Run the founding interview first
+(`manuals/founding_interview.md`); it is the coordinator's session zero.
+
+---
+
 ## 0 · WHAT A BRIEF IS
 
 **A brief is a research memo, not a task ticket — and its steer is a hypothesis the worker may

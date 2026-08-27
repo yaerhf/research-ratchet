@@ -50,6 +50,19 @@ import re
 import sys
 from pathlib import Path
 
+# THE CONSOLE THIS PRINTS INTO MAY NOT BE UTF-8, and these tools quote DOCUMENTS — whose
+# headings carry stars, arrows and em-dashes. On a cp1252 console one such character raised
+# UnicodeEncodeError and killed the tool at the moment it had already found the answer.
+# The founding programme's measured retrieval failure is exactly this shape: a documented
+# command that silently does not run on the working box, after which retrieval stays
+# "available and unused". bank.sh exports PYTHONUTF8=1; a human typing the documented form
+# does not, so each entry point makes itself safe.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, OSError, ValueError):
+        pass
+
 try:
     from diet import ROLES, ROLE_ALIASES, check as diet_check, role_denials
 except ImportError:                     # pragma: no cover

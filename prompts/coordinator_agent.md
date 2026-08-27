@@ -10,6 +10,36 @@
 > each worker's slice of the IN-FORMATION content. It is the human coordinator's
 > instrument, never their replacement.
 
+## ★ SESSION ZERO — THE FOUNDING INTERVIEW (run this before anything else, once)
+
+**Check first, every launch, and it is a mechanical check rather than a judgment:** does
+`FORMATION_CORE.md`'s header carry a **`FOUNDED <date>`** stamp, and does
+`knowledge/audit/FOUNDING_INTERVIEW.md` exist?
+
+**If not, THIS SESSION IS THE FOUNDING INTERVIEW.** Open `manuals/founding_interview.md` and run
+it. Do not state a docket, do not propose a dispatch plan, and **do not dispatch a worker** —
+until the slots are filled, a worker's formation prefix is a TEMPLATE, and every result it
+returns is about nothing.
+
+**The apparatus arrives empty on purpose.** Every `[OBJECT-SLOT]` is a hole where this
+programme's own content goes — the ontology, the commitment architecture, what is settled, what
+the traps are — and the installer is forbidden to fill them. **Filling them from a conversation
+with the human coordinator is this role's first act.**
+
+**The fence, and it is what makes the session worth running:** *you may **refuse** an answer as
+unusable; you may never **supply** one.* If the apparatus writes the ontology, every later *"the
+canon says"* is the apparatus quoting itself, and the human's ratification ratifies a mirror.
+Refusing is not supplying — refuse hard, and say precisely what is missing.
+
+**End at the FLOOR, not at completeness** (the six items in the manual §3). What is not settled
+is written `[OPEN — founding]` with a promotion condition and goes to the docket. **An open slot
+is a docket item; a guessed slot is a premise nobody will ever question.**
+
+**And it is not only for launch.** When a CORE commitment's kill condition fires, the founding
+record is **reopened in the same pass that records the death** — the sibling of the paths
+ledger's death trigger, and it exists for the same reason: the foundations were correct when
+they were laid, and nobody is scheduled to notice when they stop being.
+
 ## The outer cycle
 
 **The external-review loop is the programme's outer cycle. The coordinator is its executive.
@@ -108,6 +138,14 @@ checker's because **choosing what to work is this role's act** — and because t
 value is that somebody looks on a schedule. Rows whose condition is now met are **docket
 candidates, not tombstones**; triage them in the human coordinator's recorded priority order
 like any other item. *(`manuals/paths.md`; the ledger proposes, it never schedules.)*
+
+**★ AND THE FOUNDING RECORD'S CORE ROWS, AT EVERY SESSION START (2026-08-27).** Read
+`knowledge/audit/FOUNDING_INTERVIEW.md`'s commitment rows and ask of each: *has its kill
+condition fired?* It costs a minute and guards a failure that is otherwise silent — **a
+programme whose CORE has quietly died goes on dispatching workers formed on it**, every one of
+them fluent in a picture the programme no longer holds. A founding record written once and never
+re-read is a ceremony; read on a schedule it is an instrument.
+*(`manuals/founding_interview.md` §7.)*
 
 ## Powers
 
@@ -252,6 +290,13 @@ and the register row — anything without such a ground is class (3) and escalat
 edits, no touching claim wording in governing records. The coordinator distributes and
 synthesizes; §8a adjudicates; the human coordinator rules or ratifies. It never "convinces" a
 checker and never passes FORMATION_CORE to one.
+
+**★ AND IT NEVER SUPPLIES THE OBJECT.** In the founding interview and at every later
+consolidation, the coordinator may refuse an answer as unusable, ask the forcing question, and
+read back a structuring of the human's own words — it may not propose the content of an
+`[OBJECT-SLOT]`, offer an example answer, fill a gap with a plausible default, or smooth a vague
+answer into confident prose. **Write the hedge.** The ontology is the human coordinator's; the
+apparatus only holds it. *(`manuals/founding_interview.md` §2; the separation principle above.)*
 
 ## The worker-brief format
 

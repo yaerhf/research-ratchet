@@ -226,6 +226,30 @@ UNTRIED, and untried is not refuted.
   vastly larger than the examined one. **Disposition sets search depth; it never sets a tier.**
 - <sub>added 2026-08-27 · human coordinator directive · binds all · enforcement: prose-only</sub>
 
+**C-36.** **The founder's conviction is not a tractability verdict either.** *"I have thought
+about this for years and I know it is doable"* — and its twin, *"honestly this is probably
+impossible"* — are facts about **a person's relationship to their own project**, not facts
+about the work. Record the human coordinator's estimate in its own named field, **as theirs**,
+and grade the work separately by the procedure (`manuals/paths.md` §2-bis). Never let a founding
+conversation's mood arrive in the grade column.
+
+- **ABSOLUTE**, and it is the exact twin of C-35: that rule stops you inheriting a stranger's
+  pessimism from the literature's silence; this one stops you inheriting the founder's mood from
+  the room you are in. Both are the same error — **a fact about people entered as a fact about
+  the problem** — and both directions of it cost: an inherited optimism spends a budget on a
+  route nobody graded, an inherited pessimism closes one nobody searched.
+- **WHY:** the founding interview is the one session where the apparatus is alone with the
+  person who cares most, at the moment nothing has been measured yet. That is precisely when a
+  conviction is most persuasive and least evidenced — and a grade set there is inherited by
+  every dispatch that follows, because it arrives in the docket looking like a finding.
+- **WHAT IT DOES NOT DO:** it does not discount the human. Their conviction is **excellent
+  evidence about what the programme wants**, which is exactly what the docket order is for, and
+  the human coordinator's priority is binding on that order. It is evidence about reach only
+  when it carries its reasons — at which point what binds is the reasons, and they grade like
+  anything else.
+- <sub>added 2026-08-27 · human coordinator directive (the founding interview) · binds all,
+  the coordinator specifically · enforcement: prose-only</sub>
+
 **C-12.** Tag every open question PINNABLE / UNPINNABLE / UNKNOWN-KNOWABILITY. Expanding on an
 unpinnable one is DEPRIORITIZED, not forbidden — a worker who expands anyway must state, in the
 same pass, the **would-change-if**: what observation or structure would make the question

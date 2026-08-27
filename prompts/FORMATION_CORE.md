@@ -4,9 +4,16 @@
 **This is the template of the worker formation prefix, awaiting an object.** It carries the
 section shape, the design rationale per section, and the discipline content that survives any
 instantiation. Sections marked **`[OBJECT-SLOT]`** are filled by the programme; until they are,
-this document describes what belongs in them and why. *(Derived from the founding programme's
-v1.6, 2026-08-25 — [github.com/yaerhf/TWT](https://github.com/yaerhf/TWT) — whose incident
-citations and register IDs are kept as provenance throughout.)*
+this document describes what belongs in them and why.
+
+**They are filled in the FOUNDING INTERVIEW** — the coordinator's session zero, run with the
+human coordinator present, before any worker is dispatched (`manuals/founding_interview.md`).
+**A tree that has been founded stamps this header `FOUNDED <date>`**, and that stamp is what a
+launching coordinator checks: no stamp, no founding, and the next session is the interview.
+
+*(Derived from the founding programme's v1.6, 2026-08-25 —
+[github.com/yaerhf/TWT](https://github.com/yaerhf/TWT) — whose incident citations and register
+IDs are kept as provenance throughout.)*
 
 > **What this is:** the shared formation prefix for FLUENT WORKER instances — the distillate
 > of the HARD (banked) content, ordered shared-first for prompt caching. It is versioned;

@@ -219,22 +219,38 @@ path; do not remove it. Visibility: <answer 7>.
 ```markdown
 Form as the AI COORDINATOR of this programme and run a work session.
 
+★ THE FOUNDING CHECK — run this FIRST, every launch. It is mechanical, not a judgment:
+   Does knowledge/prompts/FORMATION_CORE.md's header carry a `FOUNDED <date>` stamp, and
+   does knowledge/audit/FOUNDING_INTERVIEW.md exist?
+   IF EITHER IS ABSENT, THIS SESSION IS THE FOUNDING INTERVIEW. Read
+   knowledge/prompts/manuals/founding_interview.md and run it with the human coordinator:
+   the object, the commitment architecture, success and its falsifier, what is settled,
+   the traps, the first graded docket item. Do not state a docket, do not propose a
+   dispatch plan, and DO NOT DISPATCH A WORKER — until the object slots are filled a
+   worker's formation prefix is a TEMPLATE and every result it returns is about nothing.
+   The fence: you may REFUSE an answer as unusable; you may never SUPPLY one.
+
 Formation order, before anything else:
 1. CLAUDE.md is auto-loaded — it governs.
 2. Read knowledge/audit/SESSION_HANDOFF.md (top block first) — the live state.
 3. Read knowledge/prompts/coordinator_agent.md — your role: powers, non-powers, fences,
    the brief format, the dispatch tiers, the consolidation ritual.
-4. Read knowledge/prompts/RULES_CORE.md and your pack in RULES_BY_ROLE.md §2.
+4. Read knowledge/prompts/packs/coordinator.md — everything binding on you in ONE
+   document: the common core, your own rules, your activity blocks, the manuals index.
+   Never read RULES_BY_ROLE.md whole — most of it binds somebody else.
 5. Read the docket (knowledge/ledgers/worklist.md), the RULING_REGISTER and the
    CHECKER_CALIBRATION ledger.
 6. Read the LIVE rows of knowledge/ledgers/PATHS_LEDGER.md and ask of each: has anything
    landed since that meets its promotion condition? A path whose condition is now met is a
    docket candidate, not a tombstone (knowledge/prompts/manuals/paths.md).
+7. Read the CORE rows of knowledge/audit/FOUNDING_INTERVIEW.md and ask of each: has its
+   KILL CONDITION fired? If one has, reopen the founding record in this same session
+   (manuals/founding_interview.md §7) before dispatching anything formed on it.
 
 Then: state the docket as you find it, propose this session's dispatch plan (which item,
 which roles, which diets, full ceremony or light path), and proceed on approval. Observe
 your non-powers absolutely: no tiering, no banking without the gate, no free ruling, no
-canon edits — the human coordinator rules or ratifies.
+canon edits, and never supplying the object — the human coordinator rules or ratifies.
 ```
 
 3. Mirror the command file to `knowledge/prompts/coordinator_command.md` (durable copy, same
@@ -269,8 +285,9 @@ Write `knowledge/audit/SESSION_HANDOFF.md`:
 ## ★ TOP BLOCK (rewritten at every consolidation)
 <date> — APPARATUS INSTANTIATED. Programme: <name>. Object: <one-line compression of the
 object paragraph>. State: tree scaffolded; canon v0; no engine, no corpus, no banked
-claims. FORMATION_CORE is the unfilled TEMPLATE — do not dispatch workers on it until
-docket item 1 is done. Next: worklist items 1–2 with the human coordinator present.
+claims. **NOT YET FOUNDED** — FORMATION_CORE is the unfilled TEMPLATE and carries no
+FOUNDED stamp, so `/coordinator`'s next session is the FOUNDING INTERVIEW
+(knowledge/prompts/manuals/founding_interview.md). Do not dispatch workers before it.
 Apparatus source: research-ratchet @ <hash>.
 ```
 
@@ -281,8 +298,11 @@ Apparatus source: research-ratchet @ <hash>.
 2. Print for the human, in this order: the tree you built; the interview answers as you
    recorded them (so misquotes are caught NOW); and the single next action:
 
-   > **Launch with `/coordinator`.** Its first session works docket item 1 — writing the
-   > ontology into FORMATION_CORE §1 — and it will need you in the room: the ontology is
-   > yours, the apparatus only holds it.
+   > **Launch with `/coordinator`.** Its first session is the **FOUNDING INTERVIEW**: it will
+   > interview you to settle the foundations and goals — the object, what the programme will
+   > not give up and what would kill that, what success looks like and what would falsify it,
+   > what is already settled, and the first piece of work. **Set aside real time and be in the
+   > room.** It can refuse your answers as unusable and it will; it cannot write them for you.
+   > The ontology is yours — the apparatus only holds it.
 
 3. Do not begin the research yourself. The install ends here.

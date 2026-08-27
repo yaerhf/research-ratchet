@@ -446,6 +446,67 @@ forbids that inference, and `manuals/paths.md` §2-bis carries the grading proce
 
 ---
 
+## W9 · SESSION ZERO — THE FOUNDING INTERVIEW · **BUILT 2026-08-27**
+
+> **Directive (human coordinator, 2026-08-27, immediately before the first trial run):** *"When
+> the coordinator launches for the first time, he should start interviewing the human to settle
+> the foundations and goals of the research."*
+
+**The gap it closed, and it was a hole in the middle of the install.** `INSTALL.md` already ended
+by telling the human *"its first session works docket item 1 — writing the ontology — and it
+will need you in the room."* **No routine existed for that session.** The apparatus shipped
+thirty-two `[OBJECT-SLOT]`s, an installer explicitly forbidden to fill them, and nothing at all
+describing the conversation that does — so the most consequential hour in a programme's life was
+left to whatever the coordinator improvised, in a role whose ordinary mode is dispatching.
+
+**Built:**
+
+- **`manuals/founding_interview.md`** — the routine, complete for its activity: why two
+  interviews exist and must not merge (the installer's *configuration* vs this one's
+  *foundations*), the eight questions with the bad answer each attracts, what the session
+  writes, and the failure modes of the instrument itself.
+- **The fence: refuse, never supply.** The coordinator may refuse an answer as unusable, ask the
+  forcing question, and read back a structuring of the human's own words. It may not propose
+  content, offer an example answer, default a gap, or smooth a hedge into confident prose.
+  *If the apparatus writes the ontology, every later "the canon says" is the apparatus quoting
+  itself and the human's ratification ratifies a mirror.* This is the separation principle
+  (F1/F4) applied to the human/apparatus interface, and the record's `[HUMAN]`/`[APPARATUS]`
+  authorship marks are what make it checkable rather than asserted.
+- **The FLOOR** — six items, below which no worker may be dispatched; everything else is
+  `[OPEN — founding]` with a promotion condition and goes to the docket. It is deliberately low,
+  because founding is not where a programme learns what it is about; working is. It sits between
+  two failure modes: infinite founding and premature dispatch.
+- **C-36 — the founder's conviction is not a tractability verdict.** The exact twin of C-35:
+  one stops you inheriting a stranger's pessimism from the literature's silence, the other stops
+  you inheriting the founder's mood from the room you are in. Both are *a fact about people
+  entered as a fact about the problem*, and both directions cost.
+- **Mechanical first-launch detection** — a `FOUNDED <date>` stamp in `FORMATION_CORE`'s header
+  plus the record's existence. **Tooling, not discipline:** the launching coordinator checks a
+  stamp rather than judging whether the tree feels founded.
+- **The re-founding trigger** — when a CORE commitment's kill condition fires, the founding
+  record reopens *in the same pass that records the death*. Sibling of the paths ledger's death
+  trigger, and for the same reason: the foundations were correct when they were laid and nobody
+  is scheduled to notice when they stop being.
+- **Wired in:** the `/coordinator` launch routine (founding check first, plus the CORE-rows read
+  at every session start), `coordinator_agent.md` (SESSION ZERO, the diet, a new absolute
+  non-power), `FORMATION_CORE`'s header, `manuals/dispatching.md` §0-bis, the manuals INDEX.
+- **Gated:** `check_records.py` family 8 — a filled ontology must carry its founding record
+  (hard), and the record should name every floor item (warning, because it is a keyword reading
+  and *a gate that stops a bank on a word-match would teach programmes to write the words*).
+  Six planted-defect demonstrations; the self-test is 30/30.
+
+**Fixed in passing:** the `/coordinator` routine still told the coordinator to read
+`RULES_BY_ROLE.md §2` — a drift pair left by W1's pack enactment, pointing every launch at the
+~15,600-token file the packs exist to avoid. It now reads `packs/coordinator.md`.
+
+**Still open — and it is the trial run's job, not a build item:** nobody has run this interview.
+It was written from the shape of the slots it must fill, which is a specification, and *an
+installer never run is a specification* (W6). **The first trial run measures it**: which
+questions the human found unanswerable, which slots came back `[OPEN — founding]`, and whether
+the refuse-never-supply fence survived contact with a human who wanted help answering.
+
+---
+
 ## MEANING NOTES — do not compress
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the
@@ -464,6 +525,12 @@ compression pass is exactly what loses the reasoning behind a decision. This is 
 - **The regress question is closed** (human coordinator, 2026-08-27): for a repository whose
   work IS commits, git history is the negatives ledger and the paths ledger. The apparatus asks
   a *research* programme to keep records that a version-controlled toolkit already keeps.
+- **The founding question a record must be able to answer is *"who actually said this?"*** An
+  invented premise and a stated one read identically once they are written up well — that is the
+  whole reason the founding record marks authorship line by line instead of asserting a fence.
+  The detector is blunt and it works: run your eye down the `[HUMAN]` lines alone and ask whether
+  they still say something. If the object only holds together with the apparatus's lines carrying
+  it, the apparatus wrote the programme.
 - **This repository is a programme too.** It has a docket now; it does not yet have an engine,
   a negatives ledger, or a paths ledger of its own. Whether it should is itself an open
   question — but the asymmetry is worth seeing: the apparatus asks every programme to keep

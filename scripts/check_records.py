@@ -44,6 +44,19 @@ import re
 import sys
 from pathlib import Path
 
+# THE CONSOLE THIS PRINTS INTO MAY NOT BE UTF-8, and these tools quote DOCUMENTS — whose
+# headings carry stars, arrows and em-dashes. On a cp1252 console one such character raised
+# UnicodeEncodeError and killed the tool at the moment it had already found the answer.
+# The founding programme's measured retrieval failure is exactly this shape: a documented
+# command that silently does not run on the working box, after which retrieval stays
+# "available and unused". bank.sh exports PYTHONUTF8=1; a human typing the documented form
+# does not, so each entry point makes itself safe.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, OSError, ValueError):
+        pass
+
 ROOT = Path(__file__).resolve().parent.parent
 DRIFT_TOL = 2       # narrative counts may lag the tree by this much between consolidations
 
@@ -181,6 +194,45 @@ def stale_packs(fingerprint_of_sources, pack_fingerprints):
                   if fp != fingerprint_of_sources)
 
 
+FLOOR_ITEMS = (
+    ("the object",                                 ("object",)),
+    ("the deliverable",                            ("deliverable",)),
+    ("a success criterion",                        ("success",)),
+    ("a falsifier",                                ("falsif", "abandon", "would end")),
+    ("a CORE commitment with its kill condition",  ("kill condition",)),
+    ("the first graded docket item",               ("docket",)),
+)
+
+
+def founding_unrecorded(formation_text, founding_exists):
+    """A tree whose ONTOLOGY is written but which records no founding interview.
+
+    The object slots are filled in one session with the human coordinator present, and that
+    session leaves a governing record naming who said what (`manuals/founding_interview.md`).
+    A filled ontology with no such record has lost the provenance of its own premises — the
+    phantom-cite class, pointed at the foundations: the programme can no longer answer *who
+    actually said this?* about the picture every worker is formed on."""
+    sec = re.search(r"(?ms)^## 1\. .*?(?=^## )", formation_text or "")
+    if not sec:
+        return ""                       # no template shape to judge — say nothing
+    if "[OBJECT-SLOT]" in sec.group(0):
+        return ""                       # not founded yet; nothing is owed
+    return "" if founding_exists else ("FORMATION_CORE §1 is filled but no founding record "
+                                       "exists (audit/FOUNDING_INTERVIEW.md)")
+
+
+def founding_floor_gaps(founding_text):
+    """Floor items the founding record does not appear to name.
+
+    ITS OWN LIMIT, STATED: this is a keyword reading, not a comprehension. It catches the
+    record that never asked the question — overwhelmingly the falsifier and the kill
+    condition, which are the two the room most wants to skip — and it cannot catch a record
+    that names an item and answers it badly. That is why it WARNS rather than blocks: a gate
+    that stops a bank on a word-match would teach programmes to write the words."""
+    low = (founding_text or "").lower()
+    return [label for label, keys in FLOOR_ITEMS if not any(k in low for k in keys)]
+
+
 ROLE_FILE = re.compile(r"`([a-z_]+\.md)`")
 ROLE_HINT = ("agent", "meta_observer", "coherence_keeper", "register_clerk",
              "decision_attention_reader", "external_review_loop")
@@ -299,7 +351,30 @@ def main():
         _ck("counts: count-bearing prose matches the counted tree",
             not drift, "; ".join(f"{w} vs tree {act} (tol {t})" for w, act, t in drift[:4]))
 
-    # 8 — OBJECT-SLOT ACCOUNTING (informational; a slot is a docket item, not a defect)
+    # 8 — FOUNDING (the session that filled the slots left a record, and it met the floor)
+    if inst:
+        fr = None
+        for cand in ("knowledge/audit/FOUNDING_INTERVIEW.md", "audit/FOUNDING_INTERVIEW.md"):
+            if exists(cand):
+                fr = cand
+                break
+        problem = founding_unrecorded(fc, fr is not None)
+        _ck("founding: a filled ontology carries its founding record", not problem, problem)
+        if fr:
+            gaps = founding_floor_gaps(_read(fr) or "")
+            _warn("founding: the record names every floor item", not gaps,
+                  f"not named: {'; '.join(gaps)} — manuals/founding_interview.md §3")
+        elif not problem:
+            # No record AND nothing owed: the tree is simply not founded yet. Say so as a
+            # note — never alongside the failure above, where a benign line reads as
+            # reassurance standing next to a defect.
+            NOTES.append("founding — not founded yet; /coordinator's next session is the "
+                         "FOUNDING INTERVIEW (manuals/founding_interview.md)")
+    else:
+        NOTES.append("founding — the apparatus repository has no object to found; checked "
+                     "once instantiated")
+
+    # 9 — OBJECT-SLOT ACCOUNTING (informational; a slot is a docket item, not a defect)
     slots = sum((_read(f"{ap_dir}/{p.name}") or "").count("[OBJECT-SLOT]")
                 for p in (ROOT / ap_dir).glob("*.md"))
     if slots:
@@ -396,6 +471,29 @@ def self_test():
          missing_roles("| Reviewer | `reviewer_agent.md` |", lambda f: False), True)
     demo("roles: CONTROL — the same row once the file exists",
          missing_roles("| Reviewer | `reviewer_agent.md` |", lambda f: True), False)
+
+    FILLED = "\n".join(["## 1. THE ONTOLOGY",
+                        "The field is the sole substrate; the layers never collapse.",
+                        "", "## 2. THE DISCIPLINE", ""])
+    TEMPLATE = "\n".join(["## 1. THE ONTOLOGY",
+                          "> **`[OBJECT-SLOT]`.** The dense statement of the object itself.",
+                          "", "## 2. THE DISCIPLINE", ""])
+    demo("founding: an ontology written with no founding record behind it",
+         founding_unrecorded(FILLED, False), True)
+    demo("founding: CONTROL — the same ontology once the record exists",
+         founding_unrecorded(FILLED, True), False)
+    demo("founding: CONTROL — an UNFILLED template owes no record",
+         founding_unrecorded(TEMPLATE, False), False)
+    demo("founding: CONTROL — a document with no §1 at all is not judged",
+         founding_unrecorded("## 4. TRAPS AND CONVENTIONS\nnothing here\n", False), False)
+
+    RECORD = ("the object: the tempo field. the deliverable: a paper. success: a kernel "
+              "family compatible with the data. falsifier: any measured drift. CORE, with "
+              "its kill condition: the invariance fails. first docket item, grade B.")
+    demo("founding: a record that never asked for a falsifier or a kill condition",
+         founding_floor_gaps("object, deliverable, success, docket — and nothing else"), True)
+    demo("founding: CONTROL — a record naming every floor item",
+         founding_floor_gaps(RECORD), False)
 
     bad = cases.count(False)
     print("-" * 70)

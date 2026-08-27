@@ -40,6 +40,7 @@ moment they become binding**, which is also the moment it will actually retain t
 
 | manual | **read this if you are about to…** | status |
 |---|---|---|
+| `founding_interview.md` | **launch a programme for the first time** — no founding record exists yet — or **reopen the foundations** because a CORE commitment just died | **WRITTEN** |
 | `banking.md` | **bank anything** — run `bank.sh`, commit, or add a check | **WRITTEN** |
 | `engine.md` | **build or extend the engine** — write the first executable primitive, add one, or decide whether this programme needs an engine at all | **WRITTEN** |
 | `paths.md` | **choose a route and leave others**, review work that chose one, or re-rank after a route DIES | **WRITTEN** |
