@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# DIET-CLASS: TOOLING
 """Generate the ENGINE-PAPER MAP by mechanical scan.
 
 GENERIC EDITION NOTE (2026-08-27): founding implementation — engine/paper paths are the

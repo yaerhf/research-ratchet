@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # THE COORDINATOR ROLE — dispatcher & context-distributor (generic edition, 2026-08-27)
 
 > *(Derived from the founding programme's v1.2 — incident citations and `RUL-NNN` IDs point
@@ -229,8 +230,8 @@ checker and never passes FORMATION_CORE to one.
 [RETRIEVAL]   REQUIRED on every dispatch (2026-08-27, human coordinator: every agent is to be
               made aware of retrieval in its brief). **Two lines: that the corpus is
               QUERYABLE, and the DIET BOUND that query runs under.**
-                  Retrieval: `python rag/query.py "question" -k 8 [--source <shorthand>]`
-                  --diet <open|starved|bare-statement>   (this instance's bound)
+                  Retrieval: `python rag/query.py "question" -k 8 --role <this role>`
+                  Before opening ANY file directly: `python rag/diet.py --role <this role> FILE`
               **Why it is a required field and not a footnote.** The apparatus tells agents to
               query rather than bulk-load (RULES_BY_ROLE #171; the doc-tree principle) — and
               the founding programme measured what happens when nobody says so at the moment
@@ -243,14 +244,28 @@ checker and never passes FORMATION_CORE to one.
               `knowledge/audit/` is excluded, by design). So an unbounded query from a STARVED
               role is one keystroke from destroying the measurement it was dispatched to
               make — **invisibly, because the verdict would look identical.** Name the bound
-              from the role, always:
-                  meta-observer         → `--diet starved`        (no round directories)
-                  re-derivation agent   → `--diet bare-statement` (canon, engine, ledgers only)
-                  worker · reviewer · keeper · philosopher · coordinator → `--diet open`
-              `query.py` PRINTS the bound with its results, so the transcript carries the
-              proof of what was in force; the apparatus auditor checks that against this line
-              exactly as it checks `[DIET]` against what the brief contained. *A separation
-              asserted and never verified is a convention, not a control.*
+              from the role, always — **name the ROLE, never a bound**, because a role
+              cannot be picked wrong the way a flag can: `--role meta-observer`,
+              `--role rederivation`, `--role reviewer`, and so on (`rag/diet.py` holds the
+              table, and `--role <name> --list` prints what that role may and may not
+              receive).
+              **The bound is over CONTENT CLASSES, not paths** — every artifact declares what
+              it IS (`<!-- DIET-CLASS: DERIVATION -->`), so a derivation, a verdict or the
+              formation prefix stays out of a starved role's reach *wherever it happens to
+              live*. This replaced a path-shaped bound that leaked: it allowed the whole
+              prompts directory, and FORMATION_CORE lives there — so the meta-observer's own
+              bound returned the one file rule 92 forbids a checker. **A bound that permits an
+              absolute breach is not a bound.**
+              `query.py` PRINTS the bound and anything WITHHELD (by class name, never by
+              content) with its results, so the transcript carries the proof of what was in
+              force; the apparatus auditor checks that against this line exactly as it checks
+              `[DIET]` against what the brief contained. *A separation asserted and never
+              verified is a convention, not a control.*
+              **And retrieval is not the only way in.** Every role has a file-reading tool, so
+              the bound guards the query and not the hand. Before opening any file you are
+              unsure about, run `python rag/diet.py --role <you> <file>` — it answers in one
+              line and cites the rule. That check is what makes an ACCIDENTAL breach hard; a
+              deliberate one stays possible and must be DECLARED.
               **Where retrieval is not installed** (it is optional — `rag/README.md`), say so
               on this line and name what the instance must read instead.
 [DOUBTS]      OPTIONAL, and if present it MUST carry this sentence verbatim: *this list

@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # Reusable session — adversarial review (separate-build form)
 
 *(Generic edition, 2026-08-27.)* Two ways to get an independent review:

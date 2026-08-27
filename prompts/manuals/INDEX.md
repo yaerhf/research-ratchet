@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: RULES -->
 # ACTIVITY MANUALS — the lazy-loaded documentation tree
 
 **Generic edition, 2026-08-27** (from v1, 2026-08-20), on the human coordinator's directive: *"Can we issue manuals for activities,

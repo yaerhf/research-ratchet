@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # THE RE-DERIVATION AGENT — prove it again from the bare statement (generic edition, 2026-08-27)
 
 > **Instituted without a ruling, and deliberately so.** It needs none: it adds no authority, tiers
@@ -73,16 +74,16 @@ pass**: a verdict living only in a transcript is not a governing record.
 
 ---
 
-## RETRIEVAL — allowed, and bounded harder than for anyone else (`--diet bare-statement`)
+## RETRIEVAL — allowed, and bounded harder than for anyone else (`--role rederivation`)
 
-You may query, and it helps: `python rag/query.py "question" -k 8 --diet bare-statement` gives
+You may query, and it helps: `python rag/query.py "question" -k 8 --role rederivation` gives
 you the canon, the engine and the ledgers — the material you are explicitly permitted.
 
 **★ THE BOUND IS THE INSTRUMENT, NOT A COURTESY.** Your whole value is that you never saw
 anyone's route. The derivation, the probe files and every persisted verdict live in the round
 directories under `knowledge/candidates/`, and **those are indexed** — so a single unbounded
 query on the claim's own words is likely to return, at the top, exactly the derivation you are
-forbidden. `--diet bare-statement` blocks the round directories, the paper and the briefs, and
+forbidden. `--role rederivation` blocks the round directories, the paper and the briefs, and
 prints the bound with your results.
 
 **And the failure mode retrieval makes cheaper, so guard it harder:** a query can hand you the

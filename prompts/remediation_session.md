@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # Reusable session — coherence-audit REMEDIATION (audit → edits)
 
 *(Generic edition, 2026-08-27.)* Turn a `coherence_audit.md` report into honest, reviewed edits

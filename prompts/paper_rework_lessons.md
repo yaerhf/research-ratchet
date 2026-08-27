@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: RULES -->
 # Paper-rework lessons — the standing editorial discipline (generic edition, 2026-08-27)
 
 *Coordinator-directed: "bank the lessons for subsequent reworks of the paper." Distilled from

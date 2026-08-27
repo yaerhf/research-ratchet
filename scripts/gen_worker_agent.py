@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# DIET-CLASS: TOOLING
 """Generate the cached fluent-worker agent type (.claude/agents/worker.md).
 
 GENERIC EDITION (2026-08-27): founding implementation, generic names.

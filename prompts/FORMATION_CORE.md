@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: FORMATION -->
 # FORMATION CORE — TEMPLATE (generic edition, 2026-08-27)
 
 **This is the template of the worker formation prefix, awaiting an object.** It carries the

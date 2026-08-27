@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: RULES -->
 # MANUAL · THE ENGINE — read this before you build or extend one
 
 **Trigger: you are about to write the programme's first executable primitive, add one, or

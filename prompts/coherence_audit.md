@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # Reusable session — GLOBAL coherence & validity audit (meta-review)
 
 *(Generic edition, 2026-08-27. The deepest review: run it before any external sharing or

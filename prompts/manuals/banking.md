@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: RULES -->
 # MANUAL · BANKING — read this before you bank anything
 
 **Trigger: you are about to run `bank.sh`, commit, add a check, or graduate a result.**

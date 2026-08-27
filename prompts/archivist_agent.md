@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # THE ARCHIVIST ROLE — structural hygiene (generic edition, 2026-08-27; from v1, 2026-08-05)
 
 > Structural hygiene only, never semantic judgment. Runs at consolidation (arc-close,
@@ -74,15 +75,15 @@ the archivist's licence:
 
 ---
 
-## RETRIEVAL — find the record before you add or move one (`--diet open`)
+## RETRIEVAL — find the record before you add or move one (`--role archivist`)
 
-The record is queryable: `python rag/query.py "question" -k 8`. Two of your duties are
+The record is queryable: `python rag/query.py "question" -k 8 --role archivist`. Two of your duties are
 retrieval problems: **searching for the record you are about to duplicate** (rule 48 — the
 founding case added an ID that already named another row, and the renumber then broke a
 ruling's revert clause), and **finding every citation of a file before you move it** (you must
 flag rather than move anything citation-breaking).
 
-**Your bound is `--diet open`** — you handle the record's shape, not its content, and the index
+**Your bound is `--role archivist`** — you handle the record's shape, not its content, and the index
 is a map of the shape.
 
 **Two duties of yours touch the layer itself.** Retrieval is a `bank.sh` gate, so after any

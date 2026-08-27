@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # Calibration probes — verify the reviewer before trusting the review
 
 **Generic edition, 2026-08-27** *(the probe discipline and its measured results are the founding

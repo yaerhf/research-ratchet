@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: PUBLIC -->
 # research-ratchet
 
 **An operating system for AI-agent-driven research under a human coordinator — built, measured,

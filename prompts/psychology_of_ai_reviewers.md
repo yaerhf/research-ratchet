@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # THE PSYCHOLOGY OF AI REVIEWERS (generic edition, 2026-08-27; from v1, 2026-08-13)
 
 > Written for successor instances out of the founding programme's external-review round 1 and

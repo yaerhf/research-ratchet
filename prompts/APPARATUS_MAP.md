@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # THE APPARATUS — organigramme, roles, and where everything lives
 
 **Generic edition, 2026-08-27** (derived from the founding programme's v1, 2026-08-19, written at

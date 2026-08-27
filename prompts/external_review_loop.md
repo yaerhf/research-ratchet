@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # THE EXTERNAL-REVIEW LOOP — cold-gatekeeper routine (generic edition, 2026-08-27; from v1.1)
 
 > *(Incident citations and class-staffing data are the founding programme's — github.com/yaerhf/TWT.

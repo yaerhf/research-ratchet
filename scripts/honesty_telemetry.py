@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# DIET-CLASS: TOOLING
 """HONESTY TELEMETRY (recommendation R-F / Limit 2).
 
 GENERIC EDITION (2026-08-27): the founding programme's working instrument, carried as the

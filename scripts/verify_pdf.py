@@ -1,3 +1,4 @@
+# DIET-CLASS: TOOLING
 # GENERIC EDITION NOTE (2026-08-27): founding implementation; re-point paths at instantiation.
 """Verify the rendered PDFs actually contain what they should.
 

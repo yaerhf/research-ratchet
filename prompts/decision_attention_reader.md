@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # THE DECISION-ATTENTION READER (N2) — generic edition, 2026-08-27 (from v1)
 
 > Written on the human coordinator's instruction (*"N2: please write it"*). Adopted 2026-08-19 with
@@ -93,9 +94,9 @@ hardest**. That paragraph is what the coordinator will act on.
 
 ---
 
-## RETRIEVAL — do not use it to answer, use it to MEASURE the path (`--diet open`)
+## RETRIEVAL — do not use it to answer, use it to MEASURE the path (`--role decision-reader`)
 
-The record is queryable: `python rag/query.py "question" -k 8` — and for this role that is a
+The record is queryable: `python rag/query.py "question" -k 8 --role decision-reader` — and for this role that is a
 **measuring instrument, not a shortcut.** You model a reader with agents, and their agents will
 have retrieval too, so the honest test of "can an assisting agent extract this?" is: **run the
 query yourself and count what it takes.** Which query, how many hops after it, what the agent

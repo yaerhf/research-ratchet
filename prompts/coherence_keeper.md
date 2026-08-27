@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 <!-- DURABLE SPEC. The runnable agent lives under `.claude/agents/`, which is GITIGNORED and
      does NOT survive a fresh clone. This tracked copy is the source of truth.
      Generic edition, 2026-08-27: incident citations reference the founding programme
@@ -167,16 +168,16 @@ dispatch.
 
 ---
 
-## RETRIEVAL — how you load a neighbourhood you could not otherwise see (`--diet open`)
+## RETRIEVAL — how you load a neighbourhood you could not otherwise see (`--role keeper`)
 
-The record is queryable: `python rag/query.py "question" -k 8`. **Your STEP 1 axis (c) —
+The record is queryable: `python rag/query.py "question" -k 8 --role keeper`. **Your STEP 1 axis (c) —
 *the same object, however differently named; names drift, objects do not* — is the one place in
 the whole apparatus where retrieval is doing irreplaceable work rather than saving tokens.** A
 grep finds the word you thought of; a query finds the passage that means the same thing in the
 corpus's other vocabulary. Run it on every collision search, and run axis (a) as
 `--source code` so both engines are covered.
 
-**Your bound is `--diet open`: you are SATURATED by construction** — you cannot see a collision
+**Your bound is `--role keeper`: you are SATURATED by construction** — you cannot see a collision
 you have not loaded, so nothing is out of reach. That is also the honest cost: retrieval helps
 you load the neighbourhood, and it does not tell you the neighbourhood was complete. Say which
 axes you ran and what you loaded.

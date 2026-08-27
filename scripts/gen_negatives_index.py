@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# DIET-CLASS: TOOLING
 """Generate the NEGATIVES INDEX — the bootstrap read over the negatives ledger.
 
 GENERIC EDITION (2026-08-27): founding implementation, generic ledger names.

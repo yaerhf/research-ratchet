@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 <!-- DURABLE SPEC for the adversarial-reviewer subagent. The runnable copy lives under
      `.claude/agents/`, which is gitignored and does NOT survive a fresh clone — this tracked copy
      is the source of truth. Restore the runnable agent by copying this file (minus this comment)
@@ -156,16 +157,16 @@ dispatch.
 
 ---
 
-## RETRIEVAL — query the corpus, do not bulk-load it (`--diet open`)
+## RETRIEVAL — query the corpus, do not bulk-load it (`--role reviewer`)
 
-The record is queryable: `python rag/query.py "question" -k 8`, with `--source` shorthands
+The record is queryable: `python rag/query.py "question" -k 8 --role reviewer`, with `--source` shorthands
 (`code` reaches BOTH engines and the harnesses; `paper`, `ledgers`, `candidates`, `canon`,
 `prompts`, `scripts`). Use it for the sweeps this role owes and cannot shortcut: whether the
 corpus already answers the objection somewhere else (rule 174), whether a claimed
 "engine-verified" cite resolves to a real primitive with the claimed asserts (C-17), whether
 the claim re-treads a recorded dead end.
 
-**Your bound is `--diet open`: you are SATURATED, not starved** — you were given the derivation
+**Your bound is `--role reviewer`: you are SATURATED, not starved** — you were given the derivation
 on purpose, so nothing in the index is out of reach for you. Cite what you retrieve as
 `[source §section]`.
 

@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: PUBLIC -->
 # INSTALL — giving the apparatus an object
 
 **For humans:** you don't need to read past this line — open your AI coding agent (e.g. Claude

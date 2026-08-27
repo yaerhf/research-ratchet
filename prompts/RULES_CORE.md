@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: RULES -->
 # THE COMMON CORE — the rules every agent holds without looking anything up
 
 **Generic edition, 2026-08-27** (derived from the founding programme's v1, 2026-08-19). The

@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# DIET-CLASS: TOOLING
 """RECORD-INVARIANTS gate (standing policy, coordinator-directed 2026-08-13).
 
 GENERIC EDITION NOTE (2026-08-27): this is the FOUNDING PROGRAMME'S WORKING IMPLEMENTATION

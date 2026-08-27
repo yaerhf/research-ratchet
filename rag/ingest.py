@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# DIET-CLASS: TOOLING
 """RETRIEVAL INGEST — build the query index over the programme's record.
 
 WHAT THIS IS FOR. The apparatus asks agents to QUERY the corpus rather than
@@ -44,6 +45,12 @@ import math
 import re
 import sys
 from pathlib import Path
+
+try:                                    # diet classification travels with the index
+    from diet import classify          # noqa: E402  (same directory)
+except ImportError:                     # pragma: no cover - diet.py is part of the layer
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from diet import classify
 
 ROOT = Path(__file__).resolve().parent.parent
 INDEX = Path(__file__).resolve().parent / "index.json"
@@ -170,11 +177,16 @@ def build(root, verbose=True):
             continue
         if not text.strip():
             continue
+        # THE DIET CLASS IS A PROPERTY OF THE FILE, carried onto every chunk from it —
+        # so retrieval can be bounded by WHAT AN ARTIFACT IS rather than by where it
+        # happens to sit. Path was the first bound and it leaked (see rag/diet.py).
+        cls, how = classify(p, text)
         chunks = chunk_python(text, rel) if p.suffix == ".py" else chunk_markdown(text, rel)
         for name, body in split_oversized(chunks):
             if not body.strip():
                 continue
-            docs.append({"source": rel, "name": name, "text": body})
+            docs.append({"source": rel, "name": name, "text": body,
+                         "cls": cls, "cls_how": how})
     # BM25 statistics
     df = {}
     for d in docs:
@@ -189,7 +201,8 @@ def build(root, verbose=True):
     avglen = sum(d["len"] for d in docs) / n
     index = {"version": 1, "n": n, "avglen": avglen, "idf": idf,
              "docs": [{"source": d["source"], "name": d["name"], "len": d["len"],
-                       "tf": d["tf"], "text": d["text"]} for d in docs]}
+                       "tf": d["tf"], "text": d["text"], "cls": d["cls"],
+                       "cls_how": d["cls_how"]} for d in docs]}
     if verbose:
         by_src = {}
         for d in docs:
@@ -201,6 +214,14 @@ def build(root, verbose=True):
         for k in sorted(by_src):
             print(f"    {k:<28} {by_src[k]:>5} chunks")
         print("    knowledge/audit/             NOT INDEXED (by design — pointer-only)")
+        by_cls, inferred = {}, 0
+        for d in docs:
+            by_cls[d["cls"]] = by_cls.get(d["cls"], 0) + 1
+            inferred += 1 if d["cls_how"] == "heuristic" else 0
+        print("  diet classes: " + " · ".join(f"{k} {v}" for k, v in sorted(by_cls.items())))
+        if inferred:
+            print(f"    {inferred} chunk(s) classified by HEURISTIC, not a declared marker.")
+            print("    A heuristic is a guess: `python rag/diet.py --audit <dir>` lists them.")
     return index
 
 

@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # THE ENFORCER — MERGED INTO THE APPARATUS AUDITOR (RUL-072, 2026-08-21)
 
 **This role's full operating text now lives as PART B of

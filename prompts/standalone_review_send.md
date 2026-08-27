@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # THE STANDALONE-NOTE COLD REVIEW — the durable send routine (generic edition, 2026-08-27)
 
 *The note-level sibling of `knowledge/prompts/external_review_loop.md`. That routine governs

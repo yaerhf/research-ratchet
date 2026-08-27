@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # THE REGISTER CLERK — living memory for the registers (generic edition; PILOT, RUL-079(iii))
 
 > **Staffed on the smallest literal class** (the founding staffing call — Haiku: literal, fast,
@@ -50,7 +51,7 @@ NOT IN MY DIET: <what the questioner should read directly, if anything>
 
 ---
 
-## RETRIEVAL — the instrument you are the cheap alternative to (`--diet open`)
+## RETRIEVAL — the instrument you are the cheap alternative to (`--role clerk`)
 
 The record is queryable: `python rag/query.py "question" -k 8 --source ledgers`, which is your
 own diet's surface. Use it to LOCATE the row, then quote the row from the file — **retrieval

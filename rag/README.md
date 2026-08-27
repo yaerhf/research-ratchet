@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: TOOLING -->
 # THE RETRIEVAL LAYER — installed by default, optional by ruling
 
 **Status: DEFAULT-INSTALLED, OPTIONAL** (human coordinator, 2026-08-27: *"The RAG is important
@@ -22,25 +23,44 @@ saving tokens.
 
 ## ★ Diet bounds — retrieval must not breach a starvation
 
-**The hazard, stated plainly:** only `knowledge/audit/` is excluded from the index. The round
-directories under `knowledge/candidates/` — which hold **the derivations under review and every
-persisted verdict** — *are* indexed. So an unbounded query from a STARVED role is one keystroke
-from voiding the measurement it was dispatched to make, and it leaves no trace: the verdict
-looks identical.
+**The hazard:** only `knowledge/audit/` is excluded from the index. The round directories under
+`knowledge/candidates/` — the derivations under review and every persisted verdict — *are*
+indexed. So an unbounded query from a STARVED role is one keystroke from voiding the
+measurement it was dispatched to make, and it leaves no trace: the verdict looks identical.
 
-`--diet` applies the bound mechanically and **prints it with the results**, so the transcript
-carries proof of what was in force:
+**The bound is over CONTENT, not paths — and that correction was forced by a measured defect.**
+The first design bounded by directory. It leaked: `starved` allowed `prompts/`, and
+`FORMATION_CORE.md` lives there, so the meta-observer's own bound returned the one file rule 92
+(ABSOLUTE) forbids passing to a checker. **A bound that permits an absolute breach is not a
+bound.** Now every artifact declares what it *is* —
 
-| bound | reaches | for |
-|---|---|---|
-| `open` | everything indexed | worker · reviewer · keeper · philosopher · coordinator · auditor · archivist · clerk · N2 |
-| `starved` | everything **except the round directories** | the meta-observer |
-| `bare-statement` | canon, engine and ledgers **only** | the re-derivation agent |
+```
+<!-- DIET-CLASS: DERIVATION -->      markdown (invisible when rendered)
+# DIET-CLASS: ENGINE                 code
+```
 
-The dispatching brief's `[RETRIEVAL]` line names the bound (`coordinator_agent.md`, brief
-format); the apparatus auditor checks that line against what the transcript shows, exactly as
-it checks `[DIET]` against what the brief contained. `--exclude SUBSTR` (repeatable) narrows
-further. **A diet bound is not a courtesy — it is the instrument.**
+— and `rag/diet.py` maps roles to the classes they may receive, each denial carrying its reason
+so the auditor can check it rather than merely trust it. Unmarked files fall back to a path
+heuristic that is **fail-safe, never fail-open**: an unmarked file in a round directory is
+treated as a DERIVATION, and an UNCLASSIFIED artifact is refused to any role that carries a
+starvation.
+
+```bash
+python rag/query.py "question" -k 8 --role meta-observer   # bounded retrieval
+python rag/diet.py --role meta-observer FILE               # may I open this at all?
+python rag/diet.py --role rederivation --list              # what may I see, and why not the rest
+python rag/diet.py --audit knowledge/candidates            # what is still unmarked?
+```
+
+The brief's `[RETRIEVAL]` line names the **role** (never a bound — a role cannot be picked wrong
+the way a flag can). The bound and anything WITHHELD are printed with the results, by class name
+and never by content, so the transcript is the proof of what was in force.
+
+**What this cannot do, said plainly.** Every role has a file-reading tool: this makes an
+*accidental* breach hard, not a deliberate one impossible. That is the same honest position as
+the rest of the apparatus — most rules have no mechanical enforcement, and the answer is to make
+the break **cheap to declare and expensive to hide**, never to oversell the control. If you
+breached your diet, say so in your report.
 
 ## Two scope decisions that are architectural
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# DIET-CLASS: TOOLING
 """RETRIEVAL QUERY — ask the record instead of bulk-loading it.
 
 THE CLI CONTRACT (the apparatus's documents quote this form; keep it stable if
@@ -21,13 +22,18 @@ SOURCE SHORTHANDS. `--source` filters by where a chunk lives:
     candidates  the round directories — derivations under review, persisted verdicts
     all         no filter (default)
 
-★ DIET BOUNDS — `--diet` keeps retrieval from breaching a role's starvation:
-    open            unrestricted (worker, reviewer, keeper, coordinator)
-    starved         no round directories (meta-observer)
-    bare-statement  canon, engine and ledgers only (re-derivation agent)
-The dispatching brief's `[RETRIEVAL]` line names which bound is in force, and the
-bound is PRINTED with the results so the transcript proves what was applied.
-`--exclude SUBSTR` (repeatable) narrows further.
+★ DIET BOUNDS — `--role <who you are>` keeps retrieval from breaching a
+starvation. The bound is not a path rule: every chunk carries the DIET CLASS of
+the artifact it came from (`rag/diet.py`), and the role table says which classes
+that role may receive. So the meta-observer cannot retrieve a DERIVATION, a
+VERDICT or the FORMATION prefix (rule 92) wherever any of them happens to live.
+
+    python rag/query.py "question" -k 8 --role meta-observer
+    python rag/diet.py --role meta-observer FILE   # may I open this at all?
+
+The dispatching brief's `[RETRIEVAL]` line names the role; the bound and anything
+WITHHELD are PRINTED with the results, so the transcript proves what was applied.
+`--exclude SUBSTR` (repeatable) narrows further. `--diet` is a deprecated alias.
 
 WHAT IT WILL NOT RETURN. `knowledge/audit/` is not in the index, by design —
 governing records are reachable only by explicit pointer, and the session
@@ -43,6 +49,12 @@ import math
 import re
 import sys
 from pathlib import Path
+
+try:
+    from diet import ROLES, ROLE_ALIASES, check as diet_check, role_denials
+except ImportError:                     # pragma: no cover
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from diet import ROLES, ROLE_ALIASES, check as diet_check, role_denials
 
 INDEX = Path(__file__).resolve().parent / "index.json"
 
@@ -79,29 +91,25 @@ SOURCE_FILTERS = {
 # ★ DIET BOUNDS — retrieval must not silently breach a role's starvation.
 #
 # The whole architecture rests on some roles being STARVED: the meta-observer of
-# the derivation, the re-derivation agent of the derivation, the probes and ALL
-# verdicts. Those artifacts live in `knowledge/candidates/<round>/` — which IS
-# indexed (only `knowledge/audit/` is excluded). So an unbounded query is one
-# keystroke from voiding the measurement it was dispatched to make, and it would
-# leave no trace: the verdict would look identical.
+# the derivation, the re-derivation agent of the derivation and ALL verdicts, the
+# checkers of the formation prefix (rule 92, ABSOLUTE). Those artifacts are in the
+# index — only `knowledge/audit/` is excluded — so an unbounded query is one
+# keystroke from voiding the measurement the dispatch was made to take, and it
+# would leave no trace: the verdict would look identical.
 #
-# `--diet` applies the bound mechanically and PRINTS it, so the transcript shows
-# which bound was in force. The dispatching brief's [RETRIEVAL] line names it;
-# the apparatus auditor checks the line against what was actually run. A
-# separation asserted and never verified is a convention, not a control.
+# `--role` applies the bound mechanically and PRINTS it, so the transcript shows
+# what was in force. The dispatching brief's [RETRIEVAL] line names it; the
+# apparatus auditor checks the line against what was actually run. A separation
+# asserted and never verified is a convention, not a control.
 # ---------------------------------------------------------------------------
-DIETS = {
-    "open": (set(SOURCE_FILTERS) - {"all"},
-             "unrestricted — for roles that are saturated, not starved "
-             "(worker, reviewer, keeper, coordinator)"),
-    "starved": ({"canon", "paper", "code", "ledgers", "prompts", "scripts"},
-                "no round directories — the derivation under review and every "
-                "persisted verdict are out of reach (meta-observer)"),
-    "bare-statement": ({"canon", "code", "ledgers"},
-                       "canon, engine and ledgers ONLY — no paper, no rounds, no "
-                       "briefs (re-derivation agent: you are proving it AGAIN, and "
-                       "the measurement is void the moment you read someone's route)"),
-}
+# ★ WHY --role AND NOT A PATH BOUND — A MEASURED DEFECT (2026-08-27).
+# These path-shaped bounds were the first design, and the proxy leaked: `starved`
+# allowed `prompts`, and FORMATION_CORE.md lives there — so the meta-observer's own
+# bound returned the one file rule 92 (ABSOLUTE) forbids passing to a checker. A
+# bound that permits an absolute breach is not a bound. `--role` replaces them by
+# filtering on WHAT AN ARTIFACT IS (rag/diet.py), not on where it sits. Kept as
+# aliases so existing briefs keep working — each maps to the role it stood for.
+DIET_ALIASES = {"open": None, "starved": "meta-observer", "bare-statement": "rederivation"}
 
 
 def tok(text):
@@ -121,27 +129,30 @@ def load():
         sys.exit(2)
 
 
-def diet_filter(diet):
-    """Return (predicate, human-readable bound) for a diet name."""
-    allowed, why = DIETS[diet]
-    fs = [SOURCE_FILTERS[n] for n in allowed]
-    return (lambda s: any(f(s) for f in fs)), why
-
-
-def search(index, question, k, source, diet="open", exclude=()):
+def search(index, question, k, source, role=None, exclude=()):
+    """Filter by source shorthand, then by the ROLE's diet over CONTENT CLASSES."""
     want = SOURCE_FILTERS.get(source, SOURCE_FILTERS["all"])
-    allow, _ = diet_filter(diet)
+    withheld = {}                       # class → how many chunks it hid, for the report
 
-    def keep(s):
+    def keep(d):
+        s = d["source"]
         if any(x in s for x in exclude):
             return False
-        return want(s) and allow(s)
+        if not want(s):
+            return False
+        if role:
+            cls = d.get("cls", "UNCLASSIFIED")
+            ok, _ = diet_check(role, cls)
+            if not ok:
+                withheld[cls] = withheld.get(cls, 0) + 1
+                return False
+        return True
 
     q = tok(question)
     idf, avglen = index["idf"], index["avglen"] or 1
     scored = []
     for d in index["docs"]:
-        if not keep(d["source"]):
+        if not keep(d):
             continue
         tf, dl = d["tf"], d["len"] or 1
         s = 0.0
@@ -153,7 +164,9 @@ def search(index, question, k, source, diet="open", exclude=()):
         if s > 0:
             scored.append((s, d))
     scored.sort(key=lambda x: -x[0])
-    return scored[:k]
+    # `withheld` counts only chunks the DIET removed — never what --source narrowed,
+    # so the report distinguishes "not asked for" from "not allowed to see".
+    return scored[:k], withheld
 
 
 def excerpt(text, question, width=420):
@@ -183,32 +196,50 @@ def main():
     ap.add_argument("-k", type=int, default=8, help="how many chunks (default 8)")
     ap.add_argument("--source", default="all", choices=sorted(SOURCE_FILTERS),
                     help="filter by where the chunk lives")
-    ap.add_argument("--diet", default="open", choices=sorted(DIETS),
-                    help="the ROLE BOUND your dispatch brief's [RETRIEVAL] line names; "
-                         "starved roles must not run 'open'")
+    ap.add_argument("--role", default=None,
+                    help="WHO YOU ARE dispatched as — your brief's [RETRIEVAL] line names it. "
+                         "Retrieval is then bounded by what each artifact IS "
+                         "(rag/diet.py). Known: " + ", ".join(sorted(ROLES)))
+    ap.add_argument("--diet", default=None, choices=sorted(DIET_ALIASES),
+                    help="deprecated alias for --role (open|starved|bare-statement)")
     ap.add_argument("--exclude", action="append", default=[], metavar="SUBSTR",
                     help="drop any chunk whose path contains SUBSTR (repeatable)")
     ap.add_argument("--full", action="store_true", help="print whole chunks, not excerpts")
     a = ap.parse_args()
 
+    role = a.role or (DIET_ALIASES.get(a.diet) if a.diet else None)
+    if role:
+        role, denials = role_denials(role)          # normalizes aliases, rejects unknowns
+    else:
+        denials = {}
+
     index = load()
-    hits = search(index, a.question, a.k, a.source, a.diet, tuple(a.exclude))
-    bound = "" if a.diet == "open" else f"  --diet {a.diet}"
+    hits, withheld = search(index, a.question, a.k, a.source, role, tuple(a.exclude))
+    bound = f"  --role {role}" if role else ""
+    src = "" if a.source == "all" else f"  --source {a.source}"
     if not hits:
-        print(f"[rag] no match for {a.question!r}"
-              f"{'' if a.source == 'all' else f' in --source {a.source}'}{bound}.")
+        print(f"[rag] no match for {a.question!r}{src}{bound}.")
         print("      Retrieval is lexical: try the corpus's own vocabulary, or widen "
               "--source. Remember knowledge/audit/ is never indexed.")
-        if a.diet != "open":
-            print(f"      Your diet bound is in force: {DIETS[a.diet][1]}.")
-        return 1
-    print(f"[rag] {len(hits)} hit(s) for {a.question!r}"
-          f"{'' if a.source == 'all' else f'  --source {a.source}'}{bound}")
-    # Print the bound WITH the results, so the transcript carries the proof of what
-    # was in force — the auditor checks this against the brief's [RETRIEVAL] line.
-    if a.diet != "open":
-        print(f"      diet bound: {DIETS[a.diet][1]}")
+    else:
+        print(f"[rag] {len(hits)} hit(s) for {a.question!r}{src}{bound}")
+    # THE BOUND IS PRINTED WITH THE RESULTS, ALWAYS — the transcript is the proof of
+    # what was in force, and the apparatus auditor checks it against the brief's
+    # [RETRIEVAL] line. Withheld classes are named but never their contents: knowing
+    # that something was withheld is not knowing what it said.
+    if role:
+        if denials:
+            print(f"      diet: {role} may not receive "
+                  + ", ".join(sorted(denials)) + " — starvation is the instrument")
+        else:
+            print(f"      diet: {role} is saturated; nothing was withheld")
+        if withheld:
+            print("      WITHHELD this query: "
+                  + " · ".join(f"{c} ×{n}" for c, n in sorted(withheld.items()))
+                  + "  (names only — the contents stay out of your context)")
     print()
+    if not hits:
+        return 1
     for score, d in hits:
         print(f"  [{d['source']} §{d['name']}]  score {score:.2f}")
         body = d["text"] if a.full else excerpt(d["text"], a.question)

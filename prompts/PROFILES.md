@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # PSYCHOLOGICAL PROFILES — the second axis (generic edition, 2026-08-27)
 
 **Instituted on the human coordinator's directive**, after an external campaign's record showed

@@ -1,3 +1,4 @@
+<!-- DIET-CLASS: ROLE -->
 # THE APPARATUS AUDITOR — Chesterton's fence + the spirit of the rules (generic edition, 2026-08-27; from v2, RUL-072 merge)
 
 > *(Incident citations reference the founding programme, github.com/yaerhf/TWT.)*
@@ -391,9 +392,9 @@ measurement in the same way a seeded checker brief does (rule 82, and the `[DOUB
 
 ---
 
-## RETRIEVAL — and the [RETRIEVAL] line is now yours to verify (`--diet open`)
+## RETRIEVAL — and the [RETRIEVAL] line is now yours to verify (`--role auditor`)
 
-The record is queryable: `python rag/query.py "question" -k 8`. Use it to find every site a
+The record is queryable: `python rag/query.py "question" -k 8 --role auditor`. Use it to find every site a
 defensive structure is referenced from — a structure's real cost includes what it forces
 others to read, and its real benefit is invisible unless you can find where it fired.
 
