@@ -56,6 +56,27 @@ reviewer. Consequence for cuts: **restructure for navigability, never cut for br
 - **F5 — §0 of the cover note STAYS.** Its benefit is invisible by construction; the only
   trace it can leave is somebody objecting to it. Do not "fix" it on a complaint.
 
+**★ THE PRINCIPLE BEHIND F1 AND F4, named 2026-08-27 — it was implicit in both and stated in
+neither.** Those two fences are the same move twice: **when one instance would both HOLD
+something and produce artifacts that must be FREE of it, split the roles so that the interface
+between them is an artifact somebody can read.** The coordinator holds the formation and must
+not form the cold reader (F1); the philosopher's worker capacity holds the forcing argument and
+must not price its own promotion (F4).
+
+**Why a split beats a promise, and it is the whole reason to prefer one:** *"I will not let what
+I know influence what I write"* is an internal state — unverifiable, and unfalsifiable, so its
+failure leaves no trace. A split produces a **document** — a brief, a verdict, an instruction —
+and a document can be handed to a third party with one question: *would this make sense to
+somebody who did not hold what its author holds?* That question is answerable. The other is not.
+
+**Use it whenever you meet the shape**, not only at the two fences that happen to be numbered:
+an instance that must both know an answer and judge an attempt at it; one that must both set a
+standard and be measured against it; one that must both hold a target and design the instrument
+aimed at it. **And check the feedback direction too** — a split is defeated if the knowing side
+sends the blind side a signal that encodes what it knows, however coarse. *A separation asserted
+and never verified is a convention, not a control; a separation the feedback walks around is not
+even that.*
+
 ## Loop mechanics the coordinator applies by rule (M1 / M2)
 
 - **M1 — what qualifies a paper change for the loop's offer:** **entry-path changes only**

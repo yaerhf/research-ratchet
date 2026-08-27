@@ -328,11 +328,41 @@ better, or because the handles came off* — so intention is not enough. Two gua
    cannot be as cheaply. **The generality claim needs its own control world** — the kill-test
    argument, pointed at the apparatus instead of at the research.
 
-**THE SCORER'S OWN FENCE.** Whoever holds the answer key must not also be composing the briefs
-or the formation prefix, or the ideal path leaks into the apparatus through its architect. The
-discipline is the programme's own: **the freeze is a solo commit** — tag the apparatus version
-under test FIRST, then take the key. Changes made after the key is read carry the same
-never-mentions-the-target rationale.
+**THE SCORER'S FENCE — A ROLE SPLIT, NOT A PROMISE** (human coordinator, 2026-08-27). An
+earlier version of this item proposed a TEMPORAL fence: freeze the apparatus, then read the key.
+That is a convention, not a control — it rests on the architect's internal state, which nobody
+can inspect and which cannot be shown to have failed. **Split the roles instead, so the
+interface between them is an artifact:**
+
+- **THE SCORER** holds the answer key and the recent literature, and scores runs against the
+  ideal path. It writes **no apparatus text**.
+- **THE MODIFIER** changes the apparatus and is blind to the key, the literature, and the
+  scores. It works only from written instructions.
+
+**Why this is the stronger arrangement, in the coordinator's own words:** *"making sure that you
+give general modification instructions to the apparatus-modifying instance is already easier
+than making sure that you modify the apparatus neutrally yourself."* The instruction is a
+document. A document can be read by a third party and asked one question — **would this
+instruction make sense for a programme in any field?** — which is exactly the apparatus
+auditor's spirit question, and it is answerable. "Did you edit neutrally?" is not.
+
+**★ AND THE LEAK CHANNEL THE SPLIT DOES NOT CLOSE, named here because it is the one that will
+actually bite.** The SCORE is itself information about the path. Run *n* scores 40%, run *n+1*
+scores 55% — whoever writes the next instruction has just learned which direction the ideal path
+lies in. **Iterated scoring is gradient descent on the withheld answer**, and it arrives through
+a channel no role split blocks: it does not matter who holds the pen if the feedback reaches
+them. That is precisely the overfitting the stay-general rule forbids, entering by the door
+nobody guarded.
+
+Three mitigations, in order of strength:
+1. **The second held-out problem is the real guard** — an instruction fitted to problem 1 will
+   not transfer, and transfer is measurable without anyone reading minds. This is why it is
+   listed above as required rather than desirable.
+2. **Score coarsely and late.** A per-iteration percentage is a gradient; a verdict at the end of
+   a version's run is much less of one. Resist the urge to score every rung.
+3. **Every instruction is filed before its run** and audited afterwards against the
+   would-this-hold-in-any-field question — the same freeze discipline the programme applies to
+   probes, applied to the experiment's own instructions.
 
 **A BASELINE ARM IS STILL WORTH ONE RUN** (bare dispatch, no apparatus, same budget and class) —
 expected to fail, and expected to be sensitive to prompt specifics in a way that does not
