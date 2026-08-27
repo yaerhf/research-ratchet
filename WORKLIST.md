@@ -201,12 +201,21 @@ the install promise is true; what is missing is the account of *why the design i
 way*, which is the part that travels.
 
 ## W6 · RE-RUN THE INSTALLER AFTER ANY CHANGE TO THE GATES OR INSTALL.md
-**Grade A · standing duty**
+**Grade A · standing duty · LAST RUN 2026-08-27, after the records-gate rewrite, the `bank.sh`
+hardening and the two new INSTALL steps — PASSED**
 
 The 2026-08-27 dry-run found **eight defects** by executing `INSTALL.md` instead of reading it —
 including the apparatus shipping with its own records gate red. **An installer never run is a
 specification, not an installer.** Instantiate a throwaway programme, bank twice, verify with
 `git log`; the whole pass costs minutes.
+
+**Second run, 2026-08-27 — clean, and it bought a demonstration the self-test cannot.** Fresh
+clone → tree → retrieval → packs → canon → handoff → 13 ledgers → `init_repo.sh` → **first bank
+in ONE run**. Then the new pack-currency gate was tested *in situ*: a rule was appended to
+`RULES_CORE.md` without regenerating, and the bank **refused** — naming all twelve stale packs
+and the command that fixes them; regenerating cleared it and the next bank landed in one run.
+**A planted-defect demonstration proves a check CAN fire; this proved it fires on the real
+thing, in the place it has to.**
 
 ## W7 · STANDING: CHECK THE FOUNDING TREE FOR APPARATUS DRIFT
 **Grade A · standing duty · first pass run 2026-08-27**
