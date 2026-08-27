@@ -111,6 +111,19 @@ verbatim + the rest summarized.
    recorded as push-tested.** A negative that dissolves under one encouragement was not a
    located gap; a negative that survives it has earned its ledger entry. Either outcome is
    information.
+3d. **★ PROPOSE THE ENGINE WHEN THE CLAIM IS REACHABLE (2026-08-27, human coordinator: an
+   engine "delivered self-coherence as an executable").** When a docket item's claim is
+   engine-reachable and **no primitive covers it**, name the primitive to write in the brief's
+   `[TASK]` — do not let the claim land as prose that a checker can only argue about. The
+   apparatus's teeth depend on this: a refuting verdict must COMPUTE or be labeled ARGUED
+   (C-16), so **an unreachable claim silently downgrades every review it will ever receive.**
+   And where the programme has **no engine at all** while its claims have machine-checkable
+   content — see the availability table in `manuals/engine.md` §2, whose last rows (definitional
+   consistency, declared dependency structure, counts and tiers) are available to almost any
+   programme — that is a **docket item**, not a preference. *Measured ground: a paper-only
+   derivation can be not merely unchecked but VACUOUS — the founding case stated a requirement
+   that constrained nothing at all in the formalism it was written in, and only writing it as a
+   computation revealed that.*
 4. **★ REQUIRE LAYERED CREDENCE FROM VERDICT-BEARING CHECKS.** A single HOLDS/REFUTED on a
    multi-layer claim hides where the risk actually sits. The soberest verdict in the source
    campaign was a referee's split reading: **the innermost lemma at ≥ 0.99, the headline

@@ -87,7 +87,7 @@ flowchart TB
     subgraph BANK ["scripts/bank.sh — THE ONLY WAY IN"]
         G1["1. both suites green"]
         G2["2. check_records.py — prose vs tree"]
-        G3["3. RAG re-ingest"]
+        G3["3. retrieval re-ingest<br/><i>optional — loud SKIP if absent</i>"]
         G4["4. commit (sweep-guarded)"]
         G1 --> G2 --> G3 --> G4
     end
@@ -145,7 +145,9 @@ knowledge/
 │   ├── AGENT_RULES.md         the by-when-it-bites view + the live divergence table
 │   ├── RULES_CORE.md          the core rules that bind everyone · RULES_BY_ROLE.md  the role packs
 │   ├── PROFILES.md            the disposition axis (steelman RESOLVED into the worker duty, RUL-075)
-│   ├── manuals/               activity manuals (banking.md carries the demotion AND tier-raise passes)
+│   ├── manuals/               activity manuals — banking.md (demotion AND tier-raise passes) ·
+│   │                          engine.md (SELF-COHERENCE AS AN EXECUTABLE: is an engine
+│   │                          relevant here, and how to build one that arbitrates)
 │   ├── removal_auditor_agent.md  ★ THE APPARATUS AUDITOR (N1 + ex-enforcer): prevents/costs + spirit-served
 │   ├── enforcer_agent.md          pointer stub only — merged into the auditor (RUL-072); kept so old pointers resolve
 │   ├── decision_attention_reader.md  N2 — at each release: what must the human DECIDE?
@@ -190,7 +192,10 @@ knowledge/
 
 scripts/     bank.sh (the only way in) · check_records.py (the records gate) · honesty_telemetry.py
              · gen_worker_agent.py · gen_negatives_index.py · release tooling
-rag/         ingest.py · query.py — the retrieval layer
+rag/         ingest.py · query.py — the retrieval layer. INSTALLED BY DEFAULT, OPTIONAL by
+             ruling (2026-08-27): bank gate [3/4] re-indexes at every bank and prints a loud
+             SKIP if the layer is absent; `knowledge/audit/` is never indexed (a diet at the
+             file layer). Shipped lexical + dependency-free; swappable — see rag/README.md
 ```
 
 **Three structural lessons from the founding programme, worth carrying:**

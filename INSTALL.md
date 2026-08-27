@@ -33,6 +33,8 @@ Two fences bind the whole install:
 4. Copy into place:
    - `_apparatus_src/prompts/` → `knowledge/prompts/`
    - `_apparatus_src/scripts/` → `scripts/`
+   - `_apparatus_src/rag/` → `rag/` (the retrieval layer — **installed by default**; see
+     step 2b)
    - `_apparatus_src/README.md` → `knowledge/prompts/APPARATUS_README.md` (the apparatus's own
      description, kept for reference)
    - `_apparatus_src/LICENSE` and `_apparatus_src/LICENSE-DOCS` → `knowledge/prompts/` (they
@@ -54,8 +56,17 @@ a follow-up.
 4. **The rivals.** Which incumbent frameworks/approaches does this compete with or get
    compared against? (These become the philosopher's saturation diet.)
 5. **The engine.** Can the programme's claims be made executable — checked by running code?
-   In what language? (Default: Python. If genuinely nothing is executable, say so — the
-   apparatus still runs, but the engine-arbitration rules bind whatever *can* be computed.)
+   In what language? (Default: Python.)
+   **Do not accept a fast "no".** An engine is what delivers *self-coherence as an executable*,
+   and it is the ground every refuting verdict stands on — without it, every checker verdict is
+   ARGUED rather than COMPUTED, and the review layer loses most of its teeth. Before recording
+   a "no", read `knowledge/prompts/manuals/engine.md` §2 and put its availability table to the
+   human: exact identities, computed values with failable tolerances, **enumerations** (a menu
+   closure is a theorem, not an assertion), declared dependency structure, single-site
+   definitions, and counts/tier bookkeeping. The last three are available to almost any
+   programme, including a purely literature-based one. Record their answer either way — and if
+   it is "no", record *which rows they ruled out and why*, because that is a claim the
+   programme may later want to revisit.
 6. **Model classes.** Which AI model classes are available for staffing? (The apparatus
    requires CROSS-CLASS checking keyed on authorship — name at least two classes, and which
    is the scarce/premium one.)
@@ -75,6 +86,24 @@ knowledge/
 └── candidates/
 ```
 
+### Step 2b — stand up retrieval (installed by default; optional by ruling)
+
+Run `python rag/ingest.py` and confirm it prints a chunk count and writes the index. Then run
+one query (`python rag/query.py "the diet is the role" -k 3 --source prompts`) and **confirm
+hits come back** — the founding programme's measured failure here was a documented retrieval
+command that silently did not run on the working box, after which retrieval stayed *"available
+and unused"* and every read-on-demand instruction degraded into a bulk read.
+
+The shipped implementation is dependency-free lexical BM25; `rag/README.md` states its limit
+(it matches words, not meaning) and the swap contract for an embedding store. If the human
+declines the layer, say plainly what they lose: `bank.sh` gate `[3/4]` will print a loud SKIP,
+and every "query the corpus" instruction becomes "read the source" — correct, but expensive.
+
+**Do not index `knowledge/audit/`** — the ingest already excludes it and that exclusion is an
+instrument (governing records are reachable only by explicit pointer). Do not "fix" it.
+
+### Step 2c — the ledgers
+
 In `knowledge/ledgers/`, create each standing ledger as a file with a two-line header (its
 name, and its one-line purpose quoted from `APPARATUS_MAP.md` §3): `NEGATIVES_LEDGER.md` ·
 `WINS_LEDGER.md` · `RULING_REGISTER.md` · `FAMILY_TREE.md` · `CHECKER_CALIBRATION.md` ·
@@ -89,11 +118,18 @@ line with an empty status column:
 1. Write `knowledge/prompts/FORMATION_CORE.md` §1 (the ontology) from the object paragraph —
    the programme's first real session, with the human.
 2. Fill `RULES_CORE.md` §A — the two-to-five ontological invariants (C-1..C-4 slots).
-3. Seed the engine: first executable claims + harness, every check with a demonstrated
-   failure mode (`manuals/banking.md` §3).
+3. **Seed the engine — `manuals/engine.md` is the manual for this item.** Order matters: the
+   **gate list first** (every quantity the programme cannot yet earn, wired to raise — a gate
+   written after the value exists is a gate written around it), then the smallest claim that
+   can FAIL (never the headline), then its check **with a demonstrated failure mode**, then
+   the two structural splits (MAIN never calls COMPANION; CORE never consumes CANDIDATE).
+   *(If the interview recorded "no engine", this item instead reads: revisit the availability
+   table in `engine.md` §2 at the first consolidation, with the ruled-out rows named.)*
 4. Name the control worlds (the coordinator's `[KILL-TEST]` zoo): objects where proposed
    methods must FAIL.
-5. Found the calibration probes from the first caught defects (`calibration_probes.md`).
+5. Found the calibration probes from the first caught defects (`calibration_probes.md`) —
+   **P1 is portable as written and needs no domain knowledge; run it blind against every
+   checker class before trusting a single verdict.**
 6. First philosopher campaign: most-shared premises first, against the named rivals.
 
 ## Step 3 — write the canon

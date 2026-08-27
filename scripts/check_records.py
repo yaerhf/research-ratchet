@@ -855,10 +855,18 @@ def main():
         _ck(f"render_pdf.sh mirror copy list includes {f}", f in render)
 
     # ---- 5. TOOLING COHERENCE: rag 'code' shorthand covers both engines --
+    # The retrieval layer is OPTIONAL (ruling 2026-08-27): a tree without rag/ is a
+    # legitimate configuration, so ABSENCE is reported, not failed. But if the layer
+    # IS present, its `code` shorthand must reach the COMPANION engine too — a
+    # shorthand that silently covered only the main engine would hide half the
+    # executable ground truth from every agent that trusted it.
     print("tooling:")
-    ragq = _read("rag/query.py") or ""
-    _ck("rag/query.py 'code' source shorthand covers the companion engine",
-        "twt_companion" in ragq)
+    ragq = _read("rag/query.py")
+    if ragq is None:
+        print("  [n/a ] rag/query.py absent — retrieval layer not installed (optional)")
+    else:
+        _ck("rag/query.py 'code' source shorthand covers the companion engine",
+            "companion" in ragq)
 
     # ---- 6. CENSUS: doc-quoted def counts vs the tree (AST truth) --------
     print("census (AST truth vs count-bearing sites; tol ±%d):" % DRIFT_TOL)

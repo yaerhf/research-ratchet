@@ -438,6 +438,7 @@ instantiation; refresh by counting, never by carrying this sentence forward — 
 |---|---|
 | about to derive, probe, or compute | `RULES_BY_ROLE.md` § WORKER |
 | about to run `bank.sh` | `manuals/banking.md` |
+| about to build or extend the engine | `manuals/engine.md` — **self-coherence as an executable** |
 | about to edit the paper | `RULES_BY_ROLE.md` § PAPER & RELEASE **and** `paper_rework_lessons.md` in full |
 | checking someone's work | `RULES_BY_ROLE.md` § ANY CHECKING ROLE + your own pack |
 | dispatching | `RULES_BY_ROLE.md` § THE AI COORDINATOR + `coordinator_agent.md` |

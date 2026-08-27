@@ -98,9 +98,20 @@ agents and the ontology is owned by one human:
   section shape, the design rationale per section, and the slots the programme fills
   (byte-stable for prompt caching; regenerated into a cached agent type by
   `scripts/gen_worker_agent.py`).
-- **`prompts/manuals/`** — activity manuals (banking carries both the demotion pass and the
-  tier-raise pass: claims can be corrected in either direction, and a raise is never admissible
-  on argument).
+- **`prompts/manuals/`** — activity manuals, opened at the moment they bind: **banking**
+  (both the demotion pass and the tier-raise pass — claims can be corrected in either
+  direction, and a raise is never admissible on argument) and **the engine** (below).
+- **The engine — self-coherence delivered as an executable.** Where a programme's claims have
+  machine-checkable content, they are rendered as running code, so coherence stops being a
+  matter of opinion: the engine *arbitrates* (on any conflict between prose and engine, the
+  engine wins), refuting verdicts must **compute** rather than argue, and quantities the
+  programme has not earned **raise instead of returning a number**. `prompts/manuals/engine.md`
+  carries the availability test — narrower than "is my field computational", and its last rows
+  reach almost any programme — and the build order, the two structural splits, and the traps.
+- **`rag/`** — the retrieval layer: query the record instead of bulk-loading it. Installed by
+  default, optional by ruling, dependency-free (lexical BM25) and swappable for an embedding
+  store; `knowledge/audit/` is deliberately never indexed, which is a diet implemented at the
+  file layer.
 - **`prompts/APPARATUS_MAP.md`** — the organigramme: who holds what, who is starved of what,
   and the reference layout of an instantiated programme's tree.
 - **`scripts/`** — the gates and instruments: `bank.sh` (nothing enters the record except

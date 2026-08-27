@@ -69,8 +69,26 @@ if ! python scripts/check_records.py --main "$CHECKS" --companion "$CHECKSC"; th
   echo ">>> RECORD-INVARIANTS FAILED — the records drifted from the tree. Fix the documents (scripts/check_records.py lists the sites), then re-bank."; exit 1
 fi
 
-echo "[3/4] rebuilding RAG index (embeddings on the GPU)..."
-python rag/ingest.py
+echo "[3/4] rebuilding the retrieval index..."
+# THE RETRIEVAL LAYER IS INSTALLED BY DEFAULT AND IS OPTIONAL BY RULING (2026-08-27).
+# It is a real instrument — gate [3/4] keeps the record retrievable, and the
+# query-instead-of-bulk-load economics rest on it — but a programme may run without
+# it. So its ABSENCE is reported LOUDLY and never silently: an uninstalled instrument
+# is an honest state, a gate that quietly stopped guarding is not (the apparatus's own
+# measured class: of five raising gates, one was unreachable and both suites stayed
+# green). A FAILING ingest still stops the bank, because that is the recorded defect
+# this gate exists around: rag/ingest.py can die at the end of a run and leave the
+# commit skipped while the printed line looks fine.
+if [ -f rag/ingest.py ]; then
+  python rag/ingest.py
+else
+  echo ">>> [3/4] SKIPPED — rag/ingest.py is not present in this tree."
+  echo ">>>       The retrieval layer is OPTIONAL but INSTALLED BY DEFAULT; this tree"
+  echo ">>>       is running without it. Agents must then READ what they would have"
+  echo ">>>       queried, and every 'query the corpus' instruction in the apparatus"
+  echo ">>>       (RULES_BY_ROLE #171; manuals/INDEX.md) degrades to a bulk read."
+  echo ">>>       Install it:  python rag/ingest.py   (see rag/README.md)"
+fi
 
 echo "[4/4] committing timeline..."
 TREE_NOW="$(git status --porcelain | git hash-object --stdin)"

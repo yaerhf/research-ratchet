@@ -1,0 +1,7 @@
+# GENERATED — rebuilt by `python rag/ingest.py` (bank.sh gate [3/4]) at every bank.
+# Not committed: it is derived from the tree, it is large, and a stale committed copy
+# would be a drift pair of exactly the class this apparatus keeps finding.
+rag/index.json
+
+__pycache__/
+*.pyc

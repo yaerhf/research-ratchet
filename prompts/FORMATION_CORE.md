@@ -369,8 +369,12 @@ published file against its working twin and names the resync duty.
 agent inherits the canon auto-load and arrives *formed*, which voids the measurement.
 
 Orientation for a fresh lead: canon → `SESSION_HANDOFF` → this file's map. Retrieval:
-`rag/query.py "question" -k 8` (`knowledge/audit/` is NOT indexed — by design; the handoff is
-reachable only through the canon's pointer).
+`python rag/query.py "question" -k 8` — shorthands `--source paper|code|ledgers|prompts|scripts`
+(`code` covers BOTH engines). `knowledge/audit/` is NOT indexed — by design; the handoff is
+reachable only through the canon's pointer. The layer is installed by default and **optional**:
+without it, bank gate [3/4] prints a loud SKIP and every query instruction degrades to a bulk
+read (`rag/README.md`). **Building or extending the engine: `manuals/engine.md`** — the engine
+is what makes self-coherence executable, and it is the ground a refuting verdict computes on.
 
 ---
 
