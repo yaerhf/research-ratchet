@@ -191,7 +191,10 @@ path; do not remove it. Visibility: <answer 7>.
 
 ## Step 4 — install the agent surfaces
 
-1. **Roles.** Copy each durable spec to a runnable agent, stripping the leading HTML comment:
+1. **Roles.** Copy each durable spec to a runnable agent, **stripping everything above the
+   `---` frontmatter line** (the specs carry a `DIET-CLASS` marker AND a durable-spec note;
+   if either survives the copy the frontmatter is no longer at line 1 and agent registration
+   can fail):
    - `knowledge/prompts/reviewer_agent.md` → `.claude/agents/reviewer.md`
    - `knowledge/prompts/meta_observer.md` → `.claude/agents/meta-observer.md`
    - `knowledge/prompts/coherence_keeper.md` → `.claude/agents/coherence-keeper.md`
@@ -223,7 +226,27 @@ canon edits — the human coordinator rules or ratifies.
 ```
 
 3. Mirror the command file to `knowledge/prompts/coordinator_command.md` (durable copy, same
-   restore rule as the agents).
+   restore rule as the agents), with `<!-- DIET-CLASS: ROLE -->` as its first line — every
+   apparatus document declares its class, and the records gate warns about any that does not.
+
+### Step 4c — tell the bank where your engine will live
+
+`bank.sh` looks for `knowledge/corpus/twt_test.py` by default — the founding programme's
+harness. Until docket item 3 lands you have no engine, and the gate says so plainly and
+carries on; that is correct. Once you have one, set the names (shell profile, or at the top
+of `bank.sh`):
+
+```bash
+export MAIN_SUITE=<your_harness>.py         # e.g. tempo_test.py
+export COMPANION_SUITE=<your_companion>.py  # optional; single-engine trees skip it
+export CORPUS_DIR=knowledge/corpus          # only if the engine lives elsewhere
+```
+
+**What a correct first bank looks like** — run it now, before any research, so the tree's
+first commit goes through the gate: telemetry reports · `[1/4]` SKIPS with a stated reason ·
+`[2/4]` runs its self-test then the records gate and prints `RECORDS HOLD` · `[3/4]`
+re-indexes · `[4/4]` commits. Then **verify with `git log` that the commit landed** — that
+verification is a rule, not a courtesy.
 
 ## Step 5 — the handoff
 

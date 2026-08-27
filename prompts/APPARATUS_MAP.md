@@ -192,7 +192,10 @@ knowledge/
 │
 └── candidates/              CANDIDATE material — probes, memos, unadjudicated work
 
-scripts/     bank.sh (the only way in) · check_records.py (the records gate) · honesty_telemetry.py
+scripts/     bank.sh (the only way in) · check_records.py (the records gate; runs on any tree)
+             · check_records_founding.py (the founding gate, kept as the worked example of a
+               mature one — ~98 pins onto its own corpus; not run by bank.sh)
+             · honesty_telemetry.py
              · gen_worker_agent.py · gen_negatives_index.py · release tooling
 rag/         ingest.py · query.py — the retrieval layer. INSTALLED BY DEFAULT, OPTIONAL by
              ruling (2026-08-27): bank gate [3/4] re-indexes at every bank and prints a loud

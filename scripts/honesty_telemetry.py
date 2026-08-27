@@ -392,6 +392,12 @@ def append_log(vals, asof):
     row = [asof.isoformat(), head] + [str(vals.get(k, "")) for k in FIELDS]
     line = "\t".join(row)
     try:
+        # D7 (install dry-run, 2026-08-27): do NOT conjure a knowledge/ tree into a repo that
+        # has none. Running the bank inside the apparatus repository — or any tree not yet
+        # given an object — used to leave a stray generated log behind, and a FAILED bank
+        # left it untracked in the working tree. Log only where the audit trail already lives.
+        if not LOG.parent.is_dir():
+            return "history off (no knowledge/audit/ in this tree)"
         LOG.parent.mkdir(parents=True, exist_ok=True)
         prev = LOG.read_text(encoding="utf-8").rstrip("\n").split("\n") if LOG.exists() else []
         if not prev or not prev[0].startswith("# HONESTY TELEMETRY"):

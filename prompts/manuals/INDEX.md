@@ -26,7 +26,7 @@ moment they become binding**, which is also the moment it will actually retain t
 **Why it is not merely a folder.** Three properties make it a tree rather than a pile:
 
 1. **Every manual is REACHABLE FROM THIS INDEX and from nowhere else** — one entry point, so a
-   manual cannot go unreferenced and quietly stale. `check_records` should pin that.
+   manual cannot go unreferenced and quietly stale. `check_records.py` pins that.
 2. **A manual is COMPLETE for its activity.** An agent that reads it needs nothing else to act
    correctly. If a rule matters during banking, it is in the banking manual — even if it also
    lives in the core.
@@ -85,6 +85,8 @@ Two mitigations, both required:
 
 - **The manual QUOTES with a pointer, or OWNS outright — never paraphrases.** If the banking manual
   restates a core rule, it quotes it verbatim and names where it lives. Paraphrase is what drifts.
-- **`check_records` should verify the index lists every manual present and every manual is
-  reachable from the index.** Cheap, mechanical, and it is the same invariant family that already
-  catches an unnamed ledger.
+- **`check_records.py` DOES verify this, as of 2026-08-27** — every manual present is listed
+  here, and every manual this index marks WRITTEN exists (the phantom-cite class, pointed at the
+  documentation tree). Same invariant family as the unnamed-ledger check, and it ships with its
+  own planted-defect demonstrations. *It sat here as an owed pin; the install dry-run is what
+  finally ran it.*

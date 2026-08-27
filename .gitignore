@@ -1,7 +1,22 @@
-# GENERATED — rebuilt by `python rag/ingest.py` (bank.sh gate [3/4]) at every bank.
-# Not committed: it is derived from the tree, it is large, and a stale committed copy
-# would be a drift pair of exactly the class this apparatus keeps finding.
+# GENERATED ARTIFACTS — never committed, and the reason is mechanical, not tidiness.
+#
+# `bank.sh` snapshots the working tree when it STARTS and refuses to commit if the tree
+# changed while it ran (the sweep guard: it exists because a bank once swept another
+# session's uncommitted work into an unrelated commit). Gate [3/4] REWRITES the retrieval
+# index during that window — so a TRACKED index makes the guard fire on every bank that
+# follows any content change, and only a second run succeeds. Measured in the 2026-08-27
+# install dry-run. The guard is right; the tracked generated file was the defect.
 rag/index.json
 
+# Python bytecode.
 __pycache__/
 *.pyc
+
+# The RUNNABLE agent surfaces. The durable copies live in the apparatus directory and are
+# the source of truth; every role spec's header carries the restore rule, because `.claude/`
+# not surviving a fresh clone is a recorded, measured failure (five role files found
+# untracked).
+.claude/
+
+# Local render output.
+knowledge/corpus/pdf/

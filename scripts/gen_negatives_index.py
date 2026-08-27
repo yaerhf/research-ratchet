@@ -243,7 +243,23 @@ def main(argv):
     print(f"  topic headings         : {len(topics)}")
 
     if not entries:
-        print("ERROR: zero entries parsed - refusing to write an empty index.")
+        # AN EMPTY LEDGER IS NOT A PARSE REGRESSION. Every freshly instantiated tree has
+        # one, and an adopter's first run of this script should not read as an ERROR
+        # (measured: it did, in the 2026-08-27 install dry-run). The refusal below exists
+        # to catch a parser that broke over a POPULATED ledger — so distinguish the two.
+        # The discriminator is whether the ledger holds anything SHAPED LIKE AN ENTRY —
+        # never how long the file is. No entry-shaped text at all => genuinely empty.
+        # Entry-shaped text that parsed to nothing => the parser regressed, which is
+        # precisely what the refusal below exists to catch.
+        body = "\n".join(lines)
+        if not re.search(r"(?m)^(?:##\s+N[0-9]|\*\*N[0-9])", body):
+            print("  nothing to index yet — the negatives ledger has no entries.")
+            print("  That is normal for a new programme: the index appears with your first")
+            print("  recorded dead end (tried X -> failed because Y -> would change if Z).")
+            return 0
+        print("ERROR: zero entries parsed from a NON-EMPTY ledger — refusing to write an "
+              "empty index.\n       The parser may have regressed; see the format note at "
+              "the top of this file.")
         return 1
 
     text = render(entries, topics)

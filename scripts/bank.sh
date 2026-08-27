@@ -29,17 +29,52 @@ python scripts/honesty_telemetry.py || true
 # MIS-ATTRIBUTED content. Snapshot now, re-check before committing, refuse on drift.
 TREE_SNAPSHOT="$(git status --porcelain | git hash-object --stdin)"
 
-# [OBJECT-SLOT] the two harnesses — the founding programme's were twt_test.py / twt_companion_test.py.
+# ★ THE ENGINE GATE — and the state EVERY new programme starts in.
+# The harness filenames are the programme's own (the founding programme's were
+# twt_test.py / twt_companion_test.py). Override per-run or export in your shell.
 MAIN_SUITE="${MAIN_SUITE:-twt_test.py}"
 COMPANION_SUITE="${COMPANION_SUITE:-twt_companion_test.py}"
-echo "[1/4] substrate self-checks ($MAIN_SUITE + $COMPANION_SUITE)..."
-out="$(cd knowledge/corpus && python "$MAIN_SUITE" 2>&1)"; echo "$out" | tail -14
-if ! echo "$out" | grep -qE "ALL [0-9]+ CHECKS PASSED across"; then
-  echo ">>> Self-checks FAILED (main engine) — not banking. Fix the oracle first."; exit 1
-fi
-outc="$(cd knowledge/corpus && python "$COMPANION_SUITE" 2>&1)"; echo "$outc" | tail -14
-if ! echo "$outc" | grep -qE "ALL [0-9]+ COMPANION CHECKS PASSED across"; then
-  echo ">>> Self-checks FAILED (companion engine) — not banking. Fix the oracle first."; exit 1
+CORPUS_DIR="${CORPUS_DIR:-knowledge/corpus}"
+#
+# A tree with no engine yet is NOT a broken tree — it is docket item 3, and a new
+# programme lives there for its first weeks. But an absent gate must be LOUD: the
+# apparatus's own measured failure class is a gate that stopped guarding while
+# everything stayed green. Absent engine -> a stated SKIP; present engine that fails
+# -> a hard stop with the output. What must never happen is what an install dry-run
+# found here on 2026-08-27: `set -euo pipefail` aborting the command substitution
+# with NO message, leaving the adopter a truncated line and no diagnosis.
+CHECKS=""; CHECKSC=""
+if [ ! -f "$CORPUS_DIR/$MAIN_SUITE" ]; then
+  echo "[1/4] engine self-checks — SKIPPED: no harness at $CORPUS_DIR/$MAIN_SUITE."
+  echo "      This tree has no engine yet. That is an honest state (docket item 3;"
+  echo "      manuals/engine.md) and it is NOT a passed gate: until an engine exists"
+  echo "      every checker verdict is ARGUED rather than COMPUTED, and the review"
+  echo "      layer is running on argument alone. Set MAIN_SUITE / COMPANION_SUITE"
+  echo "      (or CORPUS_DIR) once you have one; nothing else needs to change."
+else
+  echo "[1/4] engine self-checks ($MAIN_SUITE + $COMPANION_SUITE)..."
+  if ! out="$(cd "$CORPUS_DIR" && python "$MAIN_SUITE" 2>&1)"; then
+    echo "$out" | tail -20
+    echo ">>> The MAIN harness did not run to completion — not banking."; exit 1
+  fi
+  echo "$out" | tail -14
+  if ! echo "$out" | grep -qE "ALL [0-9]+ CHECKS PASSED"; then
+    echo ">>> Self-checks FAILED (main engine) — not banking. Fix the oracle first."; exit 1
+  fi
+  CHECKS="$(echo "$out" | grep -oE "ALL [0-9]+ CHECKS PASSED" | grep -oE "[0-9]+" | head -1)"
+  if [ -f "$CORPUS_DIR/$COMPANION_SUITE" ]; then
+    if ! outc="$(cd "$CORPUS_DIR" && python "$COMPANION_SUITE" 2>&1)"; then
+      echo "$outc" | tail -20
+      echo ">>> The COMPANION harness did not run to completion — not banking."; exit 1
+    fi
+    echo "$outc" | tail -14
+    if ! echo "$outc" | grep -qE "ALL [0-9]+ COMPANION CHECKS PASSED"; then
+      echo ">>> Self-checks FAILED (companion engine) — not banking."; exit 1
+    fi
+    CHECKSC="$(echo "$outc" | grep -oE "ALL [0-9]+ COMPANION CHECKS PASSED" | grep -oE "[0-9]+" | head -1)"
+  else
+    echo "      (no companion harness — single-engine tree)"
+  fi
 fi
 
 echo "[2/4] record-invariants gate (prose vs tree; policy 2026-08-13)..."
@@ -63,10 +98,12 @@ if ! echo "$st_out" | grep -qE "SELF-TEST: [0-9]+/[0-9]+ demonstrations behaved 
   echo ">>> APPARATUS SELF-TEST did not print its all-behaved-as-specified line — not banking."; exit 1
 fi
 echo "$st_out" | tail -2
-CHECKS="$(echo "$out" | grep -oE "ALL [0-9]+ CHECKS PASSED" | grep -oE "[0-9]+")"
-CHECKSC="$(echo "$outc" | grep -oE "ALL [0-9]+ COMPANION CHECKS PASSED" | grep -oE "[0-9]+")"
-if ! python scripts/check_records.py --main "$CHECKS" --companion "$CHECKSC"; then
-  echo ">>> RECORD-INVARIANTS FAILED — the records drifted from the tree. Fix the documents (scripts/check_records.py lists the sites), then re-bank."; exit 1
+# Counts are passed ONLY when an engine actually printed them — a gate told "0 checks"
+# by a tree that has no harness would be checking prose against a number nobody counted.
+if [ -n "$CHECKS" ]; then set -- --main "$CHECKS" --companion "${CHECKSC:-0}"; else set --; fi
+if ! python scripts/check_records.py "$@"; then
+  echo ">>> RECORD-INVARIANTS FAILED — the records drifted from the tree."
+  echo ">>> Fix the documents at the sites the gate named above, then re-bank."; exit 1
 fi
 
 echo "[3/4] rebuilding the retrieval index..."
