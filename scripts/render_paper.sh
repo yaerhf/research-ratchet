@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# GENERIC EDITION NOTE (2026-08-27): founding implementation; re-point paths at instantiation.
 # Render the foundational paper to a standalone, math-rendered HTML for comfortable reading.
 # Optional convenience — VS Code's Markdown preview (Ctrl+Shift+V) already renders the math.
 # Requires pandoc (https://pandoc.org/installing.html).

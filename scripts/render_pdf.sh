@@ -2,6 +2,10 @@
 # Render the Core paper (the primary, front-facing artifact) + the instance dossier
 # + the companion to provenance-stamped PDFs.
 #
+# GENERIC EDITION NOTE (2026-08-27): founding implementation — document names and the
+# count-drift guard are the founding tree's; re-point at instantiation. The load-bearing
+# decisions documented below (font fallback, slug algorithm, layout filters) are portable.
+#
 #   scripts/render_pdf.sh              # -> knowledge/corpus/pdf/*.pdf
 #   scripts/render_pdf.sh /some/dir    # custom output directory
 #
@@ -114,7 +118,7 @@ render () {           # render <src.md> <out.pdf> <title> <geometry> <fontsize> 
     --toc --toc-depth=2 \
     -V geometry:"$4" -V fontsize="$5" -V colorlinks=true \
     -V title="$3" ${6:+-V subtitle="$6"} \
-    -V author="Yaer Aharon Haddad Fennech · Independent Researcher · hfyaer@gmail.com" \
+    -V author="${PAPER_AUTHOR:-<programme author>}" \
     -V date="$STAMP" \
     -o "$2" 2>&1 | grep -iE "missing character|error" | head -20 || true
   [ -s "$2" ] || { echo "     BUILD FAILED — $2 was not produced"; exit 1; }

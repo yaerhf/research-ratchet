@@ -1,4 +1,4 @@
-# THE DECISION-ATTENTION READER (N2) — v1, 2026-08-20
+# THE DECISION-ATTENTION READER (N2) — generic edition, 2026-08-27 (from v1)
 
 > Written on the human coordinator's instruction (*"N2: please write it"*). Adopted 2026-08-19 with
 > the eleven standing rules; it had a specification and no file, which is the same defect N1 had
@@ -16,8 +16,8 @@ somebody who owes it nothing.
 WRONG AND SUPERSEDED. Do not restore it.**
 
 It assumed an unaided human referee. The gatekeeping unit is **human + AI**: the paper is read by a
-person *with agents*, and this programme has a measured instance of it — a professor of mathematics
-reviewed the paper using Claude agents as **both gatekeepers and assistants**.
+person *with agents*, and the founding programme has a measured instance of it — a professor of
+mathematics reviewed the paper using AI agents as **both gatekeepers and assistants**.
 
 **So reading capacity is not the scarce resource. The human's DECISION ATTENTION is.** An agent can
 grind through 170 results; the human still has to decide a handful of things, and each decision

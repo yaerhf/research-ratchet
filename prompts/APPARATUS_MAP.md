@@ -1,16 +1,21 @@
 # THE APPARATUS — organigramme, roles, and where everything lives
 
-**v1, 2026-08-19.** Written at the human coordinator's request: *"draw an organigramme of the
-apparatus with the roles and folder organization. I need to see it clear-minded."*
+**Generic edition, 2026-08-27** (derived from the founding programme's v1, 2026-08-19, written at
+the human coordinator's request: *"draw an organigramme of the apparatus with the roles and folder
+organization. I need to see it clear-minded."*).
 
-> **What this is.** The program has an unusual amount of machinery — role definitions with
-> deliberately different information diets, three registries, an executable oracle, a records gate,
-> an outer review cycle. It accreted over months and has never been drawn in one place. This is
-> that drawing. **It is descriptive, not normative** — the binding rules live in `AGENT_RULES.md`
-> beside it, and the canon governs both.
+> **What this is.** The apparatus has an unusual amount of machinery — role definitions with
+> deliberately different information diets, standing registries, an executable oracle, a records
+> gate, an outer review cycle. This is the one drawing of it. **It is descriptive, not
+> normative** — the binding rules live in `RULES_CORE.md` and `RULES_BY_ROLE.md`, and the
+> programme's canon governs both.
 >
-> **The apparatus is a program asset in its own right**, and is in principle exportable to other
-> research programs. That is a reason to keep it legible.
+> **Provenance note (generic edition).** Incident citations and `RUL-NNN`/`R-NNN`/`N-NN`
+> identifiers in this file point into the founding programme's registers
+> ([github.com/yaerhf/TWT](https://github.com/yaerhf/TWT)) — they are the design's evidence
+> trail, kept per this apparatus's own rule that a structure with no recorded incident reads as
+> decree. Blocks marked **`[OBJECT-SLOT]`** are supplied by the programme that instantiates the
+> apparatus.
 
 ---
 
@@ -33,9 +38,9 @@ flowchart TB
 
     subgraph INNER ["§8a — THE INNER CHECK (per claim; cross-class on authorship)"]
         RV["<b>REVIEWER</b><br/>saturated: the derivation<br/><i>sound and honestly tiered?</i><br/><i>a refutation COMPUTES or is labeled ARGUED (R5)</i>"]
-        MO["<b>META-OBSERVER</b><br/><b>STARVED of the derivation</b><br/><i>is it ABOUT what it says?</i><br/><i>owns prior-art (F3; ex-N3)</i>"]
+        MO["<b>META-OBSERVER</b><br/><b>STARVED of the derivation</b><br/><i>is it ABOUT what it says?</i><br/><i>owns prior-art (F3)</i>"]
         KP["<b>KEEPER</b><br/>saturated: the whole result set<br/><i>does the corpus assert one thing?</i>"]
-        RD["<b>RE-DERIVATION AGENT</b> (2026-08-21, first run blind-REPRODUCED)<br/><b>STARVED of the derivation, the probes, ALL verdicts</b><br/>diet: the claim's BARE STATEMENT only<br/><i>prove it again; a different route beats agreement</i>"]
+        RD["<b>RE-DERIVATION AGENT</b> (first run blind-REPRODUCED)<br/><b>STARVED of the derivation, the probes, ALL verdicts</b><br/>diet: the claim's BARE STATEMENT only<br/><i>prove it again; a different route beats agreement</i>"]
     end
 
     subgraph PHIL ["THE PHILOSOPHER (split role, fence F4)"]
@@ -45,7 +50,7 @@ flowchart TB
     end
 
     subgraph OUTER ["THE OUTER CYCLE — external review loop"]
-        XR["<b>EXTERNAL REVIEWER</b><br/><b>STARVED of everything but the artifact</b><br/>held-out = Fable · recurrent = Opus<br/><i>fence F1: never formed in-session</i>"]
+        XR["<b>EXTERNAL REVIEWER</b><br/><b>STARVED of everything but the artifact</b><br/>held-out class · recurrent class<br/><i>fence F1: never formed in-session</i>"]
     end
 
     subgraph RARE ["NON-FREQUENT ROLES"]
@@ -54,19 +59,19 @@ flowchart TB
         AR["<b>ARCHIVIST</b><br/>structural hygiene only<br/><i>never semantic judgment</i>"]
     end
 
-    GEM["<b>GEMINI</b> — ideation only<br/><i>numbers carry ZERO evidential weight</i>"]
+    GEM["<b>IDEATION ADVISOR</b> — ideation only<br/><i>numbers carry ZERO evidential weight</i>"]
 
     AC --> W
     AC --> RV & MO & KP & RD
     AC --> PW & PC
     AC --> N1 & N2 & AR & RC
-    RC["<b>REGISTER CLERK</b> (Haiku, PILOT — RUL-079)<br/>quotes + pointers, read-only, as-of-commit"]
-    %% N3 (prior-art sweep) RETIRED into the meta-observer's F3 axis (RUL-073, 2026-08-21) —
+    RC["<b>REGISTER CLERK</b> (small-class PILOT — RUL-079)<br/>quotes + pointers, read-only, as-of-commit"]
+    %% A standing prior-art role was RETIRED into the meta-observer's F3 axis (RUL-073) —
     %% F3 is where that work structurally lives (the reviewer has no web tools). A one-time
     %% back-catalogue sweep, if ever wanted, is commissioned as a TASK, not a role.
-    %% ROLE-COUNT GOVERNANCE (RUL-074, 2026-08-21): adding roles AND changing any count
-    %% constraint are both under the HUMAN COORDINATOR'S approval; a freeze was proposed by
-    %% the adverse review and REFUSED (bloat noted, approval gate preferred).
+    %% ROLE-COUNT GOVERNANCE (RUL-074): adding roles AND changing any count constraint are
+    %% both under the HUMAN COORDINATOR'S approval; a freeze was proposed by an adverse
+    %% review and REFUSED (bloat noted, approval gate preferred).
     AC -.->|"orchestrates, never forms"| XR
     GEM -.->|"CANDIDATE only"| AC
     PW --> PA
@@ -98,100 +103,104 @@ merely tidiness — the meta-observer is only useful *because* it never sees the
 
 | role | file | starved of | saturated with | its one question |
 |---|---|---|---|---|
-| Human coordinator | — | — | the ontology, twenty years of it | *is this what I mean?* |
+| Human coordinator | — | — | the ontology, the years behind it | *is this what I mean?* |
 | **AI coordinator** | `coordinator_agent.md` | — | state | *who should hold what?* |
 | Fluent worker | `FORMATION_CORE.md` + brief | everything not in its brief | its task | *what does the substrate say?* |
-| Reviewer | `twt_reviewer_agent.md` | — | the derivation | *sound and honestly tiered?* |
+| Reviewer | `reviewer_agent.md` | — | the derivation | *sound and honestly tiered?* |
 | Meta-observer | `meta_observer.md` | **the derivation** | the claim, the world | *is it ABOUT what it says?* |
 | Keeper | `coherence_keeper.md` | — | the whole result set | *does the corpus assert one thing?* |
 | Philosopher (worker) | `philosopher_ledger_agent.md` | — | isolated premises + literature | *could this have been otherwise?* |
 | Philosopher (checker) | same file, F4 split | our derivations | the rivals | *what does it cost, against what?* |
 | External reviewer | `external_review_loop.md` | **everything but the artifact** | — | *is it legible from outside?* |
-| Removal auditor (N1) | `removal_auditor_agent.md` | — | the defensive structures | *what breaks if this goes?* |
+| Apparatus auditor (N1) | `removal_auditor_agent.md` | — | the defensive structures | *what breaks if this goes?* |
 | Decision-attention reader (N2) | `decision_attention_reader.md` | — | the release artifact | *what must the human decide?* |
 | Archivist | `archivist_agent.md` | **the physics** | the record's shape | *is it navigable and current?* |
-| Register clerk (PILOT) | `register_clerk.md` | the physics corpus | the registers, at formation | *what does the record say, verbatim?* |
+| Register clerk (PILOT) | `register_clerk.md` | the research corpus | the registers, at formation | *what does the record say, verbatim?* |
 | Re-derivation agent | `rederivation_agent.md` | **derivation, probes, all verdicts** | the bare statement | *can I prove it again, unaided?* |
 
-**N1 NOW HAS A DURABLE FILE (2026-08-20)** — written with recommendation **R-A** built in, so the
-role asks two questions rather than one: *what does this prevent?* **and *what does it cost per
-pass?*** The second exists because **every addition to this apparatus has a champion — its
-motivating incident — and no removal has one**, which means the apparatus can otherwise only
-accumulate until impatience removes things, and impatience removes exactly the class N1 protects.
-**N2 was written 2026-08-20** (`decision_attention_reader.md`; runs at each release, asking what
-the human must DECIDE and whether their agents can extract it). A role whose reasoning is
-reconstructed at each dispatch is a role that will drift — which is why N1, N2 and the
-re-derivation agent all now have durable files.
+**Why N1, N2 and the re-derivation agent have durable files:** a role whose reasoning is
+reconstructed at each dispatch is a role that will drift — N1's own first run reported that
+defect about itself. N1 carries recommendation **R-A** built in, so it asks two questions rather
+than one: *what does this prevent?* **and *what does it cost per pass?*** The second exists
+because **every addition to this apparatus has a champion — its motivating incident — and no
+removal has one**, which means the apparatus can otherwise only accumulate until impatience
+removes things, and impatience removes exactly the class N1 protects. N2 runs at each release,
+asking what the human must DECIDE and whether their agents can extract it.
 
 ---
 
-## 3. FOLDER ORGANIZATION — what is where, and who reads it
+## 3. FOLDER ORGANIZATION — the reference layout of an instantiated programme
+
+*(This repository ships the `prompts/` and `scripts/` halves. The rest of the tree comes into
+existence when the apparatus is given an object.)*
 
 ```
 CLAUDE.md                    THE CANON — auto-loaded into every session, un-compactable.
                              Binding on everyone. Keep it small; prune as much as you add.
 
 knowledge/
-├── prompts/                 ★ THE APPARATUS ITSELF  ⚠ gitignored wholesale — force-add new files
+├── prompts/                 ★ THE APPARATUS ITSELF (this repository's prompts/)
 │   ├── FORMATION_CORE.md      the worker prefix (versioned; changes only at consolidation)
 │   ├── APPARATUS_MAP.md       this file
-│   ├── AGENT_RULES.md         the rules, by when they bite (+ the live divergence table)
-│   ├── RULES_CORE.md          the core rules that bind everyone (count in its header) · RULES_BY_ROLE.md  the role packs
+│   ├── AGENT_RULES.md         the by-when-it-bites view + the live divergence table
+│   ├── RULES_CORE.md          the core rules that bind everyone · RULES_BY_ROLE.md  the role packs
 │   ├── PROFILES.md            the disposition axis (steelman RESOLVED into the worker duty, RUL-075)
 │   ├── manuals/               activity manuals (banking.md carries the demotion AND tier-raise passes)
-│   ├── enforcer_agent.md      MERGED into removal_auditor_agent.md (the APPARATUS AUDITOR, RUL-072) — stub only
 │   ├── removal_auditor_agent.md  ★ THE APPARATUS AUDITOR (N1 + ex-enforcer): prevents/costs + spirit-served
+│   ├── enforcer_agent.md          pointer stub only — merged into the auditor (RUL-072); kept so old pointers resolve
 │   ├── decision_attention_reader.md  N2 — at each release: what must the human DECIDE?
 │   ├── rederivation_agent.md  prove it again from the BARE STATEMENT (forbidden the derivation)
-│   ├── register_clerk.md      Haiku PILOT (RUL-079): registers held in context, quote-only, read-only
+│   ├── register_clerk.md      registers held in context, quote-only, read-only (RUL-079 pilot)
 │   ├── coordinator_agent.md   ★ THE ENTRY POINT ROUTINE (incl. the post-negative push, RUL-078)
-│   ├── twt_reviewer_agent.md / meta_observer.md / coherence_keeper.md      the §8a triad
-│   ├── philosopher_ledger_agent.md · archivist_agent.md                    other roles
+│   ├── reviewer_agent.md / meta_observer.md / coherence_keeper.md      the §8a triad
+│   ├── philosopher_ledger_agent.md · archivist_agent.md                other roles
 │   ├── external_review_loop.md    the OUTER CYCLE routine
+│   ├── standalone_review_send.md  the note-level cold-review send (byte-pinned prompt)
 │   ├── calibration_probes.md      run BLIND before trusting any checker
 │   ├── paper_rework_lessons.md    read before ANY paper edit
-│   ├── psychology_of_ai_reviewers.md · coherence_audit.md · adversarial_review.md
-│   └── *_session.md               ⚠ LEGACY entry points — superseded by the coordinator routine
+│   └── psychology_of_ai_reviewers.md · coherence_audit.md · adversarial_review.md · remediation_session.md
 │
-├── corpus/                  THE ARTIFACT + THE ORACLE
-│   ├── TWT_foundational_paper.md            V3 · HISTORY-BLIND by ruling
-│   ├── TWT_foundational_paper_companion.md  Result Index · dependency graph · dev log · imports
-│   ├── twt.py                MAIN engine — executable ground truth (~255 public)
-│   ├── twt_companion.py      COMPANION engine (~64 public; MAIN never calls it)
-│   └── twt_test.py · twt_companion_test.py   the two harnesses (422 + 87 as of 2026-08-21)
+├── corpus/                  THE ARTIFACT + THE ORACLE                       [OBJECT-SLOT]
+│   ├── <paper>.md               the foundational paper · HISTORY-BLIND by ruling
+│   ├── <paper>_companion.md     Result Index · dependency graph · dev log · import registry
+│   ├── <engine>.py              MAIN engine — executable ground truth
+│   ├── <engine>_companion.py    COMPANION engine (MAIN never calls it)
+│   └── the two test harnesses   every check ships with a demonstrated failure mode
 │
-├── ledgers/                 THE 12 STANDING LEDGERS — all indexed by RAG
-│   ├── TWT_RULING_REGISTER.md      rulings in force + GROUNDS + revert lists
-│   ├── TWT_FAMILY_TREE.md          Core vs Instance: the pick register
-│   ├── TWT_NEGATIVES_LEDGER.md     tried → failed because → would change if
-│   ├── TWT_COMPARATIVE_LEDGER.md   the ontological debt ledger (philosopher's output)
-│   ├── TWT_CHECKER_CALIBRATION.md  overturned verdicts + blind probe runs
-│   ├── TWT_EDIT_REACTION_LEDGER.md edit → external reaction history
-│   ├── TWT_worklist.md             ★ THE DOCKET + the do-not-compress meaning-notes region
-│   ├── TWT_STRATEGIC_MAP.md · TWT_EOM_MAP.md · TWT_DEFECT_CKM_GLUON.md · TWT_PHILOSOPHER_LOG.md
+├── ledgers/                 THE STANDING LEDGERS — all indexed by RAG; roster gate-pinned
+│   ├── NEGATIVES_LEDGER.md      tried → failed because → would change if
+│   ├── NEGATIVES_INDEX.md       GENERATED — one line per entry, would-change-ifs VERBATIM
+│   ├── WINS_LEDGER.md           wins recorded AS wins (a row here never upgrades a tier)
+│   ├── RULING_REGISTER.md       rulings in force + GROUNDS + revert lists
+│   ├── FAMILY_TREE.md           commitment levels: the pick register, with revert clauses
+│   ├── CHECKER_CALIBRATION.md   overturned verdicts + blind probe runs
+│   ├── EDIT_REACTION_LEDGER.md  edit → external reaction history
+│   ├── COMPARATIVE_LEDGER.md    the ontological debt ledger (philosopher's output)
+│   ├── PHILOSOPHER_LOG.md       the philosopher's own failures and successes
+│   ├── REVERSAL_LEDGER.md       positions the programme changed and what changed them
+│   ├── REDUCTIONS_LEDGER.md     the forward object: if A holds, C1..Cn follow, by proof
+│   ├── STRATEGIC_MAP.md · worklist.md  (docket + the do-not-compress meaning-notes region)
+│   └── <domain ledgers>         whatever the object demands                 [OBJECT-SLOT]
 │
 ├── audit/                   GOVERNING RECORDS, dated  ⚠ NOT in the RAG index, BY DESIGN
-│   ├── SESSION_HANDOFF_*.md     ★ READ FIRST — live state; reachable ONLY via canon §9
-│   ├── pivot_2026-08-17/        the Core/Instance split + the CHARTER
-│   ├── external_review_2026-08-13/   round 1 + MERGE_PLAN + ACTION_PLAN
-│   └── consolidation_2026-08-18/     this arc's records
+│   ├── SESSION_HANDOFF_*.md     ★ READ FIRST — live state; reachable ONLY via the canon pointer
+│   └── <arc directories>/       adjudications, consolidations, review rounds — each with INDEX.md
 │
 └── candidates/              CANDIDATE material — probes, memos, unadjudicated work
 
-scripts/     bank.sh (the only way in) · check_records.py (the records gate) · render_pdf.sh
-rag/         ingest.py · query.py — the retrieval layer (⚠ globs are non-recursive)
-gemini/      the ideation advisor (numbers: zero weight)
-simulator/   the GA-native simulator subproject
+scripts/     bank.sh (the only way in) · check_records.py (the records gate) · honesty_telemetry.py
+             · gen_worker_agent.py · gen_negatives_index.py · release tooling
+rag/         ingest.py · query.py — the retrieval layer
 ```
 
-**Three structural facts worth seeing at once:**
-1. **`knowledge/prompts/` — the apparatus itself — is gitignored wholesale.** Files added there are
-   invisible to git by default; five were found untracked on 2026-08-19. **Force-add every new one.**
-2. **`knowledge/audit/` is deliberately outside RAG**, so governing records are reachable only by
-   explicit pointer. The handoff's sole path is the canon §9 line. **Do not remove it.**
-3. **The engines are indexed and chunked per primitive** — so a primitive can be *queried* at ~8×
-   less context than reading the file. Long docstrings fragment that, and fences can be stripped
-   from all but one chunk.
+**Three structural lessons from the founding programme, worth carrying:**
+1. **Check what git actually tracks.** The founding tree gitignored its apparatus directory
+   wholesale; five role files were found untracked. A finding written to a file git ignores did
+   not happen — force-add anything a broad ignore covers.
+2. **Keep `knowledge/audit/` deliberately outside RAG**, so governing records are reachable only
+   by explicit pointer. The handoff's sole path is the canon's pointer line. **Do not remove it.**
+3. **Index and chunk the engines per primitive** — a primitive can then be *queried* at a
+   fraction of the context of reading the file. Long docstrings fragment that.
 
 ---
 
@@ -204,38 +213,36 @@ triages → banks. *Nothing is banked on the developer's say-so alone.*
 the M1 offer judgment · prefix re-version · handoff rewrite · bank + tag).
 
 **OUTER — per release.** release → cold measurement → adjudicate → correct → re-release.
-*The program's only external forcing function.* The coordinator drives it and never forms the
+*The programme's only external forcing function.* The coordinator drives it and never forms the
 reader.
 
 ---
 
-## 5. THE ENTRY POINT, AND WHAT IT SUPERSEDES
+## 5. THE ENTRY POINT
 
 **`coordinator_agent.md` is the entry point.** A session starts by forming the coordinator, which
-then dispatches everything else.
+then dispatches everything else. The consolidation ritual lives there authoritatively.
 
-**The `*_session.md` routines are the LEGACY entry points** — `consolidation_session.md`,
-`worklist_session.md`, `remediation_session.md`, `theta_rel_session.md`, and the two `class2_*`
-campaign briefs. They were written when a session *was* its type, before the coordinator role
-existed. Several are now partly restated inside `coordinator_agent.md` (the consolidation ritual is
-the clearest case). **They are not yet marked as superseded, and at least one — the consolidation
-ritual — now exists in two places that can drift apart.** Cleaning them is docketed: the question
-for each is whether it is *dead*, *folded into the coordinator routine*, or *still a live
-specialist routine the coordinator dispatches into*.
+The surviving specialist routines the coordinator dispatches into: `external_review_loop.md`
+(the outer cycle), `standalone_review_send.md` (note-level cold sends), `coherence_audit.md` +
+`remediation_session.md` (the global audit and its repair pass), `adversarial_review.md` (the
+separate-build review form). *(The founding programme's session-type entry points —
+worklist/consolidation/campaign briefs — were superseded by the coordinator routine and are not
+carried in the generic edition; its tree retains them.)*
 
 ---
 
 ## 6. WHAT THE APPARATUS DOES NOT DO — measured, not assumed
 
 Recorded here because a map that shows only what works is a sales brochure. All four were
-established by deliberately breaking things on 2026-08-19.
+established in the founding programme by deliberately breaking things (2026-08-19):
 
-- **One gate does not guard.** Of five raising gates, four fire under sabotage and one is
-  unreachable because its configuration is never constructed. Both suites stay green.
-- **Striking an import-registry row breaks nothing and warns nobody** — uniqueness is checked,
-  referential integrity is not.
-- **The suites verify the mathematics, not the prose.** ~74% of engine docstring content is prose
-  no assert can express; ~18,800 tokens of it are claims with no equation and no number.
-- **The gate machinery guards the door, not the wall.** It catches a gate that stopped raising. It
-  does not catch a *new* primitive that returns an unearned number without touching a gate. That
-  remains a human duty, and it is the reason the §8a roles exist.
+- **One gate does not guard.** Of five raising gates, four fired under sabotage and one was
+  unreachable because its configuration was never constructed. Both suites stayed green.
+- **Striking an import-registry row broke nothing and warned nobody** — uniqueness was checked,
+  referential integrity was not.
+- **The suites verify the mathematics, not the prose.** The bulk of engine docstring content is
+  prose no assert can express — claims with no equation and no number.
+- **The gate machinery guards the door, not the wall.** It catches a gate that stopped raising.
+  It does not catch a *new* primitive that returns an unearned number without touching a gate.
+  That remains a human duty, and it is the reason the §8a roles exist.

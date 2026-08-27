@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 """RECORD-INVARIANTS gate (standing policy, coordinator-directed 2026-08-13).
 
+GENERIC EDITION NOTE (2026-08-27): this is the FOUNDING PROGRAMME'S WORKING IMPLEMENTATION
+(github.com/yaerhf/TWT), carried verbatim as the reference: its pinned invariants, file names
+and quoted sentences are that tree's, BY DESIGN — a records gate pins one concrete tree, so
+there is no object-free version of its pin list. At instantiation, keep the PATTERNS (pure-text
+predicates; --self-test planted-defect demonstrations; the [PEND] human-only-canon mechanism;
+drift tolerance exact-quoted lines excluded) and re-point every pin at your own tree.
+
+
 THE POLICY: load-bearing prose about the tree's state — counts, file structure,
 what-runs-what, pointer paths — must be either generated from the tree or PINNED
 here as an executable invariant. The suite verifies the mathematics; this gate
@@ -1354,14 +1362,14 @@ def main():
 
     # ---- cached-worker prefix sync (RUL-079(vi)) -------------------------
     # Soft invariant: .claude/ is gitignored, so absence on a fresh clone is
-    # legitimate; but IF the generated twt-worker agent exists, its embedded
+    # legitimate; but IF the generated worker agent exists, its embedded
     # FORMATION_CORE version must match the source header (a stale embedded
     # prefix silently forms every worker on an old contract).
-    tw = ROOT / ".claude/agents/twt-worker.md"
+    tw = ROOT / ".claude/agents/worker.md"
     fc_head = (_read("knowledge/prompts/FORMATION_CORE.md") or "").splitlines()[0][:40]
     if tw.exists():
         print("cached-worker prefix sync (soft — skipped when the gitignored file is absent):")
-        _ck(f"twt-worker embeds current FORMATION_CORE header ({fc_head!r}...)",
+        _ck(f"worker agent embeds current FORMATION_CORE header ({fc_head!r}...)",
             fc_head in tw.read_text(encoding="utf-8"))
 
     # ---- rules-files ruling sync (R1 of the 2026-08-21 restriction analysis) --

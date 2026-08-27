@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Generate TWT_V2_ENGINE_PAPER_MAP.md by mechanical scan.
+"""Generate the ENGINE-PAPER MAP by mechanical scan.
+
+GENERIC EDITION NOTE (2026-08-27): founding implementation — engine/paper paths are the
+founding tree's; re-point at instantiation. The method (AST-scanned primitives vs section
+headers, DRIFT/CITED/ORPHAN classes) is the portable part.
 
 CLAUDE.md §10 coverage-discipline tool. Reproducible: running twice gives
 the same output. Reads:
@@ -47,7 +51,7 @@ if hasattr(sys.stdout, "buffer"):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", line_buffering=True)
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", line_buffering=True)
 
-ROOT = Path("C:/Users/hfyae/Claude/Projects/Deepseek")
+ROOT = Path(__file__).resolve().parent.parent
 ENGINE = ROOT / "knowledge" / "corpus" / "twt.py"
 PAPER = ROOT / "knowledge" / "corpus" / "TWT_foundational_paper.md"
 OUT = ROOT / "knowledge" / "corpus" / "TWT_V2_ENGINE_PAPER_MAP.md"

@@ -2,7 +2,8 @@
 
 **Trigger: you are about to run `bank.sh`, commit, add a check, or graduate a result.**
 Complete for the activity: read this and you need nothing else to bank correctly.
-*(Written 2026-08-20 as the worked pattern for the manual scheme — `manuals/INDEX.md`.)*
+*(Generic edition, 2026-08-27; the worked pattern for the manual scheme — `manuals/INDEX.md`.
+Incident citations reference the founding programme, github.com/yaerhf/TWT.)*
 
 ---
 
@@ -20,7 +21,7 @@ actually landed.**
    still finishing** — it refuses. That guard is correct; do not work around it. Wait, then re-run.
 2. **Put the message in a FILE and pass `"$(cat file)"`.** An oversized inline argument fails
    silently — the command returns nothing, the commit does not land, and the tree stays dirty.
-   *(Measured on 2026-08-20.)*
+   *(Measured in the founding programme.)*
 3. **No backticks in a commit message.** The shell performs command substitution and silently eats
    the content. Use `git commit -F` if you must.
 4. **Run it.** Five steps: honesty telemetry (reports, never gates) → both suites → the
@@ -66,19 +67,18 @@ So: **add a DISCRIMINATING check, or record why none exists.** *"No discriminati
 possible here because…"* is a complete and acceptable answer, and a better one than a green
 tautology. Before writing any check, ask the standing question: **what could have DISAGREED?**
 
-**The live example, found in our own suite:** an assertion that `Q['u'] ≈ 2/3` where `Q['u']` is
+**The live example, found in the founding suite:** an assertion that `Q ≈ 2/3` where `Q` is
 computed as `(2·1 − 0)/3`. It verifies that Python performs division. It cannot detect any change
-in physics content.
+in research content.
 
 ---
 
 ## 3a · THE TIER-RAISE PASS — how an UNDER-CLAIM finding actually moves a tier
 
-*(Added 2026-08-21, R3 of `knowledge/audit/consolidation_2026-08-18/RULES_RESTRICTION_ANALYSIS_2026-08-21.md`;
-human coordinator "adopt all". It is the demotion pass's own machinery run in reverse — and it is the
-ONLY destination an `UNDER-CLAIM` verdict has.)*
+*(It is the demotion pass's own machinery run in reverse — and it is the ONLY destination an
+`UNDER-CLAIM` verdict has.)*
 
-**Why it exists.** Three checker vocabularies gained an `UNDER-CLAIM` verdict on 2026-08-21 and it had
+**Why it exists.** Three checker vocabularies gained an `UNDER-CLAIM` verdict and it had
 nowhere to go: a finding that a claim earned MORE than it took could be recorded and then had to sit.
 Core rule **C-31** makes the under-label a labeling error of the same class as the over-label; this is
 the pass that repairs one.
@@ -97,11 +97,11 @@ the pass that repairs one.
 3. **Edit the Result-Index row AND the dependency edges in the SAME pass** (banking rule 158). A tier
    that moves in one place and not the other manufactures exactly the drift pair §4 below exists to
    prevent — and the companion, not the body, is authoritative for the tag.
-4. **Log a `knowledge/ledgers/TWT_REVERSAL_LEDGER.md` row.** A raise is a position the programme
+4. **Log a `knowledge/ledgers/REVERSAL_LEDGER.md` row.** A raise is a position the programme
    changed, and it is recorded like one: what it was, what it is, and what moved it.
 
 **The honest cost, stated with the rule.** This pass makes a **label change cheaper**, and every one of
-the five FOUND-LATER misses was a label-or-prose defect wrapped around correct mathematics — the
+the founding FOUND-LATER misses was a label-or-prose defect wrapped around correct mathematics — the
 credulity-miss class, squarely. Step 2 is the mitigation and it is not cosmetic: it gates every raise on
 the single instrument whose absence produced those misses. **If you are tempted to skip step 2 because
 the raise is obviously right, that temptation is the measured failure mode, not an exception to it.**
@@ -112,8 +112,8 @@ the raise is obviously right, that temptation is the measured failure mode, not 
 
 In reader order, and **it is longer than you think**: paper body → front matter → companion
 Sections 1/2/3/4 *including the Engine↔Paper Map's reverse index* → engine docstrings **and
-returned dict strings** → both harnesses' check-description strings → **all fourteen standing
-ledgers** (the roster is FORMATION_CORE §5 and it is gate-pinned; **`TWT_NEGATIVES_INDEX.md` is
+returned dict strings** → both harnesses' check-description strings → **all the standing
+ledgers** (the roster is FORMATION_CORE §5 and it is gate-pinned; **`NEGATIVES_INDEX.md` is
 GENERATED — regenerate it, never hand-edit it**) → canon → worklist → handoff → `simulator/`.
 
 **A value and its check move together or not at all** — a harness asserts on returned strings, so

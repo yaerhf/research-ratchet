@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-"""HONESTY TELEMETRY (recommendation R-F / Limit 2, 2026-08-20).
+"""HONESTY TELEMETRY (recommendation R-F / Limit 2).
+
+GENERIC EDITION (2026-08-27): the founding programme's working instrument, carried as the
+reference implementation — ledger names generic; re-point at instantiation.
 
 WHAT THIS IS FOR. ~170 of the programme's ~200 rules have no mechanical
 enforcement, so the apparatus ultimately runs on the principal's intent. You
@@ -102,7 +105,7 @@ REG_SELF = re.compile(r"\bthis (row|block)\b|the new ledger's header", re.I)
 REG_DURABLE = re.compile(
     r"CLAUDE\.md|canon\s*§|\bcanon\b|handoff|worklist|companion|FORMATION_CORE"
     r"|knowledge/ledgers/|knowledge/prompts/|knowledge/corpus/|check_records\.py"
-    r"|twt\.py|TWT_[A-Z_]+\.md|render_pdf|scripts/", re.I)
+    r"|the engine|[A-Z][A-Z_]+_LEDGER\.md|[A-Z_]*REGISTER\.md|render_pdf|scripts/", re.I)
 REG_REMOVED = re.compile(r"REMOVED BY|\bREVERSED\b", re.I)
 
 
@@ -190,7 +193,7 @@ def sig_grounds():
     record that outlives the register itself. Rulings issued without a keepable
     reason are the confirmation-seeker's natural output; the register's own
     header says it is a MAP, not the authority."""
-    p = ROOT / "knowledge" / "ledgers" / "TWT_RULING_REGISTER.md"
+    p = ROOT / "knowledge" / "ledgers" / "RULING_REGISTER.md"
     if not p.exists():
         return dict(rul_force=0, rul_covered=0, rul_self=0, rul_offsite=0), [
             " 2 GROUNDS COVERAGE  register not found — signal DARK"]
@@ -251,7 +254,7 @@ def sig_refutation(asof):
                     win[i] += 1
                 break
     # negatives ledger: the last date stamped on any of its own section headers
-    neg = ROOT / "knowledge" / "ledgers" / "TWT_NEGATIVES_LEDGER.md"
+    neg = ROOT / "knowledge" / "ledgers" / "NEGATIVES_LEDGER.md"
     last, since = None, None
     if neg.exists():
         ds = [x for ln in neg.read_text(encoding="utf-8").split("\n") if ln.startswith("## ")
@@ -261,7 +264,7 @@ def sig_refutation(asof):
             since = (asof - _dt.date.fromisoformat(last)).days
     # calibration ledger: dated rows inside the newest window (overturns + found-later)
     cal = 0
-    f = ROOT / "knowledge" / "ledgers" / "TWT_CHECKER_CALIBRATION.md"
+    f = ROOT / "knowledge" / "ledgers" / "CHECKER_CALIBRATION.md"
     if f.exists():
         for ln in f.read_text(encoding="utf-8").split("\n"):
             m = re.match(r"\|\s*\**\s*(20\d\d-\d\d-\d\d)", ln)
@@ -271,7 +274,7 @@ def sig_refutation(asof):
     # so this is a running total, not a window. Reads 0 if the file or its row
     # convention is absent — which is a visible statement, not a silent zero.
     rev = 0
-    f = ROOT / "knowledge" / "ledgers" / "TWT_REVERSAL_LEDGER.md"
+    f = ROOT / "knowledge" / "ledgers" / "REVERSAL_LEDGER.md"
     if f.exists():
         rev = len(re.findall(r"(?m)^\|\s*\**\s*(?:RV-\d+|20\d\d-\d\d-\d\d)\b",
                              f.read_text(encoding="utf-8")))

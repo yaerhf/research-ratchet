@@ -1,4 +1,7 @@
-# THE EXTERNAL-REVIEW LOOP — cold-gatekeeper routine (v1.1, 2026-08-19)
+# THE EXTERNAL-REVIEW LOOP — cold-gatekeeper routine (generic edition, 2026-08-27; from v1.1)
+
+> *(Incident citations and class-staffing data are the founding programme's — github.com/yaerhf/TWT.
+> `[OBJECT-SLOT]` blocks are supplied at instantiation.)*
 
 > **v1.1 carries the eleven standing rules adopted by the human coordinator 2026-08-19
 > (RUL-062).** R4/R5/R6/R7/R8 land inside the numbered steps below; R9 + R10 are the
@@ -44,8 +47,8 @@ is not a sufficient reason to defer a round.
 
    *Why within-class and not mixed (amended 2026-08-13, coordinator).* The loop measures
    whether a REAL GATEKEEPER reads the paper correctly, and the realistic gatekeeper is a
-   frontier class — Fable, or less often Opus; nobody hands a foundational-physics paper
-   to Haiku. Sampling classes that will not be used measures a situation that does not
+   frontier class; nobody hands a foundational paper
+   to the smallest class. Sampling classes that will not be used measures a situation that does not
    occur. And within-class N buys the thing the A/B items actually need: **the variance
    estimate.** With N = 1 a changed classification cannot be distinguished from sampling
    noise, so no A/B result means anything. Three runs of the deployment class give you
@@ -104,7 +107,7 @@ is not a sufficient reason to defer a round.
    meta-observer caught it as REFERENT-DRIFT before it shipped.
 4. **ADJUDICATE** findings via §8a — an external review IS a checker verdict: engine
    arbitrates; known-refuted re-raises get a ledger pointer, not a re-derivation; verdicts
-   + overturns logged in `TWT_CHECKER_CALIBRATION.md` under class EXTERNAL(model).
+   + overturns logged in `CHECKER_CALIBRATION.md` under class EXTERNAL(model).
 
    **R5 — A FINDING'S VALUE IS NOT ITS SURVIVAL RATE (adopted 2026-08-19).** A low
    confirmation rate is not a failed round and must not be recorded as one. Measured in
@@ -155,7 +158,7 @@ is not a sufficient reason to defer a round.
 6. **RE-RELEASE** and iterate, or stop at cap / when the three comprehension metrics hold.
 7. **CLOSE OUT — the edit→reaction rows (added 2026-08-15, RUL-041).** Dispatch the
    **removal auditor (N1)** to append the round's rows to
-   `knowledge/ledgers/TWT_EDIT_REACTION_LEDGER.md`, same-pass: which specific edits the
+   `knowledge/ledgers/EDIT_REACTION_LEDGER.md`, same-pass: which specific edits the
    round measured (with commit/diff pointers), the pre-emption form used (R9), the
    sending surface (F2), any pre-registered prediction and its outcome, the STATED
    reaction per reviewer class (quote pointers into the round's archived transcripts),
@@ -180,7 +183,7 @@ the loop cannot tell which. Measuring both before any tuning removes the confoun
 held-out class is then compared against **its own** round-1 baseline, never against the
 in-loop class's reads.
 
-**ROUND 1 THEREFORE HOLDS OUT NOTHING.** Sample **Fable and Opus both**, cold, on the same
+**ROUND 1 THEREFORE HOLDS OUT NOTHING.** Sample **both frontier classes**, cold, on the same
 release. The held-out designation is an OUTPUT of round 1, not an input to it — which also
 converts it from a menu-pick into a decision with a named empirical ground.
 
@@ -206,10 +209,13 @@ discrimination that matters — "more legible" versus "harder to criticize" — 
 physicist reading the front matter cold makes naturally and no model metric makes
 reliably. The held-out model read is the cheap proxy, not the real gate.
 
-## Standing A/B items (first iterations)
+## Standing A/B items — the founding programme's, kept as the worked examples
+
+> `[OBJECT-SLOT]`: a live instantiation maintains its own A/B list in this section's form —
+> each item names its variant, its metric, and its release gate.
 
 - **Subtitle variants** (measure classification rate per variant): lead candidate
-  "Time-Wave Theory: Standard-Model structure from a single wave medium"; no-subtitle
+  "<the programme's name>: <its central structural claim in one clause>"; no-subtitle
   control; coordinator alternates. Title changes ride a release gate with keeper sweep of
   identity sites (TOC, mirror README, cover note).
 - **The who-dies-from-what panel** (front matter). **SHIPPED in round 1, but not as
@@ -247,7 +253,7 @@ reliably. The held-out model read is the cheap proxy, not the real gate.
 **A cold reviewer will not take a step the training pushes against, but it works in
 good faith once a sound argument is put in front of it.** Round 1 measured this
 directly: neither class ran the symmetric ontological audit unprompted — both
-itemized TWT line-by-line against a one-phrase compression of Copenhagen and Bohm
+itemized the programme line-by-line against a one-phrase compression of its rivals
 — and *both retracted under a single challenge*, in near-identical language.
 
 **Consequence for reading every round: the loop measures what the paper makes
@@ -257,8 +263,8 @@ default runs the other way. A finding of the form "the reviewer failed to notice
 X" is therefore almost always a finding about the paper, not the reviewer.
 
 **Consequence for repair: supply the NAME, not just the data.** Both classes
-retracted at the moment they had a name for what they had done — Fable called it
-*"incumbent amortization"*, Opus *"rigged accounting"*. The naming was the
+retracted at the moment they had a name for what they had done — one class called it
+*"incumbent amortization"*, the other *"rigged accounting"*. The naming was the
 turning point, not the itemization. A written intervention should therefore state
 the failure mode explicitly and then run the audit, doing in prose what the
 challenge did in dialogue.

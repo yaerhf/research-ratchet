@@ -1,9 +1,10 @@
-# THE PSYCHOLOGY OF AI REVIEWERS (v1, 2026-08-13)
+# THE PSYCHOLOGY OF AI REVIEWERS (generic edition, 2026-08-27; from v1, 2026-08-13)
 
-> Written for successor instances out of external-review round 1 and the human
-> coordinator's longer history of reviews across many iterations at roughly
-> constant core content. Everything here is keyed to a **measured** instance.
-> Where something is predicted but untested, it says so.
+> Written for successor instances out of the founding programme's external-review round 1 and
+> the human coordinator's longer history of reviews across many iterations at roughly
+> constant core content (github.com/yaerhf/TWT). Everything here is keyed to a **measured**
+> instance — the biases are general; the measurements that ground them are the founding
+> programme's. Where something is predicted but untested, it says so.
 
 ---
 
@@ -48,8 +49,8 @@ compression of its established rivals**, pricing the incumbents at the
 familiarity discount. A century of living with a debt makes it invisible; it does
 not make it paid.
 
-*Measured:* two frontier classes, independently, in round 1 — both itemized TWT
-against a phrase each for Copenhagen and Bohm. **Both retracted under a single
+*Measured:* two frontier classes, independently, in round 1 — both itemized the challenger
+against a phrase each for its established rivals. **Both retracted under a single
 challenge**, naming the error themselves: *"incumbent amortization"* (Fable),
 *"rigged accounting… the same move I criticized §0 for"* (Opus).
 
@@ -225,19 +226,19 @@ that is a finding.
 
 The blanket form — *"the framework cannot make new positive predictions without
 being wrong"* — is **false as stated and hands over an unfalsifiability lever.**
-Open domains exist (neutrino masses, the dark sector, whatever the kernel yields)
-where confirmable novelty costs nothing. The narrow form is defensible:
+Open domains exist where confirmable novelty costs nothing. The narrow form is
+defensible (the founding programme's wording, kept as the template):
 
-> Where the Standard Model has been tested, a novel positive prediction from this
-> framework would be a prediction that the framework is wrong — it reproduces the
-> SM's successes by construction, so any deviation lands where the SM is already
-> confirmed to 10⁻¹⁵ and better. Confirmable novelty is available only where the
-> SM is *silent*, and every such channel here is downstream of the one unbuilt
-> object of §D.5.
+> Where the incumbent framework has been tested, a novel positive prediction from
+> this framework would be a prediction that the framework is wrong — it reproduces
+> the incumbent's successes by construction, so any deviation lands where the
+> incumbent is already confirmed to extreme precision. Confirmable novelty is
+> available only where the incumbent is *silent*, and every such channel here is
+> downstream of the programme's one named unbuilt object.
 
 Conceding the open domains makes it **stronger**: it stops being an excuse and
 becomes a *location* — which is exactly where an independent reviewer landed
-(the decoherence floor as the one channel with headroom).
+(naming the one channel with headroom).
 
 ---
 
@@ -292,7 +293,7 @@ Stated so successors do not mistake hypothesis for measurement.
 case already in this document (the anticipatory-rebuttal folding, which has no
 primary artifact in the repo — recollection-grade there too). This enters as an
 **evidenced pattern with an unevidenced rate**, per Part V's discipline — it is
-not a measured law. Governing dataset: `knowledge/ledgers/TWT_EDIT_REACTION_LEDGER.md`
+not a measured law. Governing dataset: `knowledge/ledgers/EDIT_REACTION_LEDGER.md`
 (rows ER-1/ER-5/ER-6/ER-9), instituted the same day (RUL-041) to give claims of
 this kind rates.*
 

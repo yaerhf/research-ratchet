@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# Bank a finding: verify the oracle, rebuild the RAG index, commit the timeline.
-# Run from anywhere inside the repo, ON YOUR MACHINE (needs git + the 4090 for embeddings).
+# Bank a finding: verify the oracle, rebuild the retrieval index, commit the timeline.
+# Run from anywhere inside the repo, ON YOUR MACHINE (needs git + a GPU for embeddings).
+# GENERIC EDITION (2026-08-27): the founding programme's working gate, carried as the
+# reference implementation — re-point the tree paths at instantiation.
 #   scripts/bank.sh "N10: tried X -> failed because Y -> would change if Z"
 set -euo pipefail
 MSG="${1:-bank: update knowledge base}"
@@ -27,12 +29,15 @@ python scripts/honesty_telemetry.py || true
 # MIS-ATTRIBUTED content. Snapshot now, re-check before committing, refuse on drift.
 TREE_SNAPSHOT="$(git status --porcelain | git hash-object --stdin)"
 
-echo "[1/4] substrate self-checks (twt_test.py + twt_companion_test.py)..."
-out="$(cd knowledge/corpus && python twt_test.py 2>&1)"; echo "$out" | tail -14
+# [OBJECT-SLOT] the two harnesses — the founding programme's were twt_test.py / twt_companion_test.py.
+MAIN_SUITE="${MAIN_SUITE:-twt_test.py}"
+COMPANION_SUITE="${COMPANION_SUITE:-twt_companion_test.py}"
+echo "[1/4] substrate self-checks ($MAIN_SUITE + $COMPANION_SUITE)..."
+out="$(cd knowledge/corpus && python "$MAIN_SUITE" 2>&1)"; echo "$out" | tail -14
 if ! echo "$out" | grep -qE "ALL [0-9]+ CHECKS PASSED across"; then
   echo ">>> Self-checks FAILED (main engine) — not banking. Fix the oracle first."; exit 1
 fi
-outc="$(cd knowledge/corpus && python twt_companion_test.py 2>&1)"; echo "$outc" | tail -14
+outc="$(cd knowledge/corpus && python "$COMPANION_SUITE" 2>&1)"; echo "$outc" | tail -14
 if ! echo "$outc" | grep -qE "ALL [0-9]+ COMPANION CHECKS PASSED across"; then
   echo ">>> Self-checks FAILED (companion engine) — not banking. Fix the oracle first."; exit 1
 fi

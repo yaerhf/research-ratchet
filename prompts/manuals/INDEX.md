@@ -1,6 +1,6 @@
 # ACTIVITY MANUALS — the lazy-loaded documentation tree
 
-**v1, 2026-08-20**, on the human coordinator's directive: *"Can we issue manuals for activities,
+**Generic edition, 2026-08-27** (from v1, 2026-08-20), on the human coordinator's directive: *"Can we issue manuals for activities,
 containing the how-to and the rules that go along with them? It might also reduce initial token
 count. The agent reads a manual only if needed. We could extend this principle as a documentation
 tree of which the agent only knows the items initially."*
@@ -14,7 +14,7 @@ and what it covers — one line each. **It opens one only when it is about to do
 
 This replaces the earlier "activity blocks" design, and it is better for the reason the coordinator
 gave: **the block scheme still shipped the rules to everyone who might do the activity; the manual
-ships only the name.** Measured motivation: a probe-scale dispatch was paying roughly **20,000
+ships only the name.** Measured motivation (founding programme): a probe-scale dispatch was paying roughly **20,000
 tokens of fixed overhead to do ~600 tokens of work**, and the activity rules were part of that
 freight.
 
@@ -40,7 +40,7 @@ moment they become binding**, which is also the moment it will actually retain t
 | manual | **read this if you are about to…** | status |
 |---|---|---|
 | `banking.md` | **bank anything** — run `bank.sh`, commit, or add a check | **WRITTEN** |
-| `paper_editing.md` | touch `TWT_foundational_paper.md` or its companion | owed |
+| `paper_editing.md` | touch the foundational paper or its companion | owed |
 | `checking.md` | serve as reviewer, meta-observer, keeper, or contra-reviewer | owed |
 | `dispatching.md` | compose a brief and launch a worker | owed |
 | `probing.md` | build a probe, a simulation, or a numerical experiment | owed |
@@ -59,22 +59,23 @@ and reading the CONTENT on demand**, wherever the content is large and condition
 
 - **already works this way:** the governing records in `knowledge/audit/` (named in the map, opened
   when relevant), the engine primitives (queried, not bulk-loaded — *see the retrieval note below*)
-- **should work this way and does not yet:** the eleven-plus ledgers, the paper's parts, the
+- **should work this way and does not yet:** the standing ledgers, the paper's parts, the
   companion's sections, the import registry
 
-**The retrieval half is the enabling condition and it is currently broken.** A query against the
-index costs roughly **8× less** than reading the engine, both engines are already indexed per
-primitive, and **the documented invocation fails on this machine** — which is why nobody queries.
-Fix that and the doc-tree principle becomes cheap everywhere at once; leave it broken and every
-"read on demand" instruction degrades into a bulk read.
+**The retrieval half is the enabling condition — keep it working.** A query against the index
+costs a fraction of reading the engine when the engines are indexed per primitive. The founding
+measurement: **the documented invocation silently failed on the working box** — which is why
+retrieval was available and unused. Verify the documented commands actually run; fix that and
+the doc-tree principle becomes cheap everywhere at once; leave it broken and every "read on
+demand" instruction degrades into a bulk read.
 
 ---
 
 ## THE HAZARD, NAMED
 
-**A tree of manuals is a tree of places for a rule to go stale**, and this programme has measured
-that exact failure — a binding sweep rule that said *"all five ledgers"* when there were eleven,
-under-specifying its own surface by six files.
+**A tree of manuals is a tree of places for a rule to go stale**, and the founding programme
+measured that exact failure — a binding sweep rule that said *"all five ledgers"* when there
+were fourteen, under-specifying its own surface by nine files.
 
 **So: a manual duplicating a rule creates a drift pair, and drift pairs are how this corpus breaks.**
 Two mitigations, both required:

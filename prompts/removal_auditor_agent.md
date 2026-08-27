@@ -1,4 +1,6 @@
-# THE APPARATUS AUDITOR — Chesterton's fence + the spirit of the rules (v2, 2026-08-21; RUL-072 merge)
+# THE APPARATUS AUDITOR — Chesterton's fence + the spirit of the rules (generic edition, 2026-08-27; from v2, RUL-072 merge)
+
+> *(Incident citations reference the founding programme, github.com/yaerhf/TWT.)*
 
 > **ONE role, TWO halves, ONE dispatch per consolidation (RUL-072, human coordinator: "yes" to the
 > merge).** Part A below is the ex-removal-auditor (N1): *what is here to prevent something, and
@@ -77,7 +79,7 @@ report, not a recommendation — see non-powers.
 1. Inventory the defensive structures, extending the named list wherever you find more; say what
    you added and on what criterion.
 2. Grade provenance (Q1) and record cost (Q2).
-3. Append rows to `knowledge/ledgers/TWT_EDIT_REACTION_LEDGER.md` at a review round's close.
+3. Append rows to `knowledge/ledgers/EDIT_REACTION_LEDGER.md` at a review round's close.
 4. Report structures whose cost exceeds their catch, **and structures whose removal would be least
    noticed — which is the dangerous class, not the safe one.**
 
@@ -366,7 +368,7 @@ accepted becomes a policeman by the back door, and the bloat returns.** Three st
 - **It has no authority.** Every finding is a proposal to the coordinator, who rebuts point by
   point with the record cited, exactly as with a §8a verdict.
 - **It is calibrated like any other checker.** A finding overturned by arbitration gets a
-  same-pass row in `knowledge/ledgers/TWT_CHECKER_CALIBRATION.md` (per role + model class). A run
+  same-pass row in `knowledge/ledgers/CHECKER_CALIBRATION.md` (per role + model class). A run
   whose findings are **all** letter-violations of defeasible rules is itself a defective run and
   gets a row saying so.
 - **It must be able to come back empty.** SPIRIT SERVED with zero findings is a good outcome and a

@@ -1,8 +1,9 @@
-# PSYCHOLOGICAL PROFILES — the second axis (v1, 2026-08-20)
+# PSYCHOLOGICAL PROFILES — the second axis (generic edition, 2026-08-27)
 
-**Instituted on the human coordinator's directive**, after the zeta campaign's record showed that
-the barrier to its result was *disposition* rather than capability, and after this programme
-measured the same pessimism in its own worker class.
+**Instituted on the human coordinator's directive**, after an external campaign's record showed
+that the barrier to its result was *disposition* rather than capability, and after the founding
+programme ([github.com/yaerhf/TWT](https://github.com/yaerhf/TWT) — whose incidents and ruling
+IDs are cited throughout) measured the same pessimism in its own worker class.
 
 > **⚠ STATUS, corrected 2026-08-20 within hours of writing this file.** An adversarial review
 > of this very design found that **it reverses RUL-044**, which rejected the two-advocate structure
@@ -20,7 +21,7 @@ measured the same pessimism in its own worker class.
 > attempt the strongest engine-checkable defence of the original claim, and accept only after that
 > defence fails or the checker's computation survives it. A worker that concedes without testing
 > is as much a consensus failure as one that stonewalls. Workers must at least QUESTION the
-> adversarial review. (Measured ground, same day the ruling was made: the J,D/Γ worker's
+> adversarial review. (Measured ground, same day the ruling was made: a worker's
 > engine-checked pushback on a keeper-drafted cure was UPHELD by arbitration — the steelman
 > function produced for free inside the consensus loop, no standing role needed; and the same
 > worker's verified acceptance of a referee's vacuity catch shows the duty is questioning, not
@@ -102,7 +103,7 @@ it to hold.**
 
 ### 3.3 RISK-APPETITE HOLDER *(new)*
 Prices **asymmetric payoffs** and is licensed to say **spend more here**. The role the human played
-in the zeta campaign, which no agent currently occupies.
+in the source campaign, which no agent currently occupies.
 
 Its question is not *will this work* but **what is the cost of not looking, given the payoff if it
 does.** It must state a *number or a comparison* — dispatches, tokens, sessions — never a
@@ -158,7 +159,7 @@ skipped the step where the claim gets rebuilt into the version worth checking.
 
 ## 5 · ★ THE DESPAIR CHECKPOINT
 
-**The intervention that mattered in the zeta campaign arrived at hour twenty-one, at the moment of
+**The intervention that mattered in the source campaign arrived at hour twenty-one, at the moment of
 maximum discouragement** — thirteen fronts back, all negative, and a correct summary about to be
 written. A formation prefix cannot deliver that: it speaks at hour zero, when the agent is not yet
 discouraged and has not earned the right to be.
@@ -169,7 +170,7 @@ first answer, in writing:
 
 1. **What would have to be true for this to work?** (a steelman pass on the thing about to be
    buried)
-2. **Is the obstruction usable?** Re-read the blocker as a *resource*, not a wall. This is the zeta
+2. **Is the obstruction usable?** Re-read the blocker as a *resource*, not a wall. This is the source
    campaign's decisive move, applied at closure instead of twelve hours later.
 3. **What did we learn that makes a NEIGHBOURING route sharper?** *Honing in on where the wall is
    is not finding a door* — but a well-mapped wall is exactly what makes the next obstruction sharp
@@ -220,7 +221,7 @@ blind test** on a claim with a known answer, checking whether the profiles actua
 **(ii) The despair checkpoint taxes the act it depends on.** Making exhaustion trigger extra
 mandatory work gives a worker a reason **not to declare exhaustion crisply** — and crisp
 exhaustion, written as a `would change if`, is exactly what the negatives-as-idea-source move
-needs. It also **mis-implements its own source**: the zeta re-read was **cold, twelve hours later**,
+needs. It also **mis-implements its own source**: the source campaign's re-read was **cold, twelve hours later**,
 and the cold version is *already in force* as step 0 of the consolidation ritual. **So §5 is
 withdrawn as a hot-path checkpoint** and replaced by a quality bar on the closing summary: a
 `would change if` that names a condition someone could actually test.

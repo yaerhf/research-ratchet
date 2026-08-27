@@ -6,7 +6,7 @@ cd "$(cd "$(dirname "$0")/.." && pwd)"
 [ -d .git ] && { echo ".git already exists — aborting (rm -rf .git to start over)"; exit 1; }
 git init -q
 git add -A
-git commit -q -m "TWT scaffold: canon, corpus, RAG, Gemini advisor, scripts"
+git commit -q -m "programme scaffold: canon, corpus, retrieval, ideation advisor, scripts"
 git branch -M main
 echo "Initialized on 'main'. Tag milestones with:  git tag -a v1 -m '...'"
-echo "Parallel work:  git worktree add ../Deepseek-explore -b explore/<topic>"
+echo "Parallel work:  git worktree add ../<project>-explore -b explore/<topic>"

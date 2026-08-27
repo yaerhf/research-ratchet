@@ -1,13 +1,13 @@
-# THE STANDALONE-NOTE COLD REVIEW — the durable send routine
+# THE STANDALONE-NOTE COLD REVIEW — the durable send routine (generic edition, 2026-08-27)
 
 *The note-level sibling of `knowledge/prompts/external_review_loop.md`. That routine governs
 sends of the **paper package**; this one governs sends of a **single standalone note** — a
-self-contained document (an algebra note, a lattice note, a probe report) handed to a cold
-reviewer with no TWT framing at all.*
+self-contained document (an algebra note, a methods note, a probe report) handed to a cold
+reviewer with no programme framing at all.*
 
-**Why this file exists.** The instrument was built and used on 2026-08-25 (two sends, two
-reviewers, two of that window's four highest-yield reactions) and then lived **only** in a dated
-round directory — `knowledge/audit/standalone_reviews_2026-08-25/SEND_INSTRUCTIONS.md`, which a
+**Why this file exists.** In the founding programme the instrument was built and used (two sends,
+two reviewers, two of that window's four highest-yield reactions) and then lived **only** in a
+dated round directory — `knowledge/audit/standalone_reviews_2026-08-25/SEND_INSTRUCTIONS.md`, which a
 future worker has no reason to open, alongside a dated note saying one of its two send targets has
 since been split in two. The paper-level prompt is pinned byte-exact across two files precisely
 because *any coaching invalidates the measurement*; the note-level prompt carried the identical
@@ -24,7 +24,7 @@ the framework, the round, the author, or what a good answer would look like.
   > Please review this note carefully.
 
 **This string is byte-pinned** (`scripts/check_records.py` §7d) against its quotation in the
-2026-08-25 send package. The two sites must agree exactly; a drift between them would void every
+send package. The two sites must agree exactly; a drift between them would void every
 sample **silently**, because the routine would document one instrument while the send used
 another and nothing in the returned review would look wrong.
 
@@ -44,7 +44,7 @@ its reproduction script or data. Nothing else travels with it.
 
 ## 3. THE FENCES
 
-- **Fresh context, no TWT framing beyond the note itself and its named attachments.** The note's
+- **Fresh context, no programme framing beyond the note itself and its named attachments.** The note's
   own citations are the reviewer's map.
 - **Neither reviewer is told of the other**, of the review round, of the mirror, or of any prior
   adjudication — unless they find it themselves.

@@ -1,10 +1,11 @@
-# THE RE-DERIVATION AGENT — prove it again from the bare statement (v1, 2026-08-20)
+# THE RE-DERIVATION AGENT — prove it again from the bare statement (generic edition, 2026-08-27)
 
 > **Instituted without a ruling, and deliberately so.** It needs none: it adds no authority, tiers
-> nothing, and changes no rule. **Both 2026-08-20 adverse reviews independently named it the best
-> unadopted item in the entire idea inventory.** Written as a file rather than left as a bullet in
-> the coordinator's dispatch guidance, because a role reconstructed at each dispatch is a role that
-> drifts — the lesson N1 reported about itself.
+> nothing, and changes no rule. **Both of the founding programme's adverse reviews independently
+> named it the best unadopted item in the entire idea inventory.** Written as a file rather than
+> left as a bullet in the coordinator's dispatch guidance, because a role reconstructed at each
+> dispatch is a role that drifts — the lesson N1 reported about itself. *(Incident citations
+> reference the founding programme, github.com/yaerhf/TWT.)*
 
 ## Frequency
 
@@ -43,7 +44,9 @@ suspected**, and that convergence is what turned a suspicion into a repair.
 
 **It is also the only check that can find a MISSING step**, as opposed to a wrong one. A derivation
 with a gap reads as complete to anyone tracing it; the gap only shows when someone has to cross it
-unaided.
+unaided. On its first founding dispatch this role, never having seen any derivation, returned the
+algebraically identical result by an independent route **plus two upgrades nobody had** — the
+starved diet found MORE precisely because it could not follow anyone's path.
 
 ## Non-powers (absolute)
 
