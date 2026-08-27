@@ -43,17 +43,14 @@ listed in this file and in `RULES_BY_ROLE.md` are **ILLUSTRATIONS of this clause
 examples of a rule's purpose being served by breaking its letter — not separate grants; the
 clause also binds rules written after it, which an enumerated list cannot.
 
-**★ THE APPARATUS AUDITOR — `removal_auditor_agent.md` (the spirit-of-the-rules question is its
-PART B: adopted RUL-066, merged RUL-072).** **It is available, and it draws its own sample —
-content-addressed, never by the audited party. You will not know in advance whether this pass is
-audited, and that uncertainty is the instrument: its value depends on being BELIEVED to be
-callable, not on being called often.** *(The cadence recorded in its own file is a floor, not a
-ceiling, and the auditor — not the audited — decides what it looks at.)* It asks whether the
-SPIRIT was served, not whether the letter was followed. **A
-recorded, reasoned break is compliance; the thing it hunts is a rule followed to the letter while
-its spirit was defeated** — a sweep that touched every site and fixed nothing, a tier tag that is
-technically defensible and misleads, a check that passes and verifies nothing. It does not
-adjudicate the research; §8a does that.
+**★ THE APPARATUS asks whether the SPIRIT of the rules was served, not whether the letter was
+followed:** a recorded, reasoned break is **compliance**, and what it hunts is a rule followed
+to the letter while the thing the rule exists to produce did not happen — a sweep that touched
+every site and fixed nothing, a tier tag technically defensible and misleading, a check that
+passes and verifies nothing. That is the class no gate reaches and no per-claim reviewer is
+looking for. It never adjudicates the research; §8a does that.
+
+*(The instrument is `removal_auditor_agent.md`, Part B — adopted RUL-066, merged RUL-072.)*
 
 ---
 

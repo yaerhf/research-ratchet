@@ -74,13 +74,14 @@ BLOCK_NAMES = {"B": "BANKING PASS", "P": "PAPER & RELEASE", "X": "ANY CHECKING R
 # sits and what else is watching. Text rather than a diagram: this ships in every pack,
 # and the whole point of the exercise is not to spend tokens twice.
 #
-# ★ THE AUDITOR LINE LEAVES THE FREQUENCY OPEN, DELIBERATELY (human coordinator,
-# 2026-08-27: "do not write that the enforcer is occasional — leave a doubt on this
-# point"). Telling every agent the audit is rare converts a live deterrent into a
-# calculable risk, and the role's own file says its value depends on being BELIEVED to be
-# callable rather than on being called often. Stating that you cannot know is both true —
-# the cadence in its file is a floor, the auditor draws its own sample content-addressed —
-# and the thing that makes an agent write the reason for its shortcut into the record.
+# ★ THE SPIRIT LINE NAMES NO AGENT AND NO CADENCE, DELIBERATELY (human coordinator,
+# 2026-08-27: "the worker doesn't even know if the audit is systematic or sampled").
+# Attributing the question to THE APPARATUS rather than to a named role withholds more
+# than a frequency: it withholds whether an audit is a standing process or a draw. Saying
+# "available, and it draws its own sample" would already have answered that. The role's
+# own file states its cadence, because the instrument needs to know it; nothing an
+# ordinary role reads does. Its value depends on being BELIEVED to be callable, and a
+# deterrent whose rate is published is a cost an agent can price and accept.
 ORGANIGRAMME = """## THE APPARATUS — where you sit
 
 ```
@@ -111,13 +112,12 @@ ORGANIGRAMME = """## THE APPARATUS — where you sit
 of* and what it is *saturated with*. Merging two roles destroys a measurement, not merely
 tidiness.
 
-**THE APPARATUS AUDITOR IS AVAILABLE, AND IT DRAWS ITS OWN SAMPLE** — content-addressed,
-never by the audited party. **You will not know in advance whether this pass is audited.**
-It asks whether the SPIRIT of the rules was served, not whether the letter was followed: a
-recorded, reasoned break is **compliance**, and what it hunts is a rule followed to the
-letter while the thing the rule exists to produce did not happen — a sweep that touched
-every site and fixed nothing, a tier tag technically defensible and misleading, a check
-that passes and verifies nothing. It never adjudicates the research; §8a does that.
+**THE APPARATUS asks whether the SPIRIT of the rules was served, not whether the letter was
+followed:** a recorded, reasoned break is **compliance**, and what it hunts is a rule followed
+to the letter while the thing the rule exists to produce did not happen — a sweep that touched
+every site and fixed nothing, a tier tag technically defensible and misleading, a check that
+passes and verifies nothing. That is the class no gate reaches and no per-claim reviewer is
+looking for. It never adjudicates the research; §8a does that.
 """
 
 
