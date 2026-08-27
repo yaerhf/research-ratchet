@@ -44,16 +44,17 @@ flowchart TB
         GATE ==>|"admits"| REC
     end
 
-    XR -->|"cold verdict"| HC
-    HC -->|"sends the release · never the AI coordinator (fence F1)"| XR
-    HC -->|"rulings · ratification · priorities"| AC
-    AC -->|"owed rulings, costed both ways"| HC
-    AC -->|"briefs: kill-test · forecast · diet · retrieval bound"| EXEC
-    EXEC -->|"verdicts, persisted as files"| AC
-    AC -->|"prices premises · audits the apparatus"| META
-    META -->|"debt · spirit-served · re-ranked paths"| AC
+    XR -->|"the cold verdict comes back here — and the release<br/>goes out from the human's own surface, never the<br/>AI coordinator's (fence F1)"| HC
+    HC -->|"rulings · ratification · priorities<br/><i>owed rulings return costed both ways</i>"| AC
+    AC -->|"briefs: kill-test · forecast · diet · retrieval bound<br/><i>verdicts return, persisted as files</i>"| EXEC
+    AC -->|"prices premises · audits the apparatus<br/><i>debt, spirit-served and re-ranked paths return</i>"| META
     AC ==>|"banks — nothing enters on an author's say-so"| BANK
     REC -->|"formation · diet-bounded retrieval"| EXEC
+
+    %% Layout only — invisible links that pin the vertical order. Mermaid ranks by
+    %% longest path, so without these the self-watching roles float to the top.
+    EXEC ~~~ META
+    META ~~~ BANK
 ```
 
 **Read it by DIET, not by hierarchy** — every instrument is defined by what it is *starved of*
