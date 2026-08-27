@@ -340,7 +340,7 @@ pass. CORE is not a synonym for unconditional.
 `NEGATIVES_LEDGER.md` · **`NEGATIVES_INDEX.md`** (**GENERATED — the bootstrap read over the
 negatives: one line per entry, every would-change-if VERBATIM; regenerate with
 `scripts/gen_negatives_index.py`; pull FULL entries from the ledger on demand**) ·
-**`WINS_LEDGER.md`** (**wins recorded AS wins — the founding programme found twelve ledgers
+**`WINS_LEDGER.md`** (**wins recorded AS wins, IN EVERY SHAPE THEY COME — an exact result, yes, but equally a structural reduction (n inputs became m), a gap moved from vague to LOCATED, a premise retired, a debt shown payable. A ledger that only ever records exact answers teaches its agents which shape of success counts, and most research does not produce that shape — the founding programme found twelve ledgers
 recording failure and none recording a result; a row here NEVER upgrades a tier, tiers live in
 the companion**) · `STRATEGIC_MAP.md` · `worklist.md` (docket + the **meaning-notes region**,
 never to be compressed) · `RULING_REGISTER.md` (rulings in force + revert lists) ·

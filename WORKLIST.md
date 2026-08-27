@@ -403,6 +403,42 @@ different route · did the paths ledger's death trigger fire when a route died �
 catch something real. A clean, well-recorded failure at a middle rung is still a result **about
 the apparatus**.
 
+**★ THE CONSTRUCT-VALIDITY LIMIT, and it is the sharpest objection to this whole item**
+(human coordinator, 2026-08-27): *"maybe not about the fact that we should attempt a problem
+with a closed result. The shape of TWT is a reality of research. Sometimes an increase in
+parsimony and clarity is a valuable outcome. Maybe as much as an exact result."*
+
+**This is a validity threat, not a preference — and it is the overfitting concern one level up.**
+The earlier entry worried about apparatus changes fitted to a target; this is about the
+BENCHMARK ITSELF fitting a *shape of success*. **Optimising an apparatus against closed-result
+problems biases it toward problems that have closed results**, and most research does not. An
+apparatus that only knows how to value an exact answer will quietly get worse at the work that
+increases parsimony, locates a gap precisely, or replaces nineteen inputs with five — and it
+would score that decline as progress.
+
+**What survives the objection, and what has to be added.**
+
+- **The closed-result arm stays, for one reason only: it is the only thing that can RANK.** A
+  judgment-laden outcome cannot rank versions without the judgment becoming the measurement.
+  Keep it — and keep it labelled as measuring **one shape** of success.
+- **A SECOND AXIS is required, and the apparatus already owns the instruments for it.**
+  Structural gain is measurable without a known answer: the **premise-cost readings**
+  (FREE / CHEAP / COSTLY / CONVOLUTED — a programme accumulating FREE/CHEAP is converging, one
+  accumulating COSTLY/CONVOLUTED is fitting), the **counted INPUT economy**, the comparative
+  ledger's **debt structure** (named · payable · being worked), **gaps LOCATED versus left
+  vague**, and tier honesty under adverse review. None of these needs anyone to know the answer.
+- **The deployment is where axis 2 is measured** — a live programme with a real corpus, not a
+  benchmark. Its target being open is not a defect of the measurement; it is the condition most
+  research runs under.
+- **And record parsimony as a WIN, or the apparatus teaches its agents which shape to value.**
+  The wins ledger exists because twelve ledgers recorded failure and none recorded a result. A
+  structural reduction is a win of a different shape, and if only exact results are ever entered
+  there, the ledger becomes a lesson in what does not count.
+
+**Neither axis alone is the picture.** Rank on the first; validate on the second; and treat a
+version that climbs the benchmark while flattening the debt structure as the divergence tripwire
+firing — comprehension up, findings down, one level up.
+
 **PREREQUISITE — discharged 2026-08-27.** The predictable first failure is instances declaring
 the target impossible on the prior that the literature would already have done it. **C-35** now
 forbids that inference, and `manuals/paths.md` §2-bis carries the grading procedure with

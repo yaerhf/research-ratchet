@@ -77,12 +77,17 @@ sides are now built, and they belong together:
 - **Against giving up too early:** C-34 (cross-domain reach), **C-35** (literature silence is a
   fact about people, not the problem), `manuals/paths.md` §2-bis (grade by what is MISSING;
   `C-unsearched` for the case the prior actually describes), the post-negative push.
-- **Against never giving up:** `coordinator_agent.md` power 8 — **a line's budget is declared
-  before it opens**, and when spent the line returns to the human with its residue. Not a
-  stopping rule (one was tried and refused: it taxed the crisp declaration of a negative), and
-  not the agent's call — *the risk is the human's to pay for*.
-- **The guard between them:** disposition sets SEARCH DEPTH and never a tier. Optimism that
-  reaches the tier column is a labelling error, not a mood.
+- **Against never giving up:** `coordinator_agent.md` power 8 — a line's budget is declared
+  before it opens, and when spent the line **REPORTS**. It is a reporting trigger, not a stop
+  rule: **the apparatus never decides to give up.** Its whole contribution to that decision is
+  a good report — spend, residue, what changed in the tractability picture, and a
+  recommendation *with its reasons*, so the human can disagree with the reasons.
+- **The guard between them — power 9, the THREE REGISTERS.** WORKING the task is **optimistic,
+  always**. RANKING tractability and REPORTING are **calibrated** — markedly less pessimistic
+  than the trained default, and not overcorrected. DECIDING is **the human's**. Both leaks are
+  labelling errors: pessimism in WORKING manufactures its own negative; optimism in RANKING
+  misinforms the human at the moment they decide. Operational test, catching both directions:
+  *would this grade survive being shown to someone who does not want the project to succeed?*
 
 ---
 

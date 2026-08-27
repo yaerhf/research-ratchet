@@ -203,31 +203,47 @@ like any other item. *(`manuals/paths.md`; the ledger proposes, it never schedul
    **Record the same-pass register row for every new ruling — human-delivered or
    class-(1)-enacted** (unregistered ruling = banking-stopper).
 
-8. **★ DECLARE A LINE'S BUDGET BEFORE OPENING IT — the apparatus's only STOP instrument
-   (2026-08-27, human coordinator: the real risk is "an apparatus that doesn't know when to give
-   up when the result is truly outside of its reach").**
-   Every rule in this apparatus pushes AWAY from stopping — C-10 forbids "impossible", C-35
-   forbids inferring it from the literature's silence, the post-negative push adds one more
-   attempt. **Nothing said stop**, and an apparatus corrected for pessimism without a stop
-   instrument burns budget on genuinely unreachable results indefinitely.
-   **The instrument is a pre-declared budget, not a judgment made while discouraged.** When a
-   line is opened, state what it gets — *N dispatches · a token ceiling · a wall-clock window* —
-   in the record, before the first brief. When the budget is spent the line **RETURNS TO THE
-   HUMAN COORDINATOR** with what it learned; it is not abandoned and not silently extended.
-   **Why this shape and not a stopping rule.** A naive version was tried and REFUSED: the
-   despair checkpoint made exhaustion trigger extra mandatory work, which taxes the crisp
-   declaration of a negative — exactly what the negatives ledger needs most (PROFILES §6-bis).
-   A budget taxes nothing: it is set when nobody is tired, it is falsifiable, and **hitting it
-   is not a verdict about the problem** — it is a fact about spending, which is the only
-   honest thing anyone can assert at that moment.
-   **And the decision stays the human's**, because it is theirs to pay for: the coordinator
-   reports the spend, the residue (the negatives ledger's would-change-ifs, the paths ledger's
-   live forks and their grades) and its own recommendation. **Extending a budget is a ruling,
-   and it is registered like one** — which makes a programme that never stops anything visible
-   in the register instead of invisible in the drift.
-   *(Guard on the other side: disposition sets SEARCH DEPTH and never a tier — C-35. An
-   optimism that reaches the tier column is the overshoot, and it is a labelling error, not a
-   mood.)*
+8. **★ DECLARE A LINE'S BUDGET BEFORE OPENING IT — a REPORTING trigger, not a stop rule
+   (2026-08-27, human coordinator).** *"I don't think the apparatus had to know when to stop.
+   That's for the human to say. The apparatus has to do its best to inform the human
+   correctly."*
+   When a line opens, state what it gets — *N dispatches · a token ceiling · a window* — in the
+   record, before the first brief. When that is spent, **the line REPORTS.** It does not stop
+   itself, does not quietly continue, and does not deliver a verdict on the problem.
+   **What the apparatus owes at that moment is a good report, and that is the whole of its
+   contribution to the decision:** what was spent · what was learned (the negatives'
+   would-change-ifs, the live forks with their grades) · what changed about the tractability
+   picture since the line opened · and the coordinator's recommendation *with its reasons*, so
+   the human can disagree with the reasons rather than with the conclusion.
+   **Why a budget and not a stopping rule.** A stopping rule was tried and REFUSED: the despair
+   checkpoint made exhaustion trigger extra mandatory work, which taxes the crisp declaration
+   of a negative — what the negatives ledger needs most (PROFILES §6-bis). A budget taxes
+   nothing. It is set when nobody is tired, it is falsifiable, and **reaching it says nothing
+   about the problem** — only about spending, which is the only thing anyone can honestly
+   assert at that moment.
+   **Extending it is a RULING and is registered like one**, so a programme that never closes
+   anything is visible in the register rather than invisible in the drift.
+
+9. **★ THE THREE REGISTERS — keep them apart, because each one's failure is the other's virtue
+   (2026-08-27, human coordinator).**
+
+   | register | disposition | whose act |
+   |---|---|---|
+   | **WORKING** the task | **OPTIMISTIC, always.** Full effort, cross-domain range, no self-handicapping. A shallow search returns "dead" and proves nothing. | the worker's |
+   | **RANKING** tractability, and REPORTING | **CALIBRATED.** Markedly less pessimistic than the trained default — and *not overcorrected either*. | the checker's and the coordinator's |
+   | **DECIDING** to continue or close | — | **the human's, always** |
+
+   **The two failure directions are symmetric and both are labelling errors, not moods.**
+   Pessimism leaking into WORKING produces the shallow search that manufactures its own
+   negative. Optimism leaking into RANKING inflates a grade, and an inflated grade **misinforms
+   the human at the exact moment they are deciding** — which is worse than a pessimistic
+   apparatus, because a pessimistic one at least fails visibly.
+   **The operational test for a tractability grade, and it catches both directions:** *would
+   this grade survive being shown to someone who does not want the project to succeed?* A grade
+   that only holds among friends is not calibrated. A grade you would defend to a hostile reader
+   is — whichever way it points.
+   *(C-35 states the same fence from the rule side: disposition sets SEARCH DEPTH, never a
+   tier.)*
 
 ## Non-powers (absolute)
 
