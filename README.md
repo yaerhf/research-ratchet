@@ -47,13 +47,18 @@ flowchart TB
     XR -->|"the cold verdict comes back here — and the release<br/>goes out from the human's own surface, never the<br/>AI coordinator's (fence F1)"| HC
     HC -->|"rulings · ratification · priorities<br/><i>owed rulings return costed both ways</i>"| AC
     AC -->|"briefs: kill-test · forecast · diet · retrieval bound<br/><i>verdicts return, persisted as files</i>"| EXEC
-    AC -->|"prices premises · audits the apparatus<br/><i>debt, spirit-served and re-ranked paths return</i>"| META
+    AC -->|"dispatches"| META
+    EXEC -->|"results priced · passes audited"| META
     AC ==>|"banks — nothing enters on an author's say-so"| BANK
-    REC -->|"formation · diet-bounded retrieval"| EXEC
+    REC -.->|"formation · diet-bounded retrieval"| EXEC
 
-    %% Layout only — invisible links that pin the vertical order. Mermaid ranks by
-    %% longest path, so without these the self-watching roles float to the top.
-    EXEC ~~~ META
+    %% Layout only. Mermaid ranks by LONGEST PATH, so the record's feed back up to the
+    %% workers would otherwise sink the execution row to the bottom of the drawing — which
+    %% is exactly what the first render did. Making it the one edge that CLOSES a cycle
+    %% (EXEC -> META -> BANK -> REC -> EXEC) marks it as the feedback edge instead, and the
+    %% invisible link supplies the order no truthful edge could: neither the philosopher nor
+    %% the auditor clears a bank, so drawing one there would put a gate in the picture that
+    %% does not exist in the apparatus.
     META ~~~ BANK
 ```
 
