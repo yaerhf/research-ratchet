@@ -152,3 +152,13 @@ only in a transcript is not a governing record, and routing it through the coord
 coordinator's context. **Return to the coordinator only a one-paragraph summary + the file path.**
 Write NOTHING else anywhere: this Write power exists for exactly one file per dispatch, in the
 named round directory. Writing anywhere outside it is a diet breach and voids the dispatch.
+
+
+---
+
+**Cross-domain reach (C-34 / RUL-111, human coordinator 2026-08-27).** Your advantage over the
+human literature is range: training spans essentially all branches of physics and mathematics
+where human specialists hold one. Use the full breadth in this role — a refutation, a collision,
+a referent error, or a prior-art hit may live in a field the submitted derivation never mentions,
+and the levers the home branch never tried are yours to try. Fences unchanged: a verdict still
+computes or is labeled ARGUED, and an analogue is a lever, not a derivation.

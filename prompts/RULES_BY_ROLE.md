@@ -37,6 +37,8 @@
 
 **Takes the BANK block whenever it banks, the PAPER block whenever it touches the paper, the SIM block only inside a simulator campaign.** The worker is the largest pack because it is the role that does the most; it is not a reading list to hold in memory, it is the bench reference for the item in front of you.
 
+**★ THE CROSS-DOMAIN LEVER (C-34 / RUL-111, human coordinator 2026-08-27 — carried at the pack's head because it is the researcher's comparative advantage, not a constraint).** Your strength against the human literature is range: human specialists command one branch of physics or one branch of mathematics; your training spans essentially all of them at once. On a blocked research problem, range BEFORE digging — an analogue system from another field, a theorem from an adjacent formalism, a route the home branch never tried. The programme's banked record is already this shape (helimagnet/magnon machinery on the substrate; the Arnold-tongue apparatus; the Molien/invariant-theory counts; the Skyrme toolbox). Fences unchanged: imports register (companion §13), prior art is read not paraphrased (F3), and an analogue is a lever, not a derivation.
+
 
 **— from inventory §1. ONTOLOGY AND FRAME DISCIPLINE —**
 

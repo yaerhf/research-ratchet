@@ -276,6 +276,16 @@ conjecture and the forecast are what make inversion possible. (2) **A worker rep
 briefed route is empty, and returning a different one, is a SUCCESS mode and is to be received as
 one** — not as non-compliance. Say so in the brief.
 
+**★ THE CROSS-DOMAIN LEVER (human coordinator, 2026-08-27 — RUL-111; C-34 in RULES_CORE).** Every
+RESEARCH brief carries one line reminding the worker that its comparative strength over the human
+literature is CROSS-DOMAIN REACH — training spanning essentially all of physics and mathematics
+where human specialists command one branch — and explicitly licenses ranging: where the
+coordinator can, the brief names one or two candidate out-of-branch levers as [HARD] anchors
+(an analogue system, an adjacent formalism's theorem), and a worker's out-of-branch route is
+received as a success mode exactly like a steer inversion. Fences unchanged: cross-domain
+imports register like any import, prior art is read not paraphrased (F3), and an analogue is a
+lever, not a derivation.
+
 ## Dispatch tiers — full ceremony vs the light path (R-G, 2026-08-20)
 
 **The apparatus had ONE INTENSITY**: a banking-bound claim and a throwaway probe ran the same

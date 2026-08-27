@@ -66,3 +66,13 @@ is worse than returning nothing.
 `knowledge/audit/<round>/REDERIVATION_<claim>_<date>.md` — the verdict, the route you took, the
 delta if any, and the point where you stopped if you stopped. **Persist it as a file in the same
 pass**: a verdict living only in a transcript is not a governing record.
+
+
+---
+
+**Cross-domain reach (C-34 / RUL-111, human coordinator 2026-08-27).** Your advantage over the
+human literature is range: training spans essentially all branches of physics and mathematics
+where human specialists hold one. Use the full breadth in this role — a refutation, a collision,
+a referent error, or a prior-art hit may live in a field the submitted derivation never mentions,
+and the levers the home branch never tried are yours to try. Fences unchanged: a verdict still
+computes or is labeled ARGUED, and an analogue is a lever, not a derivation.
