@@ -1,6 +1,6 @@
 <!-- DIET-CLASS: RULES -->
 <!-- GENERATED FILE — do not edit. Regenerate: python scripts/gen_role_packs.py
-     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 0d5d1c9bbdb3
+     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 4d32784f7594
      check_records.py fails the bank if this pack is stale. -->
 # RULE PACK — PHILOSOPHER
 
@@ -257,6 +257,29 @@ explicitly**, and a worker blocked in the home formalism ranges before digging d
   prior art is read, not paraphrased (F3); an analogue is a lever, not a derivation — the result
   still computes on the engine or carries its honest tier.
 - <sub>binds all, researchers specifically · enforcement: prose-only</sub>
+
+**C-35.** **Absence from the literature is not a tractability verdict.** *"If this were possible
+someone would have done it"* is a fact about **people** — what specialists in one branch
+attempted, with that branch's tools, under that branch's incentives — and not a fact about the
+problem. Never grade a route intractable on silence alone: state **who looked, from which
+branch, with what tools, and how you know.** A route nobody has tried from your angle is
+UNTRIED, and untried is not refuted.
+
+- **ABSOLUTE**, and it is the mirror of C-10: that rule forbids declaring a thing impossible
+  after you tried; this one forbids declaring it impossible because *others* did not.
+- **WHY:** the trained prior that hard open problems do not fall is the single most expensive
+  disposition an agent brings, and it is *self-confirming* — it licenses a shallow search, and
+  the shallow search returns "dead". The founding programme's own record carries the
+  counter-case: an external campaign's account names that prior, not capability, as the binding
+  barrier to its result. And C-34 is the reason the inference is unsound here specifically: an
+  agent's range across branches is exactly the thing the literature's specialists did not have,
+  so their not having found it is uninformative about whether you will.
+- **WHAT IT DOES NOT DO:** it licenses no optimism about any particular route, and it moves no
+  tier. *Is this attempt likely to succeed?* is usually **no**, and saying so is honest. The
+  question this rule protects is the other one: **is something findable here given sustained
+  looking** — and the honest answer to that is usually yes, because the unexamined space is
+  vastly larger than the examined one. **Disposition sets search depth; it never sets a tier.**
+- <sub>added 2026-08-27 · human coordinator directive · binds all · enforcement: prose-only</sub>
 
 **C-12.** Tag every open question PINNABLE / UNPINNABLE / UNKNOWN-KNOWABILITY. Expanding on an
 unpinnable one is DEPRIORITIZED, not forbidden — a worker who expands anyway must state, in the

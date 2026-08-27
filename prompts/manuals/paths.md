@@ -76,6 +76,57 @@ Opened <date> · taken: P-07b · last re-ranked <date> (<why: a death / a consol
 
 ---
 
+## 2-bis · ★ HOW TO GRADE — the procedure, because a grade assigned by feel is a rank with no argument
+
+The grade is the ledger's load-bearing column: it is what a re-rank moves, and what a coordinator
+reads when a path above it dies. **A grade is a claim about the WORK, and it carries a claim's
+burden.**
+
+**Grade by asking what is MISSING, in this order. Stop at the first that applies.**
+
+1. **Is the route specified, with only execution left?** → **A**. You can name the steps. The
+   honest test: *could you write the brief for it right now?* If yes it is A, however long the
+   execution is. Length is not intractability.
+2. **Do you know what to build, but not that it can be built?** → **B**. A mechanism is asserted
+   and its construction is the open part.
+3. **Is it waiting on something unbuilt or unmeasured ELSEWHERE?** → **D**, and **name the
+   object.** D is not a weaker C: it is a *different shape*, and it is **the grade that flips
+   fastest**, because someone else's landing moves it without anyone touching this fork. An
+   unnamed D is a C wearing a hopeful label.
+4. **Only if none of the above** → **C**, needs a new idea.
+
+**★ THE FAILURE MODE THIS PROCEDURE EXISTS AGAINST, and it is the common one: grading C when the
+truth is "I did not look outside my own branch."** C is the grade an agent reaches for when a
+route is unfamiliar rather than blocked — and it is self-confirming, because a C is not worked,
+so nothing ever contradicts it. Before writing C, discharge **C-35** in one line:
+
+> **who looked, from which branch, with what tools** — and if the answer is *"the literature
+> appears silent"*, that is **not a C.** Silence is a fact about people, not about the problem
+> (C-35), and your range across branches is precisely what the literature's specialists did not
+> have (C-34). **A route nobody tried from your angle is UNTRIED, and untried is not refuted.**
+
+**So a C carries its search, or it is not a C.** Name the branches you actually looked in. If you
+looked in one, the honest grade is **C-unsearched** — and a C-unsearched is a *cheap docket item*
+(go look), not a wall.
+
+**Two more disciplines that keep the column honest:**
+
+- **Grade the ROUTE, never the ANSWER.** *"This probably will not work"* is a forecast and belongs
+  in `[FORECAST]`; *"this needs a mechanism nobody has built"* is a grade. Confusing the two puts
+  your credence about the world into a column that is supposed to describe the work — and a
+  pessimistic credence then reads as a structural obstruction to everyone downstream.
+- **Re-grade on the trigger, not on mood.** A grade moves when its *missing thing* changes: an
+  object lands (D→B or A), a construction succeeds (B→A), a search is finally run (C-unsearched
+  → whatever it actually is). Nothing else moves a grade — least of all how the fork feels after
+  a bad week.
+
+**Why the procedure is worth its cost.** Ranking is what makes a paths ledger an instrument
+rather than a list: the death trigger promotes *the next best live path*, and "next best" is only
+meaningful if the grades were assigned by a rule. **A ledger of feelings re-ranked by feeling
+tells you what the programme was in the mood for, in the order it happened.**
+
+---
+
 ## 3 · WHO WRITES — workers AND reviewers, and the reviewer's half is the one that bites
 
 **THE WORKER** records the fork when it takes a route. Its brief asks for this on return

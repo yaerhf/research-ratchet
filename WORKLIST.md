@@ -294,6 +294,63 @@ populated); `WHY.md` and this worklist (repository-specific).
 
 **FLOWING THE OTHER WAY:** RUL-112 only — recorded above, and already honoured here.
 
+## W8 · THE BENCHMARK — rank apparatus versions against a known-answer problem
+**Grade B · opened 2026-08-27 on the human coordinator's directive · design settled, not started**
+
+**The idea.** Run the apparatus at a research target whose answer is **known to the human and
+withheld from every instance** — recent enough that the literature has not absorbed it, so
+reproduction cannot be recall. Then **rank apparatus versions** by how close they come to the
+ideal path and how fast, iterating the apparatus rather than the problem.
+
+**THE BLIND — decided, and one channel was already open.** No instance gets the founding tree
+(its formation prefix *states the target result*, so any instance formed there has been handed
+the answer) and none gets the recent literature. The generic edition is clean — verified, zero
+mentions. **Enforce it with the tooling, not with discipline:** a `WITHHELD` diet class denied to
+every research role, so `diet.py --role <you> <file>` refuses before a file is opened and any
+breach must be declared.
+
+**NO PART OF THE APPARATUS MAY KNOW THE TARGET IS REACHABLE** — that is the point of the test,
+not a detail of it. It follows that the run must look like ordinary research from inside: an
+apparatus told it is being benchmarked has been told somebody believes the problem is tractable.
+
+**THE MEASUREMENT: relative, not pass/fail.** Version *n+1* against version *n* on the same
+target, scored on distance from the ideal path (short, once known) and on time. Partial outcomes
+stay informative, which absolute pass/fail does not.
+
+**★ THE RULE THAT KEEPS IT HONEST — and it needs teeth, because this is a Goodhart setup by
+construction.** Roles and prompts **stay general**: no change may be fitted to the target. That
+is exactly what the divergence tripwire warns about — *the metric improved because the work got
+better, or because the handles came off* — so intention is not enough. Two guards:
+1. **Every apparatus change during the benchmark carries a rationale that never mentions the
+   target** and would stand for a programme in any field. Auditable afterwards; it is precisely
+   the apparatus auditor's spirit question.
+2. **A second held-out problem in a different domain.** One benchmark can be overfitted; two
+   cannot be as cheaply. **The generality claim needs its own control world** — the kill-test
+   argument, pointed at the apparatus instead of at the research.
+
+**THE SCORER'S OWN FENCE.** Whoever holds the answer key must not also be composing the briefs
+or the formation prefix, or the ideal path leaks into the apparatus through its architect. The
+discipline is the programme's own: **the freeze is a solo commit** — tag the apparatus version
+under test FIRST, then take the key. Changes made after the key is read carry the same
+never-mentions-the-target rationale.
+
+**A BASELINE ARM IS STILL WORTH ONE RUN** (bare dispatch, no apparatus, same budget and class) —
+expected to fail, and expected to be sensitive to prompt specifics in a way that does not
+generalise. That expectation is worth pre-registering, because if the bare arm *does* well the
+benchmark is measuring the models rather than the method.
+
+**WHAT TO MEASURE BESIDES THE HEADLINE**, and it is the half that stays informative when the
+headline does not fall: did the negatives ledger accumulate would-change-ifs somebody could
+test · did checkers **COMPUTE** rather than argue · did the re-derivation agent converge by a
+different route · did the paths ledger's death trigger fire when a route died · did a checker
+catch something real. A clean, well-recorded failure at a middle rung is still a result **about
+the apparatus**.
+
+**PREREQUISITE — discharged 2026-08-27.** The predictable first failure is instances declaring
+the target impossible on the prior that the literature would already have done it. **C-35** now
+forbids that inference, and `manuals/paths.md` §2-bis carries the grading procedure with
+`C-unsearched` for the case the prior actually describes.
+
 ---
 
 ## MEANING NOTES — do not compress
@@ -311,6 +368,9 @@ compression pass is exactly what loses the reasoning behind a decision. This is 
   another programme's paper resolve through it (RUL-112). Tags usually look disposable, which is
   exactly why this one is written down here — the cheapest way to break a published citation is
   to tidy up.
+- **The regress question is closed** (human coordinator, 2026-08-27): for a repository whose
+  work IS commits, git history is the negatives ledger and the paths ledger. The apparatus asks
+  a *research* programme to keep records that a version-controlled toolkit already keeps.
 - **This repository is a programme too.** It has a docket now; it does not yet have an engine,
   a negatives ledger, or a paths ledger of its own. Whether it should is itself an open
   question — but the asymmetry is worth seeing: the apparatus asks every programme to keep
