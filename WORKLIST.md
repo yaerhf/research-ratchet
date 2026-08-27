@@ -74,7 +74,7 @@ nothing else.*
 ---
 
 ## W2 · THE TWO MANUALS THAT BIND MOST OFTEN
-**Grade A · `checking.md` WRITTEN 2026-08-27 · `dispatching.md` owed**
+**Grade A · DISCHARGED 2026-08-27 — both written; `paper_editing.md`, `probing.md`, `releasing.md` remain owed and are lower value**
 
 `checking.md` (reviewer, meta-observer, keeper, re-derivation agent, philosopher-as-checker) and
 `dispatching.md` (composing a brief, launching a worker) are the two activities that bind on
@@ -93,13 +93,19 @@ its verdicts count. **The apparatus exempted its own disposition axis from its o
 is the finding to carry until the test is run.
 
 ## W4 · ALIGN THE FULLER ORGANIGRAMME
-**Grade A · cosmetic**
+**Grade A · DISCHARGED 2026-08-27**
 
-`APPARATUS_MAP.md` §1 still draws the pre-2026-08-27 arrangement. The README's spine (external
-reviewer → human → AI coordinator → execution+inner check → philosopher+watchers → data bank,
-with bidirectional arrows where traffic runs both ways) is the current one. Not a contradiction
-— the map's `orchestrates, never forms` edge is correct — but two drawings of one apparatus
-should not diverge.
+`APPARATUS_MAP.md` §1 now carries the same spine as the README — external reviewer → human
+coordinator → AI coordinator → execution with the inner check beside it → philosopher with the
+apparatus watchers beside it → the data bank — at the map's fuller grain (each role's diet, its
+fences, its ruling IDs), with bidirectional arrows where traffic genuinely runs both ways.
+
+**The note worth keeping, because the failure recurs:** mermaid ranks by LONGEST PATH, so a
+return edge makes its source an ancestor and the renderer hoists it. Both drawings therefore
+carry one visible edge per relationship (the return direction stated in the label) plus a single
+invisible link for the order no truthful edge could supply — **neither the philosopher nor the
+auditor clears a bank, and inventing an edge there to satisfy a layout would draw a gate that
+does not exist in the apparatus.**
 
 ## W5 · THE OUTREACH PACKAGE
 **Grade A · in progress 2026-08-27**
@@ -152,6 +158,46 @@ one number, and it names the gap).
 
 **Next pass:** re-run the five comparisons; if the RUL numbers match, nothing rules-level has
 moved.
+
+### ★ THE ADOPTION LIST — what the founding tree should take from here (2026-08-27)
+
+**Framed as candidates, not as a patch.** The apparatus's own adoption rule binds this transfer
+exactly as it binds any other: *an adoption is SUBMITTED TO STUDY — registry row, adversarial
+review, an honest imported-and-counted label, coherence tested like any candidate — admitted or
+refused on that study, never on origin.* These were developed in a tree with **no object**, so
+each carries assumptions that only a live corpus can test. Ordered by risk, not by novelty.
+
+**1 · DIET-BOUNDED RETRIEVAL — a live exposure, not an improvement.** *(`rag/diet.py`, the
+`[RETRIEVAL]` brief field, rule 205.)* The founding tree indexes `knowledge/candidates/` —
+where the derivations under review and every persisted verdict live — and its `query.py` has no
+role bound. So **its meta-observer is one query from the derivation it exists not to have seen,
+and its checkers one query from FORMATION_CORE, which rule 92 forbids ABSOLUTELY** — and the
+resulting verdict looks identical either way. Adopting this is closing a hole, not adding a
+feature. Take the classification and the role table; the founding `query.py` (embeddings, GPU)
+is the better retriever and should keep its implementation — only the bound needs porting.
+
+**2 · THE PATHS LEDGER** *(`manuals/paths.md`, the `[ADJACENT]` brief field, the UNSTATED-FORK
+verdict, rules 206–207, telemetry signal 5.)* Closes an asymmetry the founding tree has too: a
+wrong claim is caught by six instruments; **a path never taken is caught by none.** Highest
+value where research is actively running, because forks accrue every session and the ranking
+decays silently. Its death trigger — re-rank the fork in the same pass a path dies — is the part
+that must come with it; without it the ledger is a graveyard.
+
+**3 · THE THREE MANUALS** — `checking.md`, `engine.md`, `paths.md`. Documentation, low risk,
+immediate effect: `checking.md` alone consolidates what is currently spread across five role
+files and two packs.
+
+**4 · `bank.sh` LOUD-FAILURE HARDENING.** Lower value there (its engine exists, so the gate
+runs), but the pattern holds: a gate that dies inside a command substitution says nothing, and
+`set -euo pipefail` makes that the default failure mode.
+
+**NOT for transfer, and why:** the generic records gate + the `check_records_founding.py` split
+(the founding gate is **correct for the founding tree** — verified 28/28 there; the split exists
+only because an adopter has no corpus to pin); `init_repo.sh`'s preflight and `.gitignore`
+(that tree is long initialized); the empty-ledger fix in `gen_negatives_index.py` (its ledger is
+populated); `WHY.md` and this worklist (repository-specific).
+
+**FLOWING THE OTHER WAY:** RUL-112 only — recorded above, and already honoured here.
 
 ---
 

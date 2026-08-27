@@ -24,74 +24,56 @@ organization. I need to see it clear-minded."*).
 
 ```mermaid
 flowchart TB
+    XR["<b>EXTERNAL REVIEWER</b> — the outer cycle<br/><b>STARVED of everything but the artifact</b><br/>held-out class · recurrent class<br/><i>fence F1: never formed in-session</i>"]
     HC["<b>HUMAN COORDINATOR</b><br/>owns the ontology · rules · ratifies<br/><i>final authority; the only one who rules class-(3)</i>"]
+    AC["<b>AI COORDINATOR</b> — the entry point<br/>saturated with STATE<br/>dispatches · composes briefs · triages · escalates<br/><i>cannot tier, bank, rule freely, or edit the canon</i>"]
 
-    subgraph ENTRY [" "]
-        AC["<b>AI COORDINATOR</b> — the entry point<br/>saturated with STATE<br/>dispatches · composes briefs · triages · escalates<br/><i>cannot tier, bank, rule freely, or edit the canon</i>"]
+    subgraph EXEC ["EXECUTION AND §8a — per claim, cross-class on AUTHORSHIP"]
+        direction LR
+        W["<b>FLUENT WORKERS</b><br/>diet: FORMATION_CORE + one brief<br/><i>execute; bank nothing</i><br/><i>RUL-075: STEELMAN before conceding —<br/>question the adversarial review</i>"]
+        subgraph INNER ["THE INNER CHECK — four diets on one claim"]
+            direction LR
+            RV["<b>REVIEWER</b><br/>saturated: the derivation<br/><i>sound and honestly tiered?</i><br/><i>a refutation COMPUTES<br/>or is labeled ARGUED</i>"]
+            MO["<b>META-OBSERVER</b><br/><b>STARVED of the derivation</b><br/><i>is it ABOUT what it says?</i><br/><i>owns prior-art (F3)</i>"]
+            KP["<b>KEEPER</b><br/>saturated: the whole result set<br/><i>does the corpus assert one thing?</i><br/><i>the OLD result may lose</i>"]
+            RD["<b>RE-DERIVATION AGENT</b><br/><b>STARVED of derivation,<br/>probes, ALL verdicts</b><br/><i>prove it again; a different<br/>route beats agreement</i>"]
+        end
+        W -->|"unbanked result"| INNER
     end
 
-    HC -->|"rulings, ratification, priorities"| AC
-    AC -->|"owed rulings, costed both ways"| HC
-
-    subgraph DO ["EXECUTION"]
-        W["<b>FLUENT WORKERS</b><br/>diet: FORMATION_CORE + one brief<br/><i>execute; bank nothing</i><br/><i>§8a duty (RUL-075): STEELMAN before conceding —<br/>question the adversarial review</i>"]
+    subgraph META ["THE APPARATUS PRICES AND WATCHES ITSELF"]
+        direction LR
+        PH["<b>THE PHILOSOPHER</b> (split role, fence F4)<br/>worker capacity: isolated premises + literature<br/>checker capacity: starved of our derivations,<br/>saturated with the RIVALS<br/><i>+ contra-reviewer, RUL-044</i>"]
+        AUD["<b>APPARATUS AUDITOR</b> (N1 + ex-enforcer, RUL-072)<br/>what does it prevent · at what cost · was the<br/>SPIRIT served <i>· MANDATORY before any cut</i><br/><b>DECISION-ATTENTION READER</b> (N2, at each release)<br/><b>ARCHIVIST</b> · <b>REGISTER CLERK</b> (pilot, RUL-079)"]
     end
 
-    subgraph INNER ["§8a — THE INNER CHECK (per claim; cross-class on authorship)"]
-        RV["<b>REVIEWER</b><br/>saturated: the derivation<br/><i>sound and honestly tiered?</i><br/><i>a refutation COMPUTES or is labeled ARGUED (R5)</i>"]
-        MO["<b>META-OBSERVER</b><br/><b>STARVED of the derivation</b><br/><i>is it ABOUT what it says?</i><br/><i>owns prior-art (F3)</i>"]
-        KP["<b>KEEPER</b><br/>saturated: the whole result set<br/><i>does the corpus assert one thing?</i>"]
-        RD["<b>RE-DERIVATION AGENT</b> (first run blind-REPRODUCED)<br/><b>STARVED of the derivation, the probes, ALL verdicts</b><br/>diet: the claim's BARE STATEMENT only<br/><i>prove it again; a different route beats agreement</i>"]
-    end
-
-    subgraph PHIL ["THE PHILOSOPHER (split role, fence F4)"]
-        PW["<b>WORKER capacity</b><br/>the isolated premises + literature<br/><i>could this premise have been otherwise?</i>"]
-        PC["<b>CHECKER capacity</b><br/>starved of our derivations, saturated with RIVALS<br/><i>what does it cost, against what?</i>"]
-        PA["<b>CONTRA-REVIEWER</b> (RUL-044)<br/><i>argues against every conclusion before it lands</i>"]
-    end
-
-    subgraph OUTER ["THE OUTER CYCLE — external review loop"]
-        XR["<b>EXTERNAL REVIEWER</b><br/><b>STARVED of everything but the artifact</b><br/>held-out class · recurrent class<br/><i>fence F1: never formed in-session</i>"]
-    end
-
-    subgraph RARE ["NON-FREQUENT ROLES"]
-        N1["<b>APPARATUS AUDITOR</b> (N1, RUL-072 merge)<br/>what is here to prevent something, at what cost?<br/>+ was the SPIRIT of the rules served?<br/><i>MANDATORY before any cut · spot-check lottery</i>"]
-        N2["<b>DECISION-ATTENTION READER</b> (N2)<br/><i>at each release</i>"]
-        AR["<b>ARCHIVIST</b><br/>structural hygiene only<br/><i>never semantic judgment</i>"]
+    subgraph BANK ["THE DATA BANK — the record, and the only way into it"]
+        direction LR
+        GATE["<b>THE GATE</b> · scripts/bank.sh<br/>1. suites green → 2. records gate<br/>→ 3. re-index → 4. sweep-guarded commit<br/><i>honesty telemetry reports, never gates</i>"]
+        REC["<b>THE RECORD</b><br/>corpus · engine · paper · companion<br/>the standing ledgers: negatives · <b>paths</b> · wins<br/>rulings · family tree · calibration · reversals"]
+        GATE ==>|"admits"| REC
     end
 
     GEM["<b>IDEATION ADVISOR</b> — ideation only<br/><i>numbers carry ZERO evidential weight</i>"]
 
-    AC --> W
-    AC --> RV & MO & KP & RD
-    AC --> PW & PC
-    AC --> N1 & N2 & AR & RC
-    RC["<b>REGISTER CLERK</b> (small-class PILOT — RUL-079)<br/>quotes + pointers, read-only, as-of-commit"]
+    XR <-->|"the human sends the release · the cold verdict comes back<br/>never through the AI coordinator (fence F1)"| HC
+    HC <-->|"rulings · ratification · priorities<br/>owed rulings, costed both ways"| AC
+    AC <-->|"briefs: kill-test · forecast · diet · retrieval bound<br/>verdicts, persisted as files"| EXEC
+    AC <-->|"dispatches<br/>debt · spirit-served · re-ranked paths"| META
+    EXEC -->|"results priced · passes audited"| META
+    AC ==>|"banks — nothing enters on an author's say-so"| BANK
+    REC -.->|"formation · diet-bounded retrieval"| EXEC
+    GEM -.->|"CANDIDATE only"| AC
+
     %% A standing prior-art role was RETIRED into the meta-observer's F3 axis (RUL-073) —
-    %% F3 is where that work structurally lives (the reviewer has no web tools). A one-time
-    %% back-catalogue sweep, if ever wanted, is commissioned as a TASK, not a role.
+    %% that work structurally lives there, since the reviewer has no web tools.
     %% ROLE-COUNT GOVERNANCE (RUL-074): adding roles AND changing any count constraint are
     %% both under the HUMAN COORDINATOR'S approval; a freeze was proposed by an adverse
     %% review and REFUSED (bloat noted, approval gate preferred).
-    AC -.->|"orchestrates, never forms"| XR
-    GEM -.->|"CANDIDATE only"| AC
-    PW --> PA
-    PC --> PA
-
-    W -->|"unbanked result"| RV
-    RV & MO & KP -->|"HOLDS / REFUTED / LOCATED-GAP / OVER-CLAIM / UNDER-CLAIM"| AC
-    RD -->|"REPRODUCED / +DELTA / BLOCKED / CONTRADICTED"| AC
-    XR -->|"cold verdict"| AC
-
-    AC ==>|"banks"| BANK
-
-    subgraph BANK ["scripts/bank.sh — THE ONLY WAY IN"]
-        G1["1. both suites green"]
-        G2["2. check_records.py — prose vs tree"]
-        G3["3. retrieval re-ingest<br/><i>optional — loud SKIP if absent</i>"]
-        G4["4. commit (sweep-guarded)"]
-        G1 --> G2 --> G3 --> G4
-    end
+    %% Layout only: mermaid ranks by longest path, so the record's feed back up to execution
+    %% would otherwise sink the execution row below the bank. The invisible link supplies the
+    %% order no truthful edge could — neither the philosopher nor the auditor clears a bank.
+    META ~~~ BANK
 ```
 
 **Read the diagram by DIET, not by hierarchy.** Every instrument here is defined by what it is
