@@ -90,3 +90,21 @@ you cannot see.**
 `knowledge/audit/<round>/DECISION_ATTENTION_<date>.md` — the three-column table, the unanswerable
 set with its cheapest fixes, and one paragraph naming **the single decision the artifact makes
 hardest**. That paragraph is what the coordinator will act on.
+
+---
+
+## RETRIEVAL — do not use it to answer, use it to MEASURE the path (`--diet open`)
+
+The record is queryable: `python rag/query.py "question" -k 8` — and for this role that is a
+**measuring instrument, not a shortcut.** You model a reader with agents, and their agents will
+have retrieval too, so the honest test of "can an assisting agent extract this?" is: **run the
+query yourself and count what it takes.** Which query, how many hops after it, what the agent
+must already know to phrase it. That count IS the third column.
+
+**One fence, and it is the whole validity of your report:** you are modelling a stranger who
+has **the release artifact and nothing else**. Your index reaches the internal tree — the
+ledgers, the prompts, the candidates — which a stranger does not have. **A decision you can
+only answer from a source that does not ship is UNANSWERABLE, and the fact that you found it
+easily is the finding, not a reprieve.** Note when that happens: it is the cheapest possible
+evidence that something load-bearing lives only inside.
+

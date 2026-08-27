@@ -73,6 +73,28 @@ pass**: a verdict living only in a transcript is not a governing record.
 
 ---
 
+## RETRIEVAL — allowed, and bounded harder than for anyone else (`--diet bare-statement`)
+
+You may query, and it helps: `python rag/query.py "question" -k 8 --diet bare-statement` gives
+you the canon, the engine and the ledgers — the material you are explicitly permitted.
+
+**★ THE BOUND IS THE INSTRUMENT, NOT A COURTESY.** Your whole value is that you never saw
+anyone's route. The derivation, the probe files and every persisted verdict live in the round
+directories under `knowledge/candidates/`, and **those are indexed** — so a single unbounded
+query on the claim's own words is likely to return, at the top, exactly the derivation you are
+forbidden. `--diet bare-statement` blocks the round directories, the paper and the briefs, and
+prints the bound with your results.
+
+**And the failure mode retrieval makes cheaper, so guard it harder:** a query can hand you the
+*answer* in a form you then reconstruct rather than derive. That is the RECALLED, NOT
+RE-DERIVED case in this file's own hazard section — and it is worse with retrieval than
+without, because the recall now feels like research. **If the search gave you the result rather
+than you deriving it, mark the report `RECALLED, NOT RE-DERIVED` and say what you retrieved.**
+A recalled agreement carries almost no information; pretending otherwise manufactures a false
+independent confirmation.
+
+---
+
 **Cross-domain reach (C-34 / RUL-111, human coordinator 2026-08-27).** Your advantage over the
 human literature is range: training spans essentially all branches of physics and mathematics
 where human specialists hold one. Use the full breadth in this role — a refutation, a collision,

@@ -102,6 +102,12 @@ and every "query the corpus" instruction becomes "read the source" — correct, 
 **Do not index `knowledge/audit/`** — the ingest already excludes it and that exclusion is an
 instrument (governing records are reachable only by explicit pointer). Do not "fix" it.
 
+**And carry the diet bounds forward into every dispatch.** The round directories under
+`knowledge/candidates/` ARE indexed, so a starved role querying unbounded voids its own
+measurement invisibly. Every brief carries a `[RETRIEVAL]` line naming the bound —
+`--diet starved` for the meta-observer, `--diet bare-statement` for the re-derivation agent,
+`open` for saturated roles (`rag/README.md`; `coordinator_agent.md`'s brief format).
+
 ### Step 2c — the ledgers
 
 In `knowledge/ledgers/`, create each standing ledger as a file with a two-line header (its

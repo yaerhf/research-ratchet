@@ -237,3 +237,23 @@ than compensating.
 `COMPARATIVE_LEDGER.md` — two halves (comparative, internal), every line tier-labelled
 audited-or-surveyed, every IOU carrying an estimated cost, and an interrogation column
 recording each auxiliary premise's outcome and its would-change-if.
+
+---
+
+## RETRIEVAL — for the internal half only (`--diet open`)
+
+The record is queryable: `python rag/query.py "question" -k 8`. Use it for the half of your job
+that faces inward — finding every site where a premise is actually consumed (the
+premise-identification duty), checking whether an IOU is already booked somewhere, seeing what
+the corpus really says before you price it. `--source ledgers` reaches the standing ledgers;
+`--source paper` the prose; `--source code` both engines.
+
+**Your bound is `--diet open`** — you receive the formation prefix by carve-out (RUL-043), so
+you are the least starved checker in the building.
+
+**But note what retrieval cannot do for you, and it is the half that matters most: THE RIVALS
+ARE NOT IN THE INDEX.** It holds only what this programme wrote. Every rival's posits, debts
+and open problems must come from their own literature, read at the same depth you demand of
+ourselves — and a line itemized from the index on our side and from memory on theirs is the
+**ASYMMETRIC** verdict, which is a void measurement, not a partial one.
+

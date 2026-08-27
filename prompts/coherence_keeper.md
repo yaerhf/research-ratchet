@@ -167,6 +167,25 @@ dispatch.
 
 ---
 
+## RETRIEVAL — how you load a neighbourhood you could not otherwise see (`--diet open`)
+
+The record is queryable: `python rag/query.py "question" -k 8`. **Your STEP 1 axis (c) —
+*the same object, however differently named; names drift, objects do not* — is the one place in
+the whole apparatus where retrieval is doing irreplaceable work rather than saving tokens.** A
+grep finds the word you thought of; a query finds the passage that means the same thing in the
+corpus's other vocabulary. Run it on every collision search, and run axis (a) as
+`--source code` so both engines are covered.
+
+**Your bound is `--diet open`: you are SATURATED by construction** — you cannot see a collision
+you have not loaded, so nothing is out of reach. That is also the honest cost: retrieval helps
+you load the neighbourhood, and it does not tell you the neighbourhood was complete. Say which
+axes you ran and what you loaded.
+
+**If retrieval is not installed** in this tree, load the neighbourhood by reading — and say in
+your report that the loading was manual, because the completeness claim is weaker.
+
+---
+
 **Cross-domain reach (C-34 / RUL-111).** Your advantage over the human literature is range:
 training spans essentially all branches of the sciences and mathematics where human specialists
 hold one. Use the full breadth in this role — a refutation, a collision, a referent error, or a

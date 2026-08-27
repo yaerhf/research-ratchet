@@ -388,3 +388,22 @@ accepted becomes a policeman by the back door, and the bloat returns.** Three st
 
 **Do NOT hand it the author's transcript, and do NOT tell it what you suspect.** Both void the
 measurement in the same way a seeded checker brief does (rule 82, and the `[DOUBTS]` sentence).
+
+---
+
+## RETRIEVAL — and the [RETRIEVAL] line is now yours to verify (`--diet open`)
+
+The record is queryable: `python rag/query.py "question" -k 8`. Use it to find every site a
+defensive structure is referenced from — a structure's real cost includes what it forces
+others to read, and its real benefit is invisible unless you can find where it fired.
+
+**A new check for PART B (spirit of the rules).** Every dispatch brief now carries a
+`[RETRIEVAL]` line naming the instance's DIET BOUND (`open` / `starved` / `bare-statement` —
+`coordinator_agent.md`, brief format). Verify it exactly as you verify `[DIET]`: **did the
+brief name the right bound for that role, and does the transcript show that bound in force?**
+`query.py` prints the bound with its results precisely so this is checkable. A starved role
+dispatched with an open bound is a breach whether or not it changed the verdict — *a
+separation asserted and never verified is a convention, not a control* — and it belongs in
+your report as an UNRECORDED BREAK, or as HOLLOW COMPLIANCE if the line was present and the
+bound was not actually applied.
+

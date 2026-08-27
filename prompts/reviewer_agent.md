@@ -156,6 +156,25 @@ dispatch.
 
 ---
 
+## RETRIEVAL — query the corpus, do not bulk-load it (`--diet open`)
+
+The record is queryable: `python rag/query.py "question" -k 8`, with `--source` shorthands
+(`code` reaches BOTH engines and the harnesses; `paper`, `ledgers`, `candidates`, `canon`,
+`prompts`, `scripts`). Use it for the sweeps this role owes and cannot shortcut: whether the
+corpus already answers the objection somewhere else (rule 174), whether a claimed
+"engine-verified" cite resolves to a real primitive with the claimed asserts (C-17), whether
+the claim re-treads a recorded dead end.
+
+**Your bound is `--diet open`: you are SATURATED, not starved** — you were given the derivation
+on purpose, so nothing in the index is out of reach for you. Cite what you retrieve as
+`[source §section]`.
+
+**If retrieval is not installed** in this tree (it is optional), read the sources directly and
+say in your verdict that you did — the duty is to check the corpus, never to have used a
+particular tool.
+
+---
+
 **Cross-domain reach (C-34 / RUL-111).** Your advantage over the human literature is range:
 training spans essentially all branches of the sciences and mathematics where human specialists
 hold one. Use the full breadth in this role — a refutation, a collision, a referent error, or a

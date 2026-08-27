@@ -226,6 +226,33 @@ checker and never passes FORMATION_CORE to one.
               the derivation and the verdict would look identical. The apparatus auditor
               verifies this line against what the brief contained. *A separation asserted
               and never verified is a convention, not a control.*
+[RETRIEVAL]   REQUIRED on every dispatch (2026-08-27, human coordinator: every agent is to be
+              made aware of retrieval in its brief). **Two lines: that the corpus is
+              QUERYABLE, and the DIET BOUND that query runs under.**
+                  Retrieval: `python rag/query.py "question" -k 8 [--source <shorthand>]`
+                  --diet <open|starved|bare-statement>   (this instance's bound)
+              **Why it is a required field and not a footnote.** The apparatus tells agents to
+              query rather than bulk-load (RULES_BY_ROLE #171; the doc-tree principle) — and
+              the founding programme measured what happens when nobody says so at the moment
+              it matters: retrieval sat *available and unused* for the life of the tree while
+              every read-on-demand instruction quietly degraded into a bulk read. An agent
+              that is not told in its brief does not query.
+              **★ AND THE BOUND IS THE OTHER HALF, BECAUSE RETRIEVAL CAN VOID A DIET.** The
+              round directories under `knowledge/candidates/` hold the derivations under
+              review and every persisted verdict, and they ARE indexed (only
+              `knowledge/audit/` is excluded, by design). So an unbounded query from a STARVED
+              role is one keystroke from destroying the measurement it was dispatched to
+              make — **invisibly, because the verdict would look identical.** Name the bound
+              from the role, always:
+                  meta-observer         → `--diet starved`        (no round directories)
+                  re-derivation agent   → `--diet bare-statement` (canon, engine, ledgers only)
+                  worker · reviewer · keeper · philosopher · coordinator → `--diet open`
+              `query.py` PRINTS the bound with its results, so the transcript carries the
+              proof of what was in force; the apparatus auditor checks that against this line
+              exactly as it checks `[DIET]` against what the brief contained. *A separation
+              asserted and never verified is a convention, not a control.*
+              **Where retrieval is not installed** (it is optional — `rag/README.md`), say so
+              on this line and name what the instance must read instead.
 [DOUBTS]      OPTIONAL, and if present it MUST carry this sentence verbatim: *this list
               is not a boundary — findings outside it count fully.* (R3. Founding
               measurement: six doubts were filed on one panel; the one the author worried
@@ -278,8 +305,11 @@ the same ceremony, and there was no cheap mode. Two tiers:
 
 - **FULL CEREMONY — anything banking-bound.** The complete brief format, §8a routing,
   persisted verdicts, registry rows. Unchanged.
-- **LIGHT PATH — exploration that CANNOT bank.** A short brief ([TASK] + [DIET] + [FENCES] +
-  the banking line), no §8a round, no registry rows, and its output enters as **CANDIDATE**
+- **LIGHT PATH — exploration that CANNOT bank.** A short brief ([TASK] + [DIET] + [RETRIEVAL] +
+  [FENCES] + the banking line — retrieval stays because the light path is exactly where an
+  agent should query instead of loading, and because a light-path dispatch to a starved role
+  still carries that role's bound), no §8a round, no registry rows, and its output enters as
+  **CANDIDATE**
   by construction. **This is safe for exactly one reason, and the reason is the whole
   justification: the guarantees only need to hold AT THE BANK GATE**, and everything upstream
   of it is non-binding by construction. A light-path result that later wants to bank

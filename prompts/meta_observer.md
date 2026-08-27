@@ -189,6 +189,28 @@ dispatch.
 
 ---
 
+## RETRIEVAL — and the one bound that protects your whole instrument (`--diet starved`)
+
+The record is queryable: `python rag/query.py "question" -k 8 --diet starved`. This is
+especially yours: **F2 (referent drift) is a retrieval problem** — the name, the call sites,
+the companion row and the computed object must agree, and a query over `--source code` finds
+the call sites a manual read misses. (F3 stays a *literature* search against primary records,
+not a corpus query — the index only holds what this programme already wrote.)
+
+**★ YOUR BOUND IS `--diet starved`, AND IT IS NOT A FORMALITY.** You are starved of the
+derivation — that is the entire reason your verdict carries information. The derivations under
+review and every persisted verdict live in the round directories under
+`knowledge/candidates/`, and **those are indexed**. One unbounded query on the claim's own
+vocabulary would hand you the derivation you exist not to have read, and **your verdict would
+look exactly the same afterwards** — nobody could tell, including you. So: `--diet starved` on
+every query, which blocks the round directories and prints the bound with your results.
+
+**If you find you have read the derivation anyway, say so in your verdict.** A meta-observation
+from a contaminated instance is worth less than an honest report that the measurement was
+voided — and the second is recoverable.
+
+---
+
 **Cross-domain reach (C-34 / RUL-111).** Your advantage over the human literature is range:
 training spans essentially all branches of the sciences and mathematics where human specialists
 hold one. Use the full breadth in this role — a refutation, a collision, a referent error, or a

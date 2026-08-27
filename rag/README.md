@@ -20,6 +20,28 @@ The coherence keeper's fourth search axis — *the same object, however differen
 drift, objects do not* — is the one place retrieval is doing irreplaceable work rather than
 saving tokens.
 
+## ★ Diet bounds — retrieval must not breach a starvation
+
+**The hazard, stated plainly:** only `knowledge/audit/` is excluded from the index. The round
+directories under `knowledge/candidates/` — which hold **the derivations under review and every
+persisted verdict** — *are* indexed. So an unbounded query from a STARVED role is one keystroke
+from voiding the measurement it was dispatched to make, and it leaves no trace: the verdict
+looks identical.
+
+`--diet` applies the bound mechanically and **prints it with the results**, so the transcript
+carries proof of what was in force:
+
+| bound | reaches | for |
+|---|---|---|
+| `open` | everything indexed | worker · reviewer · keeper · philosopher · coordinator · auditor · archivist · clerk · N2 |
+| `starved` | everything **except the round directories** | the meta-observer |
+| `bare-statement` | canon, engine and ledgers **only** | the re-derivation agent |
+
+The dispatching brief's `[RETRIEVAL]` line names the bound (`coordinator_agent.md`, brief
+format); the apparatus auditor checks that line against what the transcript shows, exactly as
+it checks `[DIET]` against what the brief contained. `--exclude SUBSTR` (repeatable) narrows
+further. **A diet bound is not a courtesy — it is the instrument.**
+
 ## Two scope decisions that are architectural
 
 - **`knowledge/audit/` is NOT indexed, by design.** Governing records are reachable only by

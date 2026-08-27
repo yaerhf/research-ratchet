@@ -71,3 +71,22 @@ the archivist's licence:
 - **Close by re-versioning FORMATION_CORE** if anything in its §5 map moved, noting that the
   cache-prefix byte-identity is broken deliberately (consolidation = the sanctioned re-write
   moment).
+
+---
+
+## RETRIEVAL — find the record before you add or move one (`--diet open`)
+
+The record is queryable: `python rag/query.py "question" -k 8`. Two of your duties are
+retrieval problems: **searching for the record you are about to duplicate** (rule 48 — the
+founding case added an ID that already named another row, and the renumber then broke a
+ruling's revert clause), and **finding every citation of a file before you move it** (you must
+flag rather than move anything citation-breaking).
+
+**Your bound is `--diet open`** — you handle the record's shape, not its content, and the index
+is a map of the shape.
+
+**Two duties of yours touch the layer itself.** Retrieval is a `bank.sh` gate, so after any
+pass that moves or renames files, **re-run `python rag/ingest.py`** and confirm the chunk count
+moved as expected — a stale index points agents at paths that no longer exist. And
+`rag/index.json` is GENERATED: never hand-edit it, never archive it as a record.
+
