@@ -346,23 +346,48 @@ document. A document can be read by a third party and asked one question — **w
 instruction make sense for a programme in any field?** — which is exactly the apparatus
 auditor's spirit question, and it is answerable. "Did you edit neutrally?" is not.
 
-**★ AND THE LEAK CHANNEL THE SPLIT DOES NOT CLOSE, named here because it is the one that will
-actually bite.** The SCORE is itself information about the path. Run *n* scores 40%, run *n+1*
-scores 55% — whoever writes the next instruction has just learned which direction the ideal path
-lies in. **Iterated scoring is gradient descent on the withheld answer**, and it arrives through
-a channel no role split blocks: it does not matter who holds the pen if the feedback reaches
-them. That is precisely the overfitting the stay-general rule forbids, entering by the door
-nobody guarded.
+**★ THE OVERFITTING RISK IS REAL BUT CONCENTRATED — and an earlier draft of this item got its
+size wrong** (human coordinator, 2026-08-27): *"the number of ways the apparatus can be modified
+is huge. The probability that those modifications overfit is very small compared to the
+probability that they improve general problem solving. And the stay-general guard amplifies that
+exact ratio in the right direction."*
 
-Three mitigations, in order of strength:
-1. **The second held-out problem is the real guard** — an instruction fitted to problem 1 will
-   not transfer, and transfer is measurable without anyone reading minds. This is why it is
-   listed above as required rather than desirable.
-2. **Score coarsely and late.** A per-iteration percentage is a gradient; a verdict at the end of
-   a version's run is much less of one. Resist the urge to score every rung.
-3. **Every instruction is filed before its run** and audited afterwards against the
-   would-this-hold-in-any-field question — the same freeze discipline the programme applies to
-   probes, applied to the experiment's own instructions.
+That is correct, and the correction matters for how the experiment is run. Apparatus changes live
+at the level of roles, diets, briefs, ledgers and gates: **the abstraction gap between "every
+brief carries a kill-test" and any particular target's solution is wide**, and unlike parametric
+overfitting there is no channel with the bandwidth to memorise an answer. The stay-general rule
+is also **generative rather than merely filtering** — forcing each change through a justification
+that must hold for any programme makes general improvements more likely to be *found*, not only
+overfitted ones less likely to pass. And the downside is **bounded and detectable**: an overfitted
+change fails to transfer to the second problem, and that failure is itself a finding. Expected
+value is clearly positive; run the experiment.
+
+**So the guard should be targeted, not diffuse.** The risk is not spread across the modification
+space — it concentrates in three places, all of them close to the problem:
+
+1. **SLOT CONTENT.** `[OBJECT-SLOT]`s exist for programme-specific material, so filling one with
+   something learned from the target — a control-world zoo, a domain search heuristic, a settled
+   list — **is** overfitting: it is the one place the abstraction gap closes to zero. Slots are
+   filled by the programme under test, never by the modifier.
+2. **NUMBERS WITHOUT A REASON.** *Three referees not two · six rungs · push twice.* These look
+   structural and are fitted; a gradient hides comfortably inside a tunable integer. Any number
+   a change introduces carries the reason it is that number, or it is not a general change.
+3. **SELECTION AMONG EQUALLY-GENERAL CHANGES.** The subtle one, and the real form of the risk:
+   every candidate can be general while the *choice* of which to make is fitted, leaving a set of
+   individually-defensible rules whose selection encoded the target.
+
+**The mitigations, corrected.** An earlier draft said *score coarsely and late* to blunt the
+score-as-gradient channel. **That was the wrong trade** — coarse scoring slows learning
+substantially and blocks the selection channel only weakly. Score at whatever granularity is
+useful. Block the channel where it actually runs:
+
+- **FILE EACH INSTRUCTION BEFORE ITS SCORE IS SEEN.** Cheap, and it closes the selection channel
+  directly: an instruction written before the number cannot have been chosen by it. This is the
+  freeze-is-a-solo-commit discipline, applied to the experiment's own instructions.
+- **THE SECOND HELD-OUT PROBLEM** stays the backstop, and now carries a sharper job: it tests the
+  *selection*, not just the individual changes.
+- **Audit against the three concentrations above**, not against a general suspicion — a diffuse
+  caution catches nothing and taxes everything.
 
 **A BASELINE ARM IS STILL WORTH ONE RUN** (bare dispatch, no apparatus, same budget and class) —
 expected to fail, and expected to be sensitive to prompt specifics in a way that does not
