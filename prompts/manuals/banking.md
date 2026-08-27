@@ -109,6 +109,25 @@ the raise is obviously right, that temptation is the measured failure mode, not 
 
 ---
 
+## 3b · ★ IF THIS BANK KILLS A PATH — RE-RANK ITS FORK IN THE SAME PASS
+
+**Trigger: you are banking a negative, a refutation, or anything that closes a route.**
+
+Open `knowledge/ledgers/PATHS_LEDGER.md`, find the fork the dead route belonged to, and
+**re-rank it now** — mark the dead row TRIED with a pointer to the negative, and promote the
+next live path if it is now first choice. Stamp the fork with the date and what forced the
+re-rank.
+
+**Why this is a banking duty and not a consolidation one.** *A rank that was not good enough
+becomes the best choice the moment the path above it dies* — and the only moment anyone is
+reliably looking at that fork is the pass that records the death. Deferred, it is a graveyard:
+the programme banks an honest negative, moves on to a new idea, and the second-best route from
+the same fork sits in a file nobody opens. If the dead route has no fork recorded, **write the
+fork now** — you are the last instance that knows what the alternatives were.
+
+*(Full spec: `manuals/paths.md`. The telemetry watches this: negatives banked while the paths
+ledger has not moved means the trigger is not firing.)*
+
 ## 4 · SWEEP DISCIPLINE, IF THE BANK CHANGES A LABEL
 
 In reader order, and **it is longer than you think**: paper body → front matter → companion

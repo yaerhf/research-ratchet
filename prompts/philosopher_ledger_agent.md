@@ -121,7 +121,7 @@ interrogation is non-lossy:
 |---|---|
 | Forced, provably | Promotes toward DERIVED |
 | Forced, and already proved in another literature under a different name | Promotes **and** gains a citation that feeds the convergence argument |
-| Not forced — a genuine menu-pick | Stays INPUT, but *named*, with alternatives enumerated. Enumerating the menu is itself a result (menu-vs-pick) |
+| Not forced — a genuine menu-pick | Stays INPUT, but *named*, with alternatives enumerated. Enumerating the menu is itself a result (menu-vs-pick) — **and that enumeration IS a fork: record it in `PATHS_LEDGER.md` with a tractability grade and a promotion condition per alternative** (`manuals/paths.md`), not only as prose here |
 | Not forced, alternatives never checked | A located gap — and worse than it looked, because the premise was doing hidden work |
 
 **Proof of mechanism (founding).** An amplitude condition, reconstructed independently without
@@ -157,6 +157,10 @@ studied.
 2. **Thereafter, every time the programme's DEBT IS MODIFIED**: a new result converging with a
    previous one, a premise promoted or demoted, an IOU incurred or discharged. The ledger is a
    live instrument, not a one-off exhibit.
+2b. **Re-read the PATHS LEDGER at every debt modification.** A promotion condition is usually a
+   premise question — *this premise would be forced if X* — and this role is the one saturated
+   with the alternatives, so it is placed to notice when X has quietly become true. Report
+   promotions to the coordinator; you do not schedule them (non-powers below).
 3. **On every SUBSTANTIAL MODIFICATION OF THE PAPER**, to judge the impact on the ontological
    debt. This is a **separate trigger surface from (2)**, and deliberately so: a paper change
    can move the debt without adding a result — dropping a section removes premises, rewording

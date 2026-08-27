@@ -180,6 +180,7 @@ knowledge/
 │   ├── EDIT_REACTION_LEDGER.md  edit → external reaction history
 │   ├── COMPARATIVE_LEDGER.md    the ontological debt ledger (philosopher's output)
 │   ├── PHILOSOPHER_LOG.md       the philosopher's own failures and successes
+│   ├── PATHS_LEDGER.md          the paths NOT taken, ranked by tractability; re-ranked when one dies
 │   ├── REVERSAL_LEDGER.md       positions the programme changed and what changed them
 │   ├── REDUCTIONS_LEDGER.md     the forward object: if A holds, C1..Cn follow, by proof
 │   ├── STRATEGIC_MAP.md · worklist.md  (docket + the do-not-compress meaning-notes region)

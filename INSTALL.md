@@ -115,7 +115,8 @@ In `knowledge/ledgers/`, create each standing ledger as a file with a two-line h
 name, and its one-line purpose quoted from `APPARATUS_MAP.md` §3): `NEGATIVES_LEDGER.md` ·
 `WINS_LEDGER.md` · `RULING_REGISTER.md` · `FAMILY_TREE.md` · `CHECKER_CALIBRATION.md` ·
 `EDIT_REACTION_LEDGER.md` · `COMPARATIVE_LEDGER.md` · `PHILOSOPHER_LOG.md` ·
-`REVERSAL_LEDGER.md` · `REDUCTIONS_LEDGER.md` · `STRATEGIC_MAP.md` · `worklist.md`.
+`REVERSAL_LEDGER.md` · `REDUCTIONS_LEDGER.md` · `PATHS_LEDGER.md` · `STRATEGIC_MAP.md` ·
+`worklist.md`.
 (`NEGATIVES_INDEX.md` is GENERATED — do not create it by hand; note in the negatives ledger's
 header that `scripts/gen_negatives_index.py` generates it once entries exist.)
 
@@ -211,6 +212,9 @@ Formation order, before anything else:
 4. Read knowledge/prompts/RULES_CORE.md and your pack in RULES_BY_ROLE.md §2.
 5. Read the docket (knowledge/ledgers/worklist.md), the RULING_REGISTER and the
    CHECKER_CALIBRATION ledger.
+6. Read the LIVE rows of knowledge/ledgers/PATHS_LEDGER.md and ask of each: has anything
+   landed since that meets its promotion condition? A path whose condition is now met is a
+   docket candidate, not a tombstone (knowledge/prompts/manuals/paths.md).
 
 Then: state the docket as you find it, propose this session's dispatch plan (which item,
 which roles, which diets, full ceremony or light path), and proceed on approval. Observe

@@ -345,7 +345,7 @@ recording failure and none recording a result; a row here NEVER upgrades a tier,
 the companion**) · `STRATEGIC_MAP.md` · `worklist.md` (docket + the **meaning-notes region**,
 never to be compressed) · `RULING_REGISTER.md` (rulings in force + revert lists) ·
 `CHECKER_CALIBRATION.md` · `EDIT_REACTION_LEDGER.md` · `COMPARATIVE_LEDGER.md` ·
-`FAMILY_TREE.md` · `PHILOSOPHER_LOG.md` · `REVERSAL_LEDGER.md` (**positions the programme
+`FAMILY_TREE.md` · `PHILOSOPHER_LOG.md` · **`PATHS_LEDGER.md`** (**the paths NOT taken, ranked — the sibling of the negatives ledger: that one records what was tried and failed, this one what was SEEN AND NOT TRIED, with a tractability grade and the condition that would make it first choice. Re-ranked IN THE SAME PASS whenever a path dies, because a rank that was not good enough becomes the best choice the moment the path above it dies — `manuals/paths.md`**) · `REVERSAL_LEDGER.md` (**positions the programme
 changed and what changed them — read it early; it is the fastest way to learn how the
 programme actually corrects itself**) · **`REDUCTIONS_LEDGER.md`** (**the FORWARD object, dual
 to the negatives ledger: *if antecedent A holds, then C1…Cn follow, by argument P*. The bar is

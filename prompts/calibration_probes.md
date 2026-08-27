@@ -145,6 +145,37 @@ of it.**
 
 ---
 
+## P7 — the PROFILE DIVERGENCE test *(the instrument-on-itself probe; specified, never yet run)*
+
+**What it is for.** `PROFILES.md` §6-bis(i) records an adversarial finding against the profile
+axis itself: **if the same claim is read under two profiles and both return the same finding, it
+will read as two independent confirmations when it is one measurement reported twice.** The
+programme already has evidence pointing that way — a cold-review round found verdicts
+near-invariant under prompt changes, i.e. a property of the *artifact* rather than of the
+*elicitation*. **The axis is therefore unmeasured, and the file's own conclusion is that it must
+not be trusted until this runs.**
+
+**The protocol.** Take a claim whose answer you already know (a repaired defect from this file's
+own set works well). Dispatch it **twice, blind, same diet, same model class, same brief** —
+changing only the `[PROFILE]` line: once NEUTRAL, once PROSECUTORIAL. Then compare:
+
+- **DIVERGE** — the two runs find materially different things, or price the same finding
+  differently. The axis carries information; profiles may be trusted as separate readings.
+- **CONVERGE** — the two runs return substantially the same verdict. **Then the axis is
+  decorative**, and, worse, using it produces *false independent confirmation*: the same
+  measurement, counted twice. Record it and stop marking profiles as if they were readings.
+
+**Score it as a measurement, not an impression:** pre-register (C-20) what you expect before
+dispatching, and report the outcome against it either way. **Run it before adding any new
+profile** — calibrate the instrument before trusting it is this file's whole thesis, and the
+profile axis has never been held to it.
+
+*(Status: SPECIFIED, NOT RUN. That is itself the finding to carry — the apparatus asks every
+checker to be calibrated blind before its verdicts count, and exempted its own disposition
+axis from the same bar.)*
+
+---
+
 ## The signature worth memorising
 
 **A tight tolerance on a vacuous check is not rigour — it is a tell.** `1e-12` is affordable

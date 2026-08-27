@@ -326,8 +326,62 @@ def sig_prereg():
     ]
 
 
+# ---- SIGNAL 5 — SEARCH DEPTH (the paths ledger) ---------------------------
+def sig_paths(asof):
+    """Is the programme narrowing without noticing?
+
+    The paths ledger records routes SEEN AND NOT TRIED, ranked, each with the
+    condition that would make it first choice. Its designed failure mode is that
+    it becomes a graveyard: rows accumulate, nothing is ever promoted, and it
+    reads as diligence while functioning as landfill. Two mechanical detectors,
+    both from files that already exist:
+
+      (i)  PROMOTIONS. Zero promotions after many entries means the ranking is
+           decorative — the ledger is recording judgments nobody revisits.
+      (ii) THE DEATH TRIGGER. Every path that dies is supposed to force a
+           SAME-PASS re-rank of its fork (manuals/paths.md §4). So if negatives
+           are being banked while the paths ledger has not moved, the trigger is
+           not firing — and that is exactly when a second-choice route should
+           have been promoted and was not.
+    """
+    p = ROOT / "knowledge" / "ledgers" / "PATHS_LEDGER.md"
+    if not p.exists():
+        return dict(paths_total=0, paths_live=0, paths_promoted=0, paths_stale_deaths=0), [
+            " 5 SEARCH DEPTH      paths ledger not found — signal DARK (the instrument that "
+            "records", "                     routes NOT taken is the one nothing else covers)"]
+    text = p.read_text(encoding="utf-8", errors="replace")
+    rows = re.findall(r"(?m)^\|\s*(P-[0-9]+[a-z]?)\s*\|(.*)$", text)
+    total = len(rows)
+    live = sum(1 for _, body in rows if not re.search(r"PROMOTED|TRIED|CLOSED", body, re.I))
+    promoted = sum(1 for _, body in rows if re.search(r"PROMOTED", body, re.I))
+    forks = len(re.findall(r"(?m)^##\s+FORK\s", text))
+
+    # (ii) deaths banked since the ledger last moved — the death-trigger detector.
+    last_touch = (_git("log", "-1", "--format=%ad", "--date=short", "--",
+                       "knowledge/ledgers/PATHS_LEDGER.md") or "").strip()
+    stale = 0
+    if last_touch:
+        for ln in _git("log", "--format=%ad|%s", "--date=short").splitlines():
+            if "|" not in ln:
+                continue
+            ds, subj = ln.split("|", 1)
+            if ds.strip() > last_touch and REFUT_VOCAB.search(subj[:HEADLINE_CHARS]):
+                stale += 1
+    return dict(paths_total=total, paths_live=live, paths_promoted=promoted,
+                paths_stale_deaths=stale), [
+        f" 5 SEARCH DEPTH      {total} path(s) across {forks} fork(s) · {live} live · "
+        f"{promoted} promoted",
+        f"                     {stale} route-closing bank(s) since the ledger last moved"
+        + ("  <-- THE DEATH TRIGGER IS NOT FIRING" if stale else ""),
+        "                     [PROXY] promotions are counted from row stamps; a fork re-ranked",
+        "                     in place without a stamp reads as no movement. Zero promotions",
+        "                     after many entries means the ranking is decorative.",
+    ]
+
+
 # ---------------------------------------------------------------------------
 FIELDS = ["verdicts", "rounds", "repeat_claims", "deleted_verdicts",
+          "paths_total", "paths_live", "paths_promoted", "paths_stale_deaths",
           "rul_force", "rul_covered", "rul_self", "rul_offsite", "rul_ground",
           "refut_w0", "refut_w1", "refut_w2", "neg_last", "neg_days", "calib_30d",
           "reversals", "prereg_strict", "prereg_any", "stake_rounds"]
@@ -368,7 +422,8 @@ def main():
         asof = _dt.date.today()
 
     vals, lines = {}, []
-    for fn in (sig_verdicts, sig_grounds, lambda: sig_refutation(asof), sig_prereg):
+    for fn in (sig_verdicts, sig_grounds, lambda: sig_refutation(asof), sig_prereg,
+               lambda: sig_paths(asof)):
         try:
             v, l = fn()
         except Exception as e:                       # never let a signal break the bank

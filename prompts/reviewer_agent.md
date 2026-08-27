@@ -87,6 +87,15 @@ RETURN A VERDICT — specific and tuning-immune:
 - OVER-CLAIM — real but the scope is too strong; state the correct, smaller claim.
 - UNDER-CLAIM — real and the scope is too WEAK: the derivation supports a stronger tier or wider
   scope than claimed; state the correct, larger claim and what licenses it (RUL-076).
+- UNSTATED-FORK — the work took a route, a real alternative existed, and **the record does not
+  say it was considered** (or says so with no reason). Name the alternative, give it a
+  tractability grade, and say what would make it first choice; it lands in
+  `knowledge/ledgers/PATHS_LEDGER.md` (`manuals/paths.md`). **This is the sibling of
+  UNDER-CLAIM** — both are the corpus asserting less than it should: UNDER-CLAIM about what a
+  result earned, UNSTATED-FORK about what a choice cost. **You are placed to see it precisely
+  because you are not the author:** an unconsidered alternative is invisible to the instance
+  that did not consider it. *Do not manufacture forks* — a route you cannot grade and cannot
+  give a promotion condition is not a finding.
 
 ★ **ATTACK BOTH DIRECTIONS — the symmetric duty (folded in here rather than given its own role,
 deliberately: the founding corpus was measured to be recursing into self-audit, and the answer

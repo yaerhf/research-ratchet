@@ -80,6 +80,14 @@ motivating error into a worker; the governing records of every open arc; the com
 Index for any sector it will brief on. Ideally formed on the paper's load-bearing parts
 verbatim + the rest summarized.
 
+**★ AND THE PATHS LEDGER'S LIVE ROWS, AT EVERY SESSION START (2026-08-27).** Read
+`knowledge/ledgers/PATHS_LEDGER.md` and ask of each LIVE path: *has anything landed since that
+meets its promotion condition?* This sits in the coordinator's formation rather than in a
+checker's because **choosing what to work is this role's act** — and because the ledger's whole
+value is that somebody looks on a schedule. Rows whose condition is now met are **docket
+candidates, not tombstones**; triage them in the human coordinator's recorded priority order
+like any other item. *(`manuals/paths.md`; the ledger proposes, it never schedules.)*
+
 ## Powers
 
 1. **Assign tasks** from the docket, in the human coordinator's recorded order.
@@ -268,6 +276,21 @@ checker and never passes FORMATION_CORE to one.
               deliberate one stays possible and must be DECLARED.
               **Where retrieval is not installed** (it is optional — `rag/README.md`), say so
               on this line and name what the instance must read instead.
+[ADJACENT]    REQUIRED IN THE RETURN, not in this brief — say so in the brief: **name the
+              route you took and the ones you left, with a reason and a tractability grade for
+              each.** One FORK, three lines, written while the alternatives are still in view —
+              which is the only moment they are cheap to record. It lands in
+              `knowledge/ledgers/PATHS_LEDGER.md`; the manual is `manuals/paths.md`.
+              **Why this is asked of every dispatch.** A wrong claim is caught by six
+              instruments; **a path never taken is caught by none.** The route judged
+              second-best in four seconds is never revisited — including on the day the
+              first-choice route dies. Grades are the founding worklist's own tractability
+              scale: **A** computation remaining · **B** mechanism asserted, construction needed
+              · **C** needs a new idea · **D** blocked on a NAMED object elsewhere (the grade
+              that flips fastest, because someone else's landing moves it).
+              **A path with no promotion condition is not recorded** — if you cannot say what
+              would make it first choice, you have not identified a path, you have had a
+              feeling. One fork per dispatch unless the work genuinely opened several.
 [DOUBTS]      OPTIONAL, and if present it MUST carry this sentence verbatim: *this list
               is not a boundary — findings outside it count fully.* (R3. Founding
               measurement: six doubts were filed on one panel; the one the author worried
@@ -357,6 +380,13 @@ both the corpus and the prefix version move together.
    condition?* **A `would change if` whose condition is now met is a brief, not a
    tombstone** — and nobody will notice that it is met unless someone deliberately looks,
    because the ledger's own framing points the other way.
+0b. **★ RE-RANK THE PATHS LEDGER — and check the death trigger actually fired.** Step 0 reads
+   the negatives' would-change-ifs; this reads the paths' promotion conditions, and asks the
+   same question of each LIVE row: *has anything landed since that makes this first choice?*
+   Then verify the arc's deaths: **every path that died this arc should already have forced a
+   same-pass re-rank of its fork** (`manuals/paths.md` §4). A negative banked with its fork
+   un-re-ranked is the trigger not firing, and it is the failure mode that turns the ledger
+   into a graveyard — record it as a skip with its reason, exactly like a skipped N1.
 1. Banking triage per the arc's governing record (derived results → primitives + checks;
    negatives → ledger; notes → companion rows).
 2. Archivist pass: superseded memos folded into the governing record; spent probes
