@@ -1,31 +1,42 @@
-                 TWT PAPER AND COMPANION — DOCUMENT TERMS
+RESEARCH-RATCHET DOCUMENTS — LICENSE NOTICE
 
-Copyright (C) 2026 Yaer Aharon Haddad Fennech <hfyaer@gmail.com>
-All rights reserved.
+Copyright (c) 2026 Yaer Aharon Haddad Fennech
 
-This file governs the following works ("the Documents"):
+The documents in this repository — everything under prompts/ (including
+prompts/manuals/), README.md, and INSTALL.md — are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
 
-    TWT_foundational_paper.md
-    TWT_foundational_paper_companion.md
-    and any PDF renderings of them distributed in this repository.
+You are free to:
 
-The Documents are made publicly readable for the purposes of scientific review,
-citation and discussion. Permission is granted to:
+  * Share — copy and redistribute the material in any medium or format;
+  * Adapt — remix, transform, and build upon the material
+    for any purpose, even commercially.
 
-  * read, download and print the Documents for personal, academic or review use;
-  * quote from them with attribution, in the normal scholarly manner.
+Under the following terms:
 
-Permission is NOT granted to redistribute modified versions, to republish them
-in whole elsewhere, or to use them for commercial purposes, without the prior
-written permission of the copyright holder.
+  * Attribution — you must give appropriate credit (for example:
+    "research-ratchet, Yaer Aharon Haddad Fennech,
+    github.com/yaerhf/research-ratchet"), provide a link to the license,
+    and indicate if changes were made. You may do so in any reasonable
+    manner, but not in any way that suggests the licensor endorses you or
+    your use.
 
-The author intends to submit this work for formal publication. These terms are
-deliberately conservative so as not to prejudice that; they may be relaxed to an
-open licence (for example CC BY 4.0) at a later date.
+No additional restrictions — you may not apply legal terms or technological
+measures that legally restrict others from doing anything the license
+permits.
 
-Nothing in these terms restricts the use of the ideas, mathematics or physical
-claims described in the Documents. Copyright protects expression, not facts or
-theories. Independent reimplementation, criticism, refutation and extension of
-the physics are expressly welcome — see the cover note.
+To view a copy of this license, visit:
 
-Contact: hfyaer@gmail.com
+    https://creativecommons.org/licenses/by/4.0/
+
+Canonical legal code:
+
+    https://creativecommons.org/licenses/by/4.0/legalcode
+
+The code in scripts/ is separately licensed under the MIT License — see
+LICENSE.
+
+Note on provenance: incident citations and register IDs inside the documents
+reference the founding programme (github.com/yaerhf/TWT), whose own artifacts
+carry their own licenses in their own repository. Nothing in this repository
+is governed by that repository's terms.
