@@ -1,0 +1,134 @@
+<!-- DIET-CLASS: LEDGER -->
+# THE APPARATUS'S OWN DOCKET
+
+*research-ratchet is itself a programme, and it had no docket — which is the defect its own
+archivist rules exist to catch. This is that docket: the work owed on the **apparatus**, not on
+any object it is given. Instantiated programmes keep their own
+`knowledge/ledgers/worklist.md`; this one governs the toolkit.*
+
+**Grades are the tractability scale** (`manuals/paths.md` §2): **A** computation remaining ·
+**B** mechanism asserted, construction needed · **C** needs a new idea · **D** blocked on a
+named object elsewhere.
+
+---
+
+## W1 · THE EFFICIENCY AUDIT — duplicate activity across roles, and the cost per pass
+**Grade B · opened 2026-08-27 on the human coordinator's directive · not started**
+
+> *"Research for duplicate activity in the different roles. And other ways to reduce process
+> time and token consumption."*
+
+**★ THE FENCE THAT MUST GOVERN THIS ITEM, or it will do damage.** The apparatus is built on
+**deliberate redundancy**: four diets read one claim precisely so that each sees what the
+others structurally cannot, and *the merge destroys a measurement, not merely tidiness*. An
+efficiency pass that cannot tell **duplicate WORK** (waste) from **deliberate REDUNDANCY**
+(the instrument) will strip exactly the structures that make the apparatus work — and it will
+look like a win while doing it. So every candidate saving is classified first:
+
+| class | example | verdict |
+|---|---|---|
+| **WASTE** | the same paragraph pasted into nine role files | remove or centralize |
+| **REDUNDANCY** | reviewer and re-derivation agent both reaching the same result by different routes | **KEEP** — that convergence *is* the measurement |
+| **RITUAL** | full ceremony paid on a dispatch that cannot bank | already fixed by the light path; look for more |
+
+**Prior work to read before starting — do not re-derive it.** The light path (`coordinator_agent.md`,
+dispatch tiers); the manuals scheme (`manuals/INDEX.md` — start knowing NAMES, read CONTENT on
+demand); the formation-prefix cache (`gen_worker_agent.py`); query-instead-of-bulk-load
+(`RULES_BY_ROLE` #171); the register-clerk pilot (a cheap class holding registers so expensive
+classes ask instead of read); and the apparatus auditor's **Q2 — what does each structure cost
+per pass**, which is the existing instrument for exactly this question and should probably
+*run* this item rather than a new role being invented for it (role-count governance: adding a
+role needs the human coordinator's approval).
+
+**The measured baseline to beat.** A probe-scale dispatch was measured paying roughly
+**20,000 tokens of fixed canon-plus-prefix overhead to do ~600 tokens of work.** That ratio,
+re-measured, is this item's success criterion.
+
+**One instance already found (2026-08-27), so the item starts with evidence rather than a
+hunch.** Across the nine role files, **7% of substantive lines are duplicated** — 25 distinct
+lines appearing in two or more files, 73 line-instances in total. The three largest blocks
+appear **verbatim in three files each**: cross-class independence, cross-domain reach, and
+self-persistence. They were written that way deliberately (a role file should be complete for
+its role, as the manuals scheme argues), **but the apparatus's own hazard note says a document
+duplicating a rule creates a DRIFT PAIR, and drift pairs are how this corpus breaks.** So the
+question is live, not settled: quote-with-pointer, or own outright — never paraphrase.
+
+**Where else to look, in the order a first pass should take them:**
+1. **Per-dispatch fixed cost** — what every brief carries whether or not the task needs it.
+2. **Re-reads across a session** — the same file opened by several roles in one arc; the
+   register clerk exists for this and is still a PILOT with no measurement.
+3. **Verdict routing** — RUL-079 already made the consensus loop run direct, worker↔reviewer,
+   because routing rounds through the coordinator burned the coordinator's context. Is any
+   channel still routed that need not be?
+4. **The rules surface** — 204 rules split into packs precisely so no agent holds all of them.
+   Measure what a role actually loads versus what it needs.
+5. **Retrieval adoption** — the layer exists and the founding measurement was that it sat
+   *available and unused*. Is it being used now, and what does a query cost against a read?
+
+**Deliverable:** a table of candidate savings, each classified WASTE / REDUNDANCY / RITUAL,
+each with its measured cost per pass and what breaks if it goes. **Report, do not cut** — the
+deletion decision is the human coordinator's, and N1's founding finding stands: *a cut that
+evaluates structures on recorded catches will remove exactly the invisible-benefit class and
+nothing else.*
+
+---
+
+## W2 · THE TWO MANUALS THAT BIND MOST OFTEN
+**Grade A · not started**
+
+`checking.md` (reviewer, meta-observer, keeper, contra-reviewer) and `dispatching.md` (composing
+a brief, launching a worker) are the two activities that bind on almost every pass, and their
+rules are currently spread across role files and packs. `paper_editing.md`, `probing.md` and
+`releasing.md` stay owed and are lower value. **Watch W1's fence while writing them:** a manual
+that paraphrases a rule creates the drift pair the manuals index itself warns about — quote with
+a pointer, or own the rule outright.
+
+## W3 · RUN P7, THE PROFILE-DIVERGENCE TEST
+**Grade D — blocked on a live programme with real dispatches**
+
+`calibration_probes.md` P7 is specified and has never run. Until it does, the profile axis is an
+uncalibrated instrument, and the apparatus requires every checker to be calibrated blind before
+its verdicts count. **The apparatus exempted its own disposition axis from its own bar** — that
+is the finding to carry until the test is run.
+
+## W4 · ALIGN THE FULLER ORGANIGRAMME
+**Grade A · cosmetic**
+
+`APPARATUS_MAP.md` §1 still draws the pre-2026-08-27 arrangement. The README's spine (external
+reviewer → human → AI coordinator → execution+inner check → philosopher+watchers → data bank,
+with bidirectional arrows where traffic runs both ways) is the current one. Not a contradiction
+— the map's `orchestrates, never forms` edge is correct — but two drawings of one apparatus
+should not diverge.
+
+## W5 · THE OUTREACH PACKAGE
+**Grade A · in progress 2026-08-27**
+
+The essay built from the measured incidents, plus a Show HN text. The repo now reads well and
+the install promise is true; what is missing is the account of *why the design is shaped this
+way*, which is the part that travels.
+
+## W6 · RE-RUN THE INSTALLER AFTER ANY CHANGE TO THE GATES OR INSTALL.md
+**Grade A · standing duty**
+
+The 2026-08-27 dry-run found **eight defects** by executing `INSTALL.md` instead of reading it —
+including the apparatus shipping with its own records gate red. **An installer never run is a
+specification, not an installer.** Instantiate a throwaway programme, bank twice, verify with
+`git log`; the whole pass costs minutes.
+
+---
+
+## MEANING NOTES — do not compress
+
+*(The founding worklist carried a region kept verbatim and never summarized, because the
+compression pass is exactly what loses the reasoning behind a decision. This is that region.)*
+
+- **Redundancy is not duplication.** Four diets on one claim is the instrument; the same
+  paragraph in four files is waste. Every efficiency question in W1 turns on holding those
+  apart, and the fast, wrong answer is to treat them as one thing.
+- **The apparatus can only accumulate unless something prices removal.** Every structure here
+  has a champion — its motivating incident — and no removal has one. Q2 (cost per pass) is the
+  only mechanism by which this toolkit can shrink on evidence rather than on fatigue.
+- **This repository is a programme too.** It has a docket now; it does not yet have an engine,
+  a negatives ledger, or a paths ledger of its own. Whether it should is itself an open
+  question — but the asymmetry is worth seeing: the apparatus asks every programme to keep
+  records it does not fully keep about itself.

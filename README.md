@@ -171,6 +171,12 @@ into `FORMATION_CORE`, the §A invariants into `RULES_CORE`, the engine with
 failure-demonstrated checks, the control-world zoo, the calibration probes, the first
 philosopher campaign.
 
+## Why it is shaped this way
+
+[**WHY.md**](WHY.md) is the account: what a year of running a research programme on AI agents
+measured, and which structure each measurement forced. It is the piece to read if you want the
+reasoning rather than the reference — and the one to send to someone else.
+
 ## The measured claims this design rests on
 
 Every structure here exists because of a recorded incident, not a principle — the rules files
