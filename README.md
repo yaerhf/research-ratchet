@@ -14,34 +14,46 @@ a revert path, and nothing enters the record silently — so knowledge can move 
 
 ```mermaid
 flowchart TB
-    HC["<b>HUMAN COORDINATOR</b><br/>owns the ontology · rules · ratifies"]
-    AC["<b>AI COORDINATOR</b> — the entry point<br/>saturated with STATE<br/>composes briefs · dispatches · triages · escalates"]
-    W["<b>FLUENT WORKERS</b><br/>diet: formation prefix + one brief<br/>derive and probe · bank nothing<br/>steelman before conceding"]
+    XR["<b>EXTERNAL REVIEWER</b> — the outer cycle<br/>cold: sees only the released artifact<br/><i>owes the programme nothing</i>"]
+    HC["<b>HUMAN COORDINATOR</b><br/>owns the ontology · rules · ratifies<br/><i>the only one who rules what coherence cannot decide</i>"]
+    AC["<b>AI COORDINATOR</b> — the entry point<br/>saturated with STATE<br/>composes briefs · dispatches · triages · escalates<br/><i>cannot tier, bank, rule freely, or edit the canon</i>"]
 
-    subgraph INNER ["THE INNER CHECK — per claim, cross-class on authorship"]
+    subgraph EXEC ["EXECUTION AND THE INNER CHECK — per claim, cross-class on authorship"]
         direction LR
-        RV["<b>REVIEWER</b><br/>saturated with<br/>the derivation"]
-        MO["<b>META-OBSERVER</b><br/>starved of<br/>the derivation"]
-        KP["<b>KEEPER</b><br/>saturated with the<br/>whole result set"]
-        RD["<b>RE-DERIVATION</b><br/>the bare<br/>statement only"]
+        W["<b>FLUENT WORKERS</b><br/>diet: formation prefix + one brief<br/>derive · probe · bank nothing<br/><i>steelman before conceding</i>"]
+        subgraph INNER ["§8a — four different diets on one claim"]
+            direction LR
+            RV["<b>REVIEWER</b><br/>saturated with<br/>the derivation"]
+            MO["<b>META-OBSERVER</b><br/><b>starved</b> of<br/>the derivation"]
+            KP["<b>KEEPER</b><br/>saturated with the<br/>whole result set"]
+            RD["<b>RE-DERIVATION</b><br/>the claim's bare<br/>statement only"]
+        end
+        W -->|"unbanked result"| INNER
     end
 
-    PH["<b>PHILOSOPHER</b> (split role)<br/>saturated with the RIVALS<br/>prices every premise symmetrically"]
-    XR["<b>EXTERNAL REVIEWER</b> — the outer cycle<br/>cold: sees only the released artifact"]
-    AUD["<b>THE APPARATUS WATCHES ITSELF</b><br/>auditor: prevents/costs + spirit-served<br/>decision-attention reader · archivist · register clerk"]
+    subgraph META ["THE APPARATUS PRICES AND WATCHES ITSELF"]
+        direction LR
+        PH["<b>PHILOSOPHER</b><br/>starved of our derivations,<br/>saturated with the RIVALS<br/><i>what does it cost, against what?</i>"]
+        AUD["<b>APPARATUS WATCHERS</b><br/>auditor: what does each structure prevent,<br/>at what cost, was its SPIRIT served<br/>decision-reader · archivist · register clerk"]
+    end
 
-    BANK["<b>bank.sh — THE ONLY WAY IN</b><br/>suites green → records gate → re-index → sweep-guarded commit<br/>honesty telemetry reports at every bank, never gates"]
+    subgraph BANK ["THE DATA BANK — the record, and the only way into it"]
+        direction LR
+        GATE["<b>THE GATE</b> · scripts/bank.sh<br/>suites green → records gate<br/>→ re-index → sweep-guarded commit<br/><i>telemetry reports at every bank, never gates</i>"]
+        REC["<b>THE RECORD</b><br/>corpus · engine · paper<br/>the standing ledgers: negatives · <b>paths</b> · wins<br/>rulings · family tree · calibration · reversals"]
+        GATE ==>|"admits"| REC
+    end
 
+    XR -->|"cold verdict"| HC
+    HC -->|"sends the release · never the AI coordinator (fence F1)"| XR
     HC -->|"rulings · ratification · priorities"| AC
     AC -->|"owed rulings, costed both ways"| HC
-    AC -->|"briefs with kill-tests + forecasts"| W
-    W -->|"unbanked result"| INNER
-    AC --> PH
-    AC --> AUD
-    AC -.->|"orchestrates, never forms"| XR
-    INNER -->|"verdicts, persisted as files"| AC
-    XR -->|"cold verdict"| AC
-    AC ==>|"banks"| BANK
+    AC -->|"briefs: kill-test · forecast · diet · retrieval bound"| EXEC
+    EXEC -->|"verdicts, persisted as files"| AC
+    AC -->|"prices premises · audits the apparatus"| META
+    META -->|"debt · spirit-served · re-ranked paths"| AC
+    AC ==>|"banks — nothing enters on an author's say-so"| BANK
+    REC -->|"formation · diet-bounded retrieval"| EXEC
 ```
 
 **Read it by DIET, not by hierarchy** — every instrument is defined by what it is *starved of*
