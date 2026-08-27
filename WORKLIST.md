@@ -13,7 +13,7 @@ named object elsewhere.
 ---
 
 ## W1 · THE EFFICIENCY AUDIT — duplicate activity across roles, and the cost per pass
-**Grade B · opened 2026-08-27 on the human coordinator's directive · FIRST PASS RUN 2026-08-27; the build it recommends is not started**
+**Grade B · FIRST PASS RUN and its recommended build EXECUTED 2026-08-27 · the unmeasured items below still stand**
 
 > *"Research for duplicate activity in the different roles. And other ways to reduce process
 > time and token consumption."*
@@ -132,11 +132,30 @@ verdict-routing volume; retrieval adoption (queries per session vs bulk reads). 
 dispatch-side logging that does not exist yet, and inventing it here would be guessing.
 
 **RECOMMENDATION — one build, two guards.** Generate per-role packs; keep every block inline
-where it is used; make the generator the single source for the shared blocks; gate the generated
-artifacts against their sources in `check_records.py`. Expected saving **~12k tokens per
-dispatch** with no structure removed, no role merged and no redundancy lost. **This is a
-proposal, not an enactment** — the build touches how every role loads its rules, and that is the
-human coordinator's call.
+where it is used; gate the generated artifacts against their sources.
+
+### ENACTED 2026-08-27 (human coordinator: *"that's a huge waste… execute your plan"*)
+
+`scripts/gen_role_packs.py` emits **twelve self-contained packs** to `prompts/packs/` — the
+organigramme, the common core, that role's own rules, its activity blocks, and the manuals index
+(names and triggers only, so manuals stay lazy-loaded on top). **Measured saving: 7,200–14,500
+tokens per dispatch**, against the 22,161 a role used to load as core + the whole role file.
+Nothing was removed, no role merged, no redundancy lost — a pack is a VIEW, and
+`RULES_CORE.md` + `RULES_BY_ROLE.md` remain the sources and the authority.
+
+**The two guards, because a generated view that drifts is a drift pair with a build step in
+front of it:** every pack carries a **fingerprint of the sources it was cut from**, and
+`check_records.py` fails the bank on any stale or unfingerprinted pack (three planted-defect
+demonstrations; self-test now 24/24). Regenerate at every consolidation and whenever a rule
+changes.
+
+**And the auditor's line in every pack leaves its frequency OPEN, by directive** (*"do not write
+that the enforcer is occasional — leave a doubt on this point"*). Every role now carries the
+organigramme with the apparatus auditor on it, stated as **available, drawing its own sample,
+content-addressed, never by the audited party — you will not know in advance whether this pass
+is audited.** That is true (the cadence in its own file is a floor, not a ceiling) and it is the
+instrument: telling every agent the audit is rare converts a live deterrent into a calculable
+risk, when *its value depends on being BELIEVED to be callable, not on being called often.*
 
 ---
 

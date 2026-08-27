@@ -65,7 +65,12 @@ INCLUDE_DIRS = ["knowledge", "scripts", "prompts", "simulator"]
 # knowledge/audit is EXCLUDED BY DESIGN — see the module docstring. The rest are
 # generated artifacts, caches, and archives (archives stay reachable by pointer,
 # like the audit tree: they are history, not live record).
-EXCLUDE_PARTS = {"audit", "__pycache__", ".git", "archive", "node_modules", ".venv"}
+# `packs/` is EXCLUDED for the same reason `audit/` is — but a different one worth stating:
+# the per-role packs are GENERATED VIEWS of RULES_CORE + RULES_BY_ROLE, so indexing them
+# would put twelve near-identical copies of every core rule in front of every query and
+# bury the source under its own reflections. The sources are indexed; the views are not.
+EXCLUDE_PARTS = {"audit", "packs", "__pycache__", ".git", "archive", "node_modules",
+                 ".venv"}
 INCLUDE_SUFFIXES = {".md", ".py", ".txt"}
 MAX_CHUNK_CHARS = 6000          # a chunk larger than this is split on blank lines
 

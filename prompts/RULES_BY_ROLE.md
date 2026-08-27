@@ -15,6 +15,11 @@ to `RULES_CORE.md`. **Read the core first; then read your pack and the blocks yo
 > a rule with no recorded incident says so, and reads as decree until a programme records one.
 > **`[OBJECT-SLOT]`** blocks are supplied at instantiation.
 
+**★ THIS FILE IS THE SOURCE, NOT THE READING SURFACE.** Read `packs/<your-role>.md` instead —
+generated from this file and the core, self-contained, and carrying only what binds you. Come
+here to CHANGE a rule (then regenerate: `python scripts/gen_role_packs.py`), or when you need to
+see what binds a role other than your own.
+
 **Class and WHY are read exactly as in the core.** ABSOLUTE = never break. DEFEASIBLE = a default
 with a named situation where breaking it is right, **and the break is recorded with its reason —
 that recording is what makes it compliance** (the general break clause, RUL-068).

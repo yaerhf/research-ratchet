@@ -128,6 +128,7 @@ knowledge/
 │   ├── AGENT_RULES.md         the by-when-it-bites view + the live divergence table
 │   ├── RULES_CORE.md          the core rules that bind everyone · RULES_BY_ROLE.md  the role packs
 │   ├── PROFILES.md            the disposition axis (steelman RESOLVED into the worker duty, RUL-075)
+│   ├── packs/                 ★ GENERATED per-role rule packs — what a dispatch loads
 │   ├── manuals/               activity manuals — banking.md (demotion AND tier-raise passes) ·
 │   │                          engine.md (SELF-COHERENCE AS AN EXECUTABLE: is an engine
 │   │                          relevant here, and how to build one that arbitrates)
@@ -174,7 +175,9 @@ knowledge/
 │
 └── candidates/              CANDIDATE material — probes, memos, unadjudicated work
 
-scripts/     bank.sh (the only way in) · check_records.py (the records gate; runs on any tree)
+scripts/     bank.sh (the only way in) · gen_role_packs.py (per-role rule packs; regenerate
+               at every consolidation — a stale pack fails the bank)
+             · check_records.py (the records gate; runs on any tree)
              · check_records_founding.py (the founding gate, kept as the worked example of a
                mature one — ~98 pins onto its own corpus; not run by bank.sh)
              · honesty_telemetry.py

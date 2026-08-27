@@ -109,6 +109,18 @@ measurement invisibly. Every brief carries a `[RETRIEVAL]` line naming the bound
 `--diet starved` for the meta-observer, `--diet bare-statement` for the re-derivation agent,
 `open` for saturated roles (`rag/README.md`; `coordinator_agent.md`'s brief format).
 
+### Step 2b-bis — generate the per-role rule packs
+
+```bash
+python scripts/gen_role_packs.py
+```
+
+This writes `knowledge/prompts/packs/<role>.md` — one self-contained document per role
+(organigramme · the common core · that role's rules · its activity blocks · the manuals index).
+**Every dispatch loads its pack, never `RULES_BY_ROLE.md` whole**: that file is ~15,600 tokens
+and a role's own pack is a fraction of it. The packs are gate-checked against their sources, so
+**regenerate whenever a rule changes and at every consolidation** — a stale pack fails the bank.
+
 ### Step 2c — the ledgers
 
 In `knowledge/ledgers/`, create each standing ledger as a file with a two-line header (its

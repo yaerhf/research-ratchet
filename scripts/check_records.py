@@ -171,6 +171,16 @@ def handoff_unreachable(canon_text, exists):
     return "" if exists(m.group(1)) else f"the canon points at {m.group(1)}, which is absent"
 
 
+def stale_packs(fingerprint_of_sources, pack_fingerprints):
+    """Generated role packs that were cut from a different version of the sources.
+
+    A generated VIEW that drifts from its source is a drift pair with a build step in
+    front of it — which is why the packs exist only alongside this check. `pack_fingerprints`
+    maps pack name -> the fingerprint it records (None if it records none)."""
+    return sorted(name for name, fp in pack_fingerprints.items()
+                  if fp != fingerprint_of_sources)
+
+
 ROLE_FILE = re.compile(r"`([a-z_]+\.md)`")
 ROLE_HINT = ("agent", "meta_observer", "coherence_keeper", "register_clerk",
              "decision_attention_reader", "external_review_loop")
@@ -252,6 +262,23 @@ def main():
                          lambda f: exists(f"{ap_dir}/{f}"))
     _ck("roles: every role file the map tabulates exists",
         not gone, f"missing: {', '.join(gone)}")
+
+    # 5b — GENERATED ROLE PACKS ARE CURRENT
+    packs_dir = ROOT / ap_dir / "packs"
+    if packs_dir.is_dir():
+        import hashlib
+        h = hashlib.sha1()
+        for rel in (f"{ap_dir}/RULES_CORE.md", f"{ap_dir}/RULES_BY_ROLE.md"):
+            h.update((_read(rel) or "").encode("utf-8"))
+        want = h.hexdigest()[:12]
+        got = {}
+        for pk in sorted(packs_dir.glob("*.md")):
+            m = re.search(r"fingerprint ([0-9a-f]{12})",
+                          pk.read_text(encoding="utf-8", errors="replace")[:1200])
+            got[pk.name] = m.group(1) if m else None
+        st = stale_packs(want, got)
+        _ck("packs: every generated role pack matches the current rule sources",
+            not st, f"stale: {', '.join(st)} — regenerate: python scripts/gen_role_packs.py")
 
     # 6 — DIET MARKERS
     heads = []
@@ -355,6 +382,15 @@ def self_test():
     demo("handoff: CONTROL — pointer present and resolving",
          handoff_unreachable("read knowledge/audit/SESSION_HANDOFF.md first",
                              lambda r: True), False)
+
+    demo("packs: a generated pack cut from an older version of the sources",
+         stale_packs("abc123abc123", {"reviewer.md": "abc123abc123",
+                                      "keeper.md": "0000deadbeef"}), True)
+    demo("packs: a pack carrying no fingerprint at all",
+         stale_packs("abc123abc123", {"reviewer.md": None}), True)
+    demo("packs: CONTROL — every pack cut from the current sources",
+         stale_packs("abc123abc123", {"reviewer.md": "abc123abc123",
+                                      "keeper.md": "abc123abc123"}), False)
 
     demo("roles: a role the map tabulates whose file is gone",
          missing_roles("| Reviewer | `reviewer_agent.md` |", lambda f: False), True)
