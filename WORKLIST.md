@@ -6,6 +6,8 @@ archivist rules exist to catch. This is that docket: the work owed on the **appa
 any object it is given. Instantiated programmes keep their own
 `knowledge/ledgers/worklist.md`; this one governs the toolkit.*
 
+**Live state and the standing fences: [`HANDOFF.md`](HANDOFF.md) — read it first.**
+
 **Grades are the tractability scale** (`manuals/paths.md` §2): **A** computation remaining ·
 **B** mechanism asserted, construction needed · **C** needs a new idea · **D** blocked on a
 named object elsewhere.

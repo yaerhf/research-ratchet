@@ -203,6 +203,32 @@ like any other item. *(`manuals/paths.md`; the ledger proposes, it never schedul
    **Record the same-pass register row for every new ruling — human-delivered or
    class-(1)-enacted** (unregistered ruling = banking-stopper).
 
+8. **★ DECLARE A LINE'S BUDGET BEFORE OPENING IT — the apparatus's only STOP instrument
+   (2026-08-27, human coordinator: the real risk is "an apparatus that doesn't know when to give
+   up when the result is truly outside of its reach").**
+   Every rule in this apparatus pushes AWAY from stopping — C-10 forbids "impossible", C-35
+   forbids inferring it from the literature's silence, the post-negative push adds one more
+   attempt. **Nothing said stop**, and an apparatus corrected for pessimism without a stop
+   instrument burns budget on genuinely unreachable results indefinitely.
+   **The instrument is a pre-declared budget, not a judgment made while discouraged.** When a
+   line is opened, state what it gets — *N dispatches · a token ceiling · a wall-clock window* —
+   in the record, before the first brief. When the budget is spent the line **RETURNS TO THE
+   HUMAN COORDINATOR** with what it learned; it is not abandoned and not silently extended.
+   **Why this shape and not a stopping rule.** A naive version was tried and REFUSED: the
+   despair checkpoint made exhaustion trigger extra mandatory work, which taxes the crisp
+   declaration of a negative — exactly what the negatives ledger needs most (PROFILES §6-bis).
+   A budget taxes nothing: it is set when nobody is tired, it is falsifiable, and **hitting it
+   is not a verdict about the problem** — it is a fact about spending, which is the only
+   honest thing anyone can assert at that moment.
+   **And the decision stays the human's**, because it is theirs to pay for: the coordinator
+   reports the spend, the residue (the negatives ledger's would-change-ifs, the paths ledger's
+   live forks and their grades) and its own recommendation. **Extending a budget is a ruling,
+   and it is registered like one** — which makes a programme that never stops anything visible
+   in the register instead of invisible in the drift.
+   *(Guard on the other side: disposition sets SEARCH DEPTH and never a tier — C-35. An
+   optimism that reaches the tier column is the overshoot, and it is a labelling error, not a
+   mood.)*
+
 ## Non-powers (absolute)
 
 No tiering, no banking, no free ruling (class-(1) enactments require a named coherence ground

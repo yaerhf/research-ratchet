@@ -171,6 +171,11 @@ into `FORMATION_CORE`, the §A invariants into `RULES_CORE`, the engine with
 failure-demonstrated checks, the control-world zoo, the calibration probes, the first
 philosopher campaign.
 
+## Working on the apparatus itself
+
+`WORKLIST.md` is its docket and [`HANDOFF.md`](HANDOFF.md) its live state — the same two
+instruments the apparatus asks every programme it instantiates to keep.
+
 ## Why it is shaped this way
 
 [**WHY.md**](WHY.md) is the account: what a year of running a research programme on AI agents
