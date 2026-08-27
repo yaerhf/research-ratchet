@@ -194,7 +194,9 @@ The apparatus was built, run, and measured inside the Time-Wave Theory programme
 instantiation, and the reference one: the TWT tree remains the apparatus *as it runs with an
 object*, at **[github.com/yaerhf/TWT](https://github.com/yaerhf/TWT)** (503+ inline-checked
 engine primitives). This repository is the same apparatus with the object removed — the
-**emptyability** goal stated at first publication, now executed. Worked examples, incident
+**emptyability** goal stated at first publication, now executed. *(The tag
+`twt-apparatus-20260827` pins the last TWT-sited state and is a permanent citation anchor for
+that programme's paper — never delete or move it.)* Worked examples, incident
 citations, and register IDs reference the founding programme by design; see *The generic
 edition* above for how to read them.
 

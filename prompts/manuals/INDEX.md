@@ -44,7 +44,7 @@ moment they become binding**, which is also the moment it will actually retain t
 | `engine.md` | **build or extend the engine** — write the first executable primitive, add one, or decide whether this programme needs an engine at all | **WRITTEN** |
 | `paths.md` | **choose a route and leave others**, review work that chose one, or re-rank after a route DIES | **WRITTEN** |
 | `paper_editing.md` | touch the foundational paper or its companion | owed |
-| `checking.md` | serve as reviewer, meta-observer, keeper, or contra-reviewer | owed |
+| `checking.md` | **serve as a checker** — reviewer, meta-observer, keeper, re-derivation agent, or philosopher-as-checker | **WRITTEN** |
 | `dispatching.md` | compose a brief and launch a worker | owed |
 | `probing.md` | build a probe, a simulation, or a numerical experiment | owed |
 | `releasing.md` | render a PDF, sync the mirror, or publish anything | owed |
