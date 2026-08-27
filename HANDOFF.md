@@ -18,6 +18,15 @@ shipped (per-role packs, 7k–14.5k tokens saved per dispatch). W5's essay is wr
 launch posts are the human's to send. W3 is blocked on a live programme. **W8 — the benchmark —
 is designed in full and not started.**
 
+**W9 — SESSION ZERO, built 2026-08-27, immediately before the first trial run.** `/coordinator`
+now checks one thing before anything else: **does `knowledge/audit/FOUNDING_INTERVIEW.md`
+exist?** If not, that session IS the founding interview — it interviews the human to settle the
+foundations (`manuals/founding_interview.md`), and no worker may be dispatched until the floor
+is met. The fence is **refuse, never supply**; the twin rule is **C-36** (the founder's
+conviction is not a tractability verdict, as C-35 says the literature's silence is not).
+**Nobody has run this with a human yet** — the first trial run is its measurement, and the thing
+to watch is whether refuse-never-supply holds when the human asks for help answering.
+
 **★ WHAT IS IN FLIGHT RIGHT NOW.** The human coordinator is searching for a **candidate
 benchmark target**: a result published after this model's training cutoff, recent enough that
 the literature has not absorbed it, with a known answer they hold and the apparatus does not.
@@ -109,8 +118,14 @@ change GENERAL — justifiable for a programme in any field, with no reference t
   regeneration fails the bank** (the pack-currency gate), which is the gate working.
 - **Long commit messages break the shell.** Write the message to a file in the scratchpad and
   use `git commit -F <file>`. Apostrophes and long bodies broke two attempts this session.
-- **Prefer a Python heredoc for multi-file edits, but beware escapes** — `\n` inside an f-string
-  in a heredoc has bitten twice. For anything long or unicode-heavy, use the Write tool.
+- **★ THE HEREDOC HALVES BACKSLASHES IN THIS SHELL — measured 2026-08-27, and quoting the
+  delimiter (`<<'PY'`) does NOT prevent it.** A patch script written with `"\\n"` (intending a
+  literal `\n` in the output file) reached Python as `"\n"` and wrote a REAL newline, producing
+  an unterminated string literal; `\\.` in a regex reached Python as `\.` and raised an
+  invalid-escape SyntaxWarning. **So: never put a backslash in a heredoc'd patch script.** Use
+  the Edit/Write tools for anything containing escapes, or build strings with
+  `"\n".join([...])` written by a tool rather than by the shell. This class has now bitten
+  three times; that is why it is starred.
 - **Never `sed -i` a Python file with regex containing `|`** — one such edit clobbered a region
   of `bank.sh` by matching text the same edit had just inserted. Restore with
   `git checkout <file>` and redo with explicit anchors.
@@ -131,3 +146,8 @@ change GENERAL — justifiable for a programme in any field, with no reference t
 **The standing lesson of this session, in one line:** every substantive defect found here was
 found by **executing** something rather than reading it — the installer, the diet bound, the
 pack gate, the retrieval index, the records gate's own self-test. **Run the thing.**
+
+**And its sharpest instance, 2026-08-27:** the founding check shipped, was run once on a real
+tree, and reported a **fresh tree FOUNDED** — because it searched for a word that the paragraph
+documenting it contains. It read perfectly on the page. **A check that matches its own
+documentation verifies nothing**, and nothing but execution finds that.
