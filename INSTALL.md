@@ -42,6 +42,14 @@ Two fences bind the whole install:
      travel with the documents they license)
 5. Remove `_apparatus_src`. The upstream URL + recorded hash are the update path.
 
+**★ WHILE THE CLONE IS ON DISK, READ ONLY WHAT STEP 0 NAMES: `INSTALL.md`, `README.md`,
+`prompts/APPARATUS_MAP.md`.** The apparatus repository is itself a running programme, and its
+root-level `WORKLIST.md`, `HANDOFF.md` and `WHY.md` are **that programme's own docket, live
+state and account** — deliberately not copied into your tree. Reading them forms you on somebody
+else's programme state at the exact moment you are meant to be forming on **this** one, and
+whatever you absorb there arrives in the interview you are about to conduct. **The clone is a
+source of files, not a source of context.**
+
 ## Step 1 — the interview
 
 Ask the human these questions, one at a time, and keep the answers verbatim (you will quote
