@@ -43,6 +43,7 @@ import ast
 import json
 import math
 import re
+import os
 import sys
 from pathlib import Path
 
@@ -58,6 +59,32 @@ for _stream in (sys.stdout, sys.stderr):
         _stream.reconfigure(encoding="utf-8", errors="replace")
     except (AttributeError, OSError, ValueError):
         pass
+
+
+def _closed_pipe_exit(code):
+    """Return an exit code that does not treat a CLOSED READER as a failure.
+
+    `python rag/query.py ... | head -3` closes the pipe while we are still writing.
+    On POSIX that surfaces as BrokenPipeError at the print; on Windows CPython
+    raises OSError EINVAL when it flushes the std streams at interpreter shutdown
+    and then exits 120. Either way, under `set -euo pipefail` — which means any
+    script and any CI job — a documented, correct invocation fails the run.
+
+    Measured 2026-09-02 (exit 120 on Windows, reproduced at >64 KB of output into
+    `head -1`); found by a cold external review, which hit it twice while writing
+    the install dry-run. Pointing the fd at the null device is what makes the
+    interpreter's own shutdown flush a no-op.
+    """
+    try:
+        sys.stdout.flush()
+    except (BrokenPipeError, OSError):
+        code = 0
+    try:
+        os.dup2(os.open(os.devnull, os.O_WRONLY), sys.stdout.fileno())
+    except (OSError, ValueError):
+        pass
+    return code
+
 
 try:                                    # diet classification travels with the index
     from diet import classify          # noqa: E402  (same directory)
@@ -262,4 +289,8 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        _rc = main()
+    except BrokenPipeError:      # the reader went away; that is not our error
+        _rc = 0
+    sys.exit(_closed_pipe_exit(_rc))

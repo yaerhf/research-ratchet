@@ -98,6 +98,26 @@ if ! echo "$st_out" | grep -qE "SELF-TEST: [0-9]+/[0-9]+ demonstrations behaved 
   echo ">>> APPARATUS SELF-TEST did not print its all-behaved-as-specified line — not banking."; exit 1
 fi
 echo "$st_out" | tail -2
+
+# ★ THE DIET SELF-TEST (W11, 2026-09-02) — same standard, applied to the OTHER absolute.
+# rag/diet.py is the mechanism behind rule 92, and its first design was MEASURED to leak
+# (2026-08-27). The re-cut had never been shown able to fail, which a cold external review
+# counted as the acute case of 2-of-15 tools carrying a demonstration. A starvation that
+# cannot be shown to fire is a convention, not a control.
+if ! dt_out="$(python rag/diet.py --self-test 2>&1)"; then
+  echo "$dt_out" | tail -30
+  echo ">>> DIET SELF-TEST FAILED — a starvation could not be shown to fire on its own"
+  echo ">>> planted defect. Rule 92 is ABSOLUTE and rag/diet.py is its mechanism."
+  echo ">>> Fix the predicate (rag/diet.py ROLES / _heuristic) before banking."; exit 1
+fi
+# Matched COUNT-AGNOSTICALLY (N/N, never 27/27) so adding a demonstration cannot break
+# the gate — the mode is designed to grow.
+if ! echo "$dt_out" | grep -qE "DIET SELF-TEST: [0-9]+/[0-9]+ demonstrations behaved"; then
+  echo "$dt_out" | tail -30
+  echo ">>> DIET SELF-TEST did not print its all-behaved-as-specified line — not banking."; exit 1
+fi
+echo "$dt_out" | tail -1
+
 # Counts are passed ONLY when an engine actually printed them — a gate told "0 checks"
 # by a tree that has no harness would be checking prose against a number nobody counted.
 if [ -n "$CHECKS" ]; then set -- --main "$CHECKS" --companion "${CHECKSC:-0}"; else set --; fi
