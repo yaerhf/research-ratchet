@@ -173,12 +173,37 @@ that paraphrases a rule creates the drift pair the manuals index itself warns ab
 a pointer, or own the rule outright.
 
 ## W3 · RUN P7, THE PROFILE-DIVERGENCE TEST
-**Grade D — blocked on a live programme with real dispatches**
+**Grade A — RE-GRADED 2026-09-02 from D. Runnable today; nothing is blocking it.**
 
 `calibration_probes.md` P7 is specified and has never run. Until it does, the profile axis is an
 uncalibrated instrument, and the apparatus requires every checker to be calibrated blind before
 its verdicts count. **The apparatus exempted its own disposition axis from its own bar** — that
 is the finding to carry until the test is run.
+
+**★ THE RE-GRADE, AND IT IS AN INSTANCE OF THE FAILURE §2-bis EXISTS AGAINST.** The old D read
+*"blocked on a live programme with real dispatches"* — a D that names an object, as the
+procedure requires, but **the wrong object.** A cold external reviewer put P7's own protocol
+against that grade, and the protocol asks for something we already have: *"take a claim whose
+answer you already know (a repaired defect from this file's own set works well) — dispatch it
+twice, blind, same diet, same model class, same brief, changing only the `[PROFILE]` line."*
+Repaired defects with recorded arithmetic exist in that file now. Two sessions, one
+pre-registration, and the measurement is done.
+
+**Graded by the procedure rather than by feel:** *is the route specified, with only execution
+left?* The honest test in §2-bis is **could you write the brief for it right now** — and you
+could. That is **A**, not the reviewer's B: nothing needs building, only doing. Length is not
+intractability, and neither is unfamiliarity.
+
+**What was actually behind the D, named so it is not lost:** a *construct-validity* worry —
+that P7 run against the apparatus's own corpus measures something narrower than P7 run against
+live research. That worry is real and it belongs in the result's stated limits. **It is not a
+tractability blocker, and filing it as one closed a route nobody had tried.** §2-bis: grade the
+ROUTE, never the ANSWER; a credence about what the result would be worth is not a statement
+about whether the work can be done.
+
+*(If the human coordinator judges that a self-test against our own corpus cannot measure the
+axis honestly, that judgment closes W3 at D **with a reason** — which the paths ledger wants and
+the old grade did not have.)*
 
 ## W4 · ALIGN THE FULLER ORGANIGRAMME
 **Grade A · DISCHARGED 2026-08-27**
@@ -525,6 +550,122 @@ run measures them**: which the human found unanswerable, which slots came back
 `[OPEN — founding]`, and above all whether **refuse-never-supply** survives contact with a human
 who wants help answering — the moment the fence is designed for is also the moment it is most
 socially expensive to hold.
+
+---
+
+## ★ THE FIRST EXTERNAL REVIEW — 2026-09-02, against `bf302af`
+
+**The record:** `audit/EXTERNAL_REVIEW_2026-09-02_bf302af.md`, kept verbatim as received. It sits
+in `audit/`, which the retrieval index excludes by design — a governing record is reachable by
+explicit pointer, and this is that pointer.
+
+**What it was.** A cold reader with no write access, commissioned by the human coordinator, which
+**executed the repository rather than reading it**: four planted sabotages against a fresh
+install, the diet layer probed through retrieval rather than through the checker tool, and three
+patches written, run, and shipped with the report. Verdict: engineering HOLDS, design HOLDS,
+**self-application OVER-CLAIMS** — the apparatus applies its strictest standard to
+`check_records.py` and to almost nothing else.
+
+**Its diet, declared and partial:** it read `WORKLIST.md` and `HANDOFF.md` deliberately, which
+`INSTALL.md` step 0 forbids the *installing* agent — correctly, since it was reviewing the
+programme rather than instantiating it, and it flagged the crossing itself. It did not open the
+founding tree, so **every incident citation in the rules is, to it, an unverified provenance
+claim.** It says so. **It is not F1-clean and must not be counted in the external-loop N.**
+
+**★ AND IT TURNED ITS OWN FINDING ON ITSELF, which is the part worth keeping.** A single instance
+of one model class reviewed a repository authored with help from classes it cannot identify —
+and by RUL-065, *if those classes overlap, the entire review carries no information.* It cannot
+determine whether they do. **Neither can we, because nothing in this tree records authorship.**
+That is F1 applied to F1's own author, and it is the argument for building W10 **before**
+commissioning the next review rather than after.
+
+**Adjudication — every counted claim was recounted here, and every patch was run before it was
+believed.** All six findings CONFIRMED. Two defects were found in the supplied patches by
+executing them, which is the standard the report itself set:
+
+| finding | adjudication |
+|---|---|
+| **F1** cross-class has no mechanical support | CONFIRMED — `grep` finds no author class, no checker class; telemetry has five signals and none is cross-class. **Open as W10.** |
+| **F2** 2 of 15 tools carry a demonstration, one never run | CONFIRMED, count reproduced including its near-miss (`bank.sh` matches a naive grep but only *invokes* a self-test). **Acute half closed as W11.** |
+| **F3** no CI; W6 is discharged by remembering | CONFIRMED. **Script closed as W12; the workflow is the human's call.** |
+| **F4** verdict-shopping measurable only over written verdicts | CONFIRMED — the telemetry says it itself. Closes with W10. |
+| **F5** index rebuilt whole at every bank | CONFIRMED — 1708 KB index against 1484 KB of source. Low, deferred, recorded. |
+| **F6** tools die when their reader closes | CONFIRMED **with a correction**: on this box it is not `BrokenPipeError` at the print but `OSError` EINVAL at CPython's shutdown flush, exiting **120**. A guard catching only `BrokenPipeError` would have missed it. **Closed** at all six entry points. |
+
+**Defects found IN the review's own patches, by running them:**
+
+1. **`telemetry_metric6.py` fails OPEN on `UNKNOWN`.** Its prose says an unattributable class
+   *"is counted as same-class"*; its code compares the two columns for equality, so a row of
+   `classA / UNKNOWN` scores as **cross-class**. On three synthetic rows it reported **1/3
+   same-class where the honest answer is 2/3** — an unattributable dispatch *flatters* the very
+   metric built to catch flattery. Must be fixed before W10 ships.
+2. **It reintroduces the cp1252 crash** — a `⚠` glyph, in a tool `bank.sh` runs under `|| true`,
+   so the crash would be **swallowed** and the telemetry would just stop reporting. That also
+   exposed a gap in our own morning's fix: `honesty_telemetry.py` had been missed. Guarded now.
+
+---
+
+## W10 · THE DISPATCH LOG — give RUL-065 something to measure
+**Grade A · a computation remaining · closes F1 and F4 · NOT STARTED — the human coordinator's call**
+
+**The gap.** `WHY.md` opens with the founding measurement: a month of *"found nothing"* caused by
+same-class review. Every diet, the cross-class dispatch rule, the calibration probes and the
+review architecture descend from it. **Nothing in this tree records which class authored a claim
+or which class checked it**, so the generative measurement is exactly what rule 205's WHY column
+calls *a separation asserted and never verified* — a convention, not a control. Its breach is
+invisible by construction: the gates stay green, the telemetry prints five healthy lines, and the
+verdict looks identical.
+
+**The fence that must govern it.** A **record, not a gate** — it reports and never blocks, for the
+same structural reason the telemetry never gates: a log that can refuse a bank gets bypassed and
+then logs nothing. And it must not become a second place verdicts live: it carries a **pointer**
+to the verdict file, never a copy.
+
+**The artifact.** `knowledge/ledgers/DISPATCH_LOG.tsv`, append-only:
+`utc · role · checker_class · author_class · claim_id · verdict · verdict_path`. `UNKNOWN` is a
+legal value in either class column and **counts as SAME-class** — fail-safe, like the diet
+layer's unmarked-file rule. *(The supplied patch gets this backwards; see above.)*
+
+**Written per-dispatch by the coordinator, in the same pass** — the discipline that already
+governs register rows and verdict files. **Reconstructed at consolidation it is a stale-sync note
+and worse than nothing** (the C-24 class).
+
+**What it buys:** metric 6 in the telemetry (same-class rate, same-class CLEARs that carry no
+information, roles that have *never* run cross-class, and `RUL-065 is UNMEASURED` when the log is
+absent — the honest state, and itself the finding); verdict-shopping measured against dispatches
+rather than survivors; and a `check_records.py` invariant that every `VERDICT_*` file resolves to
+a dispatch row and every row claiming a verdict resolves to a file — which catches the **unwritten
+verdict**, currently invisible. Ship it with its planted-defect demonstration (rule 35).
+
+**★ WHY THE TIMING IS LOAD-BEARING.** The first trial run is queued. **Run #1's dispatch data can
+only be collected once**, and W8 ranks apparatus *versions* — a comparison that needs to know
+which class did what. Built after the run, the first data point is gone.
+
+## W11 · A DEMONSTRATED FAILURE MODE FOR THE DIET LAYER
+**Grade A · DISCHARGED 2026-09-02**
+
+`rag/diet.py --self-test`: 27 planted-defect demonstrations — rule 92 across all four checker
+roles with the philosopher's RUL-043 carve-out as a control, **the 2026-08-27 leak pinned as a
+permanent regression**, the marker below `MARKER_SCAN_CHARS`, three fail-safe cases, every
+starvation that *is* an instrument with its matching control, saturated roles verified **not**
+over-starved, and the role aliases. Wired into `bank.sh [2/4]`, matched count-agnostically so the
+mode can grow. **Its own failure mode is demonstrated, not asserted** — deleting the
+meta-observer's `TRANSCRIPT` denial turns exactly that line red and exits 1, verified here by
+doing it.
+
+## W12 · W6 AS A GATE
+**Grade A · the script is DISCHARGED 2026-09-02 · the CI workflow is the human coordinator's call**
+
+`scripts/install_dryrun.sh` executes `INSTALL.md` steps 0–6 against a throwaway tree and banks
+once; green, exit 0. Two assertions ride along as regression pins for defects this week actually
+produced: that retrieval **answers** on a fresh tree rather than merely writing an index, and that
+a fresh tree reports **NOT FOUNDED** — the W9 check that was defeated by the paragraph documenting
+it.
+
+**Framing for the register, kept honest:** this adds no rule. It moves one rule out of the ~85%
+unenforced set, which is the direction the WHY column is supposed to move. **And it cannot check
+that anyone followed the method** — it checks that the machinery still runs. The gates guard the
+door, not the wall; do not let it be quoted as more.
 
 ---
 

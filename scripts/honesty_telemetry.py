@@ -51,6 +51,17 @@ import subprocess
 import sys
 from pathlib import Path
 
+# THE CONSOLE THIS PRINTS INTO MAY NOT BE UTF-8, and this tool prints warning glyphs and
+# quotes document headings. On a cp1252 console one such character raises UnicodeEncodeError.
+# bank.sh runs this under `|| true`, so the crash would be SWALLOWED and the telemetry would
+# simply stop reporting with nothing to show for it — the exact "available and unused" shape.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, OSError, ValueError):
+        pass
+
+
 ROOT = Path(__file__).resolve().parent.parent
 LOG = ROOT / "knowledge" / "audit" / "HONESTY_TELEMETRY_LOG.tsv"
 WINDOW = 30  # days per rolling window
