@@ -129,6 +129,13 @@ change GENERAL — justifiable for a programme in any field, with no reference t
 - **Never `sed -i` a Python file with regex containing `|`** — one such edit clobbered a region
   of `bank.sh` by matching text the same edit had just inserted. Restore with
   `git checkout <file>` and redo with explicit anchors.
+- **★ NEVER `git checkout <file>` TO UNDO A SABOTAGE — sabotage a COPY.** Measured 2026-09-03:
+  a planted defect was reverted with `git checkout scripts/honesty_telemetry.py`, which also
+  silently discarded ~130 lines of uncommitted work in the same file. Recoverable only because
+  the payload was in the scratchpad and every step was scripted. **The self-tests themselves get
+  this right** — their predicates are pure so they can plant defects without mutating a tree; do
+  the same by hand. Copy the file, sabotage the copy, run the copy. If you must sabotage in
+  place, `cp` a backup first and restore from *that*, never from the index.
 - **The house voice for commits:** dense, narrative, stating the measurement and the reasoning,
   in the apparatus's own idiom. They are part of the record, not labels.
 

@@ -47,6 +47,14 @@ jobs:
       - name: diet self-test — the starvations, each shown able to fire
         run: python rag/diet.py --self-test
 
+      # RUL-065 is the founding measurement every diet descends from, and same_class() is the
+      # predicate that decides whether it held. It was fixed for a fail-OPEN inversion on
+      # 2026-09-02 and shipped WITHOUT a demonstration — after which the reviewer put the
+      # inversion back and all four gates here passed it. The telemetry reports and never
+      # gates; its predicate gates and never reports.
+      - name: cross-class self-test — the predicate behind RUL-065
+        run: python scripts/honesty_telemetry.py --self-test
+
       - name: records-invariants gate on this repository
         run: python scripts/check_records.py
 

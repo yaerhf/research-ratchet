@@ -707,6 +707,63 @@ door, not the wall; do not let it be quoted as more.
 
 ---
 
+## W13 · A DEMONSTRATED FAILURE MODE FOR THE CROSS-CLASS PREDICATE
+**Grade A · DISCHARGED 2026-09-03 · from the external reviewer's second pass**
+
+**★ THE FINDING, AND IT IS THE SHARPEST THIS APPARATUS HAS RECEIVED FROM OUTSIDE.** On
+2026-09-02 the reviewer's own `same_class` shipped fail-OPEN under a fail-safe docstring; we
+found it, fixed it, and **shipped the fix with no demonstration.** The reviewer then put the
+inversion back into a copy of `ea0d60d` and ran every gate this repository had:
+
+```
+python scripts/check_records.py --self-test    PASS (did not notice)
+python rag/diet.py --self-test                 PASS (did not notice)
+python scripts/check_records.py                PASS (did not notice)
+bash scripts/install_dryrun.sh                 PASS (did not notice)
+```
+
+**Reproduced here verbatim before a line was written.** The telemetry then reported
+`0/3 checks were SAME-CLASS (0%)` on a log where **every row is unattributable**, with
+`3 unattributable — counted as same-class` printed *directly beneath it*: the two claims
+contradicting each other on adjacent lines of one report, and green everywhere. As the reviewer
+put it, the metric built to catch flattery **flattered hardest exactly when it knew least** —
+and it would have been most wrong at adoption, when a tree starts with placeholder columns,
+which is when it is most likely to be believed and least likely to be checked.
+
+**★ THE STRUCTURAL CAUSE, NAMED, BECAUSE THE FIX IS NOT A PATCH.** The telemetry sits outside
+every gate *by construction*: `bank.sh` runs it under `|| true`, and **that is correct and
+stays** — a telemetry that can block a bank gets removed within a week and then measures
+nothing. But `|| true` was protecting the **report** from failing a bank while silently
+protecting the **predicate** from ever being checked. Those are different things.
+**The report never gates. Its predicate always does.**
+
+**And the measurement that caught the original defect did not run again.** The comment above
+`same_class()` records *"measured on synthetic rows (1/3 where the honest answer is 2/3)"*. That
+measurement was real and it worked — and it was a one-off, which is exactly the distinction this
+tree draws everywhere else. **A check never shown able to fail is a phantom cite of the gate
+class**, and that verdict does not stop applying because the check is ours.
+
+**Built:** `scripts/honesty_telemetry.py --self-test`, **19 demonstrations** — eight of them
+pinning the 2026-09-02 inversion permanently (`UNKNOWN` either side, blank, whitespace,
+lowercase `unknown`), the arithmetic asserted rather than the prose (*a wholly unattributable log
+reports 3/3, never 0/3, and says `100%` in the printed line*), controls for genuine cross-class
+pairs, a same-class REFUTED that is **not** a no-information CLEAR, and a worker dispatch that is
+not a check at all. `sig_crossclass()` was split so `_crossclass_report(rows)` is **pure over
+rows** — the same discipline every other predicate here follows, so a demonstration can plant
+defects without touching a tree.
+
+**Its own failure mode is demonstrated, not asserted:** the inversion restored on a COPY turns
+8 of 19 red and exits 1, naming the pinned line first.
+
+**Wired into both gates** — `bank.sh [2/4]` beside the other two self-tests, and a fifth CI step.
+Re-running the reviewer's experiment against the gates as they now stand: **caught twice**, once
+by its own step and once transitively inside the install dry-run, which runs `bank.sh`.
+
+**Counted progress on F2: 4 of 16 executable tools now carry their own demonstrations, up from
+2 of 15** at `bf302af` — and all four of them run.
+
+---
+
 ## MEANING NOTES — do not compress
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the

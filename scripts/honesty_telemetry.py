@@ -450,12 +450,18 @@ def same_class(checker, author):
 
 
 def sig_crossclass():
+    """Read the log and report. The READING is here; the ARITHMETIC is in
+    `_crossclass_report`, which is pure over rows precisely so `--self-test` can plant them."""
     rows = _dispatch_rows()
     if rows is None:
         return ({}, ["  6 CROSS-CLASS       no DISPATCH_LOG.tsv — RUL-065 is UNMEASURED here.",
                      "                      Cross-class checking is this apparatus's founding",
                      "                      measurement and nothing can see whether it held.",
                      "                      Start the log (manuals/dispatching.md §0-ter)."])
+    return _crossclass_report(rows)
+
+
+def _crossclass_report(rows):
     checks = [r for r in rows if r["role"].strip().lower() in CHECKING_ROLES]
     if not checks:
         # An EMPTY log and a HEALTHY one must not read alike. "0 logged" alone would let a
@@ -496,6 +502,133 @@ def sig_crossclass():
                    f"{', '.join(never)}")
     return ({"xc_checks": len(checks), "xc_same": len(same),
              "xc_same_clear": len(same_clear), "xc_unattr": len(unattr)}, out)
+
+
+# ======================================================================
+# PLANTED-DEFECT DEMONSTRATIONS FOR THE CROSS-CLASS PREDICATE (W13, 2026-09-03).
+#
+# ★ WHY THIS EXISTS, AND IT IS THE SHARPEST FINDING THIS APPARATUS HAS RECEIVED FROM
+# OUTSIDE. `same_class()` decides whether the founding measurement holds. Three days after
+# it was written — as a repair of a fail-OPEN inversion in the implementation that arrived
+# with the 2026-09-02 external review — the same reviewer re-introduced that exact inversion
+# into a copy of `ea0d60d` and ran every gate this repository has:
+#
+#     python scripts/check_records.py --self-test    PASS (did not notice)
+#     python rag/diet.py --self-test                 PASS (did not notice)
+#     python scripts/check_records.py                PASS (did not notice)
+#     bash scripts/install_dryrun.sh                 PASS (did not notice)
+#
+# Reproduced here before this was written. The telemetry then reported `0/3 checks were
+# SAME-CLASS (0%)` on a log where EVERY row is unattributable, with `3 unattributable —
+# counted as same-class` printed directly beneath it: the two claims contradicting each other
+# on adjacent lines of one report, and green everywhere.
+#
+# ★ THE STRUCTURAL REASON, NAMED SO THE FIX IS NOT MISTAKEN FOR A PATCH. This module sits
+# OUTSIDE every gate by construction: `bank.sh` runs it under `|| true`, and that is correct
+# and must stay — a telemetry that can block a bank gets removed within a week and then
+# measures nothing. But `|| true` was protecting the REPORT from failing a bank, and it was
+# silently protecting the PREDICATE from ever being checked. Those are different things.
+# **The report never gates. Its predicate always does.**
+#
+# ★ AND THE MEASUREMENT THAT CAUGHT THE ORIGINAL DEFECT DID NOT RUN AGAIN. The comment above
+# `same_class()` records "measured on synthetic rows (1/3 where the honest answer is 2/3)".
+# That measurement was real and it worked. It was also a one-off, which is precisely the
+# distinction this tree draws everywhere else: a check never shown able to fail is a phantom
+# cite of the gate class. This turns that afternoon into a demonstration that runs forever.
+#
+#     python scripts/honesty_telemetry.py --self-test
+# ======================================================================
+_TST_FAILS = []
+_TST_N = 0
+
+
+def _tdemo(name, got, want):
+    global _TST_N
+    _TST_N += 1
+    ok = (bool(got) == want)
+    _TST_FAILS.append(name) if not ok else None
+    print(f"  [{'OK ' if ok else 'FAIL'}] {name} "
+          f"({'fired' if got else 'did not fire'}; expected {'fire' if want else 'no fire'})")
+
+
+def _row(role, checker, author, claim, verdict):
+    return {"utc": "t", "role": role, "checker_model": checker, "author_model": author,
+            "claim_id": claim, "verdict": verdict, "verdict_path": "v.md"}
+
+
+def self_test():
+    """Planted defects for the predicate that decides whether RUL-065 held."""
+    print("  CROSS-CLASS SELF-TEST — planted defects for the cross-class predicate")
+    print("  " + "-" * 68)
+
+    # -- same_class(): UNATTRIBUTABLE IS NOT EVIDENCE OF INDEPENDENCE -------------
+    # This block is the permanent pin on the 2026-09-02 inversion. Each of these
+    # returned False under the shipped-and-withdrawn `checker == author` form.
+    _tdemo("UNKNOWN author is SAME-class (the 2026-09-02 inversion, pinned)",
+           same_class("opus-5", "UNKNOWN"), True)
+    _tdemo("UNKNOWN checker is SAME-class",
+           same_class("UNKNOWN", "opus-5"), True)
+    _tdemo("both UNKNOWN is SAME-class",
+           same_class("UNKNOWN", "UNKNOWN"), True)
+    _tdemo("a BLANK column is SAME-class (blank is not a third model)",
+           same_class("", "opus-5"), True)
+    _tdemo("a WHITESPACE-only column is SAME-class",
+           same_class("opus-5", "   "), True)
+    _tdemo("lowercase 'unknown' is SAME-class (the column is hand-written)",
+           same_class("opus-5", "unknown"), True)
+    _tdemo("identical models are SAME-class",
+           same_class("opus-5", "opus-5"), True)
+    _tdemo("case and padding do not manufacture independence",
+           same_class(" Opus-5 ", "opus-5"), True)
+    _tdemo("CONTROL — two genuinely different models are CROSS-class",
+           same_class("fable-5.1", "opus-5"), False)
+    _tdemo("CONTROL — cross-class the other way round",
+           same_class("opus-5", "fable-5.1"), False)
+
+    # -- the report: the arithmetic is the finding, so assert the arithmetic ------
+    ALL_UNATTR = [_row("reviewer", "opus-5", "UNKNOWN", "R-1", "CLEAR"),
+                  _row("meta-observer", "opus-5", "UNKNOWN", "R-2", "CLEAR"),
+                  _row("keeper", "UNKNOWN", "UNKNOWN", "R-3", "CLEAR")]
+    vals, lines = _crossclass_report(ALL_UNATTR)
+    _tdemo("a wholly unattributable log reports 3/3 SAME-class, never 0/3",
+           vals.get("xc_same") == 3 and vals.get("xc_checks") == 3, True)
+    _tdemo("...and says so in the printed line (100%, not 0%)",
+           any("3/3" in l and "100%" in l for l in lines), True)
+    _tdemo("...and every one of them is flagged as carrying NO INFORMATION",
+           vals.get("xc_same_clear") == 3, True)
+
+    MIXED = [_row("reviewer", "fable-5.1", "opus-5", "R-1", "CLEAR"),
+             _row("meta-observer", "opus-5", "opus-5", "R-2", "CLEAR"),
+             _row("keeper", "opus-5", "opus-5", "R-3", "REFUTED")]
+    vals, lines = _crossclass_report(MIXED)
+    _tdemo("CONTROL — a genuinely cross-class check is counted as cross",
+           vals.get("xc_same") == 2, True)
+    _tdemo("a same-class CLEAR is reported as carrying no information",
+           vals.get("xc_same_clear") == 1, True)
+    _tdemo("CONTROL — a same-class REFUTED is NOT a no-information CLEAR "
+           "(a refutation from any class is a finding)",
+           vals.get("xc_same_clear") == 1, True)
+    never = [l for l in lines if "NEVER run cross-class" in l]
+    _tdemo("the roles that never ran cross-class are named",
+           never and "meta-observer" in never[0] and "keeper" in never[0], True)
+    _tdemo("...and the role that DID run cross-class is absent from that list",
+           never and "reviewer" not in never[0], True)
+
+    # -- a non-checking role is not a check --------------------------------------
+    _tdemo("CONTROL — a WORKER dispatch is not counted as a check",
+           _crossclass_report([_row("worker", "opus-5", "opus-5", "R-1", "DONE")]
+                              )[0].get("xc_checks") == 0, True)
+
+    print("  " + "-" * 68)
+    if _TST_FAILS:
+        print(f"  CROSS-CLASS SELF-TEST: {len(_TST_FAILS)} of {_TST_N} demonstrations did NOT "
+              f"behave as specified —")
+        print("  the predicate deciding whether RUL-065 held is not doing what it says.")
+        for f in _TST_FAILS:
+            print(f"      - {f}")
+        return 1
+    print(f"  CROSS-CLASS SELF-TEST: {_TST_N}/{_TST_N} demonstrations behaved as specified.")
+    return 0
 
 
 FIELDS = ["verdicts", "rounds", "repeat_claims", "deleted_verdicts",
@@ -540,7 +673,11 @@ def main():
     ap = argparse.ArgumentParser(add_help=True)
     ap.add_argument("--no-log", action="store_true", help="emit only; do not append history")
     ap.add_argument("--asof", default=None, help="YYYY-MM-DD; moves the rolling windows")
+    ap.add_argument("--self-test", action="store_true",
+                    help="the planted-defect demonstrations (W13)")
     a = ap.parse_args()
+    if a.self_test:
+        return self_test()
     try:
         asof = _dt.date.fromisoformat(a.asof) if a.asof else _dt.date.today()
     except ValueError:
@@ -567,6 +704,14 @@ def main():
 
 
 if __name__ == "__main__":
+    # ★ THE ONE PATH HERE THAT MAY EXIT NON-ZERO, and the distinction is load-bearing.
+    # The REPORT never gates: it swallows its own errors and always exits 0, because a
+    # telemetry that can block a bank gets removed within a week and then measures nothing.
+    # `--self-test` is NOT telemetry. It is the check ON the telemetry's predicate, and a
+    # check that cannot fail verifies nothing. `|| true` in bank.sh was protecting the report
+    # from failing a bank — it must not go on protecting the predicate from being checked.
+    if "--self-test" in sys.argv:
+        sys.exit(main())
     try:
         main()
     except Exception as e:            # a telemetry that can fail a bank measures nothing

@@ -118,6 +118,25 @@ if ! echo "$dt_out" | grep -qE "DIET SELF-TEST: [0-9]+/[0-9]+ demonstrations beh
 fi
 echo "$dt_out" | tail -1
 
+# ★ THE CROSS-CLASS SELF-TEST (W13, 2026-09-03) — and note WHERE it sits.
+# The telemetry itself runs at [0/4] under `|| true` and must keep doing so: a telemetry that
+# can block a bank gets removed within a week and then measures nothing. But `|| true` was also
+# protecting the PREDICATE from ever being checked, and those are different things. A cold
+# reviewer re-introduced the fail-open inversion into `same_class()` and every gate this
+# repository had passed it. **The report never gates. Its predicate always does.**
+if ! xc_out="$(python scripts/honesty_telemetry.py --self-test 2>&1)"; then
+  echo "$xc_out" | tail -30
+  echo ">>> CROSS-CLASS SELF-TEST FAILED — the predicate deciding whether RUL-065 held is not"
+  echo ">>> doing what it says. That rule is the founding measurement every diet descends from."
+  echo ">>> Fix same_class() / _crossclass_report() before banking."; exit 1
+fi
+if ! echo "$xc_out" | grep -qE "CROSS-CLASS SELF-TEST: [0-9]+/[0-9]+ demonstrations behaved"; then
+  echo "$xc_out" | tail -30
+  echo ">>> CROSS-CLASS SELF-TEST did not print its all-behaved-as-specified line — not banking."
+  exit 1
+fi
+echo "$xc_out" | tail -1
+
 # Counts are passed ONLY when an engine actually printed them — a gate told "0 checks"
 # by a tree that has no harness would be checking prose against a number nobody counted.
 if [ -n "$CHECKS" ]; then set -- --main "$CHECKS" --companion "${CHECKSC:-0}"; else set --; fi
