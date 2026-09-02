@@ -21,6 +21,52 @@ nothing and **every result it returns is about nothing.** Run the founding inter
 
 ---
 
+## 0-ter · ★ LOG THE DISPATCH — one row, now, before you know the answer
+
+**Every dispatch appends one tab-separated row to `knowledge/ledgers/DISPATCH_LOG.tsv`:**
+
+```
+utc                     role           checker_model  author_model  claim_id  verdict  verdict_path
+2026-09-03T14:03:11Z    meta-observer  fable-5.1      opus-5        R-042     PENDING  -
+```
+
+Fill `verdict` and `verdict_path` when the verdict lands; until then `PENDING` and `-`.
+
+**Why the row exists.** The founding failure was a month of *"found nothing"* caused by
+**same-class review**, and RUL-065 — which every diet in this apparatus descends from — keys on
+**who authored the work.** Until this log existed, nothing recorded that. A rule whose breach
+leaves the gates green, the telemetry healthy and the verdict looking identical is, in rule 205's
+own words, *a separation asserted and never verified: a convention, not a control.*
+
+**★ AND IT CANNOT BE RECONSTRUCTED.** Staffing is chosen per dispatch and deliberately rotated —
+*"roles are not attributed by model; sometimes a Fable coordinator, sometimes Opus. To each one
+its chance"* (human coordinator, 2026-09-02). That rotation is a **strength**: it is the
+anti-monoculture practice RUL-065 argues for. But it also means **no document anywhere implies
+which model held which role on a given day.** Written at dispatch, or lost.
+
+**The four disciplines, each with its reason:**
+
+- **At DISPATCH, not at verdict.** The row exists before its answer does. That is what makes an
+  *unwritten* verdict visible — the telemetry's refutation signal says it measures *"persisted
+  verdicts only; an unwelcome verdict never written to disk leaves no trace"*, and logging the
+  dispatch is what closes it. `check_records.py` pins both directions: every persisted verdict
+  has a row, every row names a file that exists.
+- **`UNKNOWN` is legal, and counts as SAME-class.** You will often not know what authored the
+  work you are handing out. **Say `UNKNOWN` rather than guessing** (rule 50). It counts as
+  same-class because **unattributable is not evidence of independence** — a metric that scored
+  it as cross-class would reward leaving the column blank, and the reference implementation that
+  arrived with the 2026-09-02 external review did exactly that, scoring `opus / UNKNOWN` as a
+  cross-class check.
+- **A pointer, never a copy.** Rule 56 already fixes where verdicts live. A second home is a
+  drift pair.
+- **A record, never a gate.** It blocks nothing, for the same structural reason the telemetry
+  never gates: *a log that can refuse a bank gets bypassed, and then it logs nothing.*
+
+**Reconstructed at consolidation it is worthless** — a stale-sync note, the C-24 class, with the
+added defect that the thing it reconstructs is unknowable by then. **Per-dispatch or not at all.**
+
+---
+
 ## 0 · WHAT A BRIEF IS
 
 **A brief is a research memo, not a task ticket — and its steer is a hypothesis the worker may

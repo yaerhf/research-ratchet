@@ -140,6 +140,20 @@ name, and its one-line purpose quoted from `APPARATUS_MAP.md` §3): `NEGATIVES_L
 (`NEGATIVES_INDEX.md` is GENERATED — do not create it by hand; note in the negatives ledger's
 header that `scripts/gen_negatives_index.py` generates it once entries exist.)
 
+**And one that is not a markdown ledger — `DISPATCH_LOG.tsv`.** Create it with exactly this
+header line, tab-separated, and nothing else:
+
+```
+# utc	role	checker_model	author_model	claim_id	verdict	verdict_path
+```
+
+The coordinator appends one row per dispatch (`manuals/dispatching.md` §0-ter). It is what gives
+**RUL-065 — cross-class review, the measurement this whole apparatus descends from — something to
+measure**: staffing is chosen per dispatch and rotated deliberately, so no role definition implies
+which model held it, and the pairing cannot be reconstructed afterwards from anything. Telemetry
+signal 6 reads it at every bank and prints `RUL-065 is UNMEASURED` while it is empty — which is
+the honest state, and is itself the finding.
+
 In `worklist.md`, write the founding docket — the object-slot work, in this order, each as one
 line with an empty status column:
 

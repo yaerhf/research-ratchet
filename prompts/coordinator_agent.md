@@ -287,6 +287,40 @@ re-read is a ceremony; read on a schedule it is an instrument.
    *(C-35 states the same fence from the rule side: disposition sets SEARCH DEPTH, never a
    tier.)*
 
+10. **★ LOG THE DISPATCH — one row, in the same pass, before its answer is known (W10,
+    2026-09-03).** Append to `knowledge/ledgers/DISPATCH_LOG.tsv`, tab-separated:
+
+    `utc · role · checker_model · author_model · claim_id · verdict · verdict_path`
+
+    **Why this and not a role directive.** The founding measurement is cross-class review
+    (RUL-065) and it keys on **who authored the work** — yet nothing recorded that, so the
+    rule every diet descends from was *a separation asserted and never verified: a convention,
+    not a control.* Its breach is invisible by construction: the gates stay green and the
+    verdict looks identical.
+
+    **★ AND STAFFING IS NOT DERIVABLE FROM A ROLE** (human coordinator, 2026-09-02:
+    *"roles are not attributed by model — sometimes I can ask for a Fable coordinator,
+    sometimes Opus. To each one its chance."*). Deliberate rotation is a **strength** — it is
+    the anti-monoculture practice RUL-065 argues for — but it means **a fixed role→class
+    table would be a fiction, and the pairing cannot be reconstructed after the fact from
+    anything.** Recorded at dispatch or lost. That is the whole argument for the row.
+
+    - **Write it at DISPATCH, not at verdict.** The row exists before the answer does, so a
+      verdict that appears with no dispatch behind it — and a dispatch that quietly produced
+      none — both become visible. Written from memory at consolidation it is a stale-sync
+      note and worse than nothing (the C-24 class).
+    - **`UNKNOWN` is legal and counts as SAME-class.** Often you will not know what authored
+      the work; say so rather than guessing (rule 50). Fail-safe, exactly as an unmarked file
+      is in the diet layer — **unattributable is not evidence of independence**, and a metric
+      that scored it as cross-class would reward leaving the column blank.
+    - **A POINTER to the verdict, never a copy.** Rule 56 already says where verdicts live;
+      a second home for them is a drift pair.
+    - **It is a RECORD, never a GATE.** It reports at every bank (telemetry signal 6) and
+      blocks nothing, for the same structural reason the telemetry never gates: a log that can
+      refuse a bank gets bypassed, and then it logs nothing.
+
+    *(`manuals/dispatching.md` §0-ter carries the operating detail.)*
+
 ## Non-powers (absolute)
 
 No tiering, no banking, no free ruling (class-(1) enactments require a named coherence ground

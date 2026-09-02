@@ -1,0 +1,55 @@
+# THE GATES, ON EVERY PUSH — W6 as a gate rather than a standing duty.
+#
+# ★ WHY THIS EXISTS. W6 said "re-run the installer after any change to the gates or
+# INSTALL.md", and its history is the argument for automating it: three runs on 2026-08-27
+# found eight defects, a stale-pack refusal, and a founding check that reported a fresh tree
+# FOUNDED. But it was discharged by REMEMBERING — and the incident that created it was a
+# failure of remembering: the toolkit shipped with its central gate red and nothing had run it.
+# Everywhere else this apparatus treats "someone will remember" as the weakest control class
+# available. Named by the cold external review of 2026-09-02 (finding F3).
+#
+# ★ WHAT IT DOES NOT DO, and do not let it be quoted as more: it cannot check that anyone
+# followed the METHOD. It checks that the MACHINERY still runs. The gates guard the door,
+# not the wall.
+#
+# It adds no rule. It moves one rule out of the ~85% unenforced set, which is the direction
+# the WHY column is supposed to move.
+name: gates
+on: [push, pull_request]
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # scripts/init_repo.sh REFUSES to run without a git identity — deliberately, because a
+      # half-initialized tree with a failed first commit is worse than a clean refusal. A CI
+      # runner has no identity, so the install dry-run below would abort on that preflight.
+      # (Measured before this workflow ever ran: the reviewer's draft omitted this and would
+      # have gone red on its first push, on the gate working correctly.)
+      - name: give the runner a git identity (init_repo.sh refuses without one)
+        run: |
+          git config --global user.email "gates@ci.invalid"
+          git config --global user.name  "gates"
+
+      # THE GATE THAT CERTIFIES THE GATES. First, as bank.sh runs it first and for the same
+      # reason: a broken predicate would leave every check below green and vacuous, with no
+      # detector. A check never shown able to fail is a phantom cite of the gate class.
+      - name: apparatus self-test — the planted-defect demonstrations
+        run: python scripts/check_records.py --self-test
+
+      # rule 92 is ABSOLUTE and rag/diet.py is its mechanism. Its first design was MEASURED
+      # to leak (2026-08-27), so the re-cut carries its own demonstrations (W11).
+      - name: diet self-test — the starvations, each shown able to fire
+        run: python rag/diet.py --self-test
+
+      - name: records-invariants gate on this repository
+        run: python scripts/check_records.py
+
+      # The 2026-08-27 afternoon that found eight defects, on every push.
+      - name: install dry-run — INSTALL.md executed, not read
+        run: bash scripts/install_dryrun.sh

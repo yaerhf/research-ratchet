@@ -69,6 +69,19 @@ for f in NEGATIVES_LEDGER WINS_LEDGER RULING_REGISTER FAMILY_TREE CHECKER_CALIBR
 done
 printf '<!-- DIET-CLASS: LEDGER -->\n# worklist\nPurpose: the docket.\n\n| # | item | status |\n|---|---|---|\n| 1 | THE FOUNDING INTERVIEW | |\n' \
   > knowledge/ledgers/worklist.md
+# W10 — the dispatch log. Header only; the coordinator appends one row per dispatch.
+printf '# utc\trole\tchecker_model\tauthor_model\tclaim_id\tverdict\tverdict_path\n' \
+  > knowledge/ledgers/DISPATCH_LOG.tsv
+
+# ---- W10 — an EMPTY log must report RUL-065 as UNMEASURED, not as healthy ---------------
+# The failure mode a metric like this invites is printing a reassuring 0% same-class on no
+# data. The honest state of a tree that has logged nothing is "unmeasured", and that IS the
+# finding — so it is pinned here rather than trusted.
+tel_out="$(python scripts/honesty_telemetry.py 2>&1 || true)"
+case "$tel_out" in
+  *"UNMEASURED"*) echo "  telemetry reports RUL-065 UNMEASURED on an empty log" ;;
+  *) fail "an empty dispatch log did not report RUL-065 as UNMEASURED" ;;
+esac
 
 # ---- step 3 — the canon ---------------------------------------------------------------
 cat > CLAUDE.md <<'CANON'

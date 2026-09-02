@@ -391,11 +391,119 @@ def sig_paths(asof):
 
 
 # ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# 6 · CROSS-CLASS INTEGRITY (W10, 2026-09-02) — the founding measurement, measured.
+#
+# ★ WHY THIS SIGNAL EXISTS. The founding failure was a month of "found nothing" caused by
+# SAME-CLASS review, and RUL-065 keys on WHO AUTHORED THE WORK. Every diet, the cross-class
+# dispatch rule, the calibration probes and the whole review architecture descend from it.
+# Until now nothing in any tree recorded which model checked which model's work — so the
+# generative measurement was, in rule 205's own words, "a separation asserted and never
+# verified: a convention, not a control." Its breach is invisible by construction: the gates
+# stay green, the other five signals print healthy lines, and the verdict looks identical.
+# Found by the cold external review of 2026-09-02 (finding F1), which then noted that it could
+# not rule out being same-class with the authors of the very repository it was reviewing.
+#
+# ★ WHY THE COLUMN IS A MODEL AND NOT A "CLASS" (human coordinator, 2026-09-02): *"roles are
+# not attributed by model. Sometimes I can ask for a Fable coordinator, sometimes Opus. To each
+# one its chance."* Staffing is chosen per dispatch and deliberately rotated. A fixed role→class
+# directive could have been read off a document; a varying one CANNOT BE RECONSTRUCTED AFTER THE
+# FACT AT ALL. So the log records the model actually used, which is the only observable, and
+# sameness is inferred from it rather than declared in advance.
+#
+# ★ UNKNOWN COUNTS AS SAME-CLASS — fail-safe, exactly as an unmarked file does in the diet
+# layer. The reference implementation shipped with the review compared the two columns for
+# equality, which silently scores `opus / UNKNOWN` as CROSS-class: an unattributable dispatch
+# would FLATTER the very metric built to catch flattery. Measured on synthetic rows (1/3 where
+# the honest answer is 2/3) before this was written.
+DISPATCH_LOG = ROOT / "knowledge" / "ledgers" / "DISPATCH_LOG.tsv"
+DISPATCH_COLS = ["utc", "role", "checker_model", "author_model", "claim_id",
+                 "verdict", "verdict_path"]
+CHECKING_ROLES = {"reviewer", "meta-observer", "keeper", "rederivation", "philosopher",
+                  "contra-reviewer"}
+CLEARISH = {"CLEAR", "HOLDS", "COHERENT", "CONFIRMED", "NO-FINDINGS"}
+
+
+def _dispatch_rows():
+    if not DISPATCH_LOG.exists():
+        return None
+    out = []
+    for line in DISPATCH_LOG.read_text(encoding="utf-8", errors="replace").splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        fld = line.split("	")
+        if len(fld) >= len(DISPATCH_COLS):
+            out.append(dict(zip(DISPATCH_COLS, [x.strip() for x in fld])))
+    return out
+
+
+def same_class(checker, author):
+    """True when this check carries NO cross-class information.
+
+    UNKNOWN on EITHER side is same-class: unattributable is not evidence of independence,
+    and a metric that treats it as such rewards leaving the column blank."""
+    c, a = (checker or "").strip().upper(), (author or "").strip().upper()
+    if not c or not a or c == "UNKNOWN" or a == "UNKNOWN":
+        return True
+    return c == a
+
+
+def sig_crossclass():
+    rows = _dispatch_rows()
+    if rows is None:
+        return ({}, ["  6 CROSS-CLASS       no DISPATCH_LOG.tsv — RUL-065 is UNMEASURED here.",
+                     "                      Cross-class checking is this apparatus's founding",
+                     "                      measurement and nothing can see whether it held.",
+                     "                      Start the log (manuals/dispatching.md §0-ter)."])
+    checks = [r for r in rows if r["role"].strip().lower() in CHECKING_ROLES]
+    if not checks:
+        # An EMPTY log and a HEALTHY one must not read alike. "0 logged" alone would let a
+        # programme that dispatches without logging sit here looking fine forever; the word
+        # that has to survive is UNMEASURED. (The divergence itself — verdicts on disk with no
+        # rows behind them — is caught by check_records.py, not here: this reports, it never
+        # gates.)
+        return ({"xc_checks": 0},
+                ["  6 CROSS-CLASS       0 checking dispatches logged — RUL-065 UNMEASURED "
+                 "until one is.",
+                 "                      Verdicts on disk with no row behind them are a GATE "
+                 "failure, not a note."])
+    same = [r for r in checks if same_class(r["checker_model"], r["author_model"])]
+    same_clear = [r for r in same if r["verdict"].strip().upper() in CLEARISH]
+    unattr = [r for r in checks
+              if "UNKNOWN" in (r["checker_model"] + r["author_model"]).upper()
+              or not r["checker_model"].strip() or not r["author_model"].strip()]
+    pct = 100.0 * len(same) / len(checks)
+    out = [f"  6 CROSS-CLASS       {len(same)}/{len(checks)} checks were SAME-CLASS "
+           f"({pct:.0f}%) · {len(same_clear)} of those returned CLEAR"]
+    if same_clear:
+        out.append(f"                      {len(same_clear)} same-class CLEAR(s) carry NO "
+                   f"INFORMATION (RUL-065) — re-check")
+        out.append("                      cross-class, or strike them from the evidence base:")
+        for r in same_clear[:5]:
+            out.append(f"                        {r['claim_id']} · {r['role']} · "
+                       f"{r['checker_model']} checking {r['author_model']}")
+    if unattr:
+        out.append(f"                      {len(unattr)} unattributable (UNKNOWN or blank) — "
+                   f"counted as same-class.")
+    per = {}
+    for r in checks:
+        per.setdefault(r["role"].strip().lower(), []).append(r)
+    never = sorted(k for k, v in per.items()
+                   if all(same_class(x["checker_model"], x["author_model"]) for x in v))
+    if never:
+        out.append(f"                      roles that have NEVER run cross-class: "
+                   f"{', '.join(never)}")
+    return ({"xc_checks": len(checks), "xc_same": len(same),
+             "xc_same_clear": len(same_clear), "xc_unattr": len(unattr)}, out)
+
+
 FIELDS = ["verdicts", "rounds", "repeat_claims", "deleted_verdicts",
           "paths_total", "paths_live", "paths_promoted", "paths_stale_deaths",
           "rul_force", "rul_covered", "rul_self", "rul_offsite", "rul_ground",
           "refut_w0", "refut_w1", "refut_w2", "neg_last", "neg_days", "calib_30d",
-          "reversals", "prereg_strict", "prereg_any", "stake_rounds"]
+          "reversals", "prereg_strict", "prereg_any", "stake_rounds",
+          "xc_checks", "xc_same", "xc_same_clear", "xc_unattr"]
 
 
 def append_log(vals, asof):
@@ -440,7 +548,7 @@ def main():
 
     vals, lines = {}, []
     for fn in (sig_verdicts, sig_grounds, lambda: sig_refutation(asof), sig_prereg,
-               lambda: sig_paths(asof)):
+               lambda: sig_paths(asof), sig_crossclass):
         try:
             v, l = fn()
         except Exception as e:                       # never let a signal break the bank

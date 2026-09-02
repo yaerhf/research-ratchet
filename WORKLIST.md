@@ -606,7 +606,45 @@ executing them, which is the standard the report itself set:
 ---
 
 ## W10 · THE DISPATCH LOG — give RUL-065 something to measure
-**Grade A · a computation remaining · closes F1 and F4 · NOT STARTED — the human coordinator's call**
+**Grade A · DISCHARGED 2026-09-03 · closes F1 and F4**
+
+**Built:** `knowledge/ledgers/DISPATCH_LOG.tsv` (created at install, step 2c) · coordinator
+**power 10**, one row per dispatch in the same pass · `manuals/dispatching.md` **§0-ter** ·
+telemetry **signal 6** · two `check_records.py` invariants with six planted-defect demonstrations
+(self-test now 36/36) · a regression pin in the install dry-run that an EMPTY log must still
+report `RUL-065 UNMEASURED`, because an empty log and a healthy one must not read alike.
+
+**★ THE DESIGN CHANGED ON THE HUMAN COORDINATOR'S CORRECTION (2026-09-02), and the correction is
+the load-bearing part.** Both the review's proposal and the plan that followed it assumed a
+`checker_class` / `author_class` pair implied by a staffing directive. That premise is false
+here: *"roles are not attributed by model. Sometimes I can ask for a Fable coordinator, sometimes
+Opus. To each one its chance."*
+
+Three consequences, and the first is the one that decided the timing:
+
+1. **A varying assignment cannot be reconstructed after the fact from anything.** A fixed
+   role→class directive could have been read off a document at any later date; a per-dispatch
+   choice leaves no trace outside the moment it is made. **The gap the review found was worse
+   than the review thought, not better** — recorded at dispatch, or lost.
+2. **The column is a MODEL, not a class.** The model is the observable; sameness is inferred
+   from it. A `[OBJECT-SLOT]` staffing table would have been a fiction dressed as a directive.
+3. **The rotation itself is a strength worth naming** — deliberate variation is exactly the
+   anti-monoculture practice RUL-065 argues for. What was missing was never the practice; it was
+   any record that the practice happened.
+
+**The `UNKNOWN` rule, and why it is the opposite of the reference implementation.** `UNKNOWN` is
+legal in either column and **counts as SAME-class** — fail-safe, exactly like an unmarked file in
+the diet layer. The patch that arrived with the review compared the two columns for equality, so
+`opus / UNKNOWN` scored as a *cross-class* check: **an unattributable dispatch would flatter the
+very metric built to catch flattery.** Measured on synthetic rows (1/3 same-class where the
+honest answer is 2/3) before the fix was written. *Unattributable is not evidence of
+independence, and a metric that scored it so would reward leaving the column blank.*
+
+**What it still cannot see, stated so it is not over-read.** It records what the coordinator was
+told. It cannot verify that the model named is the model that ran, and a programme that dispatches
+without logging shows `0 logged` forever — which is why the *gate* pins the divergence
+independently: every persisted verdict must have a row, and every row must name a file that
+exists. The log reports; the gate refuses.
 
 **The gap.** `WHY.md` opens with the founding measurement: a month of *"found nothing"* caused by
 same-class review. Every diet, the cross-class dispatch rule, the calibration probes and the

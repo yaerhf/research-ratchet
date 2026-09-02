@@ -260,6 +260,42 @@ def founding_floor_gaps(founding_text):
     return [label for label, keys in FLOOR_ITEMS if not any(k in low for k in keys)]
 
 
+DISPATCH_COLS = 7
+
+
+def dispatch_rows(log_text):
+    """Parse the dispatch log into rows. Comments and short lines are ignored, because a
+    half-written row is a logging defect and not a verdict claim."""
+    out = []
+    for line in (log_text or "").splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        fld = [x.strip() for x in line.split("	")]
+        if len(fld) >= DISPATCH_COLS:
+            out.append(fld)
+    return out
+
+
+def verdicts_unlogged(logged_paths, verdict_files):
+    """Persisted verdicts that NO dispatch row points at.
+
+    ★ THIS IS THE ONE THAT CATCHES VERDICT-SHOPPING'S BLIND SPOT. The telemetry's
+    refutation signal says so itself: it measures "persisted verdicts only — an unwelcome
+    verdict never written to disk leaves no trace." Logging at DISPATCH time rather than at
+    verdict time turns that around: the dispatch is recorded before its answer is known, so
+    a verdict that appears with no dispatch behind it, or a dispatch that never produced one,
+    both become visible. This half catches the first."""
+    return sorted(set(verdict_files) - set(logged_paths))
+
+
+def dispatch_phantom_verdicts(logged_paths, exists):
+    """Dispatch rows naming a verdict file that does not exist — the phantom-cite class,
+    pointed at the dispatch log. A row may legitimately carry no verdict yet (an open
+    dispatch); it may not carry a path to a file nobody wrote."""
+    return sorted(p for p in set(logged_paths)
+                  if p and p.upper() not in ("", "-", "PENDING", "NONE") and not exists(p))
+
+
 ROLE_FILE = re.compile(r"`([a-z_]+\.md)`")
 ROLE_HINT = ("agent", "meta_observer", "coherence_keeper", "register_clerk",
              "decision_attention_reader", "external_review_loop")
@@ -401,7 +437,29 @@ def main():
         NOTES.append("founding — the apparatus repository has no object to found; checked "
                      "once instantiated")
 
-    # 9 — OBJECT-SLOT ACCOUNTING (informational; a slot is a docket item, not a defect)
+    # 9 — THE DISPATCH LOG (W10): verdicts and dispatches account for each other
+    if inst:
+        dl = _read("knowledge/ledgers/DISPATCH_LOG.tsv")
+        if dl is None:
+            NOTES.append("dispatch log — knowledge/ledgers/DISPATCH_LOG.tsv absent; RUL-065 "
+                         "is UNMEASURED in this tree (manuals/dispatching.md §0-ter)")
+        else:
+            rows = dispatch_rows(dl)
+            logged = [r[6] for r in rows]
+            vfiles = []
+            for d in ("knowledge/candidates", "knowledge/audit"):
+                base = ROOT / d
+                if base.is_dir():
+                    vfiles += [p.relative_to(ROOT).as_posix()
+                               for p in base.rglob("VERDICT*.md")]
+            un = verdicts_unlogged(logged, vfiles)
+            ph = dispatch_phantom_verdicts(logged, exists)
+            _ck("dispatch: every persisted verdict has a dispatch row",
+                not un, f"unlogged: {', '.join(un[:5])}")
+            _ck("dispatch: every verdict a row names exists",
+                not ph, f"named but absent: {', '.join(ph[:5])}")
+
+    # 10 — OBJECT-SLOT ACCOUNTING (informational; a slot is a docket item, not a defect)
     slots = sum((_read(f"{ap_dir}/{p.name}") or "").count("[OBJECT-SLOT]")
                 for p in (ROOT / ap_dir).glob("*.md"))
     if slots:
@@ -521,6 +579,28 @@ def self_test():
          founding_floor_gaps("object, deliverable, success, docket — and nothing else"), True)
     demo("founding: CONTROL — a record naming every floor item",
          founding_floor_gaps(RECORD), False)
+
+    VF = ["knowledge/candidates/R001/VERDICT_META_r001.md",
+          "knowledge/candidates/R001/VERDICT_REV_r001.md"]
+    demo("dispatch: a persisted verdict that no dispatch row accounts for",
+         verdicts_unlogged([VF[0]], VF), True)
+    demo("dispatch: CONTROL — every verdict has its row",
+         verdicts_unlogged(VF, VF), False)
+    demo("dispatch: a row naming a verdict file nobody wrote",
+         dispatch_phantom_verdicts(VF, lambda p: False), True)
+    demo("dispatch: CONTROL — the same rows once the files exist",
+         dispatch_phantom_verdicts(VF, lambda p: True), False)
+    demo("dispatch: CONTROL — an OPEN dispatch (no verdict yet) is not a phantom",
+         dispatch_phantom_verdicts(["PENDING", "-", ""], lambda p: False), False)
+    TAB, NL = chr(9), chr(10)
+    TSV = NL.join([
+        "# utc" + TAB + "role" + TAB + "checker_model" + TAB + "author_model"
+        + TAB + "claim" + TAB + "verdict" + TAB + "path",
+        TAB.join(["t", "reviewer", "opus", "fable", "R-1", "CLEAR", "v1.md"]),
+        "a malformed row carrying no tabs at all",
+    ]) + NL
+    demo("dispatch: CONTROL — a malformed row is skipped, not read as a verdict claim",
+         len(dispatch_rows(TSV)) != 1, False)
 
     bad = cases.count(False)
     print("-" * 70)
