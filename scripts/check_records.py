@@ -454,10 +454,29 @@ def main():
                                for p in base.rglob("VERDICT*.md")]
             un = verdicts_unlogged(logged, vfiles)
             ph = dispatch_phantom_verdicts(logged, exists)
+            # ★ THE REMEDY IS PART OF THE REFUSAL (2026-09-17). A live tree hit this gate on a
+            # design-review verdict it had written without logging the dispatch, and the next
+            # thing it did was go looking for "the guard's escape hatch". That is the correct
+            # response to a wall and the wrong response to a gate: the pack gate next door names
+            # its fix and nobody hunts for a way around that one. A gate that states only the
+            # problem is a gate that will be bypassed, and then it checks nothing.
             _ck("dispatch: every persisted verdict has a dispatch row",
-                not un, f"unlogged: {', '.join(un[:5])}")
+                not un,
+                f"unlogged: {', '.join(un[:5])}\n"
+                f"         fix: append a row to knowledge/ledgers/DISPATCH_LOG.tsv naming each "
+                f"file above.\n"
+                f"         A DESIGN REVIEW IS A DISPATCH and earns a row like any other "
+                f"(C-37).\n"
+                f"         Staffing unknown? Write UNKNOWN in the model columns — that is legal, "
+                f"and it\n"
+                f"         counts as same-class, which is the honest reading "
+                f"(manuals/dispatching.md §0-ter).")
             _ck("dispatch: every verdict a row names exists",
-                not ph, f"named but absent: {', '.join(ph[:5])}")
+                not ph,
+                f"named but absent: {', '.join(ph[:5])}\n"
+                f"         fix: write the verdict file, or correct the row's path. A row may "
+                f"carry PENDING\n"
+                f"         while a dispatch is open — it may not point at a file nobody wrote.")
 
     # 10 — OBJECT-SLOT ACCOUNTING (informational; a slot is a docket item, not a defect)
     slots = sum((_read(f"{ap_dir}/{p.name}") or "").count("[OBJECT-SLOT]")

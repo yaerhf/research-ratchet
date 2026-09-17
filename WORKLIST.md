@@ -953,6 +953,49 @@ have a design review — it has a scheduling step.
 **Status of C-37 as a rule:** proposed 2026-09-17, measured 2026-09-17, **two catches on its
 first day of operation anywhere**, both in a tree that implemented it without seeing our wording.
 
+### ★ AND A THIRD TREE, THE SAME DAY — three rules composing, and one gate firing for real
+
+**The live optical-computing instantiation pulled the update read-only and applied it within the
+hour** (*"that sends nothing about this tree, only the repo name"* — its coordinator, checking the
+leak direction unprompted). Its copy was **verbatim**, so the update was a clean copy; packs
+regenerated; records gate held. Then three separate things happened, each a first.
+
+**1 — THE KILL-TEST ENFORCEMENT HALF FIRED IN A THIRD TREE, HOURS AFTER ADOPTION.** The chain is
+worth stating whole: the founding tree made it binding on **2026-09-09** → adopted here on the
+**morning** of 2026-09-17 → pulled by the optical tree the **same afternoon** → and it caught a
+**protocol already running** that had no kill-test. The coordinator built one, ran it, and found
+the pipeline returns α = 1.006 on untrained weights — the known-false world where the law holds
+by construction — **and declared it before any α was computed.** That is the ordering clause doing
+exactly its work: *the known-false world is reported BEFORE the real case.* Its own note: *"under
+the updated checking.md a checker would now refuse the brief for that."*
+
+**2 — C-37 CAUGHT A TASK THAT WAS ALREADY RUNNING.** *"C-37 applies to the sweep I have running,
+and it's still cheap to redirect."* The rule was written for work not yet dispatched; it turns
+out to bite on work in flight too, while redirection is still cheap. And afterwards: ***"This is
+exactly what C-37 promised: a design review that redirects rather than condemns."***
+
+**3 — W10's GATE INVARIANT BLOCKED A REAL BANK.** *"the records gate correctly blocked my bank
+until its dispatch row exists."* First production fire of the verdict↔row invariant built
+2026-09-03: a design-review verdict had been written with **no dispatch row behind it**, and the
+gate refused. Correct on both counts — a design review **is** a dispatch (C-37), and an unlogged
+one is exactly the hole W10 exists to close.
+
+**★ AND IT EXPOSED A DEFECT IN THAT GATE, FIXED 2026-09-17.** The next thing the tree did was go
+looking for *"the guard's escape hatch"* — and that is the **correct response to a wall and the
+wrong response to a gate.** Our own pack-currency gate names its remedy (*"regenerate: python
+scripts/gen_role_packs.py"*) and nobody has ever hunted for a way around that one; the dispatch
+gate named only the problem. **A gate that states a problem without its remedy will be bypassed,
+and then it checks nothing** — which is the apparatus's own prediction about anything that can
+refuse a bank. The refusal now carries the fix, reproduced against a scratch tree before shipping:
+append the row, a design review earns one like any other, and **`UNKNOWN` is legal in the model
+columns** — so there is a cheap, honest, recorded path and no reason to look for another.
+
+**What the day demonstrated, and it is new.** Three trees, one directive, rules moving **both
+directions**: the kill-test's teeth came *from* the founding tree, C-37 went *to* it, its verdict
+vocabulary came back, and a third tree ran all of it within hours and exposed a defect in a gate
+built two weeks earlier. **No single tree could have produced any of these findings, and none of
+them was visible on the page.**
+
 ---
 
 ## ★ THE 2026-09-17 SURVEY — the founding tree and the first live instantiation
