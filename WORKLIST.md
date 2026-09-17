@@ -544,12 +544,31 @@ check was run on a real tree and **reported a fresh tree FOUNDED** — defeated 
 paragraph that documents the stamp. The signal moved to the record's existence, and the full
 lifecycle was then exercised in both directions. That defect was invisible on the page.
 
-**Still open — and it is the trial run's job, not a build item:** nobody has run this interview
-*with a human*. Its structure is verified; its questions are a specification. **The first trial
-run measures them**: which the human found unanswerable, which slots came back
-`[OPEN — founding]`, and above all whether **refuse-never-supply** survives contact with a human
-who wants help answering — the moment the fence is designed for is also the moment it is most
-socially expensive to hold.
+**★ MEASURED 2026-09-17 — IT WAS RUN, AND IT HELD.** This entry read *"nobody has run this
+interview with a human"* for three weeks. It has: **Opticalc** (an optical-computing programme)
+was founded on **2026-09-10** against research-ratchet `7370f51`, and its record is
+`knowledge/audit/FOUNDING_INTERVIEW.md`, 19 KB, with all **six floor items MET**.
+
+**The detector was applied**, not assumed — the one this manual specifies: *run your eye down the
+`[HUMAN]` lines alone and ask whether they still say something.* They do, and decisively. The
+human's verbatim answers carry the object (*"assembling the best silicon and optics technologies
+into a device that matches modern GPUs… simulating iterative versions in silico first"*), the
+CORE commitment with its kill condition (the no-toy rule), the falsifier (*"if we can't match
+silicon on any of the axes. As a theorem."*) and a constraint no apparatus could have invented
+(*"I do not have the money to launch an ASIC production"*). **The hedges and the typos survived
+into the record**, which is the `write the hedge` discipline holding under pressure: the answers
+do not sound like the apparatus, which was the exact failure to watch for.
+
+**And the tree recorded its own contamination rather than hiding it** — that coordinator had read
+the programme handoff and technical report *before* the apparatus was installed, on the human's
+instruction, and the record says so under a heading called **Known contamination, recorded**,
+noting the install fence was breached and the founding fence held. *A contaminated run reported
+honestly is recoverable; one reported clean is not.* That sentence was written as a rule and has
+now been used as one, by a tree nobody supervised.
+
+**Two defects in this manual were found by USING it, and both are now fixed** (see the
+2026-09-17 survey below): the missing third authorship mark, and the stub that forges the
+founding signal.
 
 ---
 
@@ -761,6 +780,89 @@ by its own step and once transitively inside the install dry-run, which runs `ba
 
 **Counted progress on F2: 4 of 16 executable tools now carry their own demonstrations, up from
 2 of 15** at `bf302af` — and all four of them run.
+
+---
+
+## W14 · THE DESIGN REVIEW — C-37
+**Grade A · DISCHARGED 2026-09-17 · human coordinator directive**
+
+> *"When a task is expected to take more than 20 minutes, its design should be submitted to
+> review, not its result only."* (2026-09-17)
+
+**The gap it closes, and it is a gap in the shape of the review layer rather than in any one
+rule.** Everything here reviewed **results**: §8a's four diets, the external loop, the keeper,
+the re-derivation agent. All of them get their first opportunity to speak **after the budget is
+spent**, when the only verdicts available are *"this was wrong"* and the sunk cost is arguing for
+the work. **A result review can condemn; a design review can redirect.**
+
+**Built:** `RULES_CORE.md` **C-37** (DEFEASIBLE — break for mechanical work, record the break) ·
+a **third dispatch trigger** in `coordinator_agent.md` that cuts across both tiers, because the
+tiers ask *how much ceremony does the RESULT need* and this asks *how expensive is it to be wrong
+about the APPROACH* — and the answers come apart exactly on a long exploratory dispatch that can
+never bank · `manuals/dispatching.md` **§0-quater** with the operating detail.
+
+**The three questions, because *"is this good"* is not one of them:** can this design **FAIL** ·
+does it answer the question that was **ASKED**, or a neighbouring easier one · what will it
+**MISS**. The second is the commonest way a long dispatch is wasted and it is invisible from
+inside the work.
+
+**Two failure modes named:** the **rubber stamp** (a reviewer who cannot answer the three
+questions in its own words has not read the design), and **the reviewer redesigning** — which is
+the separation principle again, since a reviewer who rewrites the plan has become a second author
+and the next review has nobody outside it.
+
+**The twenty minutes is a trigger, not a measurement.** Nobody is timing anything; the underlying
+question is *would a wrong approach cost more than showing someone the approach*. The clock is
+there because a threshold that needs judgment gets judged in favour of skipping it.
+
+---
+
+## ★ THE 2026-09-17 SURVEY — the founding tree and the first live instantiation
+
+**W7's standing duty, run against two trees.** *(Fence note: TWT's `FORMATION_CORE.md` moved 17
+times in the window and was **deliberately not opened** — it states the precedent result covered
+by the W8 blind. Everything below comes from rule files, role files, canon and git metadata.)*
+
+**What is NOT there, which is most of the answer.** TWT carries **no core rule research-ratchet
+lacks** — C-1..C-4 are its object slot and we are ahead by C-35/C-36 — and **no new role**: the
+`RULES_BY_ROLE` section list matches ours heading for heading. **Opticalc's `RULES_CORE.md`,
+`RULES_BY_ROLE.md` and `coordinator_agent.md` are byte-identical to ours** (same md5): it is a
+downstream consumer running current core, so its divergence is all *usage*. The enforcer,
+adversarial review, the reviewer psychology and the remediation session were adopted in the
+August passes and are already here.
+
+**THREE ADOPTIONS, all generalizable, all landed:**
+
+1. **The kill-test's ENFORCEMENT HALF** (TWT `RUL-130`, binding there since 2026-09-09). Our
+   `[KILL-TEST]` field stated a requirement on the **sender** and left it unenforced at the
+   receiver. TWT adds the two clauses that give it teeth: **the work reports the known-false
+   world's behaviour BEFORE the real case** (reported afterwards it is a formality appended to a
+   conclusion everyone already holds), and **the checkers REFUSE a brief without one** — or
+   construct it themselves and say so in the first line of the verdict. *That is what moves the
+   rule out of the sender's goodwill: the absence now appears in the record, in the checker's own
+   words.* Landed in the brief field and in `manuals/checking.md` §0-bis.
+2. **`[HANDOFF-DRAFT]` — a third authorship mark**, which Opticalc had to invent on day one.
+   Our binary has a hole: **text the apparatus drafted FOR the human to adopt** must be labelled
+   `[HUMAN]` or `[APPARATUS]`, and **both labels are lies**. The new mark carries the clause that
+   is the whole instrument — *it may never be promoted to `[HUMAN]` without the human writing it
+   again* — because without it the mark decays into `[HUMAN]` by everyone agreeing the wording
+   was fine, which is precisely how an apparatus ends up authoring an ontology with nobody
+   deciding that it should.
+3. **Write the founding record under a WORKING NAME; rename at the floor.** Our launch check is
+   *does this file exist* — so **a stub created at the start of the interview announces a
+   founding that has not happened.** Crash mid-session and the next coordinator reads FOUNDED off
+   a file containing three questions and no answers. *The same defect as the FOUNDED stamp that
+   matched the paragraph documenting it, arriving from the other direction.*
+
+**Not adopted, and why.** TWT's `consolidation_session.md` / `worklist_session.md` are
+*reusable-session* documents of the kind we already carry one of (`remediation_session.md`);
+their content is object-bound and the pattern is already ours. `RUL-133` (*every energy statement
+names its face*) is C-33's shape applied to one programme's vocabulary — the general rule is
+already here.
+
+**The standing observation.** Both defects adopted into the founding interview were found by
+**running it on a real programme**, three weeks after it was written and reviewed. Neither was
+visible on the page to its author, to a cold external reviewer, or to any gate.
 
 ---
 

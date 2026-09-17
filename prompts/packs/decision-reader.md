@@ -1,6 +1,6 @@
 <!-- DIET-CLASS: RULES -->
 <!-- GENERATED FILE — do not edit. Regenerate: python scripts/gen_role_packs.py
-     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 404969054912
+     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 9f8ff50b7d23
      check_records.py fails the bank if this pack is stale. -->
 # RULE PACK — DECISION-READER
 
@@ -304,6 +304,42 @@ conversation's mood arrive in the grade column.
   anything else.
 - <sub>added 2026-08-27 · human coordinator directive (the founding interview) · binds all,
   the coordinator specifically · enforcement: prose-only</sub>
+
+**C-37.** **A long task's DESIGN is reviewed before it runs — not only its result.** When a
+piece of work is expected to take **more than twenty minutes**, the plan goes to a checker
+*before* execution: the route, the controls, the kill-test, and what would count as failure.
+The review is of the DESIGN, and it happens while changing the design is still cheap.
+
+- **DEFEASIBLE** — **break when:** the work is mechanical and its design is not in question (a
+  sweep, a count, a rename, an enactment of a ruling already made), or the twenty minutes IS the
+  review. Record the break and its reason where the work lands. *A design review of a task with
+  no design is ceremony, and ceremony is what teaches people to skip reviews that matter.*
+- **WHY:** human coordinator, 2026-09-17: *"when a task is expected to take more than 20
+  minutes, its design should be submitted to review, not its result only."* **Reviewing only
+  the result means the reviewer's first opportunity to speak arrives after the budget is
+  spent** — at which point the only available verdicts are *"this was wrong"* and the sunk cost
+  is arguing for the work. A design review costs minutes against hours, and its findings are
+  still ACTIONABLE, which is the whole difference: a result review can condemn, a design review
+  can redirect.
+- **THE TWENTY MINUTES IS A TRIGGER, NOT A MEASUREMENT.** Nobody is timing anything. The
+  underlying question is *would a wrong approach here cost more than showing someone the
+  approach?* — and for work of this length the answer is essentially always yes. Use the clock
+  because a threshold that needs judgment gets judged in favour of skipping it.
+- **WHO REVIEWS — not the author** (the separation principle). It is a dispatch like any other:
+  it carries a diet bound and it earns a `DISPATCH_LOG` row, so whether the design was checked
+  cross-class is answerable later rather than remembered.
+- **WHAT THE REVIEWER IS ASKED IS NOT "IS THIS GOOD".** Three questions, and they are the ones a
+  result review cannot ask in time: **(i) can this design FAIL** — is there an outcome that
+  would falsify it, and is the kill-test real; **(ii) does it answer the question that was
+  ASKED**, or a neighbouring easier one; **(iii) what will it MISS** — name the thing this route
+  cannot see, so it is a stated limit rather than a later surprise.
+- **WHAT IT DOES NOT DO:** it does not approve the work, license a weaker result review, or move
+  a tier. A design passed at review and refuted at result is an ordinary, healthy outcome —
+  **the design review is not a promise about the answer.** And the reviewer does not redesign:
+  it reports; the author owns the design. *A reviewer who rewrites the plan has become a second
+  author, and the next review has nobody outside it.*
+- <sub>added 2026-09-17 · human coordinator directive · binds all, the coordinator and any
+  dispatching role specifically · enforcement: prose-only</sub>
 
 **C-12.** Tag every open question PINNABLE / UNPINNABLE / UNKNOWN-KNOWABILITY. Expanding on an
 unpinnable one is DEPRIORITIZED, not forbidden — a worker who expands anyway must state, in the

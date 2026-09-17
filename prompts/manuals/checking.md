@@ -12,6 +12,36 @@ Complete for the activity: read this, plus **your own role file**, and you need 
 
 ---
 
+## 0-bis · ★ NO KILL-TEST IN THE BRIEF? REFUSE IT — OR BUILD ONE AND SAY SO
+
+**Before you check anything, look at the brief for its `[KILL-TEST]`**: the known-false world
+where the claim under test must FAIL, and what the method is supposed to return there.
+
+**If it is absent, refuse the brief.** That is a power this role has and should use: a missing
+kill-test is not a small omission, it is the difference between a check that can fail and a check
+that cannot, and **you are the last position from which it is cheap to fix.**
+
+**If you proceed anyway** — because the work is urgent, or the coordinator ruled it — then
+**construct the kill-test yourself and say so in the FIRST LINE of your verdict.** Not in a
+footnote, not in the limits section. The top.
+
+**Why the placement is the whole mechanism.** A rule that binds only the sender is discharged by
+the sender's goodwill, and its breach leaves no trace — the verdict reads identically whether
+the brief carried a kill-test or not. Moving the duty to the RECEIVER makes the absence visible
+**in the record, in the checker's own words**, at the moment somebody is reading the verdict for
+other reasons. A missing kill-test now costs a returned brief; a self-built one is a stated fact
+about how this check had to be assembled.
+
+**And report the kill-test world FIRST, before the real case** — in your verdict as in the work
+you are checking. A kill-test reported afterwards is a formality appended to a conclusion
+everyone already holds. Reported first, it is the thing the conclusion had to get past.
+
+**A claim that SURVIVES its kill-test is not a finding.** The method returned a result in a world
+where the answer is known to be negative, which means the method is broken — and the real-case
+result is void however good it looks. *(Adopted from the founding tree's RUL-130, 2026-09-17.)*
+
+---
+
 ## 0 · THE ONE THING TO GET RIGHT BEFORE ANYTHING ELSE
 
 **Your DIET is your instrument.** You were denied particular material on purpose, and what you

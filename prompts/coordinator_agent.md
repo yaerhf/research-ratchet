@@ -361,6 +361,20 @@ apparatus only holds it. *(`manuals/founding_interview.md` §2; the separation p
               the negatives ledger (a mechanism that revives one is refuted, not promising),
               an adjudicated-drift state no argument may reproduce.
               *A brief with no kill-test is a brief that cannot fail.*
+              **★ THE ENFORCEMENT HALF, adopted from the founding tree 2026-09-17 (its
+              RUL-130, coordinator 2026-09-09, BINDING there since).** Two clauses this field
+              had stated as a requirement on the SENDER and left unenforced at the receiver:
+              **(i) ORDER — the work reports the claim's behaviour in the known-false world
+              BEFORE its behaviour in the real case.** Reported afterwards, a kill-test becomes
+              a formality appended to a result everyone already believes; reported first, it
+              is the thing the result has to survive. **(ii) THE CHECKERS REFUSE A BRIEF
+              WITHOUT ONE** — and if they proceed anyway, they **construct the kill-test
+              themselves and say so at the top of the verdict.** That is what moves the rule
+              out of the sender's goodwill: a missing kill-test now costs the sender a
+              returned brief, and a checker that built its own has said, in the record, that
+              the brief did not.
+              **And a result that SURVIVES its kill-test is not a result** — it is the
+              vacuous-check class, and it is void however good it looks on the real target.
               **★ THE STRONG FORM: A TOOL, NOT A BRIEF FIELD.** The source campaign's rung 0
               was a mechanical barrier checker that classifies any proposed idea by which
               known-false model kills it, maintained beside the zoo — run against all 106
@@ -486,6 +500,22 @@ not paraphrased (F3), and an analogue is a lever, not a derivation.
 
 **The founding apparatus had ONE INTENSITY**: a banking-bound claim and a throwaway probe ran
 the same ceremony, and there was no cheap mode. Two tiers:
+
+**★ AND A THIRD TRIGGER THAT CUTS ACROSS BOTH — DURATION (C-37, human coordinator 2026-09-17).**
+**Any dispatch expected to run more than twenty minutes has its DESIGN reviewed before it
+runs**, whichever tier it sits in. The tiers above ask *how much ceremony does the RESULT need?*
+This asks a different question — *how expensive is it to be wrong about the APPROACH?* — and the
+answers come apart: a long exploratory dispatch that can never bank is exactly the shape that
+most wants a design read, because nothing downstream will catch a wrong route and the whole
+budget is already committed to it.
+
+Send the design, not the task: the route, the controls, the kill-test, and what would count as
+failure. Ask the three questions in C-37 — *can it fail · does it answer what was asked · what
+will it miss* — and do not ask *is it good*. It is a dispatch like any other: diet bound,
+`DISPATCH_LOG` row, and **not the author**.
+
+**Skip it for mechanical work** and record the skip. A design review of a task with no design is
+ceremony, and ceremony is what teaches people to skip the reviews that matter.
 
 - **FULL CEREMONY — anything banking-bound.** The complete brief format, §8a routing,
   persisted verdicts, registry rows. Unchanged.

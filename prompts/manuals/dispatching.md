@@ -67,6 +67,54 @@ added defect that the thing it reconstructs is unknowable by then. **Per-dispatc
 
 ---
 
+## 0-quater · ★ OVER TWENTY MINUTES? THE DESIGN GOES OUT FIRST
+
+**Trigger: the work you are about to dispatch is expected to take more than twenty minutes.**
+Then its **design** is reviewed before it runs — not only its result (C-37).
+
+**Why the result review is too late.** A reviewer who sees only the finished work gets its first
+chance to speak **after the budget is spent**, when the only verdicts available are *"this was
+wrong"* and the sunk cost is arguing for the work. **A result review can condemn; a design review
+can redirect.** Minutes against hours, and the findings are still actionable.
+
+**What you send — the design, not the task:**
+
+| | |
+|---|---|
+| **the route** | what will actually be done, in enough detail that someone could object to it |
+| **the controls** | what is held fixed, and what varies |
+| **the kill-test** | the known-false world where this must fail (§ the brief format) |
+| **the failure criterion** | what outcome would make you say the approach was wrong |
+| **the budget** | declared before the line opens (coordinator power 8) |
+
+**What you ask — three questions, and none of them is "is this good":**
+
+1. **Can this design FAIL?** Is there an outcome that would falsify it, and is the kill-test a
+   real one rather than a world where success was never possible?
+2. **Does it answer the question that was ASKED** — or a neighbouring, easier one? This is the
+   commonest way a long dispatch is wasted, and it is invisible from inside the work.
+3. **What will it MISS?** Name what this route cannot see, so it lands as a stated limit instead
+   of a later surprise.
+
+**Two failure modes, both fatal to the instrument:**
+
+- **The rubber stamp.** A design review that returns *"looks good"* has cost a dispatch and
+  bought nothing. If the reviewer cannot answer the three questions in its own words, it has
+  not read the design.
+- **★ THE REVIEWER REDESIGNS.** It reports; **the author owns the design.** A reviewer who
+  rewrites the plan has become a second author — and the next review has nobody outside it.
+  This is the separation principle again: the value is that somebody who did not build it can
+  still understand it, and that is destroyed the moment they build it too.
+
+**A design passed at review and refuted at result is ordinary and healthy.** The design review is
+not a promise about the answer, it does not license a weaker result review, and it moves no tier.
+
+**Skip it for mechanical work — and record the skip with its reason.** A sweep, a count, a
+rename, an enactment of a ruling already made: these have no design to review, and reviewing
+them teaches everyone that this step is theatre.
+
+---
+
 ## 0 · WHAT A BRIEF IS
 
 **A brief is a research memo, not a task ticket — and its steer is a hypothesis the worker may

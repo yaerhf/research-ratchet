@@ -81,6 +81,22 @@ questions you asked. A later reader — the philosopher, an external reviewer, t
 themselves in four months — must be able to ask *"who actually said this?"* and get an answer.
 **A separation asserted and never verified is a convention, not a control.**
 
+**★ AND A THIRD MARK, WHICH THE FIRST LIVE INSTANTIATION HAD TO INVENT ON DAY ONE
+(2026-09-10, adopted 2026-09-17).** The binary above has a hole big enough to walk the whole
+fence through: **text the apparatus DRAFTED FOR THE HUMAN TO ADOPT.** A prior session's handoff
+proposes wording for the object; the human reads it, nods, and it goes into the record. Under a
+two-mark scheme it must be labelled `[HUMAN]` or `[APPARATUS]`, and **both labels are lies** —
+the first because the human did not write it, the second because it is now load-bearing canon
+that nobody has challenged.
+
+> **`[HANDOFF-DRAFT]`** — text written by a previous session *for the human to rewrite*. It is
+> neither of the other two, and **it may never be promoted to `[HUMAN]` without the human
+> writing it again.**
+
+That last clause is the whole instrument. Without it the mark decays into `[HUMAN]` by the
+ordinary process of everyone agreeing the wording was fine — which is exactly how an apparatus
+comes to author a programme's ontology without a single person deciding that it should.
+
 ---
 
 ## 3 · ★ THE FLOOR — what must be settled before ANY worker is dispatched
@@ -211,6 +227,14 @@ reconstructed from memory at the end is the single easiest place in this apparat
 human's actual words. Write as you go.
 
 1. **`knowledge/audit/FOUNDING_INTERVIEW.md`** — the governing record, `DIET-CLASS: GOVERNING`.
+   **★ WRITE IT UNDER A WORKING NAME AND RENAME IT WHEN THE FLOOR IS MET — never before**
+   (found in use, 2026-09-10; adopted 2026-09-17). The launching check is *does this file
+   exist?*, so **a stub created at the start of the interview announces a founding that has not
+   happened**: crash mid-session, or hand over, and the next coordinator reads FOUNDED off a
+   file containing three questions and no answers. The file appears at the moment the floor is
+   met, which is the moment the claim becomes true.
+   *A stub under the real name forges the signal — and it is the same defect as the FOUNDED
+   stamp that matched the paragraph documenting it, arriving from the other direction.*
    One section per question above, each carrying: the question as asked, the human's answer
    **verbatim** under `[HUMAN]`, your structuring under `[APPARATUS]`, and what it discharged.
    Head it with the floor as a checklist so a later reader can see at a glance what was settled
