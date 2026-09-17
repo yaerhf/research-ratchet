@@ -511,6 +511,63 @@ Both are reported **before** the real case, per the enforcement half adopted the
 design review found this in under an hour, against a design that had been settled for three
 weeks and read by a cold external reviewer without either of us noticing the omission.*
 
+**★ THE REVIEW CAME BACK THE SAME DAY: TWELVE FINDINGS, ALL CONFIRMED.** Verdict kept verbatim
+at `audit/W8_DESIGN_REVIEW_VERDICT_2026-09-17.md`; the design is now **v2**. Its closing sentence
+is the one that did the work: *"it cannot yet be broken because it has not yet said what breaking
+it looks like."*
+
+**The sharpest finding, and it is a hole in the role split itself: NOBODY WAS ASSIGNED TO WRITE
+THE MODIFICATION INSTRUCTIONS.** The scorer writes no apparatus text; the modifier works from
+written instructions; **no seat existed for the author of those instructions**, and every
+candidate holds the key. The v1 fence covered the **score number** — *filed before the score is
+seen* — and left the **run trace** open, so an instruction selected by someone who knows where
+the run diverged from the ideal path passes the *would-this-hold-in-any-field* test while
+carrying direction. **The same defect class this repository was caught in twice this month: a
+separation asserted where it is easy to assert, left open where it actually leaks.**
+
+**v2's answer is a third role with a diet, not a promise.** The **INSTRUCTION AUTHOR** sees the
+run's **process record** — did checkers COMPUTE or ARGUE, did the death trigger fire, did the
+paths ledger move, were kill-tests present, did tiers hold — and never the key, the ideal path or
+the score. **An instruction must be justifiable from the process record alone**, which makes
+*stay general* mechanical: the author cannot select on the target signal because it cannot see
+it. And the modifier now sees **nothing of run *n* but the instruction**, so its blindness holds
+at iteration *k* rather than only at iteration one. *(Role-count governance: a third role needs
+the human coordinator's approval. Proposed, not enacted.)*
+
+**Three pre-registered numbers now make the kill-tests falsifiable**, because neither stated a
+magnitude: **ε** (what score difference counts as improvement — and therefore the minimum
+detectable effect of every ranking W8 will ever report, known *before* anything is spent), **w**
+(the distance/time combination rule, **fixed before the degraded arm runs**, or degrading the
+apparatus removes ceremony, removes time, and any outcome can be explained afterwards), and
+**δ** (the band for a new **null degradation** — one pre-registered change expected *not* to
+matter, because a test with only expected-to-fail arms cannot be surprised).
+
+**Five more that changed the design:** an **unanticipated route now scores as SUCCESS** and
+updates the ideal path, since the re-derivation agent exists precisely because a different route
+is worth more; **axis 2 enters the score as its own vector**, or a well-recorded failure and a
+sloppy one score identically; **a version that gets faster by removing a checking structure is
+the divergence tripwire, not a win**, classified against W1's WASTE/REDUNDANCY table; **paired
+runs in one window** with the model snapshot recorded, because the dispatch log records the model
+*named*, not the weights that ran; and a **pre-run contamination probe per model class**, since
+`WITHHELD` stops file opens and says nothing about training data.
+
+**Mid-run human rulings were an unlisted channel** — the frozen fixture constrains only the
+founding conversation, while every ruling during a run is live from the key-holder into the tree.
+v2 takes the horn honestly: rulings logged verbatim, repeated identically where the question
+recurs, novel ones flagged as uncontrolled, **and the limit left standing** — a benchmark of a
+human-in-the-loop apparatus measures the loop, human included.
+
+**And the reviewer independently found the docket leak** this session had found the same
+afternoon: `WORKLIST.md` and `HANDOFF.md` are public and clonable and the benchmark tree installs
+from that repository, so **the fence has been describing the thing it hides.** Both corrections
+are now prerequisites for rung 0: `WITHHELD` covers the apparatus's own records, and benchmark
+trees install from a **stripped source**.
+
+**On method — worth keeping.** The reviewer held C-37's §8 exactly: **no replacement design
+anywhere**, across twelve findings, each naming what is wrong and what a correct component would
+have to satisfy. The design stayed the author's to fix. *That is the first end-to-end evidence
+that C-37's reviewer discipline survives a reviewer who had plenty to say.*
+
 ---
 
 ## W9 · SESSION ZERO — THE FOUNDING INTERVIEW · **BUILT 2026-08-27**
