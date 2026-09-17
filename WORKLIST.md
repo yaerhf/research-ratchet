@@ -899,6 +899,60 @@ and the next review has nobody outside it.
 question is *would a wrong approach cost more than showing someone the approach*. The clock is
 there because a threshold that needs judgment gets judged in favour of skipping it.
 
+### ★ MEASURED THE SAME WEEK — and by a genuinely independent implementation
+
+**The directive was given to TWO TREES SEPARATELY.** The human coordinator asked the founding
+tree's coordinator to add the rule **independently, without our text** — which turned a
+methodology change into a natural experiment: **what both arrived at is forced by the problem;
+what only one had is what the other missed.** It landed there as **RUL-134** and ran **two design
+reviews on its first day.**
+
+**What only THEY had — adopted 2026-09-17 as C-37-bis:**
+
+- **A VERDICT VOCABULARY.** C-37 specified three questions and never said what a review
+  *returns*. Theirs returns **APPROVED / APPROVED-WITH-AMENDMENTS / RETURNED**. Without a
+  vocabulary a review returns prose, which cannot be routed, counted, logged or appealed — **and
+  decays into approval by default, because nobody writes the word that would have stopped
+  anything.** This was the largest hole in C-37 as shipped.
+- **AMENDMENTS FROZEN AND COMMITTED BEFORE THE RUN**, as a rider on the design. An amendment
+  living only in a conversation gets quietly softened by the person it inconveniences.
+- **RETURNED HOLDS THE WORK** — redesign, then a *second* review. Otherwise *returned* means
+  *proceed with a caveat*, which is what it decays to.
+- **CROSS-CLASS, BINDING** rather than our weaker *"not the author, ideally not the same class"*.
+
+**What only WE had:** the three questions, the **no-redesign** fence, the rubber-stamp failure
+mode, and the twenty-minute trigger. *(The two are compatible once the distinction is stated: an
+amendment is a **constraint** — "a correct read selects blocks by stored time, not index" — never
+a design. That keeps the reviewer out of authorship while letting a verdict carry teeth.)*
+
+**TWO LIVE CASES ON DAY ONE, and they caught different classes:**
+
+1. **The defect a result review could not have seen.** A read was approved with amendments: its
+   block selection was hard-coded to indices, so after a continuation it would have **silently
+   read the previous checkpoint** — returning a number that was plausible, well-formed, and about
+   the wrong state. **The failure mode was invisible in the result.** That is the entire argument
+   for reviewing designs, compressed into one incident. The review also **computed rather than
+   judged** — the reviewer's own independent extrapolation landed on a different asymptote than
+   the design assumed, which reshaped what the result was allowed to claim. C-16 applies to
+   design reviews too.
+2. **The instrument that could not see what it was built to see.** A probe was **RETURNED**: its
+   order parameter could not detect the structure it existed to detect, and its secondary
+   criterion **passed on a known-true-negative state**. That second clause is **the kill-test
+   rule and the design review composing** — the design review is where a kill-test gets run *on
+   paper*, before any compute is spent. The run was held; the redesign became a task.
+
+**★ AND THE SENTENCE WORTH KEEPING**, from that tree's own status report, on a probe the human
+had already approved:
+
+> ***"Your approval stands; the instrument did not."***
+
+Both facts sat side by side without contradiction, which is the whole point: **approval of the
+WORK is not approval of the INSTRUMENT**, and a coordinator that cannot separate them does not
+have a design review — it has a scheduling step.
+
+**Status of C-37 as a rule:** proposed 2026-09-17, measured 2026-09-17, **two catches on its
+first day of operation anywhere**, both in a tree that implemented it without seeing our wording.
+
 ---
 
 ## ★ THE 2026-09-17 SURVEY — the founding tree and the first live instantiation

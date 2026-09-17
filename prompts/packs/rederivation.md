@@ -1,6 +1,6 @@
 <!-- DIET-CLASS: RULES -->
 <!-- GENERATED FILE — do not edit. Regenerate: python scripts/gen_role_packs.py
-     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 9f8ff50b7d23
+     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 58d39fb7809b
      check_records.py fails the bank if this pack is stale. -->
 # RULE PACK — REDERIVATION
 
@@ -340,6 +340,42 @@ The review is of the DESIGN, and it happens while changing the design is still c
   author, and the next review has nobody outside it.*
 - <sub>added 2026-09-17 · human coordinator directive · binds all, the coordinator and any
   dispatching role specifically · enforcement: prose-only</sub>
+
+**C-37-bis — THE VERDICT VOCABULARY, AND WHAT EACH ONE DOES.** *(Adopted 2026-09-17 from the
+founding tree's independent implementation of the same directive, which had it and this rule did
+not. Two trees were given C-37's directive separately; what both arrived at is forced by the
+problem, and what only one had is what the other missed.)*
+
+A design review **returns one of three words**, and each carries an obligation:
+
+| verdict | what it means | what happens |
+|---|---|---|
+| **APPROVED** | the design can fail, answers what was asked, and its limits are stated | the work runs |
+| **APPROVED-WITH-AMENDMENTS** | sound, but a named component would not do what it claims | **the amendments are FROZEN and committed BEFORE the run** |
+| **RETURNED** | the design cannot do the job it was written for | **the work is HELD.** Redesign, then a *second* review |
+
+- **A design review with no verdict vocabulary returns prose**, which cannot be routed, counted,
+  logged or appealed — and which decays into approval by default, because nobody wrote the word
+  that would have stopped anything.
+- **★ AMENDMENTS ARE FROZEN BEFORE THE RUN, as a rider on the design.** This is the
+  freeze-is-a-solo-commit discipline pointed at the review's own output: an amendment that lives
+  only in a conversation is quietly softened by the person it inconveniences, and the run then
+  reports against a standard nobody can reconstruct.
+- **RETURNED HOLDS THE WORK.** It is not advice. The redesign is a task, and it earns a second
+  review — otherwise *returned* means *proceed with a caveat*, which is what it always decays to.
+- **THE REVIEWER IS CROSS-CLASS** — binding, not preferred (RUL-065; the dispatch log makes it
+  answerable afterwards).
+- **★ AND A DESIGN REVIEW THAT COMPUTES BEATS ONE THAT JUDGES.** A reviewer that reaches the
+  design's own quantity by its own route, and lands somewhere else, has produced evidence rather
+  than an opinion — C-16 applies here as everywhere. A measured live case: a reviewer's
+  independent extrapolation landed on a different asymptote than the design assumed, which
+  reshaped what the result was allowed to claim.
+- **★ HUMAN APPROVAL OF THE WORK IS NOT APPROVAL OF THE INSTRUMENT**, and the two must be able
+  to come apart. The founding tree's own phrasing, on the day a probe was RETURNED after the
+  human had already approved the work: ***"Your approval stands; the instrument did not."*** A
+  coordinator that cannot say this has no design review — it has a scheduling step.
+- <sub>added 2026-09-17 · adopted from the founding tree's RUL-134 · binds all · enforcement:
+  prose-only</sub>
 
 **C-12.** Tag every open question PINNABLE / UNPINNABLE / UNKNOWN-KNOWABILITY. Expanding on an
 unpinnable one is DEPRIORITIZED, not forbidden — a worker who expands anyway must state, in the

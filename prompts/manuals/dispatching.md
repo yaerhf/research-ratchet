@@ -113,6 +113,63 @@ not a promise about the answer, it does not license a weaker result review, and 
 rename, an enactment of a ruling already made: these have no design to review, and reviewing
 them teaches everyone that this step is theatre.
 
+### ★ WHAT THE REVIEW RETURNS — three words, each with an obligation (C-37-bis)
+
+| verdict | means | what happens next |
+|---|---|---|
+| **APPROVED** | it can fail, it answers what was asked, its limits are stated | the work runs |
+| **APPROVED-WITH-AMENDMENTS** | sound, but a named component would not do what it claims | **the amendments are frozen and committed BEFORE the run**, as a rider on the design |
+| **RETURNED** | the design cannot do the job it was written for | **the work is HELD.** Redesign, then a SECOND review |
+
+**Why a vocabulary at all.** A design review without one returns prose — which cannot be routed,
+counted, logged or appealed, and **which decays into approval by default**, because nobody ever
+wrote the word that would have stopped anything.
+
+**The rider, and why it is frozen.** An amendment that lives only in a conversation is quietly
+softened by the person it inconveniences, and the run then reports against a standard nobody can
+reconstruct. Committing it before the run is the freeze-is-a-solo-commit discipline pointed at
+the review's own output.
+
+**★ AN AMENDMENT IS A CONSTRAINT, NEVER A DESIGN — which is what keeps §8 intact.** *"A correct
+read selects its blocks by stored time, not by index"* is an amendment. *"Here is the read to
+use"* is the reviewer becoming a second author. State what a correct component must satisfy; the
+author builds it.
+
+**Sequencing, which bites in practice:** while a reviewer is writing into the tree, **the bank
+waits** — a bank mid-review sweeps a design under revision into an unrelated commit, which is the
+sweep-guard's own motivating incident arriving by a new road.
+
+---
+
+### ★ TWO MEASURED CASES — the first day this rule ran anywhere (founding tree, 2026-09-17)
+
+The directive behind C-37 was given to two trees independently. The other one implemented it as
+its own rule and ran two design reviews on its first day. **Both caught something, and each
+caught a different class.**
+
+**Case 1 — the defect a result review could not have seen.** A read was approved with amendments:
+its block selection was **hard-coded to indices**, so after a continuation it would have
+**silently read the previous checkpoint** — returning a number that was plausible, well-formed,
+and about the wrong state. *A result review sees that number and has no way to know.* This is the
+whole argument for reviewing designs compressed into one incident: **the failure mode was
+invisible in the result.** The review also reshaped what the result would be allowed to claim,
+because **the reviewer computed rather than judged** — its own independent extrapolation landed
+on a different asymptote than the design assumed (C-16 applies to design reviews too).
+
+**Case 2 — the instrument that could not see what it was built to see.** A probe was **RETURNED**:
+its order parameter could not detect the structure it existed to detect, and its secondary
+criterion **passed on a known-true-negative state**. That second clause is the kill-test rule and
+the design review composing — **the design review is where a kill-test gets run on paper, before
+any compute is spent.** The run was held and the redesign became a task.
+
+**★ AND THE LINE WORTH KEEPING, from that tree's own status report:**
+
+> ***"Your approval stands; the instrument did not."***
+
+The human had already approved the work. The design review killed the instrument anyway, and the
+two facts sat side by side without contradiction. **A coordinator that cannot say that sentence
+does not have a design review — it has a scheduling step.**
+
 ---
 
 ## 0 · WHAT A BRIEF IS
