@@ -484,6 +484,33 @@ the target impossible on the prior that the literature would already have done i
 forbids that inference, and `manuals/paths.md` §2-bis carries the grading procedure with
 `C-unsearched` for the case the prior actually describes.
 
+**★ THE DESIGN WENT OUT FOR REVIEW BEFORE IT RAN — 2026-09-17, the first use of C-37.**
+Package: `audit/W8_DESIGN_FOR_REVIEW_2026-09-17.md` (governing record, index-excluded, reachable
+only by this pointer). It carries the route, the controls, the kill-test, the failure criterion
+and a proposed budget, plus the author's declared position — **I designed W8, which is exactly
+the condition C-37 exists for**, and I am the blind modifier.
+
+**Its handling fence is part of the artifact:** the package states that the target is reachable,
+so it **must never reach an instance under test.** Safe for the human, an outside reviewer and
+the scorer; unsafe for any coordinator, worker or checker in a measured tree.
+
+**And writing it produced a design change, which is the argument for C-37 in miniature.** W8 had
+no kill-test of its own — a research design exempting itself from the rule it makes binding on
+every brief. It now has two, and **the second is the one that bites**:
+
+- **(a) THE IDENTICAL PAIR** — score a version against *itself*. It must show **no**
+  improvement. If an apparatus outscores an identical copy of itself, the instrument is reading
+  run-to-run noise and every ranking it has produced is void.
+- **(b) THE DEGRADED APPARATUS** — score the current version against one deliberately broken
+  where we believe it matters: cross-class disabled, or the kill-test requirement removed, or
+  §8a collapsed to a single reviewer. It **must score worse.** If it does not, the metric is not
+  measuring the apparatus at all, and the entire ranking is tracking something else that happens
+  to correlate with effort.
+
+Both are reported **before** the real case, per the enforcement half adopted the same day. *The
+design review found this in under an hour, against a design that had been settled for three
+weeks and read by a cold external reviewer without either of us noticing the omission.*
+
 ---
 
 ## W9 · SESSION ZERO — THE FOUNDING INTERVIEW · **BUILT 2026-08-27**
