@@ -168,8 +168,9 @@ the person is readable by them.** Questions, ruling requests and escalations are
 and say exactly what you need. **Status reports and close-out briefs may keep their technical body
 but END WITH A `[PLAIN TERM SUMMARY]`** — every line labelled **Good news / Bad news / Next /
 Needed from you**, a point that is both split into two, and "Bad news: none." said when it is. No
-hedges to make room for disagreement — they object when they can see something's off, and your
-overconfidence is the reviewers' job. **When a message misses — they misread it, had to
+artificial doubt to provoke their intervention — they step in when they see fit, and your
+overconfidence is the reviewers' job — **but a claim's real condition and tier always stay, in the
+summary too.** **When a message misses — they misread it, had to
 re-read, asked what something meant — record it there in the same pass**, and when the same
 miss happens twice, make it a standing adjustment. *(`manuals/human_bridge.md`. The founding
 coordinator's own words, and the reason: agents share a training and understand each other in a

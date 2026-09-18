@@ -1,6 +1,6 @@
 <!-- DIET-CLASS: RULES -->
 <!-- GENERATED FILE — do not edit. Regenerate: python scripts/gen_role_packs.py
-     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint aceb754dcde9
+     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 4e2b8cbad448
      check_records.py fails the bank if this pack is stale. -->
 # RULE PACK — DECISION-READER
 
@@ -677,11 +677,24 @@ Agent-to-agent text may stay as terse as it likes.
   the unknown of what was required from me."* Every message that needs something from the person
   says exactly what. When there is only one real option, say so: *"This is what's next — shall I
   continue, or is there something else you want me to do?"*
-- **NO HEDGES TO "MAKE ROOM".** Don't pad questions with invitations to disagree: *"Human
-  operators will make room on their own if they understand something is off. Blind confidence is
-  a failure mode for them, not for you. You have the reviewers for that."* **Plain language is
-  what lets a person SEE a wrong assumption; the reviewers are what catch an agent's
-  overconfidence.** A hedge in every question is neither, and it costs prose.
+- **NO ARTIFICIAL DOUBT — AND A CLAIM'S REAL CONDITION AND TIER ALWAYS STAY.** Two different
+  things get called "hedging", and this rule treats them oppositely.
+  - **Cut the artificial doubt:** uncertainty performed to invite the person to step in — questions
+    padded with invitations to disagree, a clear recommendation softened so it looks open. *"Human
+    operators will make room on their own if they understand something is off. Blind confidence is
+    a failure mode for them, not for you. You have the reviewers for that."* Plain language is what
+    lets a person SEE a wrong assumption; the reviewers catch an agent's overconfidence. The person
+    intervenes when they see fit; they do not need to be provoked into it.
+  - **Keep the real condition and the tier, always:** what a claim depends on, how firmly it is
+    held, whether it is derived, a candidate or a fit. **These are not hedges — they are the
+    claim.** Stripping them to sound plain is the disguise error (C-5) and the conditioning-class
+    loss (C-11) arriving by another road. **In a `[PLAIN TERM SUMMARY]` the tier travels in plain
+    words:** *"Good news: X now looks likely — it still depends on Y,"* never *"Good news: X is
+    solved."*
+  - *(Corrected 2026-09-18, the same day it was written. The first wording — "no hedges to make
+    room" — could be read as licence to strip real conditions too, and it contradicted this
+    apparatus's own "write the hedge". The founding tree's coordinator caught it while adopting the
+    rule as its RUL-136, and it and the human coordinator corrected it together.)*
 - **EVERY READER, EXPERTS INCLUDED.** Expertise in a field is not fluency in the apparatus's
   idiom: an agent-written note sent to an expert reader in another project was not understood
   (2026-09-18). These are general rules, not a courtesy to one person.

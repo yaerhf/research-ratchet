@@ -1274,6 +1274,19 @@ spin, which the label exists to prevent), and **"Bad news: none." is said out lo
 left out is a question the reader has to ask). And the label is a *reporting* act, so it is
 calibrated under the three registers — optimism belongs in the work, never in the label.
 
+**★ AND CORRECTED THE SAME DAY, BY THE FOUNDING TREE ON ADOPTION.** The human coordinator lifted
+the earlier caution and had the founding tree adopt C-30-bis (its RUL-136, `26ed58b`). Its
+coordinator found the defect in *"no hedges to make room"*: two different things get called
+hedging, and the wording did not tell them apart. **Artificial doubt** — uncertainty performed to
+provoke the human into stepping in — should go. **A claim's real condition and tier** — what it
+depends on, whether it is derived or a candidate — must always stay; they are not hedges, they are
+the claim. Read literally, the first wording licensed stripping them, which is the disguise error
+by another road, and it contradicted this apparatus's own *"write the hedge"*. That tree and the
+human corrected it together; the corrected form is now C-30-bis here, with the one consequence that
+matters most in a plain summary: **the tier travels in plain words** — *"now looks likely, still
+depends on Y"*, never *"solved"*. *The loop the two-tree arrangement exists for, again: written here
+in the morning, broken open by the other tree on adoption, repaired by the evening.*
+
 ---
 
 ## W17 · UPDATING A FOUNDED TREE — the procedure that did not exist
