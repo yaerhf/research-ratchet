@@ -1,6 +1,6 @@
 <!-- DIET-CLASS: RULES -->
 <!-- GENERATED FILE — do not edit. Regenerate: python scripts/gen_role_packs.py
-     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 58d39fb7809b
+     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 3c85ded6c769
      check_records.py fails the bank if this pack is stale. -->
 # RULE PACK — META-OBSERVER
 
@@ -481,6 +481,46 @@ audit — not only ledger runs — and report the outcome against them either wa
   confirmation; the founding audit refuted its own author because the expectation was written
   first.
 - <sub>binds all · enforcement: prose-only</sub>
+
+**C-20-bis.** **Every number a pre-registration will be compared against is computed through the
+instrument's OWN PIPELINE before the freeze — and the freeze prints the call that produced it.**
+That means every registered analytic, floor, bar, expected value and comparandum. Where an
+independent analytic also exists, register it **alongside** the pipeline's value and **explain
+any gap at freeze time.**
+
+- **ABSOLUTE where a pipeline exists.** Where none does yet, the comparandum is marked
+  `[UNPIPELINED]`, and **no agreement or disagreement with it may be claimed** until it has been
+  pushed through.
+- **WHY:** *a comparison between two numbers computed by different routes cannot tell a finding
+  from a convention mismatch.* The founding tree's D-21 (2026-09-18) is the whole rule in one
+  incident: a control **FAILED on a correct instrument.** The instrument reads relative to a
+  reference orientation; the registered analytic had been computed *bare*; and through the
+  instrument's own convention the analytic predicts **exactly** the measured value. Nothing was
+  wrong except where the yardstick came from. The same read also surfaced D-22, **a registered
+  floor that was vacuous.** Computing both through the pipeline at freeze time would have caught
+  them **for free**, because *pushing a comparandum through the pipeline is itself a test of the
+  pipeline.* (Proposed by the founding tree's coordinator, adopted 2026-09-18.)
+- **★ IT GUARDS BOTH DIRECTIONS, and the second is the one this apparatus under-weights.** Most
+  of the machinery here hunts false PASSES — vacuous checks, controls that cannot fail. This
+  hunts false FAILS as well: a correct instrument rejected, or a real finding dismissed, because
+  its yardstick came from somewhere else. **A false fail on a control is as expensive as a false
+  pass**: it teaches you to distrust the one instrument that was right.
+- **★ "PRINTS THE CALL" IS WHAT MAKES THIS SAFE TO HOLD ALONGSIDE THE FREEZE — it is not
+  provenance decoration.** The freeze used to be committed *"before any script exists."* That
+  letter was a **proxy** for the property the freeze actually protects: **the author must not see
+  the REAL case's outcome before registering.** This rule needs the pipeline to exist and run
+  first — on analytic cases, floors, controls and kill-test worlds, **never on the real case.**
+  The printed call is what makes that checkable: every registered number carries the invocation
+  that produced it, so an auditor can confirm none of them touched the real case. **The
+  protection the proxy gave is restored as something inspectable rather than a blanket
+  prohibition** — and FORMATION_CORE §4's freeze rule now states the property, not the proxy.
+- **WHY REGISTER THE INDEPENDENT ANALYTIC TOO.** Registering only the pipeline's value would have
+  made D-21's control pass and **hidden what the gap was saying** — that the instrument applies a
+  convention nobody had written down. The gap was information. Explained at freeze time it
+  becomes a stated convention; unexplained, it is a finding about the instrument, found before
+  the run instead of after.
+- <sub>added 2026-09-18 · adopted from the founding tree · binds all, anyone freezing a
+  pre-registration and every design reviewer specifically · enforcement: prose-only</sub>
 
 ## E. THE RECORD — what makes a result exist
 

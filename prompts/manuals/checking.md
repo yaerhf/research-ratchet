@@ -42,6 +42,42 @@ result is void however good it looks. *(Adopted from the founding tree's RUL-130
 
 ---
 
+## 0-ter · ★ AT A DESIGN REVIEW: WHERE DID EACH REGISTERED NUMBER COME FROM?
+
+**Before the freeze, every number the result will be compared against — each analytic, floor,
+bar, expected value and comparandum — must have been computed through the instrument's own
+pipeline, and the design must print the call that produced it** (C-20-bis). Check it the way you
+check for a kill-test: **a registered number with no call behind it is a finding.** Return the
+design with it named.
+
+**Why this is a reviewer's duty rather than an author's courtesy.** A comparison between two
+numbers computed by different routes **cannot tell a finding from a convention mismatch**, and the
+author is the person least placed to notice, because the convention is the thing they are fluent
+in. The founding tree's D-21: a control **failed on a correct instrument**, because the instrument
+reads relative to a reference orientation and the registered analytic had been computed bare.
+Through the instrument's own convention, that analytic predicts the measured value **exactly**.
+The same read turned up D-22, a registered floor that was vacuous. **A design reviewer asking
+"where did this number come from?" catches both for free.**
+
+**Three things to check, in order:**
+
+1. **Is there a call?** Every registered number names the invocation that produced it. No call,
+   no comparison — mark it `[UNPIPELINED]` and say that nothing may be concluded against it.
+2. **Does every call run on something OTHER than the real case?** Analytic cases, floors,
+   controls, kill-test worlds — never the real target. **A call that touched the real case is
+   a broken freeze**, and it is the one thing this rule's relaxation of *"before any script
+   exists"* has to be policed for. This is what the printed call exists to let you verify.
+3. **Where an independent analytic also exists, is the gap to the pipeline's value explained?**
+   An unexplained gap is a finding about the instrument — a convention nobody wrote down, or a
+   defect — and it is far cheaper to find now than after the run, when it arrives dressed as a
+   result.
+
+**It cuts both ways, and the second way is the one to watch for.** This apparatus mostly hunts
+false PASSES. A mismatched yardstick produces false FAILS too — and **a false fail on a control
+teaches everyone to distrust the one instrument that was right.**
+
+---
+
 ## 0 · THE ONE THING TO GET RIGHT BEFORE ANYTHING ELSE
 
 **Your DIET is your instrument.** You were denied particular material on purpose, and what you

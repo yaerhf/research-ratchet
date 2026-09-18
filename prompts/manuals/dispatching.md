@@ -12,8 +12,12 @@ you need nothing else.
 
 ## 0-bis · ★ BEFORE THE FIRST BRIEF OF ALL — has this programme been FOUNDED?
 
-**Check once, mechanically:** does `FORMATION_CORE.md`'s header carry a `FOUNDED <date>` stamp,
-and does `audit/FOUNDING_INTERVIEW.md` exist? **If not, no brief may be composed yet.** The
+**Check once, mechanically: does `audit/FOUNDING_INTERVIEW.md` EXIST?** That is the signal —
+**never a search for the `FOUNDED` stamp**, because the template's own header explains the stamp
+and a search matches the explanation. *(That exact check reported a fresh tree FOUNDED in the
+install dry-run of 2026-08-27. It was fixed in four files that week and survived here until
+2026-09-18 — a drift pair in the manual every dispatcher reads.)* **If the record is absent, no
+brief may be composed yet.** The
 formation prefix every worker receives is still the TEMPLATE — its ontology, its architecture,
 its settled list and its traps are all `[OBJECT-SLOT]` — so a worker dispatched now is fluent in
 nothing and **every result it returns is about nothing.** Run the founding interview first
@@ -86,6 +90,7 @@ can redirect.** Minutes against hours, and the findings are still actionable.
 | **the kill-test** | the known-false world where this must fail (§ the brief format) |
 | **the failure criterion** | what outcome would make you say the approach was wrong |
 | **the budget** | declared before the line opens (coordinator power 8) |
+| **★ the registered numbers** | every analytic, floor, bar, expected value and comparandum **computed through the instrument's own pipeline**, each with **the call that produced it** (C-20-bis) |
 
 **What you ask — three questions, and none of them is "is this good":**
 

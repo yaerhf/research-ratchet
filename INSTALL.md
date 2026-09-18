@@ -314,9 +314,10 @@ Write `knowledge/audit/SESSION_HANDOFF.md`:
 ## ★ TOP BLOCK (rewritten at every consolidation)
 <date> — APPARATUS INSTANTIATED. Programme: <name>. Object: <one-line compression of the
 object paragraph>. State: tree scaffolded; canon v0; no engine, no corpus, no banked
-claims. **NOT YET FOUNDED** — FORMATION_CORE is the unfilled TEMPLATE and carries no
-FOUNDED stamp, so `/coordinator`'s next session is the FOUNDING INTERVIEW
-(knowledge/prompts/manuals/founding_interview.md). Do not dispatch workers before it.
+claims. **NOT YET FOUNDED** — there is no knowledge/audit/FOUNDING_INTERVIEW.md (that file
+is the signal; never search for a FOUNDED stamp), so `/coordinator`'s next session is the
+FOUNDING INTERVIEW (knowledge/prompts/manuals/founding_interview.md). FORMATION_CORE is still
+the unfilled TEMPLATE. Do not dispatch workers before it.
 Apparatus source: research-ratchet @ <hash>.
 ```
 

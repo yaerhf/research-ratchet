@@ -1047,6 +1047,58 @@ visible on the page to its author, to a cold external reviewer, or to any gate.
 
 ---
 
+## W15 · C-20-bis — THE YARDSTICK COMES FROM THE INSTRUMENT
+**Grade A · DISCHARGED 2026-09-18 · proposed by the founding tree's coordinator**
+
+> *"Every registered analytic, floor, bar, expected value and comparandum is computed through the
+> instrument's own pipeline before the freeze, and the freeze prints the call that produced it.
+> It would have caught tonight's D-21 for free."*
+
+**The incident, and it is sharper than "a check failed": THE INSTRUMENT WAS RIGHT.** D-21: a
+control **failed on a correct instrument.** The instrument reads relative to a reference
+orientation; the registered analytic had been computed *bare*. Through the instrument's own
+convention, that analytic predicts the measured value **exactly**. Nothing was wrong except
+where the yardstick came from. The same read surfaced **D-22 — a registered floor that was
+vacuous.** Both catchable at freeze time, for free, because *pushing a comparandum through the
+pipeline is itself a test of the pipeline.*
+
+**Adopted as C-20-bis, beside the pre-registration rule it completes**, with two additions of
+ours: where an **independent analytic** also exists it is registered alongside the pipeline's
+value and **the gap is explained at freeze time** — registering only the pipeline's value would
+have made D-21's control pass and *hidden what the gap was saying*, that the instrument applies a
+convention nobody had written down — and a comparandum with no pipeline behind it yet is marked
+`[UNPIPELINED]`, against which **nothing may be concluded**.
+
+**★ IT COLLIDED WITH AN EXISTING RULE, AND THE PROPOSAL'S OWN SECOND CLAUSE RESOLVED IT.** The
+freeze was committed *"before any script exists."* C-20-bis requires the pipeline to exist and
+run before the freeze. **That letter was a proxy** for the property the freeze actually protects
+— *the author must not see the REAL case's outcome before registering* — and "prints the call"
+is exactly what lets the proxy be retired safely: every registered number carries the invocation
+that produced it, so an auditor can confirm **none of them touched the real case.** The protection
+survives as something inspectable rather than a blanket prohibition. `FORMATION_CORE` §4 now
+states the property, not the proxy.
+
+**★ AND IT GUARDS THE DIRECTION THIS APPARATUS UNDER-WEIGHTS.** Nearly all the machinery here
+hunts false PASSES — vacuous checks, controls that cannot fail. A mismatched yardstick produces
+false FAILS: **a correct instrument rejected, a real finding dismissed.** *A false fail on a
+control is as expensive as a false pass: it teaches everyone to distrust the one instrument that
+was right.*
+
+**Landed in TWT's intended home** — the checker's design-review clause (`manuals/checking.md`
+§0-ter: three checks, **is there a call · does every call run on something other than the real
+case · is the gap to any independent analytic explained**) — and in the design package the
+author sends (`manuals/dispatching.md` §0-quater).
+
+**Found while landing it, and fixed: a drift pair three weeks old.** `dispatching.md` §0-bis
+still told every dispatcher to check for the **`FOUNDED` stamp** — the exact check that reported
+a fresh tree founded on 2026-08-27 and was fixed in four other files that same week. And the
+handoff template in `INSTALL.md` **reasoned from the stamp**, which meant every installed tree
+received a handoff teaching the defective signal. Both now name the record. *A fix applied to
+four of six sites is a drift pair with extra steps, and only a sweep finds the other two.*
+Install dry-run re-run after touching `INSTALL.md`: green.
+
+---
+
 ## MEANING NOTES — do not compress
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the

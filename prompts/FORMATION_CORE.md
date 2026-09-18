@@ -307,8 +307,13 @@ sweeps are scavenger maps whose numbers carry zero weight).
 > programme's own formalism. The tool-level half below is generic and survives instantiation:
 
 **THE FREEZE IS A SOLO COMMIT.** A probe's pre-registration is committed **ALONE — before any
-script exists and before any empirical fetch** — so the witness is cryptographic instead of a
-filesystem mtime the author can set at will. **And the freeze covers the CITATIONS, not only
+output of the REAL case exists, and before any empirical fetch** — so the witness is
+cryptographic instead of a filesystem mtime the author can set at will. *(This used to read
+"before any script exists". That was a proxy, and C-20-bis sharpened it on 2026-09-18: every
+registered comparandum must now be computed **through the instrument's own pipeline before the
+freeze**, so scripts do exist — run on analytic cases, floors, controls and kill-test worlds,
+never on the real case. **The freeze prints the call behind every registered number**, which is
+what lets an auditor confirm none of them touched the real case.)* **And the freeze covers the CITATIONS, not only
 the tests:** the founding leak was a licence line the frozen file got right and the reporting
 memo dropped.
 
