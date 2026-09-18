@@ -1207,6 +1207,25 @@ fired. Added.
 ledger are specifications until a person who has never seen the apparatus is interviewed with
 them. The test is the one the human named — **whether a student reaches the end.**
 
+**★ THE TRIAL — on Opticalc only, and TWT deliberately excluded (human coordinator, 2026-09-18).**
+*"I'm ok to try it on opticalc, but I'm not willing to change my process in TWT for now. It's too
+risky."* TWT's working process — including its translation layer — stays exactly as it is, so
+**the two trees are knowingly out of step on this**: nobody should assume TWT carries the bridge
+ledger. The arrangement also leaves a comparison standing — a ledger without a translation layer on
+one tree, a translation layer without a ledger on the other.
+
+**The first entry is a DRAFT the human corrects, and it is kept OUT of this repository.** An
+AI-written reading of a person is `[HANDOFF-DRAFT]` by this ledger's own rules, and this repository
+is public; a draft profile of its human coordinator has no business in it.
+
+**★ FOUND BEFORE IT COULD BITE: a new standing ledger is a breaking change for every tree that
+already exists.** Tested on a *copy* of Opticalc's gate, never on the live tree: drop the new
+ledger into a tree whose rules predate it, and the roster gate **refuses the next bank**
+(`unnamed: HUMAN_AGENT_BRIDGE.md`) — the tree's own `FORMATION_CORE` §5 does not list it yet. New
+installs are fine; **existing trees must pull the updated rules FIRST, then create the file.** That
+ordering belongs to each tree's own coordinator, which knows what is running in its folder and
+whose bank guards against the tree changing underneath it.
+
 ---
 
 ## MEANING NOTES — do not compress
