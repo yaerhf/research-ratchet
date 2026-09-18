@@ -1,6 +1,6 @@
 <!-- DIET-CLASS: RULES -->
 <!-- GENERATED FILE — do not edit. Regenerate: python scripts/gen_role_packs.py
-     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 3c85ded6c769
+     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint afc46ee882e1
      check_records.py fails the bank if this pack is stale. -->
 # RULE PACK — AUDITOR
 
@@ -505,6 +505,9 @@ any gap at freeze time.**
   hunts false FAILS as well: a correct instrument rejected, or a real finding dismissed, because
   its yardstick came from somewhere else. **A false fail on a control is as expensive as a false
   pass**: it teaches you to distrust the one instrument that was right.
+- **★ AND A FAILED CONTROL IS RULED, NOT DEFAULTED:** the verdict says **which failed — the
+  instrument or the yardstick** — because left unsaid it defaults to the instrument, and that
+  default is the false fail. *(Refinement from the founding tree's adoption, 2026-09-18.)*
 - **★ "PRINTS THE CALL" IS WHAT MAKES THIS SAFE TO HOLD ALONGSIDE THE FREEZE — it is not
   provenance decoration.** The freeze used to be committed *"before any script exists."* That
   letter was a **proxy** for the property the freeze actually protects: **the author must not see

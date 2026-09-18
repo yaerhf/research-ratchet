@@ -76,6 +76,13 @@ The same read turned up D-22, a registered floor that was vacuous. **A design re
 false PASSES. A mismatched yardstick produces false FAILS too — and **a false fail on a control
 teaches everyone to distrust the one instrument that was right.**
 
+**★ SO WHEN A CONTROL FAILS, YOUR VERDICT SAYS WHICH FAILED: THE INSTRUMENT OR THE YARDSTICK.**
+Left unsaid, a failed control defaults to *"the instrument failed"* — and that default **is** the
+false fail. Rule it explicitly, with the evidence that decides it: recompute the comparandum
+through the instrument's own pipeline, and if the failure dissolves, the yardstick failed and the
+instrument stands. *(Adopted 2026-09-18 from the founding tree's version of this clause, which
+added the sentence when it took ours — our reconciliation went out, their refinement came back.)*
+
 ---
 
 ## 0 · THE ONE THING TO GET RIGHT BEFORE ANYTHING ELSE

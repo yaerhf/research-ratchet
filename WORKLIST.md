@@ -1097,6 +1097,20 @@ received a handoff teaching the defective signal. Both now name the record. *A f
 four of six sites is a drift pair with extra steps, and only a sweep finds the other two.*
 Install dry-run re-run after touching `INSTALL.md`: green.
 
+**★ ADOPTED BY THE FOUNDING TREE THE SAME DAY — faithfully, and with one sentence better.** It
+landed in all three of its checker role files and its `RULES_BY_ROLE`, carrying all three checks,
+`[UNPIPELINED]`, the independent analytic registered beside the pipeline's value, and **row 204's
+freeze restated to protect the REAL CASE'S OUTPUT, with the printed call as the audit** — so the
+contradiction flagged here never landed in that tree. *(A first check here missed the call clause
+and was retracted on reading: it is phrased there as "carries the pipeline INVOCATION". A narrow
+grep is not evidence of absence — C-23.)*
+
+**Their refinement, adopted back:** *"the reviewer says WHICH of the two failed, the instrument or
+the yardstick."* We named the false-fail class and never required a verdict to settle it; left
+unsaid, **a failed control defaults to "the instrument failed", and that default is the false
+fail.** Now in C-20-bis and `checking.md` §0-ter. *Our reconciliation went out; their refinement
+came back — the loop the two-tree arrangement was meant to produce.*
+
 ---
 
 ## MEANING NOTES — do not compress
