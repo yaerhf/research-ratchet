@@ -33,8 +33,9 @@ founded tree takes a newer apparatus without erasing its own content).
 **★ THE APPARATUS IS NOW A NETWORK, and that is where most recent findings came from.**
 **Opticalc** — a live optical-computing programme, founded 2026-09-10 — runs current core
 byte-identical; its founding interview was run with a human and **held** (W9 is measured). **The
-founding tree** implemented C-37 *independently* as its RUL-134 and adopted C-20-bis. Rules now
-move both directions. **Keep future rules independent across trees where possible**: a directive
+founding tree** implemented C-37 *independently* as its RUL-134 and adopted C-20-bis. It also
+adopted C-30-bis's labelled summary as its RUL-136 and **corrected it on adoption**: artificial doubt
+goes, but a claim's real condition and tier always stay. Rules now move both directions. **Keep future rules independent across trees where possible**: a directive
 given to two trees separately shows what is forced by the problem and what was one author's
 choice, and that comparison produced C-37-bis.
 

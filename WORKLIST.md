@@ -1213,6 +1213,9 @@ risky."* TWT's working process — including its translation layer — stays exa
 **the two trees are knowingly out of step on this**: nobody should assume TWT carries the bridge
 ledger. The arrangement also leaves a comparison standing — a ledger without a translation layer on
 one tree, a translation layer without a ledger on the other.
+*(The caution was lifted the same day for one piece, the labelled `[PLAIN TERM SUMMARY]`. The founding
+tree adopted it as its RUL-136 (`26ed58b`) and corrected it on the way in (see below). That is the only
+piece it is known to carry. Nothing here records it taking the ledger.)*
 
 **The first entry is a DRAFT the human corrects, and it is kept OUT of this repository.** An
 AI-written reading of a person is `[HANDOFF-DRAFT]` by this ledger's own rules, and this repository
@@ -1242,7 +1245,9 @@ survived.
 - **No hedges to "make room".** The draft proposed leaving room for the human to correct wrong
   assumptions. The human: *"Blind confidence is a failure mode for them, not for you. You have the
   reviewers for that."* Plain language lets a person see a wrong assumption; the reviewers catch the
-  agent's overconfidence; a hedge in every question is neither.
+  agent's overconfidence; a hedge in every question is neither. *(Too broad as first written here —
+  corrected the same day by the founding tree, below: artificial doubt goes; a claim's real
+  condition and tier always stay.)*
 - **And the rules were general, not personal:** *"Yes they are. But they are general rules"* — an
   agent-written note sent to an expert in another project had not been understood either. So they
   belong in C-30-bis, which now says so ("every reader, experts included"), not in a per-person file.
