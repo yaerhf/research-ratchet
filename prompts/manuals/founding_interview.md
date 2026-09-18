@@ -114,8 +114,11 @@ person/apparatus boundary.
 
 **What you never do:**
 
-- **Offer the content of an answer** — not as a suggestion, an example answer, or *"some people
-  in your position say…"*. They will adopt it, and neither of you will remember who said it first.
+- **Offer the content of THEIR answer** — not as a suggestion, not as *"some people in your
+  position say…"*. They will adopt it, and neither of you will remember who said it first.
+  **★ Examples are welcome — from an UNRELATED field.** A baker's example shows the *shape* of an
+  answer and cannot be copied into a physics project; an example from their own field hands them
+  one. That is the whole distinction, and §4's running example exists to keep it easy.
   If they ask you directly what you think, say gently: *"I'd rather not put words in your mouth
   here — this part needs to be yours. How would you put it?"*
 - **Fill a gap with something plausible** because the conversation is running long.
@@ -192,77 +195,109 @@ being interviewed about it.**
 
 ---
 
-## 4 · THE QUESTIONS — what to ASK, and what to FILE
+## 4 · THE QUESTIONS — small ones, each with an example
 
-**Ask** in the left voice. **File** in the right one. They are listed in a natural order, but follow
-the conversation — if they answer question 5 while talking about question 1, take it and move on.
-**If they brought notes (§2-bis), skip anything the notes already answer and confirm it instead.**
+**Why small, and why examples** (human coordinator, 2026-09-18): *"Let's break down the questions
+in smaller simpler questions with examples. Agents share the same training so they can understand
+themselves in a few words. Humans are more diverse."* A big question makes a person take it apart
+before they can answer it. A small one with an example can be answered at once.
 
-**4.1 · What are they trying to do?**
-- **Ask:** *"In a few sentences, what are you trying to do? Say it however you'd explain it to a
-  friend."*
-- **If it's very broad** — a field name like *"quantum computing"* or *"supply chains"*: *"And
-  what's the actual thing you'd be spending your days on?"*
-- **File:** the object → `FORMATION_CORE` §1. You're listening for the concrete things the work is
-  *about* — the parts someone would have to handle to be useful on day one.
+**★ THE RUNNING EXAMPLE — one imaginary project, used for every question.** *A baker trying to find
+out why some sourdough starters stay healthy for years while others die within a week.* Every
+example below is how **that baker** would answer. Because it is obviously not their project, it
+shows the shape of an answer without handing them one — the fence holds (§2). **If their own work
+is in food, biology or chemistry, switch to a second one:** *someone designing a quieter bicycle
+bell.* If both are close to their field, invent one from a field clearly far from theirs — and keep
+using the same one all the way through.
 
-**4.2 · What does a win look like?**
-- **Ask:** *"If this goes really well, what does that look like? What would you be happy to have?"*
-- **File:** success criterion.
+**How to use this section.** Ask **one small question at a time**, in your own warm words. Offer the
+example **when it helps** — usually the first time a new kind of question comes up, or when they
+hesitate — not mechanically after every line. Follow the conversation: if they answer something
+early, take it and skip ahead. **If their notes or setup answers already cover a question, confirm
+it instead of asking** (§2-bis). Each block ends with what you **file** — that line is for you,
+never for them.
 
-**4.3 · What would change their mind?**
-- **Ask:** *"And the other side — what would convince you that you're on the wrong track?"*
-- **If they say "we'd learn something either way":** *"That's true — I'm asking something
-  narrower: is there a result that would make you stop, or change direction?"* Ask **once**. If
-  they still won't name one, that's fine — record that they declined, which is itself useful.
-- **Why it matters, if they ask:** *"It helps me tell the difference between a setback and a real
-  dead end, so I don't keep pushing on the wrong thing — or give up on the right one."*
-- **File:** falsifier. **Not** a prediction of failure — what the world would have to show.
+**4.1 · The project**
+- *"What's your project, in a sentence or two?"* — the baker: *"Working out why some sourdough
+  starters stay healthy for years and others die in a week."*
+- If that's very broad: *"What would you actually spend your days doing on it?"* — the baker:
+  *"Measuring acidity and yeast in different starters, and trying to keep some alive on purpose."*
+- **File:** the object → `FORMATION_CORE` §1 — the concrete things the work is about.
 
-**4.4 · What won't they give up?**
-- **Ask:** *"Is there anything about this project you're not willing to change?"* — then, gently:
-  *"Is there anything that would make you drop even that?"*
-- **And if it comes naturally:** *"Are there other choices you've made that you'd happily revisit
-  if something better came along?"*
-- **File:** what they won't give up → **CORE**, and what would make them → its **kill condition**.
-  Things they'd happily revisit → **PICK**. Things they prefer but could be talked out of →
-  **ENDORSED**. **You do the sorting** — never ask them to classify their own commitments into
-  three buckets. If they name something as untouchable but no amount of evidence would move it,
-  note it; don't lecture them about it.
+**4.2 · A win**
+- *"If this goes really well, what would you have at the end?"* — the baker: *"A simple rule anyone
+  could follow to keep a starter alive."*
+- *"Is there a smaller win that would still make you happy?"* — the baker: *"Even just knowing which
+  one thing matters most."*
+- **File:** success criteria — the full one and the modest one.
 
-**4.5 · What do they want to end up with — and who is it for?**
-- **Ask:** *"What do you want to have at the end — a paper, a working model, a prototype,
-  something to show people who might fund it?"* and *"Who needs to be able to understand it?"*
-- **File:** the deliverable, and its reader. The reader matters: what's produced will be read by
-  people *and* their AI tools, which fill in whatever is left implicit.
+**4.3 · What would change your mind**
+- *"What result would make you think you're on the wrong track?"* — the baker: *"If the healthy
+  starters and the dying ones turn out to have the same acidity and the same yeast — then those
+  aren't what matters."*
+- If they say *"we'd learn something either way"*: *"That's true — I'm asking something narrower. Is
+  there a result that would make you stop, or change direction?"* **Ask once.** If they still
+  decline, that's fine — record that they declined.
+- If they ask why: *"It helps me tell a setback from a real dead end, so I don't keep pushing on the
+  wrong thing — or give up on the right one."*
+- **File:** the falsifier — not a prediction of failure; what the world would have to show.
 
-**4.6 · How do others do this today?**
-- **Ask:** *"What's the usual way people approach this now?"* — then: *"What does that approach
-  get right?"*
-- **The second question is the valuable one.** An alternative with no strengths is a strawman,
-  and the project's own choices can't be honestly weighed against a strawman.
-- **File:** the rivals → the philosopher's reference set, and what they get right.
+**4.4 · What won't change**
+- *"Is there anything about how you're doing this that you don't want to change?"* — the baker:
+  *"Only flour and water. No additives."*
+- *"Is there anything that would make you change even that?"* — the baker: *"If it turned out no
+  starter can live long without one."*
+- *"Are there choices you made that you'd happily swap if something better came along?"* — the
+  baker: *"I use rye flour, but mostly because it's what I had."*
+- **File:** the untouchable → **CORE**, and what would change it → its **kill condition**; the
+  happily-swapped → **PICK**; preferred-but-negotiable → **ENDORSED**. **You do the sorting** — never
+  ask them to sort their own commitments into buckets.
 
-**4.7 · Is anything already decided?**
-- **Ask:** *"Is there anything you've already decided that you don't want to reopen?"*
-- **File:** settled items → `FORMATION_CORE` §3, each with how it was decided — *"I decided"* is a
-  perfectly good answer and is recorded as such.
+**4.5 · What they want to end up with**
+- *"What do you want to have when this is done?"* — the baker: *"A short guide for home bakers — and
+  maybe a paper, if it's solid enough."*
+- *"Who needs to be able to understand it?"* — the baker: *"Home bakers. They're not scientists."*
+- **File:** the deliverable and its reader. (What they produce will be read by people *and* by their
+  AI tools, which fill in whatever is left unsaid.)
 
-**4.8 · Has anything already cost them time?**
-- **Ask:** *"Has anything already tripped you up — a confusion, a trap, something that looked
-  promising and wasn't?"*
-- **This is the most often skipped and the cheapest to ask.** Early on, traps feel too obvious to
-  forget. Ask anyway.
+**4.6 · How people do it now**
+- *"How do people usually deal with this today?"* — the baker: *"They follow feeding schedules that
+  bakers pass to each other."*
+- *"What's good about that way?"* — the baker: *"It mostly works, and it's simple."*
+- **The second question is the valuable one.** An alternative with no strengths is a strawman, and
+  nothing can be weighed honestly against a strawman.
+- **File:** the rivals → the philosopher's reference set, with what they get right.
+
+**4.7 · Already decided**
+- *"Is there anything you've already decided and don't want to reopen?"* — the baker: *"I'm only
+  studying wild starters — not shop-bought yeast."*
+- **File:** settled items → `FORMATION_CORE` §3, each with how it was decided (*"I decided"* is a
+  perfectly good answer).
+
+**4.8 · What's already tripped them up**
+- *"Has anything already caught you out — a confusion, or something that looked promising and
+  wasn't?"* — the baker: *"The kitchen temperature changed my results and I didn't notice for a
+  month."*
+- **The most often skipped and the cheapest to ask** — early on, traps feel too obvious to forget.
 - **File:** traps → `FORMATION_CORE` §4.
 
-**4.9 · Where do they want to start?**
-- **Ask:** *"What would you like to look at first? And was there anything else you considered
-  starting with?"* — then: *"Roughly how much time or effort would you want to put into that
-  before we step back and see how it's going?"*
-- **File:** the first work item, graded by `manuals/paths.md` §2-bis (by what's *missing*, never by
-  feel) · the alternatives they mentioned → the first entry in `PATHS_LEDGER.md` · the effort they
-  named → the declared budget, which is **a point to report back, never a point to give up**
-  (coordinator power 8).
+**4.9 · Where to start**
+- *"What would you like to look at first?"* — the baker: *"Measure the acidity of five starters every
+  day for two weeks."*
+- *"Did you think about starting somewhere else?"* — the baker: *"I also thought about comparing
+  flours first."*
+- *"Roughly how long would you give that before we step back and see how it's going?"* — the baker:
+  *"Two weeks."*
+- **File:** the first work item, graded by `manuals/paths.md` §2-bis (by what is *missing*, never by
+  feel) · the alternatives → the first entry in `PATHS_LEDGER.md` · the time they named → the
+  declared budget, which is **a point to report back, never a point to give up** (power 8).
+
+**4.10 · How they'd like to hear from you** — *the bridge's first entries*
+- *"How do you like to get updates from me — short or detailed? With examples, or without?"*
+- *"Is there a language you'd rather I use for anything complicated?"*
+- **File:** → `HUMAN_AGENT_BRIDGE.md`, THE PERSON (`manuals/human_bridge.md` §3) — with anything you
+  noticed during this conversation about what landed and what didn't. **Tell them you're noting it,
+  and show them the entry.**
 
 ---
 
@@ -295,6 +330,7 @@ lose someone's actual words. Write as you go.
    goes into a slot that isn't in the record.
 3. **Open items** → the worklist, each with what would make it answerable.
 4. **The first alternatives** → `PATHS_LEDGER.md`.
+4-bis. **The bridge's first entries** → `HUMAN_AGENT_BRIDGE.md` (§4.10) — shown to them.
 5. **The founded stamp** in `FORMATION_CORE`'s header — a label for readers, never the check. The
    check is the record's existence.
 6. **The handoff's top block**, rewritten.

@@ -1153,6 +1153,62 @@ came back — the loop the two-tree arrangement was meant to produce.*
 
 ---
 
+## W16 · THE HUMAN–AGENT BRIDGE — talk to people in people's language
+**Grade A · DISCHARGED 2026-09-18 · human coordinator directive**
+
+> *"Let's always talk to humans in human language. Let's break down the questions in smaller
+> simpler questions with examples. Agents share the same training so they can understand
+> themselves in a few words. Humans are more diverse and the most common type of training for
+> humans is not at all as technical as the training agents received. We have to make sure the
+> human-agent bridge is functional."*
+
+**The asymmetry this names is the reason the apparatus's voice was wrong for people.** Every
+document here was written for agents, and agents share a background: a few words carry a lot
+between them. A person arrives from somewhere else, usually with far less technical training and
+far more varied. **Text efficient between agents is often unreadable to a person** — and a
+programme whose human cannot follow it is steering blind.
+
+**Built:**
+
+- **C-30-bis — talk to humans in human language**, beside C-30, which already carried the human
+  coordinator's founding-programme complaint (*"I was handicapped by jargon"*). ABSOLUTE for the
+  register, DEFEASIBLE for depth when the person asks for the technical version. Its test: *would a
+  smart person outside this project understand every word on first reading?*
+- **`manuals/human_bridge.md`**, triggered for **any role about to write anything a person will
+  read.** Put the ask first · one idea at a time · small questions · define or avoid technical
+  words · examples.
+- **★ The founding interview's questions broken into small ones, each with an example — without
+  breaking its fence.** The request and the fence collided: the fence forbids offering the content
+  of their answer, and examples look like offering content. **Resolved by taking every example from
+  one UNRELATED imaginary project** — *a baker working out why some sourdough starters survive* —
+  which shows the *shape* of an answer and cannot be copied into anyone's actual project. *A baker's
+  example cannot become a physicist's premise.* The same running example now runs through the
+  installer's questions too, so the two interviews read as one conversation.
+- **`HUMAN_AGENT_BRIDGE.md` — a new standing ledger, calibrated per person**, the way the checker
+  calibration ledger calibrates each checker: how this person likes to be told things, what lands,
+  what loses them, dated bridge failures, and standing adjustments once a failure recurs. Created
+  at install with headings only; **its first entries come from the founding interview**; the
+  coordinator reads it at session start and **before every message to the person** — a ledger read
+  after the message was sent calibrates nothing. **It is about a person, so they own it:** nothing
+  written about them they haven't seen, functional rather than psychological, and a public mirror
+  makes it public, which they are told.
+- **The translation-layer practice**, documented from the founding tree's measured case: a separate
+  large-context model from a different family, given the transcript and read access, used as the
+  human's *"plain term translation and ideation layer"* — after which, in the human coordinator's
+  words, *"TWT jumped leaps forward."* Two cautions ride with it: its **wording** entering the
+  foundations is `[HANDOFF-DRAFT]` like any AI-drafted text, and **for a blind experiment the bridge
+  is inside the blind** — a channel in both directions.
+
+**Found while registering the ledger:** `DISPATCH_LOG.tsv` had been missing from
+`APPARATUS_MAP.md`'s ledger tree since W10 — the roster gate checks `.md` files only, so it never
+fired. Added.
+
+**What stays unmeasured, and it is the point:** the new wording, the running example and the
+ledger are specifications until a person who has never seen the apparatus is interviewed with
+them. The test is the one the human named — **whether a student reaches the end.**
+
+---
+
 ## MEANING NOTES — do not compress
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the

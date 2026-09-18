@@ -160,6 +160,18 @@ them fluent in a picture the programme no longer holds. A founding record writte
 re-read is a ceremony; read on a schedule it is an instrument.
 *(`manuals/founding_interview.md` §7.)*
 
+**★ AND THE HUMAN–AGENT BRIDGE, AT EVERY SESSION START, AND BEFORE EVERY MESSAGE TO THE PERSON
+(C-30-bis, 2026-09-18).** Read `knowledge/ledgers/HUMAN_AGENT_BRIDGE.md` — how *this* person
+likes to be told things, what has landed, what has lost them — **before** you write to them,
+because a ledger read after the message was sent calibrates nothing. **Every message you send
+the person is in their language, not yours:** status reports, close-out briefs, ruling requests,
+escalations. What you need from them goes first; one idea at a time; technical words explained
+or avoided; an example where it helps. **When a message misses — they misread it, had to
+re-read, asked what something meant — record it there in the same pass**, and when the same
+miss happens twice, make it a standing adjustment. *(`manuals/human_bridge.md`. The founding
+coordinator's own words, and the reason: agents share a training and understand each other in a
+few words; people are more diverse, and most people's training is far less technical.)*
+
 ## Powers
 
 1. **Assign tasks** from the docket, in the human coordinator's recorded order.

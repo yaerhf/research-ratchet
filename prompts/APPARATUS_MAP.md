@@ -166,6 +166,8 @@ knowledge/
 │   ├── PATHS_LEDGER.md          the paths NOT taken, ranked by tractability; re-ranked when one dies
 │   ├── REVERSAL_LEDGER.md       positions the programme changed and what changed them
 │   ├── REDUCTIONS_LEDGER.md     the forward object: if A holds, C1..Cn follow, by proof
+│   ├── HUMAN_AGENT_BRIDGE.md    how this human and the agents understand each other; per person
+│   ├── DISPATCH_LOG.tsv         one row per dispatch: who checked whose work (RUL-065's record)
 │   ├── STRATEGIC_MAP.md · worklist.md  (docket + the do-not-compress meaning-notes region)
 │   └── <domain ledgers>         whatever the object demands                 [OBJECT-SLOT]
 │

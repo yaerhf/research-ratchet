@@ -63,7 +63,7 @@ echo "  12 packs, and the launch routine's target resolves"
 # ---- step 2c — the ledgers ------------------------------------------------------------
 for f in NEGATIVES_LEDGER WINS_LEDGER RULING_REGISTER FAMILY_TREE CHECKER_CALIBRATION \
          EDIT_REACTION_LEDGER COMPARATIVE_LEDGER PHILOSOPHER_LOG REVERSAL_LEDGER \
-         REDUCTIONS_LEDGER PATHS_LEDGER STRATEGIC_MAP; do
+         REDUCTIONS_LEDGER PATHS_LEDGER STRATEGIC_MAP HUMAN_AGENT_BRIDGE; do
   printf '<!-- DIET-CLASS: LEDGER -->\n# %s\nPurpose: standing ledger.\n' "$f" \
     > "knowledge/ledgers/$f.md"
 done

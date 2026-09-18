@@ -362,7 +362,7 @@ negatives: one line per entry, every would-change-if VERBATIM; regenerate with
 `scripts/gen_negatives_index.py`; pull FULL entries from the ledger on demand**) ·
 **`WINS_LEDGER.md`** (**wins recorded AS wins, IN EVERY SHAPE THEY COME — an exact result, yes, but equally a structural reduction (n inputs became m), a gap moved from vague to LOCATED, a premise retired, a debt shown payable. A ledger that only ever records exact answers teaches its agents which shape of success counts, and most research does not produce that shape — the founding programme found twelve ledgers
 recording failure and none recording a result; a row here NEVER upgrades a tier, tiers live in
-the companion**) · `STRATEGIC_MAP.md` · `worklist.md` (docket + the **meaning-notes region**,
+the companion**) · **`HUMAN_AGENT_BRIDGE.md`** (**how this programme's human and its agents understand each other — calibrated per person, read BEFORE writing to them; `manuals/human_bridge.md`**) · `STRATEGIC_MAP.md` · `worklist.md` (docket + the **meaning-notes region**,
 never to be compressed) · `RULING_REGISTER.md` (rulings in force + revert lists) ·
 `CHECKER_CALIBRATION.md` · `EDIT_REACTION_LEDGER.md` · `COMPARATIVE_LEDGER.md` ·
 `FAMILY_TREE.md` · `PHILOSOPHER_LOG.md` · **`PATHS_LEDGER.md`** (**the paths NOT taken, ranked — the sibling of the negatives ledger: that one records what was tried and failed, this one what was SEEN AND NOT TRIED, with a tractability grade and the condition that would make it first choice. Re-ranked IN THE SAME PASS whenever a path dies, because a rank that was not good enough becomes the best choice the moment the path above it dies — `manuals/paths.md`**) · `REVERSAL_LEDGER.md` (**positions the programme

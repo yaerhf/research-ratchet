@@ -59,21 +59,28 @@ exists because the fence's wording allowed that reading.)*
 ## Step 1 — the interview
 
 **Ask these in plain, friendly words — a person is answering, not an agent.** Short questions,
-one at a time. Anything marked *For you* is guidance for you, **never something to read aloud.**
+one at a time, **each with an example when it helps.** The examples all come from one imaginary
+project — *a baker working out why some sourdough starters survive and others die* — so they
+show the kind of answer wanted without suggesting theirs. (If their own work is about food or
+biology, use *someone designing a quieter bicycle bell* instead.) Anything marked *For you* is
+guidance for you, **never something to read aloud.**
 Keep the answers verbatim: you will quote them into the canon and the handoff, and the founding
 interview will **start from them rather than ask again**, so the person is never made to repeat
 themselves.
 
-1. **Name.** *"What would you like to call this project?"* *(For you: derive a short slug for file
+1. **Name.** *"What would you like to call this project?"* — e.g. *"Starter Survival."* *(For you: derive a short slug for file
    prefixes, propose it, and confirm.)*
 2. **What it's about.** *"In a few sentences, what is the research about — and what would success
-   look like?"* *(For you: this is the seed of the object; the founding interview builds on it.)*
+   look like?"* — e.g. *"Why some starters stay healthy for years; success would be a simple rule
+   anyone can follow."* *(For you: this is the seed of the object; the founding interview builds on it.)*
 3. **What they want to end up with.** *"What do you want to have at the end — a paper, a working
-   model, a proof, a prototype, something else? And in what field?"*
+   model, a proof, a prototype, something else? And in what field?"* — e.g. *"A short guide for
+   home bakers, maybe a paper — food science."*
 4. **Existing approaches.** *"What are the main existing approaches to this problem — the ones your
-   work would be compared against?"* *(For you: these become the philosopher's reference set.)*
+   work would be compared against?"* — e.g. *"The feeding schedules bakers pass to each other."* *(For you: these become the philosopher's reference set.)*
 5. **Checking by code.** *"Could some of the work be checked by running code — calculations,
-   simulations, consistency checks? If so, in what language? Python is the default."*
+   simulations, consistency checks? If so, in what language? Python is the default."* — e.g.
+   *"A script that tracks the acidity readings and flags a starter that's starting to decline."*
    *(For you: **do not accept a fast "no".** An engine is what delivers self-coherence as an
    executable, and it is the ground every refuting verdict stands on — without it, every checker
    verdict is ARGUED rather than COMPUTED. Before recording a "no", read
@@ -84,7 +91,7 @@ themselves.
    including a purely literature-based one. If it is still "no", record which of those they ruled
    out and why — the programme may want to revisit it.)*
 6. **Which AI models.** *"Which AI models do you have access to? This works best with at least two
-   different ones, so one can check the other's work."* *(For you: the apparatus requires
+   different ones, so one can check the other's work."* — e.g. *"Claude and Gemini."* *(For you: the apparatus requires
    CROSS-CLASS checking keyed on authorship. Also record which one is scarce or expensive.)*
 7. **Public or private.** *"Will this be public — on GitHub, say — from the start, later, or
    never?"* *(For you: affects nothing structural; recorded so publish-on-cite duties are read
@@ -144,7 +151,13 @@ name, and its one-line purpose quoted from `APPARATUS_MAP.md` §3): `NEGATIVES_L
 `WINS_LEDGER.md` · `RULING_REGISTER.md` · `FAMILY_TREE.md` · `CHECKER_CALIBRATION.md` ·
 `EDIT_REACTION_LEDGER.md` · `COMPARATIVE_LEDGER.md` · `PHILOSOPHER_LOG.md` ·
 `REVERSAL_LEDGER.md` · `REDUCTIONS_LEDGER.md` · `PATHS_LEDGER.md` · `STRATEGIC_MAP.md` ·
-`worklist.md`.
+`HUMAN_AGENT_BRIDGE.md` · `worklist.md`.
+
+**`HUMAN_AGENT_BRIDGE.md` gets its section headings now** — THE PERSON · THE BRIDGE · WHAT WORKS ·
+BRIDGE FAILURES · STANDING ADJUSTMENTS (`manuals/human_bridge.md` §3) — and **nothing under them.**
+It is about a person, and only they fill in what it says about them; its first entries come from
+the founding interview. If the tree will have a public mirror, tell them this ledger would be
+public too.
 (`NEGATIVES_INDEX.md` is GENERATED — do not create it by hand; note in the negatives ledger's
 header that `scripts/gen_negatives_index.py` generates it once entries exist.)
 
