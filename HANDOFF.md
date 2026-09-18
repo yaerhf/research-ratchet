@@ -6,32 +6,43 @@ This is research-ratchet's own. Rewrite the top block whenever the state moves.*
 
 ---
 
-## ★ TOP BLOCK — 2026-08-27, written immediately before a deliberate compaction
+## ★ TOP BLOCK — rewritten 2026-09-18
 
 **What this repository is.** The generic edition of the apparatus: emptied of its founding
-object (the TWT programme), MIT + CC BY 4.0, instantiable in one paste (`INSTALL.md`). Docket:
-`WORKLIST.md`. The account that travels: `WHY.md`. Everything is committed and pushed; the tree
-was clean at handoff.
+object, MIT + CC BY 4.0, instantiable in one paste (`INSTALL.md`). Docket: `WORKLIST.md`. The
+account that travels: `WHY.md`. Everything is committed and pushed; **CI runs five gates and the
+install dry-run on every push**, and has been green on every commit since it was added.
 
-**Where the work stands.** W2, W4, W6, W7 discharged. W1's audit ran and its recommended build
-shipped (per-role packs, 7k–14.5k tokens saved per dispatch). W5's essay is written and the
-launch posts are the human's to send. W3 is blocked on a live programme. **W8 — the benchmark —
-is designed in full and not started.**
+**Where the work stands.** Discharged: W2, W4, W6, W7, **W9, W10, W11, W12, W13, W14, W15**. W1's
+build shipped; its unmeasured items stand. W5's launch posts are the human's to send. **W3 is
+grade A and runnable today** (re-graded from D on 2026-09-02; nothing blocks it). **W8 — design
+v2, externally reviewed (twelve findings, all confirmed), not started.** F5 deferred.
 
-**W9 — SESSION ZERO, built 2026-08-27, immediately before the first trial run.** `/coordinator`
-now checks one thing before anything else: **does `knowledge/audit/FOUNDING_INTERVIEW.md`
-exist?** If not, that session IS the founding interview — it interviews the human to settle the
-foundations (`manuals/founding_interview.md`), and no worker may be dispatched until the floor
-is met. The fence is **refuse, never supply**; the twin rule is **C-36** (the founder's
-conviction is not a tractability verdict, as C-35 says the literature's silence is not).
-**Nobody has run this with a human yet** — the first trial run is its measurement, and the thing
-to watch is whether refuse-never-supply holds when the human asks for help answering.
+**Rules added since the last top block — read them before changing anything they touch:**
+**C-37** (a task expected to take more than twenty minutes has its DESIGN reviewed before it runs)
+with **C-37-bis** (verdicts APPROVED / APPROVED-WITH-AMENDMENTS / RETURNED; amendments frozen
+before the run; RETURNED holds the work) · **C-20-bis** (every registered comparandum computed
+through the instrument's own pipeline before the freeze; the freeze prints the call; a failed
+control is ruled *instrument or yardstick*, never defaulted). **The freeze now protects the REAL
+CASE'S OUTPUT**, not "before any script exists" — that letter was a proxy and is retired.
 
-**★ WHAT IS IN FLIGHT RIGHT NOW.** The human coordinator is searching for a **candidate
-benchmark target**: a result published after this model's training cutoff, recent enough that
-the literature has not absorbed it, with a known answer they hold and the apparatus does not.
-**When they return with one, do not ask for the mathematics.** See the fence below — it is the
-single most important thing on this page.
+**★ THE APPARATUS IS NOW A NETWORK, and that is where most recent findings came from.**
+**Opticalc** — a live optical-computing programme, founded 2026-09-10 — runs current core
+byte-identical; its founding interview was run with a human and **held** (W9 is measured). **The
+founding tree** implemented C-37 *independently* as its RUL-134 and adopted C-20-bis. Rules now
+move both directions. **Keep future rules independent across trees where possible**: a directive
+given to two trees separately shows what is forced by the problem and what was one author's
+choice, and that comparison produced C-37-bis.
+
+**★ WHAT IS IN FLIGHT.** W8's prerequisites before rung 0 — build `WITHHELD`, **covering the
+apparatus's own docket as well as the literature**; install benchmark trees from a **stripped
+source**; give the **scorer a demonstrated failure mode**; the human's approval of the proposed
+**third role** (the instruction author); the human's calls on the rung and the second problem.
+**A candidate target has been identified by the human. Its field is known to the modifier and is
+deliberately written nowhere in this repository — this file is public, and the mirror is being
+cloned by machines nobody can identify (31 clones, 0 page views, in the 14 days to 2026-09-18).
+Never name the target here, in any commit message, or in any file that ships. Do not ask for the
+mathematics.**
 
 **The one thing that must never be broken:** the tag `twt-apparatus-20260827` is a permanent
 citation anchor — four citations in the founding programme's paper resolve through it (RUL-112).
