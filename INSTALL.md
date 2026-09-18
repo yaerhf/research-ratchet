@@ -50,37 +50,45 @@ else's programme state at the exact moment you are meant to be forming on **this
 whatever you absorb there arrives in the interview you are about to conduct. **The clone is a
 source of files, not a source of context.**
 
+**This fence covers the APPARATUS REPOSITORY'S OWN records — never the human's project.** If the
+human hands you notes, a brainstorm, a report or an earlier summary of their project, **read them:**
+that is the best input the founding interview can get, not a breach. *(Measured 2026-09-18: the
+first live founding recorded a human's own brainstorm as a breach of this fence — this paragraph
+exists because the fence's wording allowed that reading.)*
+
 ## Step 1 — the interview
 
-Ask the human these questions, one at a time, and keep the answers verbatim (you will quote
-them into the canon and the handoff). Do not skip any; do not add more unless an answer forces
-a follow-up.
+**Ask these in plain, friendly words — a person is answering, not an agent.** Short questions,
+one at a time. Anything marked *For you* is guidance for you, **never something to read aloud.**
+Keep the answers verbatim: you will quote them into the canon and the handoff, and the founding
+interview will **start from them rather than ask again**, so the person is never made to repeat
+themselves.
 
-1. **Name.** What is the programme called? (A short slug for file prefixes is derived from
-   this — propose one and confirm.)
-2. **The object.** In a paragraph in your own words: what is the research about, and what
-   would success look like?
-3. **The deliverable.** What artifact does the programme ultimately produce — a paper, a
-   theory with an executable model, a proof, a system? In what field?
-4. **The rivals.** Which incumbent frameworks/approaches does this compete with or get
-   compared against? (These become the philosopher's saturation diet.)
-5. **The engine.** Can the programme's claims be made executable — checked by running code?
-   In what language? (Default: Python.)
-   **Do not accept a fast "no".** An engine is what delivers *self-coherence as an executable*,
-   and it is the ground every refuting verdict stands on — without it, every checker verdict is
-   ARGUED rather than COMPUTED, and the review layer loses most of its teeth. Before recording
-   a "no", read `knowledge/prompts/manuals/engine.md` §2 and put its availability table to the
-   human: exact identities, computed values with failable tolerances, **enumerations** (a menu
-   closure is a theorem, not an assertion), declared dependency structure, single-site
-   definitions, and counts/tier bookkeeping. The last three are available to almost any
-   programme, including a purely literature-based one. Record their answer either way — and if
-   it is "no", record *which rows they ruled out and why*, because that is a claim the
-   programme may later want to revisit.
-6. **Model classes.** Which AI model classes are available for staffing? (The apparatus
-   requires CROSS-CLASS checking keyed on authorship — name at least two classes, and which
-   is the scarce/premium one.)
-7. **Visibility.** Will the tree have a public mirror from the start, or later? (Affects
-   nothing structural; recorded so publish-on-cite duties are read correctly.)
+1. **Name.** *"What would you like to call this project?"* *(For you: derive a short slug for file
+   prefixes, propose it, and confirm.)*
+2. **What it's about.** *"In a few sentences, what is the research about — and what would success
+   look like?"* *(For you: this is the seed of the object; the founding interview builds on it.)*
+3. **What they want to end up with.** *"What do you want to have at the end — a paper, a working
+   model, a proof, a prototype, something else? And in what field?"*
+4. **Existing approaches.** *"What are the main existing approaches to this problem — the ones your
+   work would be compared against?"* *(For you: these become the philosopher's reference set.)*
+5. **Checking by code.** *"Could some of the work be checked by running code — calculations,
+   simulations, consistency checks? If so, in what language? Python is the default."*
+   *(For you: **do not accept a fast "no".** An engine is what delivers self-coherence as an
+   executable, and it is the ground every refuting verdict stands on — without it, every checker
+   verdict is ARGUED rather than COMPUTED. Before recording a "no", read
+   `knowledge/prompts/manuals/engine.md` §2 and walk them through its table **in plain words**:
+   checking exact identities, computed values with tolerances that can fail, enumerating the
+   options and showing which survive, declaring what depends on what, defining each quantity in
+   one place, and keeping counts and statuses straight. The last three suit almost any programme,
+   including a purely literature-based one. If it is still "no", record which of those they ruled
+   out and why — the programme may want to revisit it.)*
+6. **Which AI models.** *"Which AI models do you have access to? This works best with at least two
+   different ones, so one can check the other's work."* *(For you: the apparatus requires
+   CROSS-CLASS checking keyed on authorship. Also record which one is scarce or expensive.)*
+7. **Public or private.** *"Will this be public — on GitHub, say — from the start, later, or
+   never?"* *(For you: affects nothing structural; recorded so publish-on-cite duties are read
+   correctly.)*
 
 ## Step 2 — build the tree
 
@@ -257,7 +265,10 @@ Form as the AI COORDINATOR of this programme and run a work session.
    the traps, the first graded docket item. Do not state a docket, do not propose a
    dispatch plan, and DO NOT DISPATCH A WORKER — until the object slots are filled a
    worker's formation prefix is a TEMPLATE and every result it returns is about nothing.
-   The fence: you may REFUSE an answer as unusable; you may never SUPPLY one.
+   Talk to the human in PLAIN, WARM words - this is a conversation with a person, not a
+   form; the apparatus vocabulary is for the record only. If they brought notes or a
+   brainstorm, read it first and start from it. The fence: you may ask for more when an
+   answer isn't clear; you may never write their answers for them.
 
 Formation order, before anything else:
 1. CLAUDE.md is auto-loaded — it governs.
@@ -332,7 +343,11 @@ Apparatus source: research-ratchet @ <hash>.
    > interview you to settle the foundations and goals — the object, what the programme will
    > not give up and what would kill that, what success looks like and what would falsify it,
    > what is already settled, and the first piece of work. **Set aside real time and be in the
-   > room.** It can refuse your answers as unusable and it will; it cannot write them for you.
+   > room.** It will ask about your project in plain words — what you're trying to do, what a
+   > win looks like, what would change your mind. *"I don't know yet"* is a perfectly good
+   > answer. **If you already have notes, a brainstorm or a report, give them to it first** —
+   > it will start from them and the conversation gets shorter. It won't write your answers for
+   > you; that part has to be yours.
    > The ontology is yours — the apparatus only holds it.
 
 3. Do not begin the research yourself. The install ends here.

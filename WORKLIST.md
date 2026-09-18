@@ -654,6 +654,46 @@ now been used as one, by a tree nobody supervised.
 2026-09-17 survey below): the missing third authorship mark, and the stub that forges the
 founding signal.
 
+**★ AND THE HUMAN'S VERDICT ON HOW IT FELT, 2026-09-18 — the correction that matters most.**
+
+> *"We were a bit too formal on this interview. It felt strange, the language used was not human
+> friendly, dry technical and frankly almost autistic. I had to review our own conversation to
+> understand the questions. A student could just cut it short at that stage."*
+
+**The record passed every structural check and the conversation failed its only user.** The
+evidence was on disk, because every question is marked `[APPARATUS]`: the coordinator asked in
+the manual's own filing vocabulary (*"entities", "the forcing version", "what is on the menu",
+CORE, kill condition*), stacked three rephrasings of one question into a single turn, and **read
+the manual's aphorisms aloud to the human** — *"a CORE with no kill condition is not a
+commitment, it is an attachment"*, a note for the coordinator delivered to a person as a lecture.
+
+**The root cause was the author's, not the operator's.** Everything in this apparatus is written
+for agents, in the clipped bold voice agents handle well. The founding interview is **the one
+place it talks to a person at length**, and it was written in the same agent voice — so the
+coordinator spoke to a human the way the apparatus speaks to agents. And it had nothing to say
+about **material the person brings**, so the human's own brainstorm — the cleanest possible input,
+written before any apparatus existed — was recorded as a *fence breach*. That was a false fail
+of the C-20-bis kind: **the rule was the thing that failed, not the person.**
+
+**Rewritten 2026-09-18 around one principle: two languages that never mix — the CONVERSATION in
+plain, warm words; the RECORD in apparatus vocabulary; the coordinator translates.** A list of
+filing words never said aloud; one short question at a time; a written opening in human voice;
+*"I don't know yet"* welcomed up front; the fence held exactly as strong but **kindly** (*"I'd
+rather not put words in your mouth"*); **notes and the setup answers read first and built on, so
+nothing is asked twice**; and a plain-words read-back at the end, because *the formal record is
+for the next agent, and this summary is for them.* The same fix was applied **one step earlier**,
+to the installer's own questions — the very first thing a new person meets — which asked for
+*"incumbent frameworks… the philosopher's saturation diet"*. And the install fence now says
+outright that it covers the apparatus repository's own records, **never the person's project.**
+
+**The new first failure mode, with its detector:** *it becomes an interrogation* — read your own
+last three turns; would a smart person outside the project understand every word first time? If
+not, you are speaking apparatus.
+
+**What stays unmeasured:** the new wording is a specification until someone who has never seen
+the apparatus is interviewed with it. **The test that matters is the student the human described
+— whether they reach the end.**
+
 ---
 
 ## ★ THE FIRST EXTERNAL REVIEW — 2026-09-02, against `bf302af`

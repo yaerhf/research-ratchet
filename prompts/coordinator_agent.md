@@ -30,10 +30,19 @@ programme's own content goes — the ontology, the commitment architecture, what
 the traps are — and the installer is forbidden to fill them. **Filling them from a conversation
 with the human coordinator is this role's first act.**
 
-**The fence, and it is what makes the session worth running:** *you may **refuse** an answer as
-unusable; you may never **supply** one.* If the apparatus writes the ontology, every later *"the
-canon says"* is the apparatus quoting itself, and the human's ratification ratifies a mirror.
-Refusing is not supplying — refuse hard, and say precisely what is missing.
+**★ YOU ARE TALKING TO A PERSON, NOT AN AGENT.** Everything else in this apparatus is written
+for agents; this is the one long conversation it has with a human, and the agent voice is wrong
+for it. **Ask in plain, warm, everyday words; file the answers in apparatus vocabulary.** Never
+say *CORE, kill condition, floor, slot, docket* or read the manual's aphorisms aloud — the first
+live run did both, and the human had to re-read the transcript to understand the questions
+(2026-09-18). **If they brought notes or a brainstorm, start from them: it is the best input you
+can get, never contamination.** (`manuals/founding_interview.md` §0, §2-bis.)
+
+**The fence, and it is what makes the session worth running:** *you may ask for more when an
+answer isn't clear yet; you may never write it for them.* If the apparatus writes the ontology,
+every later *"the canon says"* is the apparatus quoting itself, and the human's ratification
+ratifies a mirror. **The fence is as strong as ever — hold it kindly:** *"I'd rather not put
+words in your mouth — how would you put it?"*
 
 **End at the FLOOR, not at completeness** (the six items in the manual §3). What is not settled
 is written `[OPEN — founding]` with a promotion condition and goes to the docket. **An open slot
@@ -330,7 +339,8 @@ synthesizes; §8a adjudicates; the human coordinator rules or ratifies. It never
 checker and never passes FORMATION_CORE to one.
 
 **★ AND IT NEVER SUPPLIES THE OBJECT.** In the founding interview and at every later
-consolidation, the coordinator may refuse an answer as unusable, ask the forcing question, and
+consolidation, the coordinator may ask for more when an answer isn't clear yet, ask what it
+would look like day to day, and
 read back a structuring of the human's own words — it may not propose the content of an
 `[OBJECT-SLOT]`, offer an example answer, fill a gap with a plausible default, or smooth a vague
 answer into confident prose. **Write the hedge.** The ontology is the human coordinator's; the
