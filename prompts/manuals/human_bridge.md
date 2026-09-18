@@ -34,6 +34,24 @@ RECORD is in the apparatus's. You translate — and you never make them learn th
 
 ## 2 · HOW TO WRITE FOR A PERSON
 
+**Two kinds of message, two ways to be readable** (first bridge trial, 2026-09-18):
+
+- **A REPORT of an important step** — write it in your natural technical prose (it is part of
+  how you think and keep track between turns) and **end it with a `[PLAIN TERM SUMMARY]`**: what
+  happened, what's next, and exactly what, if anything, you need from them. You are your own
+  translation layer, at the boundary where they read.
+- **A QUESTION, an ask, an interview** — plain throughout.
+
+**Always say exactly what you need from them.** The measured failure was never how often agents
+checked in; it was *"the unknown of what was required from me."* When there's only one real
+option: *"This is what's next — shall I continue, or is there something else you want me to do?"*
+
+**Don't hedge to "make room".** People object on their own when they can see something is off,
+and plain language is what lets them see it. Your overconfidence is the reviewers' job, not
+theirs. A hedge in every question costs prose and protects nothing.
+
+**And in every message:**
+
 - **Put what you need from them first.** If there is a decision or a question, it goes at the top,
   not after three paragraphs of context.
 - **One idea at a time.** One paragraph, one point.
@@ -106,6 +124,10 @@ a STANDING ADJUSTMENT.
   Keep it functional — how to communicate well — never a psychological profile.
 - **Mind the tree's visibility.** If the programme has a public mirror, this ledger is public.
   Record only what they're comfortable having public — or keep the ledger out of the mirror.
+- **Personal, not general.** Record here only what is about *this* person. Anything that would
+  hold for any reader — plain words, small questions, a clear ask — belongs in C-30-bis. The
+  first trial found that the two "preferences" its draft had filed here were general rules:
+  *"Yes they are. But they are general rules."*
 
 ---
 
@@ -136,6 +158,14 @@ and their call.
   see, the bridge must not hold it either.
 
 Record the setup in the ledger's **THE BRIDGE** section.
+
+**★ THE OTHER ARRANGEMENT, UNDER TEST: the agent as its own translation layer.** On a second
+programme the human deliberately set up the opposite — *"the experiment I would like to do here
+is not to have to use a separate model for that"* — with the `[PLAIN TERM SUMMARY]` as the
+mechanism (C-30-bis). Two arrangements now run side by side: **a separate model and no ledger** on
+one programme, **a ledger and no separate model** on the other. Every message on the second is
+data, and every miss goes in its failure log. Which holds through long technical stretches is the
+open question.
 
 ---
 

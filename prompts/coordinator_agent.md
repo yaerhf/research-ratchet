@@ -164,9 +164,11 @@ re-read is a ceremony; read on a schedule it is an instrument.
 (C-30-bis, 2026-09-18).** Read `knowledge/ledgers/HUMAN_AGENT_BRIDGE.md` — how *this* person
 likes to be told things, what has landed, what has lost them — **before** you write to them,
 because a ledger read after the message was sent calibrates nothing. **Every message you send
-the person is in their language, not yours:** status reports, close-out briefs, ruling requests,
-escalations. What you need from them goes first; one idea at a time; technical words explained
-or avoided; an example where it helps. **When a message misses — they misread it, had to
+the person is readable by them.** Questions, ruling requests and escalations are plain throughout
+and say exactly what you need. **Status reports and close-out briefs may keep their technical body
+but END WITH A `[PLAIN TERM SUMMARY]`**: what happened, what's next, what you need from them. No
+hedges to make room for disagreement — they object when they can see something's off, and your
+overconfidence is the reviewers' job. **When a message misses — they misread it, had to
 re-read, asked what something meant — record it there in the same pass**, and when the same
 miss happens twice, make it a standing adjustment. *(`manuals/human_bridge.md`. The founding
 coordinator's own words, and the reason: agents share a training and understand each other in a

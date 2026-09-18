@@ -1226,6 +1226,76 @@ installs are fine; **existing trees must pull the updated rules FIRST, then crea
 ordering belongs to each tree's own coordinator, which knows what is running in its folder and
 whose bank guards against the tree changing underneath it.
 
+**★ THE TRIAL RAN — 2026-09-18, and it produced the best evidence the bridge has.** Record:
+`audit/BRIDGE_TRIAL_NOTE_FOR_APPARATUS_2026-09-18.md`, written by the optical programme's
+coordinator *for* this repository, carried by the human, containing no programme content and no
+personal details. The ledger was opened; its first entry was written **with** the human, one item at
+a time; **7 of the draft's 9 items were confirmed**, and no unconfirmed `[HANDOFF-DRAFT]` line
+survived.
+
+**The two items the draft got wrong were this session's — and both corrections generalize:**
+
+- **The failure is an unclear ask, not a frequent one.** The draft read the human's short
+  instructions as a wish for fewer check-ins. The human: *"The number of your check-ins were not the
+  problem. It was the unknown of what was required from me."* The fix is a clear ask — *"this is
+  what's next; shall I continue, or is there something else?"* — not fewer of them.
+- **No hedges to "make room".** The draft proposed leaving room for the human to correct wrong
+  assumptions. The human: *"Blind confidence is a failure mode for them, not for you. You have the
+  reviewers for that."* Plain language lets a person see a wrong assumption; the reviewers catch the
+  agent's overconfidence; a hedge in every question is neither.
+- **And the rules were general, not personal:** *"Yes they are. But they are general rules"* — an
+  agent-written note sent to an expert in another project had not been understood either. So they
+  belong in C-30-bis, which now says so ("every reader, experts included"), not in a per-person file.
+
+**★ THE `[PLAIN TERM SUMMARY]` — proposed by the human, adopted into C-30-bis the same day.** *"Your
+prose is a part of how you think and keep track between turns, so what I suggest is an added layer at
+the end of every important step that needs to be reported to the human."* It resolves a real tension
+the rule had: read strictly, *talk to humans in human language* pushes an agent to write plainly
+everywhere, and an agent's technical prose is how it reasons. **Work in natural technical prose;
+translate at the boundary where a person reads.** Questions and asks stay plain throughout. It is
+also the ledger's own mechanism working as designed: the same failure happened twice (the founding
+interview, and a long run whose reports lost the human — *"I lost the plot some time ago"*), and a
+failure that happens twice becomes a standing adjustment. This is that adjustment.
+
+**The experiment is now set on both sides.** The optical programme deliberately uses **no separate
+translation model** — *"the experiment I would like to do here is not to have to use a separate
+model"* — so the agent is its own translation layer and every message is data. The founding
+programme keeps its separate model and no ledger. **Honest limit:** one session; the summary has been
+used exactly once, and whether it survives long technical stretches is the open question.
+
+---
+
+## W17 · UPDATING A FOUNDED TREE — the procedure that did not exist
+**Grade A · DISCHARGED 2026-09-18**
+
+**The gap.** The only guidance for taking a newer apparatus into a tree already founded was one line
+of `INSTALL.md`: *"the upstream URL + recorded hash are the update path."* Everything else was
+improvised, and the first live programme's updates surfaced two defects in the improvising:
+
+1. **A new ledger's roster entry and its file must land in the same commit** — and the instructions
+   that got this wrong were **this session's own**. They put the `HUMAN_AGENT_BRIDGE.md` entry into
+   `FORMATION_CORE` §5 in one step and created the file in a later one, with a bank between. The
+   records gate checks the roster in **both** directions, so that bank would have been refused. The
+   one direction had been tested on a copy; the other had not. The optical programme's coordinator
+   caught it and landed both together.
+2. **The right action on the wrong ground.** An earlier update there gave *rule 92* as the reason
+   `FORMATION_CORE.md` was not overwritten. Rule 92 forbids handing the formation prefix to a
+   *checker*; it does not bind the coordinator. The real reason is that the file holds the
+   programme's founding content — and it matters, because a wrong ground is how the next coordinator
+   reaches the wrong action on a slightly different file.
+
+**Checked before any instruction was written**, read-only: that programme's `FORMATION_CORE.md`
+carries its founding content alongside the template markers, so the slot counts match upstream and
+**a straight copy would have erased its foundations with every gate staying green** — the template is
+well-formed. Nothing mechanical can see that; only sorting files before touching them can.
+
+**Built:** `manuals/updating.md` — two kinds of file (still verbatim → replace; holds the programme's
+content → merge by hand, never overwrite), how to tell them apart (compare against the version the
+tree *last synced from*, not the new one), the whole-ledger rule, recording the new upstream hash,
+and C-37's recorded skip. **And the gate's roster messages now name their remedy in both directions**
+— the same lesson as the dispatch gate: a refusal that states a problem without its fix is a gate
+that gets bypassed.
+
 ---
 
 ## MEANING NOTES — do not compress

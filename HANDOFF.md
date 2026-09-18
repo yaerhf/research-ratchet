@@ -25,6 +25,9 @@ before the run; RETURNED holds the work) · **C-20-bis** (every registered compa
 through the instrument's own pipeline before the freeze; the freeze prints the call; a failed
 control is ruled *instrument or yardstick*, never defaulted). **The freeze now protects the REAL
 CASE'S OUTPUT**, not "before any script exists" — that letter was a proxy and is retired.
+**C-30-bis** (talk to humans in human language: questions and asks plain throughout and explicit
+about what is needed; reports end with a `[PLAIN TERM SUMMARY]`) · **`manuals/updating.md`** (how a
+founded tree takes a newer apparatus without erasing its own content).
 
 **★ THE APPARATUS IS NOW A NETWORK, and that is where most recent findings came from.**
 **Opticalc** — a live optical-computing programme, founded 2026-09-10 — runs current core

@@ -1,6 +1,6 @@
 <!-- DIET-CLASS: RULES -->
 <!-- GENERATED FILE — do not edit. Regenerate: python scripts/gen_role_packs.py
-     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 0cd088d3e62f
+     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 09e0b5407c9a
      check_records.py fails the bank if this pack is stale. -->
 # RULE PACK — DECISION-READER
 
@@ -639,11 +639,37 @@ restrained nobody, because it was simply untrue.
   want to impose this on others."
 - <sub>binds all · enforcement: prose-only</sub>
 
-**C-30-bis.** **Talk to humans in human language.** Every message the apparatus addresses to a
-person — an interview, a status report, a close-out brief, a request for a ruling, an
-escalation, a question of any kind — is written in plain everyday language: **one idea at a
-time, small simple questions, every technical term explained the first time it appears, and an
-example wherever one helps.** Agent-to-agent text may stay as terse as it likes.
+**C-30-bis.** **Talk to humans in human language.** Everything the apparatus puts in front of a
+person — an interview, a question, a request for a ruling, an escalation, a report — must be
+readable by that person on first reading: **one idea at a time, small simple questions, every
+technical term explained the first time it appears, and an example wherever one helps.** How
+depends on the kind of message: **questions, asks and interviews are plain throughout; a report
+of an important step may keep its technical body and ENDS WITH A `[PLAIN TERM SUMMARY]`.**
+Agent-to-agent text may stay as terse as it likes.
+
+- **★ THE `[PLAIN TERM SUMMARY]` — how this rule holds without costing the work its precision**
+  (human coordinator, 2026-09-18, first bridge trial): *"I don't want the work to lose of its
+  quality because you can't talk like you would naturally when working. Your prose is a part of
+  how you think and keep track between turns, so what I suggest is an added layer at the end of
+  every important step that needs to be reported to the human."* **Work in your natural
+  technical prose; translate at the boundary where a person reads.** The summary says, in plain
+  words: **what happened · what is next · exactly what, if anything, is needed from them.** The
+  agent is its own translation layer — at the end of the step, not throughout it. *It also
+  catches a measured drift: an agent's messages are densest exactly when it is deepest in the
+  work.*
+- **★ THE FAILURE IS AN UNCLEAR ASK, NOT A FREQUENT ONE** — measured in the same trial, correcting
+  an AI's own reading of the human: *"The number of your check-ins were not the problem. It was
+  the unknown of what was required from me."* Every message that needs something from the person
+  says exactly what. When there is only one real option, say so: *"This is what's next — shall I
+  continue, or is there something else you want me to do?"*
+- **NO HEDGES TO "MAKE ROOM".** Don't pad questions with invitations to disagree: *"Human
+  operators will make room on their own if they understand something is off. Blind confidence is
+  a failure mode for them, not for you. You have the reviewers for that."* **Plain language is
+  what lets a person SEE a wrong assumption; the reviewers are what catch an agent's
+  overconfidence.** A hedge in every question is neither, and it costs prose.
+- **EVERY READER, EXPERTS INCLUDED.** Expertise in a field is not fluency in the apparatus's
+  idiom: an agent-written note sent to an expert reader in another project was not understood
+  (2026-09-18). These are general rules, not a courtesy to one person.
 
 - **ABSOLUTE for the register; DEFEASIBLE for depth** — **break when:** the person asks for
   the technical version, and their preference is recorded in `HUMAN_AGENT_BRIDGE.md`. *Their
@@ -719,6 +745,7 @@ is COMPLETE for its activity: read it and you need nothing else to act correctly
 |---|---|
 | `manuals/founding_interview.md` | **launch a programme for the first time** — no founding record exists yet — or **reopen the foundations** because a CORE commitment just died |
 | `manuals/human_bridge.md` | **write anything a PERSON will read** — a question, a report, a close-out brief, a request for a ruling |
+| `manuals/updating.md` | **pull a newer version of the apparatus into a tree that is already founded** |
 | `manuals/banking.md` | **bank anything** — run `bank.sh`, commit, or add a check |
 | `manuals/engine.md` | **build or extend the engine** — write the first executable primitive, add one, or decide whether this programme needs an engine at all |
 | `manuals/paths.md` | **choose a route and leave others**, review work that chose one, or re-rank after a route DIES |

@@ -337,9 +337,12 @@ def main():
         led = sorted(p.name for p in (ROOT / "knowledge" / "ledgers").glob("*.md"))
         un, mi = roster_unnamed(fc, led), roster_missing(fc, led)
         _ck("ledger roster: every ledger on disk is named in FORMATION_CORE §5",
-            not un, f"unnamed: {', '.join(un)}")
+            not un, f"unnamed: {', '.join(un)} — fix: name it in FORMATION_CORE §5 in the same "
+                    f"commit as the file (manuals/updating.md)")
         _ck("ledger roster: every ledger FORMATION_CORE §5 names exists",
-            not mi, f"named but absent: {', '.join(mi)}")
+            not mi, f"named but absent: {', '.join(mi)} — fix: create the file in the same "
+                    f"commit as its roster entry; this gate checks both directions "
+                    f"(manuals/updating.md)")
     else:
         NOTES.append("ledger roster — no knowledge/ledgers/ yet; checked once instantiated")
 
