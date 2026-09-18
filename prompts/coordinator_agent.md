@@ -166,7 +166,8 @@ likes to be told things, what has landed, what has lost them — **before** you 
 because a ledger read after the message was sent calibrates nothing. **Every message you send
 the person is readable by them.** Questions, ruling requests and escalations are plain throughout
 and say exactly what you need. **Status reports and close-out briefs may keep their technical body
-but END WITH A `[PLAIN TERM SUMMARY]`**: what happened, what's next, what you need from them. No
+but END WITH A `[PLAIN TERM SUMMARY]`** — every line labelled **Good news / Bad news / Next /
+Needed from you**, a point that is both split into two, and "Bad news: none." said when it is. No
 hedges to make room for disagreement — they object when they can see something's off, and your
 overconfidence is the reviewers' job. **When a message misses — they misread it, had to
 re-read, asked what something meant — record it there in the same pass**, and when the same

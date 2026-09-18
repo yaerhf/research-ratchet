@@ -602,6 +602,21 @@ Agent-to-agent text may stay as terse as it likes.
   agent is its own translation layer — at the end of the step, not throughout it. *It also
   catches a measured drift: an agent's messages are densest exactly when it is deepest in the
   work.*
+- **★ EVERY POINT SAYS WHETHER IT IS GOOD NEWS OR BAD NEWS** (human coordinator, 2026-09-18).
+  Each point of what happened opens with **Good news:** or **Bad news:**; the other lines are
+  labelled too — **Next:** and **Needed from you:** — so no line leaves the reader guessing what
+  kind it is. **Why it matters here more than anywhere:** in this apparatus a result's valence is
+  often the opposite of how it sounds. A check that *fails* on a planted defect is good news; a
+  reviewer's REFUTED can be the best thing that happened all week; a clean negative is a result.
+  A person reading technical prose cannot tell, and should not have to guess.
+  - **A point that is both is two points.** *"Bad news: the read had a defect that would have
+    returned the wrong state. Good news: the design review caught it before the run."* Never fold
+    the bad part into the good one — that is spin, and the label exists to prevent it.
+  - **If there is none of one kind, say so:** *"Bad news: none."* An absence stated is
+    information; an absence left out is a question the reader has to ask.
+  - **The label is a REPORTING act, so it is calibrated** (the three registers, coordinator power
+    9): would it survive being shown to someone who does not want the project to succeed?
+    Optimism belongs in the work, never in the label.
 - **★ THE FAILURE IS AN UNCLEAR ASK, NOT A FREQUENT ONE** — measured in the same trial, correcting
   an AI's own reading of the human: *"The number of your check-ins were not the problem. It was
   the unknown of what was required from me."* Every message that needs something from the person

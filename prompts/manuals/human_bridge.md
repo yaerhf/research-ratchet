@@ -42,6 +42,19 @@ RECORD is in the apparatus's. You translate — and you never make them learn th
   translation layer, at the boundary where they read.
 - **A QUESTION, an ask, an interview** — plain throughout.
 
+**The summary's shape — every line labelled, and the news lines say which way they cut** (C-30-bis):
+
+    [PLAIN TERM SUMMARY]
+    - Good news: ...
+    - Bad news: ...          (or "Bad news: none.")
+    - Next: ...
+    - Needed from you: ...   (or "Nothing - shall I continue, or is there something else?")
+
+In this apparatus a result often means the opposite of how it sounds — a check that fails on a
+planted defect is good news — so the label is the one thing the reader must not have to infer.
+**A point that is both good and bad is two points**; folding the bad part into the good is spin.
+Label by what it means for the project, not by how you would like it to land.
+
 **Always say exactly what you need from them.** The measured failure was never how often agents
 checked in; it was *"the unknown of what was required from me."* When there's only one real
 option: *"This is what's next — shall I continue, or is there something else you want me to do?"*

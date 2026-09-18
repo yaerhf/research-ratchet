@@ -1263,6 +1263,17 @@ model"* — so the agent is its own translation layer and every message is data.
 programme keeps its separate model and no ledger. **Honest limit:** one session; the summary has been
 used exactly once, and whether it survives long technical stretches is the open question.
 
+**★ AND THE SAME DAY, ONE REFINEMENT FROM THE HUMAN COORDINATOR:** *"In the plain term summary the
+agent must say explicitly for each point if it's good news or bad news."* Adopted into C-30-bis.
+Every news line opens **Good news:** or **Bad news:**; the other lines are labelled **Next:** and
+**Needed from you:**. **Why it earns its place in this apparatus above all:** here a result's
+valence is routinely the opposite of how it sounds — a check failing on a planted defect is good
+news, a REFUTED can be the week's best outcome — and a person reading technical prose cannot tell.
+Two guards keep the label honest: **a point that is both is two points** (folding bad into good is
+spin, which the label exists to prevent), and **"Bad news: none." is said out loud** (an absence
+left out is a question the reader has to ask). And the label is a *reporting* act, so it is
+calibrated under the three registers — optimism belongs in the work, never in the label.
+
 ---
 
 ## W17 · UPDATING A FOUNDED TREE — the procedure that did not exist
