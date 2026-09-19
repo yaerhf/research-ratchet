@@ -657,8 +657,10 @@ founding signal.
 **★ AND THE HUMAN'S VERDICT ON HOW IT FELT, 2026-09-18 — the correction that matters most.**
 
 > *"We were a bit too formal on this interview. It felt strange, the language used was not human
-> friendly, dry technical and frankly almost autistic. I had to review our own conversation to
+> friendly, dry technical and frankly almost [robotic]. I had to review our own conversation to
 > understand the questions. A student could just cut it short at that stage."*
+
+*(One word revised by the speaker on 2026-09-19; the brackets mark it.)*
 
 **The record passed every structural check and the conversation failed its only user.** The
 evidence was on disk, because every question is marked `[APPARATUS]`: the coordinator asked in
