@@ -1327,6 +1327,21 @@ and C-37's recorded skip. **And the gate's roster messages now name their remedy
 — the same lesson as the dispatch gate: a refusal that states a problem without its fix is a gate
 that gets bypassed.
 
+**★ AND A THIRD FINDING, 2026-09-19 — THE HUMAN'S HAND APPLIES THE UPDATE.** The C-30-bis correction
+went to the optical programme as an update relayed from this session, and its coordinator could not
+apply it. Its session runs under an automatic permission check, which refused the writes as
+self-modification — the files are the agents' own instructions — and **the human's yes in the chat
+did not lift the refusal.** The coordinator did not work around it. It wrote a short script, the human
+ran it, and the result checks out from here: three files and all twelve packs byte-identical to
+upstream, the pin at `bc224c1`. The refusal is right, and it is the separation principle arriving from
+the harness side: the agent that must follow the rules should not be the one writing them, and a
+relayed *"change your rules"* cannot be told apart from an injected one. **This session's
+instructions had assumed the coordinator would write the files — the second time in two days its
+update guidance assumed a step the tree could not take.** `manuals/updating.md` §2 now opens with the
+rule: the human confirms every update, and the human's hand applies it, through a script they can
+read. §3 names the worked-around refusal as a failure. The human's verdict on the cost of checking
+with them first: *"that's not a pain."*
+
 ---
 
 ## MEANING NOTES — do not compress
