@@ -132,6 +132,7 @@ CANON
 # ---- INSTALL.md step 4c — SKIPPED: a fresh tree has no engine ------------------------------
 # Step 4c names the harness bank.sh runs once an engine exists. A fresh tree has none, and the
 # correct behaviour is that bank.sh says so and carries on, which the first bank at step 6 runs.
+# Its other half — a harness NAMED but absent is refused, not skipped — is pinned after step 6.
 
 # ---- INSTALL.md step 5 — the handoff -------------------------------------------------
 printf '<!-- DIET-CLASS: GOVERNING -->\n# SESSION HANDOFF — read me first\n## TOP BLOCK\nAPPARATUS INSTANTIATED. NOT YET FOUNDED.\n' \
@@ -155,6 +156,19 @@ bash scripts/init_repo.sh | tail -2
 echo "== [6] first bank"
 bash scripts/bank.sh "ci: first bank on a fresh tree"
 git log --oneline | head -2
+
+# ---- W18 — a harness named for ANOTHER programme is refused, not skipped ----------------------
+# Two programmes on one machine, one engine name exported in a shell profile: the second tree's
+# bank looked for the first tree's harness, and answered "this tree has no engine yet" with its
+# engine checks skipped. Pinned here so the refusal cannot quietly revert.
+echo "== [4c] a harness named but absent stops the bank"
+if col_out="$(MAIN_SUITE=another_programme_test.py bash scripts/bank.sh "ci: must not bank" 2>&1)"; then
+  fail "a harness named but absent was banked through: the engine checks were silently skipped"
+fi
+case "$col_out" in
+  *"ANOTHER"*"programme"*) echo "  refused, and the message names the likely cause" ;;
+  *) fail "the bank stopped without naming the likely cause (a profile export for another programme)" ;;
+esac
 
 echo "== install dry-run PASSED — a fresh tree reaches a green first bank"
 echo "   INSTALL.md steps declared and NOT run: ${skipped:-none} (reasons at each in scripts/install_dryrun.sh)"

@@ -10,6 +10,10 @@ Code) in a **new, empty folder** and paste:
 Your agent will ask you a few configuration questions and build everything. When it finishes,
 you launch the programme with `/coordinator`.
 
+**More than one programme on the same computer?** That works. Give each one its own folder, side by
+side, never one inside another. Each folder then has its own `/coordinator`, its own rules and its
+own records, and the programmes never see each other.
+
 ---
 
 **For the installing agent — everything below is addressed to you.** You are instantiating a
@@ -23,6 +27,16 @@ Two fences bind the whole install:
   what the human's answers state; the slots are the programme's own first work items.
 - **Everything you create is written to files and committed.** A finding not written to a file
   did not happen — that rule starts now.
+- **Nothing you write is machine-wide, because several programmes may share this computer.**
+  Everything goes inside this folder. Never write to `~/.claude/`: a command or a CLAUDE.md there
+  reaches every project. Never put an engine setting in a shell profile (step 4c). **And check,
+  before Step 0, that this folder is not inside another programme's tree** — no CLAUDE.md, no
+  `knowledge/` in any folder above it. Claude Code reads the CLAUDE.md of every folder above the
+  one it starts in, so a nested programme would be formed on its parent's canon as well as its
+  own. If you find one, stop and tell the human. *(Keep one canon inside the tree, too: Claude
+  Code also loads a subfolder's CLAUDE.md when an agent reads files there, so an archived copy
+  or a leftover agent worktree can carry a retired canon back in. Measured 2026-09-22 on a machine
+  running two programmes: both trees held such copies.)*
 
 ## Step 0 — get the apparatus
 
@@ -314,14 +328,19 @@ canon edits, and never supplying the object — the human coordinator rules or r
 
 `bank.sh` looks for `knowledge/corpus/twt_test.py` by default — the founding programme's
 harness. Until docket item 3 lands you have no engine, and the gate says so plainly and
-carries on; that is correct. Once you have one, set the names (shell profile, or at the top
-of `bank.sh`):
+carries on; that is correct. Once you have one, set the names **at the top of this tree's
+`bank.sh`, never in a shell profile**:
 
 ```bash
 export MAIN_SUITE=<your_harness>.py         # e.g. tempo_test.py
 export COMPANION_SUITE=<your_companion>.py  # optional; single-engine trees skip it
 export CORPUS_DIR=knowledge/corpus          # only if the engine lives elsewhere
 ```
+
+**Why never the shell profile:** an export there reaches every tree on the machine. A second
+programme's bank would look for this one's harness. Until 2026-09-22 it then answered "this tree
+has no engine yet" and skipped its own engine checks. It now refuses to bank when a harness is
+named but absent, and says where the name probably came from.
 
 **What a correct first bank looks like** — run it now, before any research, so the tree's
 first commit goes through the gate: telemetry reports · `[1/4]` SKIPS with a stated reason ·

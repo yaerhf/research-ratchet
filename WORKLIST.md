@@ -1410,6 +1410,37 @@ unreviewed.
 
 ---
 
+## W19 · SEVERAL PROGRAMMES ON ONE MACHINE
+**Grade A · DISCHARGED 2026-09-22**
+
+**The question, from the human:** *"If somebody installs 2 research-ratchet on the same computer but
+different project. How does it go?"* **By design, fine.** Step 4 writes `/coordinator` into the
+project's own `.claude/commands/`, Claude Code takes commands from the folder it starts in, and
+every path in the routine is relative. The canon, agents, ledgers, index and memory are per folder
+too. This machine already ran two trees that way, with nothing installed at user level.
+
+**But the answer found three ways to make two trees collide, and one was in our own INSTALL.md:**
+1. **Step 4c offered a shell profile for the engine names.** A profile export reaches every tree. A
+   second programme's bank then looked for the first one's harness and answered *"This tree has no
+   engine yet"* — a false statement — with its engine checks skipped. **`bank.sh` now refuses to
+   bank when a harness is named but absent, and says where the name probably came from.** The
+   dry-run pins the refusal, and was shown failing against the previous `bank.sh`. INSTALL.md step 4c
+   now says: the top of this tree's `bank.sh`, never a profile.
+2. **Nesting.** Claude Code reads the CLAUDE.md of every folder above the one it starts in, so a
+   programme installed inside another's tree is formed on both canons. INSTALL.md now carries a
+   third fence: nothing machine-wide, nothing under `~/.claude/`, and check before Step 0 that no
+   folder above holds a CLAUDE.md or a `knowledge/`.
+3. **Old canon copies inside a tree.** Claude Code also loads a subfolder's CLAUDE.md when an
+   agent reads files there. **Measured on this machine:** the optical programme held three in
+   leftover agent worktrees, each worktree's only unsaved file a keeper verdict already in main
+   byte for byte. The founding tree held one in a leftover session worktree with eleven uncommitted
+   changes on a commit not in main, possibly real unsaved work, and one in an untracked history
+   folder. **None was touched from here.** Each tree's cleanup went to its own coordinator, with the
+   rule that nothing unsaved is discarded unreviewed, and history is renamed rather than deleted.
+   *(Contents of the founding tree's copies were not read.)*
+
+---
+
 ## MEANING NOTES — do not compress
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the

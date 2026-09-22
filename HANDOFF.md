@@ -13,7 +13,7 @@ object, MIT + CC BY 4.0, instantiable in one paste (`INSTALL.md`). Docket: `WORK
 account that travels: `WHY.md`. Everything is committed and pushed; **CI runs five gates and the
 install dry-run on every push**, and has been green on every commit since it was added.
 
-**Where the work stands.** Discharged: W2, W4, W6, W7, **W9–W18**. W1's build shipped; its
+**Where the work stands.** Discharged: W2, W4, W6, W7, **W9–W19**. W1's build shipped; its
 unmeasured items stand. **W18 owes one follow-up:** run INSTALL.md step 4 in the dry-run, with the
 `/coordinator` routine taken from INSTALL.md's own block (no run has ever executed it). W5's launch posts are the human's to send. **W3 is
 grade A and runnable today** (re-graded from D on 2026-09-02; nothing blocks it). **W8 — design

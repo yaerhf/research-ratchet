@@ -31,7 +31,10 @@ TREE_SNAPSHOT="$(git status --porcelain | git hash-object --stdin)"
 
 # ★ THE ENGINE GATE — and the state EVERY new programme starts in.
 # The harness filenames are the programme's own (the founding programme's were
-# twt_test.py / twt_companion_test.py). Override per-run or export in your shell.
+# twt_test.py / twt_companion_test.py). Set them at the top of THIS file, or per run —
+# never in a shell profile: an export there reaches every tree on the machine, and a
+# second programme's bank would look for this one's harness (INSTALL.md step 4c).
+HARNESS_NAMED="${MAIN_SUITE:+yes}${CORPUS_DIR:+yes}"
 MAIN_SUITE="${MAIN_SUITE:-twt_test.py}"
 COMPANION_SUITE="${COMPANION_SUITE:-twt_companion_test.py}"
 CORPUS_DIR="${CORPUS_DIR:-knowledge/corpus}"
@@ -44,6 +47,18 @@ CORPUS_DIR="${CORPUS_DIR:-knowledge/corpus}"
 # found here on 2026-08-27: `set -euo pipefail` aborting the command substitution
 # with NO message, leaving the adopter a truncated line and no diagnosis.
 CHECKS=""; CHECKSC=""
+# ★ A NAMED HARNESS THAT IS NOT HERE IS NOT A FRESH TREE (2026-09-22). Until then this branch
+# answered "this tree has no engine yet" whenever the file was missing, including when a name
+# had been SET: exported in a shell profile for ANOTHER programme on the same machine, or a
+# harness since moved. The engine checks were skipped under a message that was not true.
+if [ ! -f "$CORPUS_DIR/$MAIN_SUITE" ] && [ -n "$HARNESS_NAMED" ]; then
+  echo "[1/4] engine self-checks — FAILED: a harness is named ($CORPUS_DIR/$MAIN_SUITE) and this"
+  echo "      tree does not have it. If the name was exported in your shell profile for ANOTHER"
+  echo "      programme, it reaches every tree on this machine: unset it there and set this tree's"
+  echo "      own names at the top of this bank.sh (INSTALL.md step 4c). If it is this tree's own"
+  echo "      harness, it has moved or been deleted."
+  echo ">>> Not banking: a named engine that does not run is a gate that stopped guarding."; exit 1
+fi
 if [ ! -f "$CORPUS_DIR/$MAIN_SUITE" ]; then
   echo "[1/4] engine self-checks — SKIPPED: no harness at $CORPUS_DIR/$MAIN_SUITE."
   echo "      This tree has no engine yet. That is an honest state (docket item 3;"
