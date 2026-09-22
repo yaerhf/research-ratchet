@@ -58,6 +58,15 @@ And the four **banking-stoppers**, none of which any gate can catch — they run
 for the named reason, then passing. *A check never shown able to fail is a phantom-cite of the gate
 class.*
 
+**★ AND WITH ITS BLIND SPOT, WRITTEN AND PINNED — and a name that claims no more than it verifies
+(2026-09-22).** A failure demonstration covers the defects its author imagined. So a new check also
+states what it cannot see, and its self-test carries at least one BLIND SPOT demonstration: a real
+defect, planted, asserted NOT to fire. The pin keeps the statement honest — extend the check and
+the pin flips. And the check's name, its CI step name and its success line say what it verified and
+no more: **a gate's name is a claim, and the gap between the name and the code is where its holes
+are.** Measured on the day it was adopted — two such gaps in a sibling project, then the same
+defect in this apparatus's own pack gate (`manuals/checking.md` §0-quater).
+
 **★ AND A CHECK MUST BE ABLE TO FAIL FOR A REASON THAT MATTERS (RUL-067).** The older rule *"add a
 check for every banked fact"* collided with *"a tight tolerance on a vacuous check is a tell"* —
 obeying the first mechanically manufactures what the second condemns. **Resolved in favour of the

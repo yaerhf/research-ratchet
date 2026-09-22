@@ -59,5 +59,6 @@ jobs:
         run: python scripts/check_records.py
 
       # The 2026-08-27 afternoon that found eight defects, on every push.
-      - name: install dry-run — INSTALL.md executed, not read
+      # Its old name, "INSTALL.md executed, not read", claimed more than it checked (2026-09-22).
+      - name: install dry-run — every INSTALL.md step declared, the mechanical ones run to a first bank
         run: bash scripts/install_dryrun.sh

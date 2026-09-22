@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # DIET-CLASS: TOOLING
 #
-# W6 AS A SCRIPT — the installer executed, not read.
+# W6 AS A SCRIPT — INSTALL.md's steps, executed on a fresh tree.
 #
 # ★ WHY THIS EXISTS. W6 is the standing duty "re-run the installer after any change to the
 # gates or INSTALL.md", and its history is the argument for automating it: three runs on
@@ -12,9 +12,19 @@
 # weakest control class available; here it was the only control on the most expensive failure.
 # Named by a cold external review at bf302af (2026-09-02, finding F3).
 #
-# WHAT IT CHECKS, AND WHAT IT CANNOT. It checks that the MACHINERY still runs: that an adopter
-# following INSTALL.md today reaches a green first bank. It cannot check that anyone followed
-# the METHOD. The gates guard the door, not the wall — do not let this be quoted as more.
+# WHAT IT CHECKS. That the MACHINERY still runs: a fresh tree taken through INSTALL.md's steps
+# reaches a green first bank. The steps are TRANSCRIBED here, not read from INSTALL.md, so a guard
+# runs first: the steps INSTALL.md declares (its "Step N" headings) must equal the steps this
+# script declares (its "INSTALL.md step N" section markers), in the same order, each one
+# executed or marked SKIPPED with its reason.
+#
+# WHAT IT CANNOT SEE — written 2026-09-22, when this header still said "the installer executed,
+# not read" and nothing checked the claim:
+#   * a command changed INSIDE a transcribed step. The guard checks that every step is here, not
+#     that each one still does what INSTALL.md now says;
+#   * the steps it declares and does not run (listed at the end of every run, reasons inline);
+#   * whether anyone followed the METHOD. The gates guard the door, not the wall — do not let
+#     this be quoted as more.
 #
 #     bash scripts/install_dryrun.sh        # exit 0 = a fresh tree reaches a green first bank
 set -euo pipefail
@@ -26,6 +36,22 @@ export PYTHONUTF8=1
 fail() { echo ">>> DRY-RUN FAILED: $*"; exit 1; }
 
 echo "== install dry-run: $SRC -> $TREE"
+
+# ---- the transcription guard: every INSTALL.md step accounted for, in order ------------------
+# Measured 2026-09-22: this script carried markers for 8 of INSTALL.md's 11 steps. Steps 1, 4 and
+# 4c were skipped without a word, while the CI step was named "INSTALL.md executed, not read".
+SELF="$SRC/scripts/install_dryrun.sh"
+want="$(grep -oE '^#{2,3} Step [0-9][0-9a-z-]*' "$SRC/INSTALL.md" | sed -E 's/^#+ Step //' || true)"
+have="$(grep -oE '^# ---- INSTALL\.md step [0-9][0-9a-z-]*' "$SELF" | sed -E 's/^# ---- INSTALL\.md step //' || true)"
+skipped="$(grep -E '^# ---- INSTALL\.md step [0-9][0-9a-z-]* .*SKIPPED' "$SELF" \
+           | sed -E 's/^# ---- INSTALL\.md step ([0-9][0-9a-z-]*).*/\1/' | paste -sd' ' - || true)"
+[ -n "$want" ] || fail "INSTALL.md has no 'Step N' headings: the transcription guard has nothing to compare"
+if [ "$want" != "$have" ]; then
+  echo "  INSTALL.md declares:  $(echo $want)"
+  echo "  this script declares: $(echo $have)"
+  fail "INSTALL.md and this dry-run no longer declare the same steps. Add, rename or reorder this script's 'INSTALL.md step N' sections to match, each executed or marked SKIPPED with its reason."
+fi
+echo "  transcription guard: all $(echo "$want" | wc -l | tr -d ' ') INSTALL.md steps declared here, in order"
 cd "$TREE"
 
 # ---- INSTALL.md step 0 — the apparatus into place -------------------------------------
@@ -37,10 +63,14 @@ rm -f rag/index.json                     # generated, and untracked upstream
 cp "$SRC/README.md" knowledge/prompts/APPARATUS_README.md
 cp "$SRC/LICENSE" "$SRC/LICENSE-DOCS" knowledge/prompts/
 
-# ---- step 2 — the tree ----------------------------------------------------------------
+# ---- INSTALL.md step 1 — SKIPPED: the interview is a conversation with a person ------------
+# A dry-run has no person to ask. What it can check about this step, it checks below (W9): a
+# fresh tree reports NOT FOUNDED, so a launching coordinator's first session IS the interview.
+
+# ---- INSTALL.md step 2 — the tree ----------------------------------------------------------
 mkdir -p knowledge/corpus knowledge/ledgers knowledge/audit knowledge/candidates
 
-# ---- step 2b — retrieval, and it must ANSWER ------------------------------------------
+# ---- INSTALL.md step 2b — retrieval, and it must ANSWER ------------------------------
 # The founding programme's measured failure: a documented retrieval command that silently did
 # not run on the working box, after which retrieval stayed "available and unused" and every
 # read-on-demand instruction degraded into a bulk read. An index that writes is not enough.
@@ -52,7 +82,7 @@ case "$q_out" in
   *) fail "retrieval returned no hits on a fresh tree" ;;
 esac
 
-# ---- step 2b-bis — the packs ----------------------------------------------------------
+# ---- INSTALL.md step 2b-bis — the packs ----------------------------------------------
 echo "== [2b-bis] packs"
 python scripts/gen_role_packs.py > /dev/null || fail "pack generation failed"
 # The launch routine's formation step 4 loads this exact path. A dangling pointer there sends
@@ -60,7 +90,7 @@ python scripts/gen_role_packs.py > /dev/null || fail "pack generation failed"
 [ -f knowledge/prompts/packs/coordinator.md ] || fail "packs/coordinator.md absent — the /coordinator routine's step 4 would dangle"
 echo "  12 packs, and the launch routine's target resolves"
 
-# ---- step 2c — the ledgers ------------------------------------------------------------
+# ---- INSTALL.md step 2c — the ledgers ------------------------------------------------
 for f in NEGATIVES_LEDGER WINS_LEDGER RULING_REGISTER FAMILY_TREE CHECKER_CALIBRATION \
          EDIT_REACTION_LEDGER COMPARATIVE_LEDGER PHILOSOPHER_LOG REVERSAL_LEDGER \
          REDUCTIONS_LEDGER PATHS_LEDGER STRATEGIC_MAP HUMAN_AGENT_BRIDGE; do
@@ -83,7 +113,7 @@ case "$tel_out" in
   *) fail "an empty dispatch log did not report RUL-065 as UNMEASURED" ;;
 esac
 
-# ---- step 3 — the canon ---------------------------------------------------------------
+# ---- INSTALL.md step 3 — the canon ---------------------------------------------------
 cat > CLAUDE.md <<'CANON'
 # DRY-RUN — THE CANON (v0)
 Apparatus: research-ratchet.
@@ -93,7 +123,17 @@ An install dry-run. No object; this tree is never founded.
 Read knowledge/audit/SESSION_HANDOFF.md FIRST each session — this pointer is its only path.
 CANON
 
-# ---- step 5 — the handoff -------------------------------------------------------------
+# ---- INSTALL.md step 4 — SKIPPED: the agent surfaces are not yet executed here -------------
+# Step 4 copies three role specs into .claude/agents/ (frontmatter at line 1) and writes the
+# /coordinator launch routine from a block in INSTALL.md. A first bank needs none of it, which is
+# why this script never noticed it skipped them. Executing them, with the routine taken FROM
+# INSTALL.md rather than retyped here, is a docket item (W18). Until then this is a stated gap.
+
+# ---- INSTALL.md step 4c — SKIPPED: a fresh tree has no engine ------------------------------
+# Step 4c names the harness bank.sh runs once an engine exists. A fresh tree has none, and the
+# correct behaviour is that bank.sh says so and carries on, which the first bank at step 6 runs.
+
+# ---- INSTALL.md step 5 — the handoff -------------------------------------------------
 printf '<!-- DIET-CLASS: GOVERNING -->\n# SESSION HANDOFF — read me first\n## TOP BLOCK\nAPPARATUS INSTANTIATED. NOT YET FOUNDED.\n' \
   > knowledge/audit/SESSION_HANDOFF.md
 
@@ -109,7 +149,7 @@ grep -q "FOUNDING INTERVIEW" knowledge/prompts/manuals/founding_interview.md \
   || fail "the manual the launch routine names is absent or empty"
 echo "  a fresh tree reports NOT FOUNDED, and the manual resolves"
 
-# ---- step 6 — init and the first bank -------------------------------------------------
+# ---- INSTALL.md step 6 — init and the first bank -------------------------------------
 echo "== [6] init_repo.sh"
 bash scripts/init_repo.sh | tail -2
 echo "== [6] first bank"
@@ -117,3 +157,4 @@ bash scripts/bank.sh "ci: first bank on a fresh tree"
 git log --oneline | head -2
 
 echo "== install dry-run PASSED — a fresh tree reaches a green first bank"
+echo "   INSTALL.md steps declared and NOT run: ${skipped:-none} (reasons at each in scripts/install_dryrun.sh)"

@@ -85,6 +85,45 @@ added the sentence when it took ours — our reconciliation went out, their refi
 
 ---
 
+## 0-quater · ★ WHEN THE THING UNDER REVIEW IS A CHECK: TEST ITS NAME, ASK WHAT IT CANNOT SEE
+
+**A gate's name is a claim.** So are its CI step name and its success line. **Each must say no
+more than the code verifies.** Read the name, read the code, and ask one question: *does this
+deliver what its name promises?* An overclaiming name is how a narrower check gets trusted for
+the wider property, and it is the fastest route to the check's blind spot, because **the gap
+between the name and the code IS the blind spot.**
+
+**A check shown able to fail can still have a hole.** Its failure demonstrations cover the defects
+its author imagined. So ask for the other half: **every check states what it cannot see, and its
+self-test pins the statement** — a real defect, planted in the blind spot, asserted to PASS. The pin
+keeps the statement true: extend the check and the pin flips, and the statement must change with
+it. **A check with no written blind spot is a finding; so is a written one with no pin.**
+
+**Then sabotage outside the author's fixtures.** Plant a defect the check's name says it catches
+and its tests never try. That is where the holes are, and the author is the person least placed to
+plant it — RUL-065 once more: an author's self-test covers the author's imagination.
+
+**And before you report a miss, rule it: instrument or yardstick** (§0-ter). A planted defect that
+landed outside what the check claims to read is your aim, not their code.
+
+*(Measured 2026-09-20 → 2026-09-22. Reviewing a sibling project's two new checks: a CI step named
+"No published copy has been rewritten since its own release" compared a stamp — a hash field inside
+the published file — so a rule rewritten inside the file passed; a translation check whose success
+line said "66 rules with the same principle and the same obligations" compared table rows, never
+the rule bodies where the obligations are written. Both found by testing the name. Of the first
+pass's two misses, **one was the yardstick** — the planted defect sat in a glossary row the check
+never claims to read — and was re-aimed before anything was reported; the other was real. **Then
+the same test, turned on this apparatus's own gates, found the same defect here.** The pack check
+said "every generated role pack matches the current rule sources" and read a fingerprint line from
+each pack's header: a pack hand-edited with its stamp left alone passed both pack gates, and so did
+a pack cut from an older manuals index, which the fingerprint never covered. The install dry-run,
+named "INSTALL.md executed, not read", ran its own transcription and skipped three of INSTALL.md's
+eleven steps without a word. And writing the dispatch telemetry's blind-spot statement exposed that
+it compared model names as spelled, so one model under two spellings counted as independent
+review. All fixed the same day, each with its failure shown and its remaining blind spot pinned.)*
+
+---
+
 ## 0 · THE ONE THING TO GET RIGHT BEFORE ANYTHING ELSE
 
 **Your DIET is your instrument.** You were denied particular material on purpose, and what you

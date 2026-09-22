@@ -36,6 +36,14 @@ to make the break **cheap to declare and expensive to hide**. If you breached
 your diet, say so in your verdict; a contaminated finding reported honestly is
 recoverable, and one reported clean is not.
 
+★ AND IT TRUSTS THE DECLARATION — the blind spot, stated and pinned (2026-09-22). An
+artifact is what its marker says. A derivation marked CLAIM is served to the
+meta-observer, and nothing here reads the content to object. The marker is the
+contract: whoever writes the artifact declares its class, and a false declaration
+passes. `--self-test` pins this as a BLIND SPOT demonstration, so the day the
+classifier learns to read content, the pin flips and this paragraph must change
+with it.
+
 RUN
     python rag/diet.py --role meta-observer FILE [FILE...]   # may I open these?
     python rag/diet.py --role rederivation --list            # what may I see at all?
@@ -308,11 +316,14 @@ def check(role, cls):
 # ======================================================================
 _ST_FAILS = []
 _ST_TOTAL = 0
+_ST_BLIND = 0
 
 
 def _demo(name, got, want):
-    global _ST_TOTAL
+    global _ST_TOTAL, _ST_BLIND
     _ST_TOTAL += 1
+    if "BLIND SPOT" in name:
+        _ST_BLIND += 1
     ok = (got == want)
     verb = "fired" if got else "did not fire"
     expect = "expected fire" if want else "expected no fire"
@@ -367,6 +378,9 @@ def self_test():
           _denied("meta-observer", "x.md", "<!-- DIET-CLASS: TRANSCRIPT -->\n"), True)
     _demo("meta-observer: CONTROL — the CLAIM itself is its whole diet",
           _denied("meta-observer", "x.md", "<!-- DIET-CLASS: CLAIM -->\n"), False)
+    _demo("meta-observer: BLIND SPOT (pinned) — a derivation MARKED as a claim is served",
+          _denied("meta-observer", "x.md",
+                  "<!-- DIET-CLASS: CLAIM -->\n# the derivation, step by step\nstep 1: ..."), False)
 
     _demo("rederivation: FORBIDDEN the DERIVATION",
           _denied("rederivation", "x.md", "<!-- DIET-CLASS: DERIVATION -->\n"), True)
@@ -409,7 +423,9 @@ def self_test():
         print("  Fix rag/diet.py (ROLES / _heuristic) before banking. A bound that permits")
         print("  a breach of an absolute rule is not a bound.")
         return 1
-    print(f"  DIET SELF-TEST: {_ST_TOTAL}/{_ST_TOTAL} demonstrations behaved as specified.")
+    print(f"  DIET SELF-TEST: {_ST_TOTAL}/{_ST_TOTAL} demonstrations behaved as specified — "
+          f"{_ST_BLIND} of them pin{'s' if _ST_BLIND == 1 else ''} a blind spot (a real breach "
+          f"this bound is documented NOT to stop).")
     return 0
 
 # ---------------------------------------------------------------------------

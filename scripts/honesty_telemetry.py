@@ -438,13 +438,35 @@ def _dispatch_rows():
     return out
 
 
+def model_key(name):
+    """The model a hand-written column names, with the spelling noise taken out: case, padding,
+    separators (space, '.', '_' become '-'), a leading 'claude' and a trailing date stamp.
+    'claude-opus-5', 'Opus 5' and 'opus-5' are one model; 'fable-5.1' and 'claude-fable-5-1' are
+    one; 'opus-5' and 'opus-4-8' stay two — a version is not spelling."""
+    k = re.sub(r"[\s._]+", "-", (name or "").strip().lower())
+    k = re.sub(r"^claude-", "", k)
+    k = re.sub(r"-\d{8}$", "", k)
+    return k.strip("-")
+
+
 def same_class(checker, author):
     """True when this check carries NO cross-class information.
 
     UNKNOWN on EITHER side is same-class: unattributable is not evidence of independence,
-    and a metric that treats it as such rewards leaving the column blank."""
-    c, a = (checker or "").strip().upper(), (author or "").strip().upper()
-    if not c or not a or c == "UNKNOWN" or a == "UNKNOWN":
+    and a metric that treats it as such rewards leaving the column blank.
+
+    ★ SPELLING IS NOT INDEPENDENCE — corrected 2026-09-22. This compared the two strings as
+    written, so 'claude-opus-5' against 'opus-5' counted as a CROSS-class check: one model,
+    two spellings, independence manufactured. The column is hand-written, and the manual's own
+    example spells models short while their IDs spell them long. Found while writing this
+    predicate's blind-spot statement, not in a log — which is the case for writing one.
+
+    WHAT IT CANNOT SEE: (1) whether two DIFFERENT models share blind spots. RUL-065 keys on the
+    model, so two models from one provider count as cross-class; shared training is invisible
+    here (pinned in --self-test). (2) Whether the log is true. It measures the rows as written;
+    a misrecorded author passes."""
+    c, a = model_key(checker), model_key(author)
+    if not c or not a or c == "unknown" or a == "unknown":
         return True
     return c == a
 
@@ -540,11 +562,14 @@ def _crossclass_report(rows):
 # ======================================================================
 _TST_FAILS = []
 _TST_N = 0
+_TST_BLIND = 0
 
 
 def _tdemo(name, got, want):
-    global _TST_N
+    global _TST_N, _TST_BLIND
     _TST_N += 1
+    if "BLIND SPOT" in name:
+        _TST_BLIND += 1
     ok = (bool(got) == want)
     _TST_FAILS.append(name) if not ok else None
     print(f"  [{'OK ' if ok else 'FAIL'}] {name} "
@@ -584,6 +609,21 @@ def self_test():
            same_class("fable-5.1", "opus-5"), False)
     _tdemo("CONTROL — cross-class the other way round",
            same_class("opus-5", "fable-5.1"), False)
+
+    # -- spelling is not independence (2026-09-22) ------------------------------------
+    _tdemo("one model, long ID and short name ('claude-opus-5' / 'opus-5'), is SAME-class",
+           same_class("claude-opus-5", "opus-5"), True)
+    _tdemo("one model, dotted and hyphenated ('fable-5.1' / 'claude-fable-5-1'), is SAME-class",
+           same_class("fable-5.1", "claude-fable-5-1"), True)
+    _tdemo("one model, spaced ('Opus 5' / 'opus-5'), is SAME-class",
+           same_class("Opus 5", "opus-5"), True)
+    _tdemo("a date stamp is spelling ('claude-haiku-4-5-20251001' / 'haiku-4-5')",
+           same_class("claude-haiku-4-5-20251001", "haiku-4-5"), True)
+    _tdemo("CONTROL — two versions of one family stay two models ('opus-5' / 'opus-4-8')",
+           same_class("opus-5", "opus-4-8"), False)
+    _tdemo("BLIND SPOT (pinned) — two models from ONE provider count as cross-class "
+           "(RUL-065 keys on the model; shared training is invisible here)",
+           same_class("sonnet-5", "opus-5"), False)
 
     # -- the report: the arithmetic is the finding, so assert the arithmetic ------
     ALL_UNATTR = [_row("reviewer", "opus-5", "UNKNOWN", "R-1", "CLEAR"),
@@ -627,7 +667,9 @@ def self_test():
         for f in _TST_FAILS:
             print(f"      - {f}")
         return 1
-    print(f"  CROSS-CLASS SELF-TEST: {_TST_N}/{_TST_N} demonstrations behaved as specified.")
+    print(f"  CROSS-CLASS SELF-TEST: {_TST_N}/{_TST_N} demonstrations behaved as specified — "
+          f"{_TST_BLIND} of them pin{'s' if _TST_BLIND == 1 else ''} a blind spot (a limit this "
+          f"predicate is documented NOT to see past).")
     return 0
 
 

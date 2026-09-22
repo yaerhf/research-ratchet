@@ -61,6 +61,11 @@ which model held which role on a given day.** Written at dispatch, or lost.
   it as cross-class would reward leaving the column blank, and the reference implementation that
   arrived with the 2026-09-02 external review did exactly that, scoring `opus / UNKNOWN` as a
   cross-class check.
+- **Write the model's name, plainly: `opus-5`, `fable-5.1`.** The telemetry forgives spelling —
+  case, spaces, separators, a `claude-` prefix, a date stamp, so `claude-opus-5` is `opus-5` — and
+  nothing more. A nickname or a typo is a second model, and a second model is manufactured
+  independence. *(Until 2026-09-22 it forgave only case and padding, and counted `claude-opus-5`
+  against `opus-5` as a cross-class check.)*
 - **A pointer, never a copy.** Rule 56 already fixes where verdicts live. A second home is a
   drift pair.
 - **A record, never a gate.** It blocks nothing, for the same structural reason the telemetry

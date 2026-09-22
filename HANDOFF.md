@@ -13,8 +13,9 @@ object, MIT + CC BY 4.0, instantiable in one paste (`INSTALL.md`). Docket: `WORK
 account that travels: `WHY.md`. Everything is committed and pushed; **CI runs five gates and the
 install dry-run on every push**, and has been green on every commit since it was added.
 
-**Where the work stands.** Discharged: W2, W4, W6, W7, **W9, W10, W11, W12, W13, W14, W15**. W1's
-build shipped; its unmeasured items stand. W5's launch posts are the human's to send. **W3 is
+**Where the work stands.** Discharged: W2, W4, W6, W7, **W9–W18**. W1's build shipped; its
+unmeasured items stand. **W18 owes one follow-up:** run INSTALL.md step 4 in the dry-run, with the
+`/coordinator` routine taken from INSTALL.md's own block (no run has ever executed it). W5's launch posts are the human's to send. **W3 is
 grade A and runnable today** (re-graded from D on 2026-09-02; nothing blocks it). **W8 — design
 v2, externally reviewed (twelve findings, all confirmed), not started.** F5 deferred.
 
@@ -28,7 +29,11 @@ CASE'S OUTPUT**, not "before any script exists" — that letter was a proxy and 
 **C-30-bis** (talk to humans in human language: questions and asks plain throughout and explicit
 about what is needed; reports end with a `[PLAIN TERM SUMMARY]`, every line labelled Good news /
 Bad news / Next / Needed from you) · **`manuals/updating.md`** (how a
-founded tree takes a newer apparatus without erasing its own content).
+founded tree takes a newer apparatus without erasing its own content; the human confirms every
+update and the human's hand applies it) · **checks, 2026-09-22** (a gate's name claims no more
+than it verifies; every check writes down its blind spot and pins it — `manuals/checking.md`
+§0-quater. Turned on our own gates the same day, it found the pack gate reading a stamp instead of
+the packs, now fixed).
 
 **★ THE APPARATUS IS NOW A NETWORK, and that is where most recent findings came from.**
 **Opticalc** — a live optical-computing programme, founded 2026-09-10 — runs current core

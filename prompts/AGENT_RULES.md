@@ -147,7 +147,9 @@ new one, either give the rule a second home or pin the single home from the inde
     clause; Core-touching picks need the human coordinator's **plain-language** sign-off
     *first*.
 28. **Every new check ships with its failure demonstration** — show it failing against the
-    broken state. *A check never shown able to fail is a phantom-cite of the gate class.*
+    broken state. *A check never shown able to fail is a phantom-cite of the gate class.* **And
+    with its blind spot, written and pinned** — a planted defect it is asserted NOT to catch —
+    **and a name that claims no more than it verifies** (`manuals/banking.md` §3; 2026-09-22).
 29. **Sweep after patch, in reader order** — paper body first, then front matter, companion
     index sections including the reverse index, engine docstrings **and returned values**,
     harness description strings, **all the standing ledgers**, canon, worklist, handoff,

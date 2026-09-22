@@ -24,11 +24,24 @@ activity.
 
 ★ THE HAZARD THIS CREATES, NAMED. A generated view that drifts from its source is a drift
 pair with a build step in front of it. Two guards: every pack carries a FINGERPRINT of the
-sources it was cut from, and `check_records.py` fails the bank if any pack is stale.
-Regenerate at every consolidation and whenever the rules change:
+sources it was cut from, and `check_records.py` fails the bank if any pack is not EXACTLY what
+the current sources generate. Regenerate at every consolidation and whenever the rules change:
 
     python scripts/gen_role_packs.py            # write the packs
     python scripts/gen_role_packs.py --check    # verify currency; write nothing
+
+★ THE CHECK COMPARES CONTENT, NOT THE STAMP — corrected 2026-09-22. Until then both guards read
+the fingerprint line recorded INSIDE each pack and compared it with the sources. Measured on a
+copy: one MUST changed to SHOULD inside the worker's pack, fingerprint left alone, and both
+passed — "all 12 packs current", "RECORDS HOLD". And the fingerprint covers RULES_CORE.md and
+RULES_BY_ROLE.md only, while a pack also embeds the manuals index, the organigramme and this
+file's own template, so an index changed without regenerating passed as well. The same defect
+had been reported to a sibling project two days earlier; testing our own gate's NAME against its
+code is what found it here. Both checks now regenerate every pack in memory and compare.
+
+WHAT THE CHECK CANNOT SEE: whether this generator is RIGHT. It proves pack == build(sources);
+a bug in build() reproduced faithfully in every pack passes. The fingerprint stays as the
+readable stamp — it is no longer the check.
 """
 import argparse
 import hashlib
@@ -263,10 +276,21 @@ def manuals_table(ap):
     return "\n".join(out)
 
 
+def expected_packs(ap=None):
+    """Every pack as the CURRENT inputs generate it: {'<role>.md': text}. The one function both
+    checks compare against, so the comparison and the writer can never disagree about what a
+    current pack is."""
+    ap = ap or AP
+    core = read(ap / "RULES_CORE.md")
+    byrole = read(ap / "RULES_BY_ROLE.md")
+    mans = manuals_table(ap)
+    return {f"{role}.md": build(role, spec, core, byrole, mans)[0] for role, spec in ROLES.items()}
+
+
 def main():
     ap_ = argparse.ArgumentParser()
     ap_.add_argument("--check", action="store_true",
-                     help="verify every pack is current; write nothing")
+                     help="verify every pack is exactly what the sources generate; write nothing")
     a = ap_.parse_args()
 
     core = read(AP / "RULES_CORE.md")
@@ -275,24 +299,26 @@ def main():
     fp = fingerprint(core, byrole)
 
     if a.check:
-        stale, missing = [], []
-        for role in ROLES:
-            p = OUT / f"{role}.md"
+        differ, missing = [], []
+        for name, text in expected_packs().items():
+            p = OUT / name
             if not p.exists():
-                missing.append(role)
-                continue
-            m = re.search(r"fingerprint ([0-9a-f]{12})", read(p))
-            if not m or m.group(1) != fp:
-                stale.append(role)
-        if missing or stale:
-            print(f"[packs] STALE — sources fingerprint {fp}")
+                missing.append(name)
+            elif read(p) != text:
+                differ.append(name)
+        if missing or differ:
+            n = len(missing) + len(differ)
+            print(f"[packs] NOT CURRENT — {n} of {len(ROLES)} packs {'is' if n == 1 else 'are'} "
+                  f"not what the current sources generate (fingerprint {fp})")
             if missing:
                 print(f"        missing: {', '.join(missing)}")
-            if stale:
-                print(f"        stale:   {', '.join(stale)}")
-            print("        regenerate: python scripts/gen_role_packs.py")
+            if differ:
+                print(f"        differ:  {', '.join(differ)} — hand-edited, or cut from older "
+                      f"inputs (rules, manuals index, or this generator)")
+            print("        regenerate: python scripts/gen_role_packs.py  (never edit a pack by hand)")
             return 1
-        print(f"[packs] all {len(ROLES)} packs current (fingerprint {fp})")
+        print(f"[packs] all {len(ROLES)} packs are exactly what the current sources generate "
+              f"(fingerprint {fp})")
         return 0
 
     OUT.mkdir(parents=True, exist_ok=True)

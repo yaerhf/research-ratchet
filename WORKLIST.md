@@ -1344,6 +1344,72 @@ with them first: *"that's not a pain."*
 
 ---
 
+## W18 · A CHECK'S NAME IS A CLAIM; ITS BLIND SPOT IS WRITTEN AND PINNED — imported, then turned on ourselves
+**Grade A · DISCHARGED 2026-09-22** (one follow-up owed, below)
+
+**Where it came from.** A follow-up review of a sibling project (2026-09-20) broke both of its new
+checks in minutes, and both holes had the same shape: **the check verified less than its name
+said.** A step named *"No published copy has been rewritten since its own release"* compared a
+hash field stored inside the published file, so a rule rewritten inside it passed. A translation
+check reporting *"66 rules with the same principle and the same obligations"* compared table rows,
+never the rule bodies where the obligations live. That project also had a practice this one lacked:
+its checks carry a *"what this does not check — and never will"* block, pinned by a test named
+`test_what_this_check_cannot_see`. The human approved importing both practices.
+
+**The two practices** (`manuals/checking.md` §0-quater, `manuals/banking.md` §3, AGENT_RULES 28):
+1. **A gate's name, CI step name and success line say no more than the code verifies.** The gap
+   between name and code is where the holes are, and testing the name is the fastest way to find it.
+2. **Every check states what it cannot see, and its self-test pins that statement:** a real defect
+   planted in the blind spot, asserted to PASS. Extend the check and the pin flips, and the
+   statement has to change with it.
+
+**★ TURNED ON THIS APPARATUS THE SAME DAY, AND IT FOUND THE SAME DEFECT HERE.** Four findings, each
+shown on a copy before it was fixed:
+- **The pack gate read a stamp.** Named *"every generated role pack matches the current rule
+  sources"*, it compared the fingerprint line in each pack's header. One MUST changed to SHOULD
+  inside the worker's pack, stamp left alone, and both pack gates passed (*"all 12 packs current"*,
+  *"RECORDS HOLD"*). And the fingerprint covered two of a pack's inputs, not the manuals index, the
+  organigramme or the generator's template. **This is the defect reported to the sibling project
+  two days earlier**, and nothing here had caught it. Now both gates regenerate every pack and
+  compare the text. Shown failing on a hand-edited pack and on an index change. The fingerprint
+  code the records gate had duplicated, a drift pair of its own, is gone.
+- **The install dry-run ran a transcription under INSTALL.md's name.** Named *"INSTALL.md executed,
+  not read"*, it carried markers for 8 of INSTALL.md's 11 steps and skipped 1, 4 and 4c without a
+  word. Now every step is declared in order, run or SKIPPED with its reason. A guard fails the run
+  when INSTALL.md and the script stop declaring the same steps (shown on an untranscribed new
+  step and on a dropped marker), and every run prints what it did not run. The CI step's name now
+  says what it checks.
+- **The telemetry compared model names as spelled.** `claude-opus-5` against `opus-5` counted as
+  a cross-class check: one model under two spellings, independence manufactured. The column is
+  hand-written, and the manual's example spells models short while their IDs spell them long.
+  **Found by writing the predicate's blind-spot statement, not in a log** — the practice paying
+  for itself on its first use. Names now compare by model (case, separators, a `claude-` prefix and
+  a date stamp are spelling; a version is not). Shown on the old code: all four variants counted as
+  independent.
+- **The records gate's verdict line** said *"RECORDS HOLD."* It now says what held: *every
+  invariant above passed (structure and existence, not truth).*
+
+**Blind spots now written and pinned:** records gate 3 (a builder bug reproduced in every pack; a
+founding record naming the kill condition only to skip it; a wrong diet class declared), diet 1 (a
+derivation marked as a claim is served), telemetry 1 (two models from one provider count as
+cross-class, since RUL-065 keys on the model). Every self-test's success line now counts its pins.
+
+**The yardstick rule, measured in the field.** The first sabotage pass on the sibling project
+reported two misses. **One was the yardstick:** the planted defect sat in a glossary row the check
+never claims to read. It was re-aimed at a rule body before anything was reported, and it became a
+correctly grounded finding. The other miss was real. Reporting the glossary edit as a finding would
+have been refuted on sight and taken the real finding down with it. *(An account given to the human
+that day said both misses had been the yardstick. Only one was; corrected here.)*
+
+**Owed — the follow-up:** execute INSTALL.md step 4 in the dry-run. That means copying the three
+role specs with the frontmatter check, and taking the `/coordinator` routine FROM INSTALL.md's own
+block rather than retyping it. It is the entry point of every installed programme, and no run has
+ever executed it. **C-37:** the imported practices were the human's approved scope; the four fixes
+apply to our own gates a prescription already given to the sibling project. No new design was run
+unreviewed.
+
+---
+
 ## MEANING NOTES — do not compress
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the

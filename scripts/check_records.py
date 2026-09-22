@@ -33,6 +33,25 @@ shown able to fail is a phantom cite of the gate class. The predicates are PURE 
 TEXT precisely so a demonstration can plant a defect and watch the check fire without mutating
 the tree.
 
+★ AND EVERY CHECK STATES WHAT IT CANNOT SEE, WITH THE STATEMENT PINNED (2026-09-22, imported from
+a sibling project). A failure demonstration shows a check firing on the defects its author
+imagined; the blind spot is where nobody looked. So the limits are written below, and
+`--self-test` pins the load-bearing ones as BLIND SPOT demonstrations: a real defect, planted,
+that the check is asserted NOT to catch. The pin keeps the statement true. Extend a check to cover
+its spot and the demonstration flips, and the statement has to be rewritten with it.
+
+WHAT THIS GATE CANNOT SEE
+  * TRUTH. It checks structure and existence: a ledger is named, a pointer resolves, a record
+    exists. Never that what they say is right. A pointer that resolves to the wrong file passes.
+  * WHO SAID IT. A founding record written without the human passes. The floor check is a
+    keyword reading, and it passes a record that names the kill condition only to say it was
+    skipped (pinned).
+  * A WRONG DIET CLASS. The diet family checks that a class is DECLARED, not that it is the
+    right one (pinned).
+  * A WRONG GENERATOR. The packs family proves every pack is exactly what gen_role_packs.py
+    builds from the current sources. A bug in the builder, reproduced faithfully in every pack,
+    passes (pinned).
+
 RUN
     python scripts/check_records.py                             # structural invariants
     python scripts/check_records.py --main 412 --companion 81   # + count-bearing prose
@@ -211,14 +230,21 @@ def handoff_unreachable(canon_text, exists):
     return "" if exists(m.group(1)) else f"the canon points at {m.group(1)}, which is absent"
 
 
-def stale_packs(fingerprint_of_sources, pack_fingerprints):
-    """Generated role packs that were cut from a different version of the sources.
+def packs_not_regenerated(expected, actual):
+    """Role packs that are not EXACTLY what the current sources generate, in either direction:
+    a pack that differs or is missing, and a pack on disk the sources no longer generate.
 
-    A generated VIEW that drifts from its source is a drift pair with a build step in
-    front of it — which is why the packs exist only alongside this check. `pack_fingerprints`
-    maps pack name -> the fingerprint it records (None if it records none)."""
-    return sorted(name for name, fp in pack_fingerprints.items()
-                  if fp != fingerprint_of_sources)
+    A generated VIEW that drifts from its source is a drift pair with a build step in front of
+    it — which is why the packs exist only alongside this check. `expected` maps pack name ->
+    the text `gen_role_packs.expected_packs()` builds now; `actual` maps pack name -> the text
+    on disk.
+
+    ★ CORRECTED 2026-09-22. This used to compare the FINGERPRINT recorded inside each pack — a
+    stamp. A pack hand-edited with its stamp left alone passed, and so did a pack cut from an
+    older manuals index, which the fingerprint never covered. The gate's name said "matches
+    the current rule sources"; the code checked a line of the file's own header."""
+    names = set(expected) | set(actual)
+    return sorted(n for n in names if actual.get(n) != expected.get(n))
 
 
 FLOOR_ITEMS = (
@@ -384,19 +410,18 @@ def main():
     # 5b — GENERATED ROLE PACKS ARE CURRENT
     packs_dir = ROOT / ap_dir / "packs"
     if packs_dir.is_dir():
-        import hashlib
-        h = hashlib.sha1()
-        for rel in (f"{ap_dir}/RULES_CORE.md", f"{ap_dir}/RULES_BY_ROLE.md"):
-            h.update((_read(rel) or "").encode("utf-8"))
-        want = h.hexdigest()[:12]
-        got = {}
-        for pk in sorted(packs_dir.glob("*.md")):
-            m = re.search(r"fingerprint ([0-9a-f]{12})",
-                          pk.read_text(encoding="utf-8", errors="replace")[:1200])
-            got[pk.name] = m.group(1) if m else None
-        st = stale_packs(want, got)
-        _ck("packs: every generated role pack matches the current rule sources",
-            not st, f"stale: {', '.join(st)} — regenerate: python scripts/gen_role_packs.py")
+        # The expected text comes from the generator itself, so the check and the writer can
+        # never disagree about what a current pack is. (The fingerprint this replaced was
+        # computed here a second time — a drift pair of its own.)
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import gen_role_packs
+        expected = gen_role_packs.expected_packs(ROOT / ap_dir)
+        actual = {pk.name: pk.read_text(encoding="utf-8", errors="replace")
+                  for pk in sorted(packs_dir.glob("*.md"))}
+        st = packs_not_regenerated(expected, actual)
+        _ck("packs: every role pack is exactly what the current sources generate",
+            not st, f"not current: {', '.join(st)} — regenerate: python scripts/gen_role_packs.py "
+                    f"(a pack is generated: never edit one by hand)")
 
     # 6 — DIET MARKERS
     heads = []
@@ -497,7 +522,7 @@ def main():
         print(f"\n>>> RECORD-INVARIANTS FAILED ({len(FAILS)}) — the prose has drifted from the "
               f"tree.\n>>> Fix the documents at the sites named above, then re-run.")
         return 1
-    print("  RECORDS HOLD.")
+    print("  RECORDS HOLD — every invariant above passed (structure and existence, not truth).")
     return 0
 
 
@@ -506,10 +531,13 @@ def self_test():
     """PLANTED-DEFECT DEMONSTRATIONS — each check shown firing on a defect and staying quiet
     on the repaired control, over text held in memory. The tree is never mutated."""
     cases = []
+    blind = []
 
     def demo(name, got, want):
         ok = bool(got) == want
         cases.append(ok)
+        if "BLIND SPOT" in name:
+            blind.append(ok)
         print(f"  [{'OK ' if ok else 'FAIL'}] {name} "
               f"({'fired' if got else 'did not fire'}; expected {'fire' if want else 'no fire'})")
 
@@ -555,6 +583,10 @@ def self_test():
          undeclared_diets([("a.md", "# heading")]), True)
     demo("diet: CONTROL — the same artifact once it declares one",
          undeclared_diets([("a.md", "<!-- DIET-CLASS: ROLE -->\n# heading")]), False)
+    demo("diet: BLIND SPOT (pinned) — an artifact declaring the WRONG class passes",
+         undeclared_diets([("knowledge/candidates/R001/deriv.md",
+                            "<!-- DIET-CLASS: CLAIM -->\n# the whole derivation, step by step")]),
+         False)
 
     demo("handoff: a canon naming no handoff at all",
          handoff_unreachable("## §9 read the live state", lambda r: True), True)
@@ -565,14 +597,23 @@ def self_test():
          handoff_unreachable("read knowledge/audit/SESSION_HANDOFF.md first",
                              lambda r: True), False)
 
-    demo("packs: a generated pack cut from an older version of the sources",
-         stale_packs("abc123abc123", {"reviewer.md": "abc123abc123",
-                                      "keeper.md": "0000deadbeef"}), True)
-    demo("packs: a pack carrying no fingerprint at all",
-         stale_packs("abc123abc123", {"reviewer.md": None}), True)
-    demo("packs: CONTROL — every pack cut from the current sources",
-         stale_packs("abc123abc123", {"reviewer.md": "abc123abc123",
-                                      "keeper.md": "abc123abc123"}), False)
+    GEN = {"reviewer.md": "# PACK reviewer\nfingerprint abc123abc123\nrule: MUST cite\n",
+           "keeper.md": "# PACK keeper\nfingerprint abc123abc123\nrule: MUST sweep\n"}
+    demo("packs: a pack hand-edited with its fingerprint left alone (the 2026-09-22 defect)",
+         packs_not_regenerated(GEN, {**GEN, "keeper.md": GEN["keeper.md"].replace("MUST", "SHOULD")}),
+         True)
+    demo("packs: a pack cut from older inputs the fingerprint never covered (a manuals index)",
+         packs_not_regenerated(GEN, {**GEN, "reviewer.md": GEN["reviewer.md"] + "| old row |\n"}),
+         True)
+    demo("packs: a pack the sources generate, missing from disk",
+         packs_not_regenerated(GEN, {"reviewer.md": GEN["reviewer.md"]}), True)
+    demo("packs: a pack on disk the current sources no longer generate",
+         packs_not_regenerated(GEN, {**GEN, "retired.md": "# PACK retired\n"}), True)
+    demo("packs: CONTROL — every pack exactly what the current sources generate",
+         packs_not_regenerated(GEN, dict(GEN)), False)
+    BUGGY = {"reviewer.md": "# PACK reviewer\n"}         # build() dropped the rules: a generator bug
+    demo("packs: BLIND SPOT (pinned) — a generator bug, reproduced in every pack, passes",
+         packs_not_regenerated(BUGGY, dict(BUGGY)), False)
 
     demo("roles: a role the map tabulates whose file is gone",
          missing_roles("| Reviewer | `reviewer_agent.md` |", lambda f: False), True)
@@ -601,6 +642,9 @@ def self_test():
          founding_floor_gaps("object, deliverable, success, docket — and nothing else"), True)
     demo("founding: CONTROL — a record naming every floor item",
          founding_floor_gaps(RECORD), False)
+    demo("founding: BLIND SPOT (pinned) — a record naming the kill condition only to skip it",
+         founding_floor_gaps("object: X. deliverable: Y. success: Z. falsifier: none agreed. "
+                             "kill condition: we skipped it. docket: item 1."), False)
 
     VF = ["knowledge/candidates/R001/VERDICT_META_r001.md",
           "knowledge/candidates/R001/VERDICT_REV_r001.md"]
@@ -630,7 +674,9 @@ def self_test():
         print(f"  SELF-TEST: {bad} of {len(cases)} demonstrations did NOT behave as specified "
               f"— a check that cannot be shown to fire verifies nothing.")
         return 1
-    print(f"  SELF-TEST: {len(cases)}/{len(cases)} demonstrations behaved as specified.")
+    print(f"  SELF-TEST: {len(cases)}/{len(cases)} demonstrations behaved as specified — "
+          f"{len(blind)} of them pin{'s' if len(blind) == 1 else ''} a blind spot (a real defect "
+          f"this gate is documented NOT to catch).")
     return 0
 
 
