@@ -160,5 +160,5 @@ It interviews you, builds the tree, and installs the roles and a `/coordinator` 
 The documents are written for agents; the [README](README.md) is the only part meant for you.
 
 *The apparatus was built, measured, and repeatedly corrected inside the
-[Time-Wave Theory programme](https://github.com/yaerhf/TWT), which remains its reference
+[Theory of Wave-Time programme](https://github.com/yaerhf/TWT), which remains its reference
 instantiation. MIT (code) + CC BY 4.0 (documents).*

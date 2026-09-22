@@ -150,7 +150,7 @@ render knowledge/corpus/TWT_core_paper.md \
 # record rather than assumed here.
 render knowledge/corpus/TWT_foundational_paper.md \
        "$OUTDIR/TWT_foundational_paper.pdf" \
-       "Time-Wave Theory — the V3 Instance Dossier" \
+       "Theory of Wave-Time — the V3 Instance Dossier" \
        "margin=2.1cm" "10pt" \
        "The first candidate of TWT-Core, at full technical depth"
 
@@ -158,7 +158,7 @@ render knowledge/corpus/TWT_foundational_paper.md \
 # Landscape + smaller type keeps them readable instead of clipped.
 render knowledge/corpus/TWT_foundational_paper_companion.md \
        "$OUTDIR/TWT_foundational_paper_companion.pdf" \
-       "Time-Wave Theory — Foundational Paper V3: Companion" \
+       "Theory of Wave-Time — Foundational Paper V3: Companion" \
        "margin=1.6cm,landscape" "9pt"
 
 echo

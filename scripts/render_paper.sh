@@ -11,6 +11,6 @@ SRC="knowledge/corpus/TWT_foundational_paper.md"
 OUT="${1:-knowledge/corpus/TWT_foundational_paper.html}"
 command -v pandoc >/dev/null || { echo "pandoc not found — install from https://pandoc.org/installing.html"; exit 1; }
 pandoc "$SRC" --standalone --mathjax --toc --toc-depth=2 \
-  --metadata title="Time-Wave Theory — Foundational Paper" \
+  --metadata title="Theory of Wave-Time — Foundational Paper" \
   -o "$OUT"
 echo "Rendered -> $OUT  (open in any browser)"

@@ -2,7 +2,7 @@
 # research-ratchet
 
 **An operating system for AI-agent-driven research under a human coordinator — built, measured,
-and repeatedly corrected inside the [Time-Wave Theory programme](https://github.com/yaerhf/TWT),
+and repeatedly corrected inside the [Theory of Wave-Time programme](https://github.com/yaerhf/TWT),
 and published here in its GENERIC EDITION: emptied of its founding object, awaiting yours.**
 
 A ratchet moves one way and locks against slipping back. That is the design principle here:
@@ -195,7 +195,7 @@ tests for (every new check ships with a demonstrated failure mode).
 
 ## Provenance and scope
 
-The apparatus was built, run, and measured inside the Time-Wave Theory programme — its founding
+The apparatus was built, run, and measured inside the Theory of Wave-Time programme — its founding
 instantiation, and the reference one: the TWT tree remains the apparatus *as it runs with an
 object*, at **[github.com/yaerhf/TWT](https://github.com/yaerhf/TWT)** (503+ inline-checked
 engine primitives). This repository is the same apparatus with the object removed — the
