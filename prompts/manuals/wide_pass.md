@@ -48,9 +48,12 @@ into another problem.
 
 **★ AND THE SKELETON CARRIES ITS OWN OMISSIONS.** Abstraction is where a problem gets lost: drop
 the feature that makes it hard and every door afterwards answers an easier question, convincingly.
-So the skeleton ends with **the two or three features it deliberately dropped**, and the second
-pass checks each survivor against them — *does the dropped feature kill this door?* That is the
-blind-spot discipline turned on the abstraction itself.
+So the skeleton ends with **the two or three AXES it projected out** — and say them as axes, since
+every simplification is the removal of one (C-39): time, a spatial dimension, a coupling, a scale,
+a population, a parameter. The second pass then checks each survivor against them — *does the
+removed axis kill this door?* That is the blind-spot discipline turned on the abstraction itself,
+and naming the axis is what makes it answerable: *"features I ignored"* cannot be checked, *"I froze
+time"* can.
 
 **★ AND ONE OMISSION IS NOT AVAILABLE TO YOU.** The founding record names what a simpler version of
 this object would lose (C-39). **A skeleton that drops one of those has abstracted the object away

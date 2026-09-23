@@ -241,8 +241,12 @@ consequence)*
   that the simple case is not the object. **In the founding tree, valid branches were killed for
   months by exactly that**, in a programme whose object is defined by a dynamic while the apparatus
   kept modelling it statically.
-- **File:** the constitutive list → `FORMATION_CORE` §1, beside the object. It is what C-39 reads
-  to tell a control from a stand-in, and what the wide pass checks its own abstraction against.
+- **File:** the constitutive list → `FORMATION_CORE` §1, beside the object — **and file it as AXES,
+  because that is what a simplification removes** (C-39): time, a spatial dimension, a coupling, a
+  scale, a population, a parameter. Their answer is in their words; your filing names the axis, so a
+  later checker can ask *which axis did you remove?* and get an answer. It is what C-39 reads to
+  tell a control from a stand-in, and what the wide pass checks its own abstraction against. **Never
+  say "axis" to them** — the baker says *"one starter on one day"*, and you file *"time"*.
 
 **4.2 · A win**
 - *"If this goes really well, what would you have at the end?"* — the baker: *"A simple rule anyone

@@ -1794,6 +1794,28 @@ concluded** while it holds.
 is right for verification, and it is wrong for discovery. **Expect it of yourself rather than of
 somebody else.**
 
+**★ SHARPENED THE SAME DAY BY THE HUMAN, AND IT COLLAPSED THREE RULES INTO ONE QUESTION.** *"About
+staticity I would say that it's still a form of simplification and dimensional reduction but a
+reduction in the time axis. They froze the model and thus remove one entire dimension, just like
+when they tried it on 3D instead of 4D. It hides a face."* **Every simplification is a PROJECTION —
+the removal of an axis.** A toy model projects out several at once, a static model projects out
+time, *3D instead of 4D* projects out a spatial one. So the rule no longer needs three heuristics;
+it needs one mechanical question: **which axis did you remove, and what lived on it?**
+
+**And the time axis is the dangerous one because it is the projection that hides itself.** Dropping
+a spatial dimension gets written down — somebody types *"in 3D"*. Freezing time is written as
+*"consider the configuration…"* and reads as a setting rather than a choice: **the face is gone and
+nothing marks where it was**, which is the same signature as a summary's omissions (C-38) and
+dangerous for the same reason.
+
+**What the sharpening changes, mechanically:** the founding record files the constitutive list **as
+axes** (the human still answers in their own words — the baker says *"one starter on one day"* and
+the interviewer files *"time"*); the checker's question becomes *name the axis*, with **an unnamed
+axis as the tell**; the paths ledger's revival condition names the axis, because *"re-run with time
+restored"* is a task while *"re-run without the simplification"* is a wish; and the wide pass's
+skeleton lists **axes projected out** rather than *"features dropped"*, since the first can be
+checked and the second cannot.
+
 ---
 
 ## MEANING NOTES — do not compress

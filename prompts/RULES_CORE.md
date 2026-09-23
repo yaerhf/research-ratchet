@@ -725,6 +725,20 @@ dimension, taking a toy version: **required** where it is an INSTRUMENT — a ki
 a planted-defect fixture, the smallest claim that can fail. **A breach** the moment it becomes the
 OBJECT: when results about the reduced version are read as results about the programme's.
 
+**★ AND THEY ARE ONE THING, NOT THREE: EVERY SIMPLIFICATION IS A PROJECTION — THE REMOVAL OF AN
+AXIS.** *(Human coordinator, 2026-09-23, sharpening the rule the day it was adopted: staticity*
+*"is still a form of simplification and dimensional reduction but a reduction in the time axis.*
+*They froze the model and thus remove one entire dimension, just like when they tried it on 3D*
+*instead of 4D. **It hides a face**."*) A toy model projects out several axes at once; a static
+model projects out time; *3D instead of 4D* projects out a spatial one. **So the rule needs one
+question, and it is mechanical: WHICH AXIS DID YOU REMOVE, AND WHAT LIVED ON IT?**
+
+**Why the time axis is the dangerous one: it is the projection that hides itself.** Dropping a
+spatial dimension is visible in the prose — somebody writes *"in 3D"*. Freezing time is written as
+*"consider the configuration…"* and reads as a setting rather than a choice. **A face of the object
+is gone and nothing marks the place it was** — the same signature as a summary's omissions (C-38),
+and dangerous for the same reason: what is missing leaves no gap.
+
 **The test is the constitutive list.** The founding record names *what a simpler version of this
 object would lose* (`manuals/founding_interview.md` §3). **A reduction that touches one of those
 needs a RULING, not a preference** — and the ruling states what it buys and **what may no longer be

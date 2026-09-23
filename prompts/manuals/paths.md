@@ -191,9 +191,10 @@ premise question, and this role is the one saturated with the alternatives.
 | **CLOSED** | no longer an alternative because the fork's question dissolved — name what dissolved it |
 
 **★ A PATH THAT DIED UNDER A SIMPLIFICATION IS NOT DEAD — IT IS UNTESTED (C-39, 2026-09-23).** If
-the work that killed it ran on a frozen, reduced or toy version of the object, **the row names that
-reduction, and the reduction becomes its promotion condition**: lift it, and the path is live again
-and owed a re-run. A reduction is otherwise a permanent verdict on branches it was never entitled
+the work that killed it ran on a frozen, reduced or toy version of the object, **the row names the
+AXIS that was removed, and restoring that axis becomes its promotion condition**: lift it, and the
+path is live again and owed a re-run. *Naming the axis is what makes the condition testable —
+"re-run with time restored" is a task, "re-run without the simplification" is a wish.* A reduction is otherwise a permanent verdict on branches it was never entitled
 to judge — measured in the founding tree, where a static treatment of a dynamic object killed valid
 branches repeatedly, and the fix had to be made a standing rule.
 

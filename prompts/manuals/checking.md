@@ -136,8 +136,16 @@ simple*; it is *what is this standing in for*.**
 - **A negative found under a reduction is CONDITIONAL.** If the work kills a branch, the verdict
   names the reduction the branch died under, or the death is not recorded as one. *Lifting the
   reduction revives the row.*
-- **The tell:** prose that moves between the reduced model and the object without marking the
-  step — *"in the static case…"* and then a conclusion about the object.
+- **★ THE ONE QUESTION, and it is mechanical: WHICH AXIS WAS REMOVED?** Every simplification is a
+  projection — a toy model drops several axes, a static model drops time, *3D instead of 4D* drops
+  a spatial one. **Make the work name the axis and say what lived on it.** A verdict can then check
+  the only thing that matters: whether the removed face is where the phenomenon lives.
+- **The tell is an UNNAMED axis.** Work that never says which axis it removed does not know it
+  removed one — and **time is the projection that hides itself**, because dropping a spatial
+  dimension gets written down (*"in 3D"*) while freezing time is written as *"consider the
+  configuration…"*, which reads as a setting rather than a choice.
+- **The second tell:** prose that moves between the reduced model and the object without marking
+  the step — *"in the static case…"* and then a conclusion about the object.
 
 *(Adopted 2026-09-23 from the founding tree, which lost live branches this way for months and made
 it a standing rule: "no static models, no toy models, no dimensional reductions. Simplifications
