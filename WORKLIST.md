@@ -1716,6 +1716,22 @@ terms, so the default phrasing cannot pull it home · and stated plainly: *you w
 whether any of these is right.* Then the ordinary depth dispatch verifies the doors that survive —
 **which is the half the human reports already works.**
 
+**★ BUILT THE SAME DAY, ON THE HUMAN'S SHARPENING OF IT.** *"I noticed what Gemini was doing was
+invoking different domains yes, but always domains mathematically modellable… We could ask Claude to
+bring in 3 to 10 solutions from different equation ruled domains. The more the better and test their
+equations on the problem at hand."* **That is what turns the pass from literary to executable: a
+formalism can be transplanted and TESTED; a resemblance cannot.** `manuals/wide_pass.md` — the diet,
+the ask, the ready-to-send brief, the second pass, and the count that says whether it worked. Two
+additions the brief makes on its own: **distinct equation FAMILIES, not distinct subjects** (ten
+analogies that reduce to diffusion are one door in ten costumes, and that is the failure mode a
+"more is better" ask invites), and **dimensional coherence as the first gate** — one line per
+candidate, nearly free, and a decorative analogy dies there before a dispatch is spent on it.
+**The starvation is enforced, not requested:** `rag/diet.py --role wide` refuses the formation
+prefix, the corpus, the derivation, the engine, verdicts, transcripts, adjudications **and every
+checker's role definition** — which discharges the first of W21's live imports. Seven
+demonstrations, one of them the blind spot that matters most here: **a derivation quoted inside the
+brief is served**, because a diet bounds files and not what somebody pastes.
+
 **The two instruments are two diets of one model, with the door list as the artifact between them.**
 That is the separation principle again, and it is the same shape as the founding tree's mailbox with
 neither the second software nor the channel. **What it does not settle is whether this reaches the

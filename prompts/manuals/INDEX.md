@@ -45,6 +45,7 @@ moment they become binding**, which is also the moment it will actually retain t
 | `updating.md` | **pull a newer version of the apparatus into a tree that is already founded** | **WRITTEN** |
 | `banking.md` | **bank anything** — run `bank.sh`, commit, or add a check | **WRITTEN** |
 | `engine.md` | **build or extend the engine** — write the first executable primitive, add one, or decide whether this programme needs an engine at all | **WRITTEN** |
+| `wide_pass.md` | **borrow a formalism from a domain that is not yours** — a line is stuck, or a route is about to be chosen | **WRITTEN** |
 | `paths.md` | **choose a route and leave others**, review work that chose one, or re-rank after a route DIES | **WRITTEN** |
 | `paper_editing.md` | touch the foundational paper or its companion | owed |
 | `checking.md` | **serve as a checker** — reviewer, meta-observer, keeper, re-derivation agent, or philosopher-as-checker | **WRITTEN** |

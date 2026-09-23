@@ -161,6 +161,20 @@ ROLES = {
         "GOVERNING": "an adjudication records the route and the verdicts",
         "TRANSCRIPT": "a session transcript carries the derivation inside it",
     },
+    "wide": {                     # the wide pass (manuals/wide_pass.md), added 2026-09-23
+        "FORMATION": "the programme's own picture is exactly what this pass exists to leave — "
+                     "its brief carries the problem in plain words instead",
+        "CORPUS": "the paper's formalism pulls every search back home",
+        "DERIVATION": "the current route is what invites digging; this pass looks elsewhere",
+        "ENGINE": "verification belongs to the SECOND pass — having it here turns breadth "
+                  "back into depth within one turn",
+        "ROLE": "a checker's own definition teaches you to anticipate the checker, and a "
+                "worker taught to please them is the measurement destroyed from the inside "
+                "(adopted from the founding tree's ideation channel, 2026-09-23)",
+        "VERDICT": "reading what passed teaches the same anticipation by another road",
+        "TRANSCRIPT": "a session transcript carries the derivation inside it",
+        "GOVERNING": "an adjudication records the route and the verdicts",
+    },
     "philosopher": {},            # RUL-043 carve-out: receives FORMATION deliberately
     "contra-reviewer": {},        # same carve-out (RUL-044)
     "auditor": {
@@ -399,6 +413,23 @@ def self_test():
           _denied("decision-reader", "x.md", "<!-- DIET-CLASS: RULES -->\n"), True)
     _demo("decision-reader: CONTROL — the released artifact is its whole diet",
           _denied("decision-reader", "x.md", "<!-- DIET-CLASS: PUBLIC -->\n"), False)
+
+    # -- the wide pass: starved of everything that invites depth ----------------
+    _demo("wide: starved of the DERIVATION (the route is what invites digging)",
+          _denied("wide", "x.md", "<!-- DIET-CLASS: DERIVATION -->\n"), True)
+    _demo("wide: starved of the CORPUS (the paper's formalism pulls the search home)",
+          _denied("wide", "x.md", "<!-- DIET-CLASS: CORPUS -->\n"), True)
+    _demo("wide: starved of a checker's ROLE definition (no learning to anticipate them)",
+          _denied("wide", "x.md", "<!-- DIET-CLASS: ROLE -->\n"), True)
+    _demo("wide: starved of the formation prefix",
+          _denied("wide", "knowledge/prompts/FORMATION_CORE.md"), True)
+    _demo("wide: CONTROL — the negatives ledger, its guard against a dead end in costume",
+          _denied("wide", "x.md", "<!-- DIET-CLASS: LEDGER -->\n"), False)
+    _demo("wide: CONTROL — the bare CLAIM is its problem statement",
+          _denied("wide", "x.md", "<!-- DIET-CLASS: CLAIM -->\n"), False)
+    _demo("wide: BLIND SPOT (pinned) — a derivation QUOTED INSIDE ITS BRIEF is served",
+          _denied("wide", "x.md", "<!-- DIET-CLASS: BRIEF -->\n# brief\n"
+                                  "the derivation in full: step 1 ..."), False)
 
     # -- saturated roles must not be OVER-starved: that is a defect too --------
     _demo("keeper: CONTROL — saturated by construction, sees the result set",
