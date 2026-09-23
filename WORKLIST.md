@@ -1818,6 +1818,70 @@ checked and the second cannot.
 
 ---
 
+## W25 · PUBLISHING AS A CLAUDE SKILL — evaluated, with a recommendation
+**Grade A · OPEN · this entry is the C-37 design; nothing is built**
+
+**The question (human coordinator, 2026-09-23):** publish a simplified apparatus as a Claude skill.
+
+**What a skill is, in this apparatus's own terms.** A folder with a description and a body, **loaded
+on demand when the description matches the task**, able to bundle scripts that run. So it is a
+MANUAL with a trigger — which is exactly the shape this apparatus already uses (*start knowing the
+NAMES; open one only when you are about to do that activity*). **What it is not:** a tree, a record,
+a gate, or a second context. It cannot refuse a bank, cannot keep a ledger between sessions, and
+cannot starve a second instance of anything.
+
+**★ THE VERDICT: PUBLISH ACTIVITIES, NEVER "THE APPARATUS, SIMPLIFIED".** The apparatus's value is
+in **what refuses** — the bank that will not proceed, the diet that will not serve a file, the gate
+that fails a stale pack. **A skill refuses nothing.** A simplified edition would therefore ship the
+vocabulary without the instruments, and that is this apparatus's own cardinal sin: **disguise — an
+import presented as a derivation**, here as *a method presented as a guarantee*. Somebody would say
+*"I'm running a rigorous apparatus"* while nothing in their session stops anything, and the name
+would be doing work the code does not.
+
+**What survives the translation intact** (each is complete in one document and needs no tree): the
+wide pass · the plain-term summary and the rest of the human bridge · *a check ships with its
+failure demonstration, its blind spot, and a name that claims no more than it verifies* · the
+compaction wake-up ritual, **which even ships a working tool** (`tail_transcript.py`) · C-39's one
+question, *which axis did you remove?*
+
+**What dies, and must be SAID rather than quietly dropped:** the diets (no second context to starve)
+· the gates (no bank to refuse) · the ledgers and the handoff (no persistence) · the human
+coordinator's ratification (no standing relationship) · the founding interview's whole point, since
+its output needs somewhere to live.
+
+**So every published skill states what it does not give you** — W18's rule turned on our own
+shopfront: **a skill's description claims no more than the skill delivers**, and the line *"this is
+the discipline without the gates; the gated version is the repository"* belongs in each one.
+
+**The four candidates, ranked by how well they stand alone:**
+1. **`wide-pass`** — one activity, no infrastructure, useful to a stranger the first time they are
+   stuck, and its own scoring rule tells them whether it worked. The strongest by a distance.
+2. **`plain-term-summary`** — the labelled summary and the two-languages rule. Zero infrastructure,
+   and the piece with the most external evidence behind it: it exists because a human could not
+   parse the reports he was being sent.
+3. **`a-check-that-can-fail`** — planted-defect demonstrations, the written blind spot with its pin,
+   and a gate's name as a claim. Lands on anybody who writes tests, and carries a runnable pattern.
+4. **`compaction-ritual`** — the ritual plus `tail_transcript.py`, which works today in this harness.
+   Concrete, small, and the only candidate that ships an instrument rather than a discipline.
+
+**★ AND THE MAINTENANCE DESIGN IS THE ONE PART THAT MUST NOT BE IMPROVISED: a published skill is a
+GENERATED VIEW of its manual, gate-checked — never a hand-made copy.** A copy in a stranger's hands
+is a drift pair with the worst possible feedback loop: nobody tells you it diverged. The role packs
+already solve this shape, and since 2026-09-22 their gate compares CONTENT rather than a stamp, so
+the same generator-and-gate pattern applies unchanged.
+
+**Costs, stated before anyone says yes:** a support surface (strangers ask questions, and this is a
+one-person programme) · attribution, since the docs are CC BY 4.0 and a skill carrying manual text
+carries the credit with it · and the structural one — **a skill's audience has no human coordinator,
+which is the role every gate in this apparatus ultimately reports to.**
+
+**Recommendation: publish ONE, measure, then decide.** `wide-pass` first, because it is the only
+candidate whose usefulness a stranger can judge in a single sitting. **The measurement is the same
+one this apparatus asks of everything else:** is it used, and does a pass produce doors that survive
+a second look — not how it reads.
+
+---
+
 ## MEANING NOTES — do not compress
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the
