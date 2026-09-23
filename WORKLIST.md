@@ -1600,6 +1600,28 @@ its worth. (a) can be built and tried this week, and it is falsifiable: if the h
 a coordinator would not have caught, the role dies with its reason recorded. Promote to (b) only if
 the view proves the question valuable and its own gaps say why.
 
+**★ TWO TIERS, AND THE HUMAN'S OWN INSTINCT IS THE SECOND ONE (2026-09-23).** He asked whether
+arc-level rows would be too wide, and whether a tree the age of the founding one would be an
+impossible context. **Measured, read-only, on both live trees** — row counts are an upper bound,
+since some ledgers spend several rows on one entry:
+
+| | the founding tree | the optical tree |
+|---|---|---|
+| commits | 1308 | 129 |
+| all ledger rows | 1109 | ~590 |
+| **rows that are COMMITMENT changes** (rulings, family tree, paths, reversals, negatives, wins, docket) | **~415** | **~440** |
+| that spine, at ~45 tokens a line | **~19k tokens** | **~20k tokens** |
+
+**The finding that settles the design: commitments accumulate far more slowly than activity.** Ten
+times the commits, and the same size of spine. What is excluded is what grows — calibration rows,
+comparative rows, dispatch rows, commits, verdict files: **activity, not commitment.**
+
+**So the answer to "too wide?" is that arc-level rows are the wrong size for the SPINE and exactly
+the right size for the TIER ABOVE IT.** The historian reads: **every arc rollup, always** — one
+generated row per closed arc saying what it added that is still in force and what it killed — **plus
+a slice of the event spine keyed to today's step**, and the full spine only on a periodic sweep.
+Both tiers generated from the ledgers, so neither is a new duty and both can be re-cut.
+
 **The role's shape, for the design review:** diet = the event list + the standing ledgers, **starved
 of the current derivation** (it judges history against the claim, not the mathematics); question =
 *has this been tried, decided, or reversed before, and is today's step a regression?*; output = a
@@ -1674,6 +1696,31 @@ isolation, constraint mapping, friction · (3) regime 2 **plus forced distance**
 the field itself under a *not already cited by this programme* rule, with the negatives index in its
 diet and a kill world required per candidate. **k short independent generations per regime, never
 one long answer each.**
+
+**★ AND THE HUMAN'S DIAGNOSIS, 2026-09-23, WHICH RE-AIMS THIS WHOLE ITEM.** *"The knowledge does not
+seem to be the issue. When Gemini invoke the new door, Claude is immediately recognizing it and able
+to verify and use it. So I think it's really about focus depth. Claude has what we call in French 'le
+nez dans le guidon' while Gemini has 'la tete dans les nuages'. And the apparatus needs both, but if
+possible without having to install a second software and a twisted communication channel."*
+
+**If the gap is posture rather than knowledge, it is a DIET problem, and this apparatus already knows
+how to solve those.** The diet is the role: a worker digs because the material in front of it invites
+digging. So the wide pass becomes **a separate dispatch, starved of everything that invites depth** —
+the programme's formalism, the current derivation, the engine, and the checkers' rubrics — given the
+problem **in plain words** plus the negatives index so a located dead end does not come back.
+
+**Its brief forbids depth, in structure rather than in adjectives:** N candidates · each ONE sentence
+· each naming **the field it comes from** · each with the one experiment that would kill it · no
+verification, no derivation, a hard length cap · a **forbidden vocabulary**, being the programme's own
+terms, so the default phrasing cannot pull it home · and stated plainly: *you will not be judged on
+whether any of these is right.* Then the ordinary depth dispatch verifies the doors that survive —
+**which is the half the human reports already works.**
+
+**The two instruments are two diets of one model, with the door list as the artifact between them.**
+That is the separation principle again, and it is the same shape as the founding tree's mailbox with
+neither the second software nor the channel. **What it does not settle is whether this reaches the
+other provider's width; that is what the trial measures**, and the metric follows the diagnosis:
+distinct fields named, and doors that survive verification — not "creativity".
 
 ---
 
