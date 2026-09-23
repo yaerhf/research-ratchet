@@ -934,6 +934,7 @@ is COMPLETE for its activity: read it and you need nothing else to act correctly
 | `manuals/banking.md` | **bank anything** — run `bank.sh`, commit, or add a check |
 | `manuals/engine.md` | **build or extend the engine** — write the first executable primitive, add one, or decide whether this programme needs an engine at all |
 | `manuals/wide_pass.md` | **borrow a formalism from a domain that is not yours** — a line is stuck, or a route is about to be chosen |
+| `manuals/self_review.md` | **attack your own result** before handing it over — the author's instrument, and the one that never produces agreement |
 | `manuals/paths.md` | **choose a route and leave others**, review work that chose one, or re-rank after a route DIES |
 | `manuals/checking.md` | **serve as a checker** — reviewer, meta-observer, keeper, re-derivation agent, or philosopher-as-checker |
 | `manuals/dispatching.md` | **compose a brief and launch a worker** — a research memo, not a task ticket |

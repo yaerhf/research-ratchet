@@ -1818,8 +1818,12 @@ checked and the second cannot.
 
 ---
 
-## W25 · PUBLISHING AS A CLAUDE SKILL — evaluated, with a recommendation
-**Grade A · OPEN · this entry is the C-37 design; nothing is built**
+## W25 · PUBLISHING AS A CLAUDE SKILL — designed, and the build has started
+**Grade A · OPEN · the design below was reviewed across three exchanges with the human coordinator
+and approved 2026-09-23 ("we will try to transpose research-ratchet to a skill then and publish
+it"). C-37 satisfied. FIRST PIECE BUILT: `manuals/self_review.md`, the engine both skills need and
+an activity this apparatus was missing — `checking.md` judges somebody else's work, and nothing
+covered the author attacking their own.**
 
 **The question (human coordinator, 2026-09-23):** publish a simplified apparatus as a Claude skill.
 
