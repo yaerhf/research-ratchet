@@ -1638,6 +1638,43 @@ honest ceiling is *"this much of the breadth is reachable by prompt, and here is
 and if the answer is "not much", that is a result worth banking, because it prices the channel the
 founding tree is paying for.
 
+**★ THE PROMPT FRAMEWORK THE HUMAN BROUGHT, 2026-09-23, and what survives contact with a
+measurement.** He asked the other provider how to prompt this class for transversal thinking and
+carried the answer here. Its spine: name two contrasting fields · ignore surface features and
+isolate operational mechanisms · force the constraints of one into the vocabulary of the other · ask
+for what a mono-domain expert would find counterintuitive · then a *friction analysis* of where the
+forced pairing breaks. Variants: a random third anchor, a vocabulary swap, and a reverse analogy —
+*find the domain that solved this shape long ago.*
+
+**What holds, and it is the structural half.** Mechanism-not-surface and the forced constraint
+mapping do work, because they are structure rather than exhortation: a named source field conditions
+what comes next toward that field's shape, and requiring a *constraint* to be translated is what
+separates an analogy that carries something from one that decorates. The friction step is this
+apparatus's *what you did not check* under another name. And the **reverse-analogy variant is the
+highest-value one for research**, because choosing the domain is where the breadth actually lives.
+
+**What does not hold, and each one changes the trial.**
+- ***"Activating the right weights"* is a metaphor for conditioning.** Nothing switches breadth on;
+  the prompt changes what is likely next. So **adjectives are the weakest lever** (*radical*, *avoid
+  clichés*) and **constraints are the strongest**: a named field, a forbidden vocabulary, a required
+  count, a falsifier per candidate. *An instruction to avoid a failure mode is weaker than a
+  structure the failure cannot survive* — this apparatus's own position on gates, arriving in
+  prompting.
+- **Shape beats wording, and the framework is silent on shape.** One long deep answer is the wrong
+  instrument for breadth; **k independent short generations, then triage**, is the right one. This
+  is the single biggest design choice in this item.
+- **The reverse-analogy variant is where fabrication lives.** A model naming a field will also
+  assert what that field contains. It carries the class rule or it is not run: no empirical
+  specifics, name where to look, every number read from the primary before use.
+- **The vocabulary swap generates well and records badly.** Keep it as a generator; require a plain
+  restatement (C-30-bis) before anything is scored.
+
+**So the three regimes are drafted:** (1) plain ask · (2) one named source field, mechanism
+isolation, constraint mapping, friction · (3) regime 2 **plus forced distance** — the model picks
+the field itself under a *not already cited by this programme* rule, with the negatives index in its
+diet and a kill world required per candidate. **k short independent generations per regime, never
+one long answer each.**
+
 ---
 
 ## MEANING NOTES — do not compress
