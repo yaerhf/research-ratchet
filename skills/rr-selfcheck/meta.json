@@ -1,0 +1,7 @@
+{
+  "name": "rr-selfcheck",
+  "description": "Attack your own result before shipping it. Write the attack list BEFORE you know whether the result survives, commit to a quota of attacks across named categories (the data, the arithmetic, the method, the known-wrong case, the frame, what you removed, the transfer, the rival), run them rather than imagine them, and report demonstrated failures plus the surfaces left untouched. Use when you have an analysis, a fix, a number or a claim you are about to hand over, or when asked to check your own work, stress-test a result, or find what is wrong with something you just produced. Produces demonstrated failures and a list of un-attacked surfaces; never independent confirmation.",
+  "source": "prompts/manuals/self_review.md",
+  "source_sha": "d6906822578a",
+  "blessed": "2026-09-23"
+}

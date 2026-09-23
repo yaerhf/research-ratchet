@@ -424,6 +424,32 @@ def main():
             not st, f"not current: {', '.join(st)} — regenerate: python scripts/gen_role_packs.py "
                     f"(a pack is generated: never edit one by hand)")
 
+    # 5c — PUBLISHED SKILLS: assembled as published, and still tied to their manuals
+    skills_dir = ROOT / "skills"
+    if skills_dir.is_dir():
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import gen_skills
+        expected, actual, drifts = {}, {}, []
+        for meta_path in sorted(skills_dir.glob("*/meta.json")):
+            d = meta_path.parent
+            try:
+                meta, body, source_text = gen_skills.load(d)
+            except (OSError, ValueError, KeyError) as exc:
+                drifts.append(f"{d.name}: unreadable skill ({type(exc).__name__})")
+                continue
+            drifts.append(gen_skills.provenance_drift(meta, source_text))
+            expected[meta["name"]] = gen_skills.assemble(meta, body, meta.get("source_sha", "?"))
+            out = d / "SKILL.md"
+            actual[meta["name"]] = (out.read_text(encoding="utf-8", errors="replace")
+                                    if out.exists() else None)
+        st = packs_not_regenerated(expected, actual)
+        _ck("skills: every published SKILL.md is exactly what the assembler produces",
+            not st, f"not current: {', '.join(st)} — assemble: python scripts/gen_skills.py "
+                    f"(SKILL.md is generated: edit body.md or meta.json)")
+        moved = [d for d in drifts if d]
+        _ck("skills: every published skill is tied to the manual it was derived from",
+            not moved, "; ".join(moved))
+
     # 6 — DIET MARKERS
     heads = []
     for p in sorted((ROOT / ap_dir).rglob("*.md")):
@@ -612,6 +638,17 @@ def self_test():
          packs_not_regenerated(GEN, {**GEN, "retired.md": "# PACK retired\n"}), True)
     demo("packs: CONTROL — every pack exactly what the current sources generate",
          packs_not_regenerated(GEN, dict(GEN)), False)
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import gen_skills
+    SK_MANUAL = "# manual\nthe rule as the apparatus states it.\n"
+    SK_META = {"name": "rr-x", "description": "d", "source": "manuals/x.md",
+               "source_sha": gen_skills.sha(SK_MANUAL)}
+    demo("skills: a manual that moved after its skill was blessed (the wiring, not just the tool)",
+         gen_skills.provenance_drift(SK_META, SK_MANUAL + "a paragraph nobody carried across\n"),
+         True)
+    demo("skills: CONTROL — the manual where the blessing left it",
+         gen_skills.provenance_drift(SK_META, SK_MANUAL), False)
+
     BUGGY = {"reviewer.md": "# PACK reviewer\n"}         # build() dropped the rules: a generator bug
     demo("packs: BLIND SPOT (pinned) — a generator bug, reproduced in every pack, passes",
          packs_not_regenerated(BUGGY, dict(BUGGY)), False)
