@@ -162,7 +162,9 @@ new one, either give the rule a second home or pin the single home from the inde
     backticks in the message; do not edit files while it runs; **verify the commit landed with
     `git log`.**
 34. **A finding not written to a file did not happen** — and one written to a file git ignores
-    also did not happen.
+    also did not happen. **In the turn it arises, not "this session"** (C-38-bis): after a
+    compaction the only conversation that returns is the wake-up window, and nobody is told when
+    the window closes.
 
 ## 5. IF YOU ARE CHECKING SOMEONE'S WORK
 

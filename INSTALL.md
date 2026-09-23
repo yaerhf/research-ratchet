@@ -237,6 +237,12 @@ Deliverable: <answer 3>. Rivals for comparative pricing: <answer 4>.
 - The four banking-stoppers (RULES_CORE § THE FOUR BANKING-STOPPERS) bind everyone.
 - Never "impossible" (tried → failed because → would change if); never "the only way"
   without its conditioning class.
+- **After a compaction** — this context opening as a continuation, or the system saying the
+  instruction files were re-read — **run the wake-up ritual before resuming, unprompted**
+  (RULES_CORE C-38): `PYTHONUTF8=1 python scripts/tail_transcript.py` for the record rather than
+  the summary, then your pack, then this handoff's top block, then one line saying it happened.
+  **Nothing lives only in the transcript (C-38-bis):** what matters is written where it belongs in
+  the turn it arises — this file is re-read after a compaction, and the conversation is not.
 - §A ONTOLOGICAL INVARIANTS: [OBJECT-SLOT — docket item 2; nothing may claim §A force
   until it is written here and in RULES_CORE §A.]
 
@@ -296,6 +302,12 @@ Form as the AI COORDINATOR of this programme and run a work session.
    form; the apparatus vocabulary is for the record only. If they brought notes or a
    brainstorm, read it first and start from it. The fence: you may ask for more when an
    answer isn't clear; you may never write their answers for them.
+
+★ IF THIS SESSION OPENS AS A CONTINUATION of a conversation that ran out of room, run the
+   WAKE-UP RITUAL before anything else, without being asked (canon §1, RULES_CORE C-38): read
+   the tail of the real transcript (PYTHONUTF8=1 python scripts/tail_transcript.py), then your
+   pack, then the handoff, then say in one line that a compaction happened. A summary is not the
+   record, and a background task from before the compaction is still running.
 
 Formation order, before anything else:
 1. CLAUDE.md is auto-loaded — it governs.

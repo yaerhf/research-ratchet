@@ -55,6 +55,9 @@ jobs:
       - name: cross-class self-test — the predicate behind RUL-065
         run: python scripts/honesty_telemetry.py --self-test
 
+      - name: wake-up reader self-test — the window and the finder (C-38 step 1)
+        run: python scripts/tail_transcript.py --self-test
+
       - name: records-invariants gate on this repository
         run: python scripts/check_records.py
 

@@ -1,6 +1,6 @@
 <!-- DIET-CLASS: RULES -->
 <!-- GENERATED FILE — do not edit. Regenerate: python scripts/gen_role_packs.py
-     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 4e2b8cbad448
+     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 6620b3b99da8
      check_records.py fails the bank if this pack is stale. -->
 # RULE PACK — DECISION-READER
 
@@ -564,10 +564,14 @@ incrementing.
 - <sub>binds all · enforcement: partial — census tolerance</sub>
 
 **C-25.** Graduate every finding into a file in the same session — a finding not written to a
-file did not happen.
+file did not happen. **Sharpened by C-38-bis: in the same TURN, not the same session.**
 
 - **ABSOLUTE**
-- **WHY:** **NO RECORDED INCIDENT** — reads as decree; if you know the incident, record it.
+- **WHY:** *(the ground this rule lacked until 2026-09-23, from the founding tree's adoption of
+  the same discipline)* a context window ends without warning, and after a compaction the only
+  conversation that returns is the wake-up window. "The same session" cannot be honoured by
+  anyone, because nobody is told when the session's memory of this ends. See C-38-bis for where
+  each kind of thing goes.
 - <sub>binds all · enforcement: prose-only</sub>
 
 ## F. BEFORE YOU BANK
@@ -719,6 +723,57 @@ Agent-to-agent text may stay as terse as it likes.
   `HUMAN_AGENT_BRIDGE.md` ledger.
 - <sub>added 2026-09-18 · human coordinator directive · binds all, every role that writes
   to a person specifically · enforcement: prose-only</sub>
+
+**C-38.** **After a compaction, run the WAKE-UP RITUAL before you resume — unprompted.** A
+compaction has happened when this context opens as the continuation of a conversation that ran out
+of room, or when the system says the instruction files were re-read. **Unless the coordinator
+announced it, treat it as unexpected**, and before touching the task:
+
+1. **Read the record, not the summary.** `PYTHONUTF8=1 python scripts/tail_transcript.py` prints
+   the tail of this session's own transcript — what was said, decided and run. **This is C-23
+   applied to your own conversation:** never characterize anything from a summary of it, *including
+   your own*. A compaction hands you exactly that summary, written by the instance that was about
+   to lose the thread.
+2. **Re-read what forms you** — `packs/<your-role>.md`, and the formation prefix **only if your
+   diet allows it**. Rule 92 is ABSOLUTE at a compaction as at any other moment: a checker never
+   receives it, and "I had just been compacted" is not a carve-out.
+3. **Re-read the live state** — `SESSION_HANDOFF.md`, top block first.
+4. **Say it in one line** — that a compaction happened and the ritual ran — then resume the task
+   the summary names.
+
+**A background task survives a compaction: check it before relaunching it**, or you run it twice
+and report the second run as the first.
+
+- **ABSOLUTE** — it is four reads, and the failure it prevents is silent.
+- **WHY:** adopted 2026-09-23 from the founding tree, directed there the same day. **A summary
+  keeps what it judged important, and what it drops leaves no gap where it was** — the instance
+  that resumes cannot know what it lost, so no amount of care substitutes for reading the tail of
+  the record. *Measured here on adoption: this repository's own session had been compacted with no
+  ritual, because no rule existed; and the reader written for step 1 had a defect on its first
+  live run (a zero-width window printed everything) that only running it found.*
+- <sub>added 2026-09-23 · adopted from the founding tree · binds all · enforcement: prose-only
+  (the tool exists; running it is discipline)</sub>
+
+**C-38-bis.** **NOTHING LIVES ONLY IN THE TRANSCRIPT.** After a compaction the only conversation
+that returns is the tail the wake-up reader prints, and **that window is the safety margin, never
+the budget.** So everything that matters reaches its durable home **in the turn it arises**:
+
+- **the coordinator's words** — a ruling to the ruling register; an approval, an answer or a
+  direction to the record it bears on, **quoted verbatim**; a standing preference about how to work
+  to memory;
+- **a decision, a plan, the next step** — to the handoff's top block, rewritten whenever the state
+  moves, not only when a window is ending;
+- **a finding, a number, a verdict** — to a file: the run's saved output, the verdict file, the
+  ledger row. **A number with no saved run is not a record;**
+- **an in-flight task** — a background run, an agent, a monitor — to the handoff, with what it will
+  write and where;
+- **and a turn that would end with state living only in the chat writes it down before it ends.**
+
+- **ABSOLUTE**
+- **WHY:** adopted 2026-09-23 from the founding tree. C-25 already said a finding not written to a
+  file did not happen; what it did not say is WHEN, and *"in the same session"* is not a time,
+  because **nobody tells you when the window closes.** The turn is the unit that can be honoured.
+- <sub>added 2026-09-23 · adopted from the founding tree · binds all · enforcement: prose-only</sub>
 
 ---
 

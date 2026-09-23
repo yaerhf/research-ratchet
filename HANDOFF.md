@@ -6,7 +6,14 @@ This is research-ratchet's own. Rewrite the top block whenever the state moves.*
 
 ---
 
-## ★ TOP BLOCK — rewritten 2026-09-18
+## ★ TOP BLOCK — rewritten 2026-09-23
+
+**★ IF THIS SESSION OPENED FROM A SUMMARY, RUN THE WAKE-UP RITUAL FIRST (C-38), unprompted:**
+`PYTHONUTF8=1 python scripts/tail_transcript.py` — the tail of this session's own transcript, which
+is the record the summary was written from — then your pack, then this top block, then one line
+saying a compaction happened. **A summary keeps what it judged important, and what it dropped
+leaves no gap where it was.** And **nothing lives only in the transcript** (C-38-bis): what matters
+goes to its file in the turn it arises.
 
 **What this repository is.** The generic edition of the apparatus: emptied of its founding
 object, MIT + CC BY 4.0, instantiable in one paste (`INSTALL.md`). Docket: `WORKLIST.md`. The
@@ -33,7 +40,9 @@ founded tree takes a newer apparatus without erasing its own content; the human 
 update and the human's hand applies it) · **checks, 2026-09-22** (a gate's name claims no more
 than it verifies; every check writes down its blind spot and pins it — `manuals/checking.md`
 §0-quater. Turned on our own gates the same day, it found the pack gate reading a stamp instead of
-the packs, now fixed).
+the packs, now fixed) · **C-38 + C-38-bis, 2026-09-23** (the compaction wake-up ritual, with
+`scripts/tail_transcript.py` as its first step; and nothing lives only in the transcript — what
+matters is written in the turn it arises, which sharpens C-25 from *session* to *turn*).
 
 **★ THE APPARATUS IS NOW A NETWORK, and that is where most recent findings came from.**
 **Opticalc** — a live optical-computing programme, founded 2026-09-10 — runs current core

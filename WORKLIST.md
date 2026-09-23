@@ -1441,6 +1441,53 @@ too. This machine already ran two trees that way, with nothing installed at user
 
 ---
 
+## W20 · THE COMPACTION WAKE-UP RITUAL — adopted from the founding tree
+**Grade A · DISCHARGED 2026-09-23**
+
+**Where it came from.** The human asked this session to check the founding tree's canon for
+compaction rules. It had two, both directed there that same day, and this apparatus had neither.
+
+**What was missing, and it is the sharper half:** nothing here told an agent what to do when its own
+context had just been summarized. **C-23 has always forbidden characterizing anything from a summary
+of it, *including your own*** — and a compaction hands the next instance exactly that summary,
+written by the instance about to lose the thread. The rule existed; nobody had applied it to the
+conversation itself, and no tool made it possible.
+
+**C-38 — the wake-up ritual, run unprompted before resuming:** read the tail of the session's own
+transcript (the record, not the summary) · re-read your pack, **and the formation prefix only if
+your diet allows it** — rule 92 is ABSOLUTE at a compaction too, which is the one place the
+founding tree's version could not be copied as written · re-read the handoff's top block · say in
+one line that a compaction happened. **And check a background task before relaunching it: it
+survived the compaction.**
+
+**C-38-bis — nothing lives only in the transcript.** After a compaction the only conversation that
+returns is the wake-up window, and **that window is the safety margin, never the budget.** So the
+coordinator's words, a decision, a finding, an in-flight task each reach their durable home **in the
+turn they arise**. This also gave C-25 the ground it had been carrying a `NO RECORDED INCIDENT` note
+for, and sharpened it: *the same turn*, not *the same session*, because nobody is told when the
+window closes.
+
+**Built: `scripts/tail_transcript.py`**, the ritual's first step, generic edition. It finds the
+session's transcript by reading each candidate's own `cwd` field rather than reproducing the
+harness's folder-name mangling — *a mangling rule is a guess about someone else's tool; a field in
+the file is the file's own answer* — and prints the coordinator's messages, the agent's replies and
+its tool calls, marking where a compaction boundary sits. Reasoning, tool output and subagent
+threads are not shown, and the header says so. 14 planted-defect demonstrations, one of them a
+pinned blind spot; run by CI and by the install dry-run, which also pins that **a tree with no
+transcript gets a plain sentence rather than a traceback** — the failure mode that would land in
+the exact moment an agent has just lost its context.
+
+**★ AND THE TOOL'S OWN FIRST LIVE RUN FOUND A DEFECT IN IT.** `--tools 0` printed *every* tool call
+in the session: `x[-0:]` is `x[0:]`, so a window of zero meant everything. Fixed, and pinned as a
+demonstration. **W6's standing lesson, again: nothing but execution finds that** — the self-test had
+been green, because the author had not imagined asking for none of something.
+
+**Measured on adoption:** this repository's own session had been compacted earlier the same day with
+no ritual, because no rule existed. The ritual was then run by hand on that session's transcript, and
+the record matched what the work had been proceeding on.
+
+---
+
 ## MEANING NOTES — do not compress
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the

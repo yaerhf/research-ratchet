@@ -157,6 +157,21 @@ echo "== [6] first bank"
 bash scripts/bank.sh "ci: first bank on a fresh tree"
 git log --oneline | head -2
 
+# ---- W20 — the wake-up reader must fail HONESTLY where there is no transcript -----------------
+# C-38's first step runs a tool that will sometimes find nothing: a fresh tree, another harness,
+# another machine. The failure to prevent is a traceback or a silent empty window in the one
+# moment an agent has just lost its context and is trying to recover it.
+echo "== [W20] the wake-up reader, where no transcript exists"
+python scripts/tail_transcript.py --self-test > /dev/null || fail "the wake-up reader's self-test is red"
+if tt_out="$(python scripts/tail_transcript.py 2>&1)"; then
+  fail "the wake-up reader reported success on a tree that has no transcript"
+fi
+case "$tt_out" in
+  *Traceback*) fail "the wake-up reader crashed instead of saying it found nothing" ;;
+  *"no transcript"*) echo "  it says plainly that it found nothing, and what to do instead" ;;
+  *) fail "the wake-up reader failed without saying why: $tt_out" ;;
+esac
+
 # ---- W18 — a harness named for ANOTHER programme is refused, not skipped ----------------------
 # Two programmes on one machine, one engine name exported in a shell profile: the second tree's
 # bank looked for the first tree's harness, and answered "this tree has no engine yet" with its
