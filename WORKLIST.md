@@ -1537,6 +1537,107 @@ approval on whatever that file contains next; a watcher signals *that* something
 *what*, so a wake-up lists the whole inbox; and the fade test has a definition but no runner — couple
 it to the self-handoff that is already required.
 
+**★ THE HUMAN COORDINATOR'S RULINGS ON THIS READ, 2026-09-23 — three of the six change shape.**
+
+1. **The channel's host machinery is REFUSED, and the reason is the sharpest thing in the ruling:**
+   *"I'm seeing some of them are the fruit of the constraint of having to use a different software. I
+   don't want to include the Antigravity double watcher routine into the research-ratchet."* **A
+   practice born of another tool's constraint is not a finding about research.** The watcher pair,
+   the daemon flag, the pre-approved single command: all out of the apparatus, kept in the audit note
+   as a record of how that channel runs. *(The mailbox's own protocol — numbered files, never edit
+   one that exists, the index written last — stays in the note as available if a tree ever runs an
+   asynchronous channel, and enters no rule until one does.)*
+   **And the cost that drove it is recorded, because it is the honest state of that instrument:**
+   *"I'm having a bad time with those permission prompts. I needed a break until i find a solution.
+   The antigravity software is not well designed and is either asking too many permissions or none.
+   It's not connected to windows folder structure the way Claude Desktop is."*
+2. **The long-session item is REPLACED, not taken** — and the replacement is better than what it
+   replaces: *"The long-session one is not as good as it seems at first glance and can be artificially
+   reproduce by creating an event-list document that could be consumed by a historian agent role. And
+   it could be better that way. It could be a loop over the successive coordinator contexts helping to
+   prevent regression."* → **W22.**
+3. **The breadth is the hard part, and it is now a measurement rather than an admiration:** *"The most
+   difficult thing to reproduce without Gemini and Antigravity would be the wide cross-domain
+   transversal creative thinking. This is almost opposite to how Claude thinks. I could research
+   prompts that could activate the right weights for something approaching though."* → **W23.**
+
+**Still live from the six, unchanged:** the checkers'-rubrics starvation, the attribution firewall,
+tier discipline across a provider boundary, and credit by name in the governing record.
+
+---
+
+## W22 · THE HISTORIAN AND THE EVENT LIST — the long session, reproduced as an artifact
+**Grade A · OPEN · one design question for the human before anything is built (C-37)**
+
+**The human coordinator's move, 2026-09-23.** The founding tree's ideation channel gets its value
+from a session that never ends: it does not re-tread dead ends because it *lived* through them. The
+ruling refuses to envy that and proposes to **build it out of artifacts instead** — an **event list**
+consumed by a **HISTORIAN role**, run as *"a loop over the successive coordinator contexts helping to
+prevent regression."*
+
+**Why the replacement is stronger than the thing it replaces, stated so the claim can be checked.**
+The long session's three costs all come from its history living in a context: an uncorrected claim
+hardens into background truth · the session cannot be reproduced · it fades. **An event list has none
+of the three.** It is re-readable by anyone, it survives every compaction, it can be diffed, and a
+role reading it can be handed a diet. The long session's one advantage — that living through a dead
+end beats reading an index — is exactly what the historian's *question* is for: not *"what happened?"*
+but **"does today's work contradict what this programme already learned?"**
+
+**What the apparatus already has, and why this is not simply another ledger.** The negatives index,
+the paths ledger, the ruling register, the reversal ledger, the dispatch log and the telemetry log
+each record one KIND of event, each for its own purpose. **Nothing reads them against today's work,
+and nothing spans coordinator contexts.** That gap is the item: regression is invisible precisely
+because each record is healthy on its own.
+
+**★ THE DESIGN QUESTION, and it decides everything downstream.** Is the event list
+- **(a) a GENERATED VIEW** of what already exists — the ledgers, the dispatch log, the git history,
+  the handoff's successive top blocks — rebuilt by a script, adding no new duty to anybody; or
+- **(b) a NEW APPEND-ONLY SPINE** that every session writes to as events occur, the ledgers becoming
+  views of it?
+**Recommendation: (a) first.** (b) adds a hand-maintained record beside six existing ones, which is a
+drift pair by construction, and it asks a new discipline of every session before the role has shown
+its worth. (a) can be built and tried this week, and it is falsifiable: if the historian finds nothing
+a coordinator would not have caught, the role dies with its reason recorded. Promote to (b) only if
+the view proves the question valuable and its own gaps say why.
+
+**The role's shape, for the design review:** diet = the event list + the standing ledgers, **starved
+of the current derivation** (it judges history against the claim, not the mathematics); question =
+*has this been tried, decided, or reversed before, and is today's step a regression?*; output = a
+regression list with a pointer per item, entering as CANDIDATE like any other finding. **It is the
+keeper's sibling across time:** the keeper asks whether the corpus asserts one thing NOW; the
+historian asks whether it still asserts what it learned.
+
+---
+
+## W23 · BREADTH WITHOUT A SECOND PROVIDER — measured, not hoped
+**Grade B · OPEN**
+
+**The human coordinator, 2026-09-23:** *"The most difficult thing to reproduce without Gemini and
+Antigravity would be the wide cross-domain transversal creative thinking. This is almost opposite to
+how Claude thinks. I could research prompts that could activate the right weights for something
+approaching though."*
+
+**The honest frame.** A prompt cannot install breadth a model does not have. What it can do is
+force the search to **range before it digs** (C-34 / the founding tree's *range before you dig
+deeper*), make the source of every analogy **nameable** so a shallow one is visible, and run **many
+short independent generations** instead of one deep chain. Whether that reaches anything like the
+other provider's transversal reach is a **measurement**, and the apparatus's own rule applies: it is
+worth nothing as an impression.
+
+**The shape of the trial, for a design review before it runs.** One real stuck question from a live
+programme · three prompt regimes (plain · forced field-naming · forced distance, with the negatives
+index in the diet so a located dead end does not come back) · k independent generations each ·
+scored on **distinct source fields named**, **how many survive a triage by a checker who never saw
+the prompts**, and **how many are absent from the negatives index**. Pre-registered, because the
+temptation to read the best sample as the method's output is the whole failure mode here. **The
+comparison arm is the second provider's own briefs, which exist**: eighteen of them, already scored
+by their programme's verdicts.
+
+**What this item may NOT conclude.** That the apparatus no longer needs a second provider. The
+honest ceiling is *"this much of the breadth is reachable by prompt, and here is what it cost"* —
+and if the answer is "not much", that is a result worth banking, because it prices the channel the
+founding tree is paying for.
+
 ---
 
 ## MEANING NOTES — do not compress
