@@ -1980,6 +1980,42 @@ but its output quality rides on the visitor's own question. **They share a spine
 check-building step IS the audit, so the second skill contains the first rather than competing with
 it.
 
+**★ SELF-REVIEW, DONE PROPERLY, IS THE CHAT VERSION'S ENGINE — and it is a DIFFERENT INSTRUMENT
+rather than a weaker reviewer.** *(Human coordinator, 2026-09-23: "Can we do self-review instead of
+adversarial review? Candidly asking the agent to try to break his own work in all the possible ways.
+Telling him that's also a result.")* **The second sentence is the mechanism.** The failure mode of
+self-review is not inability to find flaws — it is **motivated stopping**: the search ends when the
+thing works, because delivering a working answer was the objective. **Change the objective and the
+search changes.** This apparatus already pays for refutations — the negatives ledger banks them as
+wins — so the skill only has to say so BEFORE the work starts, not after.
+
+**Five things make it an instrument instead of a courtesy, and four are already rules here:**
+1. **EXECUTED, NEVER JUDGED.** An attack is a run with an output, not an opinion. The bias of the
+   author does not reach the result of a run.
+2. **PRE-REGISTERED.** The list of ways this could be wrong is written **before the result exists** —
+   otherwise the attacks are chosen by somebody who already knows the answer (C-20-bis's shape).
+3. **A QUOTA, NOT DISCRETION.** *N attacks across named categories* — the data, the arithmetic, the
+   method, the frame, the transfer, the rival explanation. A quota takes the stopping decision away
+   from the party that wants to stop.
+4. **THE KILL WORLD FIRST.** A method that passes the known-wrong case is broken, and that is a
+   verdict nobody can argue with.
+5. **ATTACK THE ARTIFACT AS WRITTEN**, not the intention behind it — write the result to a file and
+   attack the file. In one context the reasoning is still present, so this is weaker than a real
+   split; it still catches the whole class *what I meant was not what I wrote*.
+
+**Measured in this session, both directions.** Self-review found two real defects **in this session's
+own work within minutes**: the transcript reader's zero-width window, caught by running the tool it
+had just green-lit, and the pack gate's stamp check, caught by testing a name against its code. Both
+worked **because they were executed**. And its limit showed in the same week: the first sabotage pass
+on a sibling project produced two apparent misses, one of which was the aim rather than the code —
+self-review caught that too, but only because the instrument-or-yardstick rule forced the question.
+
+**★ THE LINE THAT MUST NOT BE CROSSED: self-review produces DEMONSTRATED FAILURES and A LIST OF
+UN-ATTACKED SURFACES. It never produces independent agreement.** A same-instance CLEAR carries no
+information (RUL-065), and the honest report says so in its own words: *N attacks run, M succeeded
+(here they are), K surfaces not attacked, and none of this is confirmation by anybody but me.*
+**That sentence is the difference between a credible shopfront and the disguise failure.**
+
 ---
 
 ## MEANING NOTES — do not compress
