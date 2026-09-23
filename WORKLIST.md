@@ -1944,6 +1944,42 @@ the README, because the artifact that travels is the output, not the page.
 **Sequence: the skill first, the plugin second.** A skill that finds something cannot break anybody's
 work; a hook that denies wrongly burns exactly the credibility the exercise exists to build.
 
+**★ AND THE SECOND SKILL, ASKED THE SAME DAY: a SHORT RESEARCH RUN, rules on trust, one chat, one
+sandbox.** *"Would we get a chat compatible version that can do the research with its adversarial
+reviews and most of the features? Not a long research but maybe something short that can run in the
+sandbox."* **Yes — and the value of the answer is in the line it draws.**
+
+**THREE ADVERSARIES SURVIVE A SINGLE CONTEXT, and they are the apparatus's best ones anyway:**
+1. **EXECUTION.** The sandbox cannot be charmed. Every numeric claim is computed, and prose that
+   disagrees with a run is a finding. *A claim that computes beats a claim that argues* — and this
+   transplants whole.
+2. **THE PLANTED DEFECT.** Break the thing, show the check fires, then trust the green run. It needs
+   no second instance, and it is the one step that turns a story into a result.
+3. **A FRESH WINDOW, WHICH THE VISITOR OPENS.** The skill does not fake the split — it **asks for
+   it**: *paste the bare claim into a new chat and ask it to re-derive without my route.* Thirty
+   seconds of the reader's time buys the single most valuable check here, and it is F1's own shape:
+   the cold read comes from the human's sending surface, never from the formed instance.
+
+**WHAT CANNOT BE FAKED, AND MUST BE LABELLED RATHER THAN PERFORMED.** Personas in one window are not
+cross-class review; they are **self-review, which catches sloppiness and never self-deception** — the
+founding measurement was a month of *"found nothing"* from same-class checking, and same-INSTANCE is
+worse. A skill claiming adversarial review while role-playing reviewers in one context **is the
+disguise failure with our name on it**, and the readers worth having would spot it in a minute.
+
+**The run's shape, all of it already written here:** frame the question and its falsifier first ·
+**which axis am I about to remove** (C-39) · a short wide pass where the problem admits formalisms ·
+**the smallest thing that can fail, with its planted-defect demonstration** · kill world before the
+real case (C-20-bis) · tiers on every claim, with the hedge written · what was tried and failed, with
+the condition that would revive it · what was not checked · the `[PLAIN TERM SUMMARY]` · a paste-able
+handoff block, because a chat ends the way a context does · and a footer naming what this run did
+**not** have: no cross-class review, no cold read, no persistence, no gate that could refuse it.
+
+**Sequencing, on the shopfront criterion:** the sabotage audit **first** — low variance, lands a
+finding in any repository. The short run **second** — it shows the whole method rather than one rule,
+but its output quality rides on the visitor's own question. **They share a spine:** the run's
+check-building step IS the audit, so the second skill contains the first rather than competing with
+it.
+
 ---
 
 ## MEANING NOTES — do not compress
