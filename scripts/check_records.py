@@ -438,10 +438,11 @@ def main():
                 drifts.append(f"{d.name}: unreadable skill ({type(exc).__name__})")
                 continue
             drifts.append(gen_skills.provenance_drift(meta, source_text))
-            expected[meta["name"]] = gen_skills.assemble(meta, body, meta.get("source_sha", "?"))
-            out = d / "SKILL.md"
-            actual[meta["name"]] = (out.read_text(encoding="utf-8", errors="replace")
-                                    if out.exists() else None)
+            want = gen_skills.expected_files(meta, body)
+            got = gen_skills.actual_files(d, want)
+            for name in want:
+                expected[f"{meta['name']}/{name}"] = want[name]
+                actual[f"{meta['name']}/{name}"] = got.get(name)
         st = packs_not_regenerated(expected, actual)
         _ck("skills: every published SKILL.md is exactly what the assembler produces",
             not st, f"not current: {', '.join(st)} — assemble: python scripts/gen_skills.py "

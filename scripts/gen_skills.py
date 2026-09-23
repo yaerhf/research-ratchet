@@ -106,6 +106,24 @@ def load(skill_dir):
     return meta, body, source_text
 
 
+def expected_files(meta, body):
+    """Everything this skill publishes: the assembled SKILL.md, plus any bundled file, which is a
+    COPY OF A FILE THAT LIVES IN THIS TREE — one home for the code, a generated copy in the skill,
+    and the same comparison catching a hand edit of either."""
+    files = {"SKILL.md": assemble(meta, body, meta.get("source_sha", "unblessed"))}
+    for published, source in (meta.get("bundle") or {}).items():
+        files[published] = read(ROOT / source)
+    return files
+
+
+def actual_files(skill_dir, names):
+    out = {}
+    for n in names:
+        p = skill_dir / n
+        out[n] = read(p) if p.is_file() else None
+    return out
+
+
 def every_skill():
     return sorted(p for p in SKILLS.glob("*/meta.json")) if SKILLS.is_dir() else []
 
@@ -138,20 +156,21 @@ def main():
             blessed.append(meta["name"])
             drift = ""
 
-        text = assemble(meta, body, meta.get("source_sha", "unblessed"))
-        out = d / "SKILL.md"
+        want = expected_files(meta, body)
         if a.check:
             if drift:
                 failures.append(drift)
-            if not out.exists() or read(out) != text:
-                failures.append(f"{meta['name']}: SKILL.md is not what the assembler produces — "
-                                f"it is generated; edit body.md or meta.json, then run: "
-                                f"python scripts/gen_skills.py")
+            got = actual_files(d, want)
+            for name in sorted(want):
+                if got.get(name) != want[name]:
+                    failures.append(
+                        f"{meta['name']}/{name}: not what the assembler produces — it is "
+                        f"generated; edit the source, then run: python scripts/gen_skills.py")
         else:
-            io.open(out, "w", encoding="utf-8", newline="").write(text)
-            print(f"[skills] wrote {out.relative_to(ROOT).as_posix()} "
-                  f"({len(text.split())} words, source {meta['source']} @ "
-                  f"{meta.get('source_sha')})")
+            for name, text in want.items():
+                io.open(d / name, "w", encoding="utf-8", newline="").write(text)
+            print(f"[skills] wrote {meta['name']}: {', '.join(sorted(want))} "
+                  f"(source {meta['source']} @ {meta.get('source_sha')})")
 
     if a.bless:
         print(f"[skills] blessed: {', '.join(blessed)} — the record now says a human re-read them")

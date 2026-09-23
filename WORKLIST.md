@@ -1998,6 +1998,18 @@ funnel the exercise is for: a finder, then a finder, then the method, then the a
 (`research-ratchet:<skill>`), so the `rr-` prefix earns its keep in a flat standalone listing and
 becomes a stutter once bundled. Published standalone first, the prefix stays.
 
+**★ BUILT 2026-09-23 — both finders, and the machinery that keeps them tied to their manuals.**
+`manuals/self_review.md` and `manuals/sabotage_audit.md` (the activities) · `scripts/gen_skills.py`
+(assembles each `SKILL.md`, copies each bundled file from its one home in `scripts/`, and records
+the fingerprint of the manual a body was derived from — move the manual and the bank fails until a
+human re-reads and blesses) · `scripts/sabotage_audit.py` (copy, baseline, plant, run, verdict;
+refuses on a red baseline) · `skills/rr-selfcheck/` and `skills/rr-sabotage/`. Every gate shown
+failing on a copy first: a hand-edited published file, a manual moved after blessing, a hand-edited
+pack. **And the audit was run against this apparatus's own records gate: four sabotages aimed at
+four of its named claims, three CAUGHT and one MISSED — the MISSED being the blind spot pinned by
+hand that same morning, a document declaring the WRONG diet class. A method that rediscovers a known
+hole without being told where to look is one that can be pointed at a suite nobody has audited.**
+
 **★ SELF-REVIEW, DONE PROPERLY, IS THE CHAT VERSION'S ENGINE — and it is a DIFFERENT INSTRUMENT
 rather than a weaker reviewer.** *(Human coordinator, 2026-09-23: "Can we do self-review instead of
 adversarial review? Candidly asking the agent to try to break his own work in all the possible ways.
