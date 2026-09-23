@@ -1984,6 +1984,20 @@ but its output quality rides on the visitor's own question. **They share a spine
 check-building step IS the audit, so the second skill contains the first rather than competing with
 it.
 
+**★ NAMING, decided 2026-09-23 with the human** (*"let's still brand the skill research-ratchet (RR)-
+sabotage or RR-audit and RR-research or RR-review or RR-assess"*). **`rr-sabotage`** for the first —
+*audit* is a crowded word and it overclaims, since this is a sampling test rather than coverage,
+while *sabotage* is exactly what it does, is this apparatus's own word for it, and carries the safety
+rule in its own name once the first line says **on a copy, never your tree**. **`rr-selfcheck`** for
+the second, **and it displaces `rr-research` in the order**: the run's engine is the low-variance
+finder — *attack the result I am about to ship* fires at a precise moment and returns demonstrated
+failures in the visitor's own work, while *do research with me* rides on whatever question they
+bring. **`rr-research`, the full short run, becomes the third and the destination** — which is the
+funnel the exercise is for: a finder, then a finder, then the method, then the apparatus.
+**One interaction to keep in view:** inside a plugin, skills are namespaced by the plugin
+(`research-ratchet:<skill>`), so the `rr-` prefix earns its keep in a flat standalone listing and
+becomes a stutter once bundled. Published standalone first, the prefix stays.
+
 **★ SELF-REVIEW, DONE PROPERLY, IS THE CHAT VERSION'S ENGINE — and it is a DIFFERENT INSTRUMENT
 rather than a weaker reviewer.** *(Human coordinator, 2026-09-23: "Can we do self-review instead of
 adversarial review? Candidly asking the agent to try to break his own work in all the possible ways.
