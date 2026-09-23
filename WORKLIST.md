@@ -2010,6 +2010,15 @@ four of its named claims, three CAUGHT and one MISSED — the MISSED being the b
 hand that same morning, a document declaring the WRONG diet class. A method that rediscovers a known
 hole without being told where to look is one that can be pointed at a suite nobody has audited.**
 
+**★ AND THE FIRST PUBLICATION DEFECT, CAUGHT BEFORE THE FIRST UPLOAD (2026-09-23).** Both skills were
+written with rich multi-sentence descriptions — **and claude.ai caps that field at 200 characters**,
+so neither could have been uploaded. Found by reading the publication docs before packaging rather
+than after a rejection. The limit is now a check in `gen_skills.py` (with its demonstrations, and the
+message naming where the overflow belongs: the body's opening lines, where the trigger vocabulary
+still reaches the model), `--package` writes `dist/<name>.zip` with the folder as the zip's root as
+the upload requires, and `rr-sabotage` declares `allowed-tools` so its bundled script runs in Claude
+Code without a prompt. **A shopfront that cannot be installed is not a shopfront.**
+
 **★ SELF-REVIEW, DONE PROPERLY, IS THE CHAT VERSION'S ENGINE — and it is a DIFFERENT INSTRUMENT
 rather than a weaker reviewer.** *(Human coordinator, 2026-09-23: "Can we do self-review instead of
 adversarial review? Candidly asking the agent to try to break his own work in all the possible ways.

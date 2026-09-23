@@ -1,6 +1,7 @@
 {
   "name": "rr-sabotage",
-  "description": "Measure what a test suite actually covers by planting defects in a COPY of the repository and checking whether the tests go red. Use when asked whether tests are any good, what they really cover, whether a green suite can be trusted, to audit or stress-test checks, or to find tests that cannot fail. Plants one small edit per claim (weaken an obligation, hand-edit a generated artifact, make a record lie, flip a declaration), runs the suite, and reports CAUGHT, MISSED or VOID, with a baseline run first so a suite that was already red cannot produce a meaningless result. A sample, never coverage; never writes to the audited tree.",
+  "description": "Measure what a test suite really covers: plant defects in a COPY and see whether the checks go red. Use to audit tests, find checks that cannot fail, or judge a green suite. Never writes to your repo.",
+  "allowed-tools": "Bash(python ${CLAUDE_SKILL_DIR}/audit.py *)",
   "source": "prompts/manuals/sabotage_audit.md",
   "source_sha": "d4c73a15d0d6",
   "blessed": "2026-09-23",

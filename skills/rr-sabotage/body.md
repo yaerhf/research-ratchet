@@ -1,5 +1,9 @@
 # Find out what your tests actually cover — by breaking things on purpose
 
+**Use this when** somebody asks whether the tests are any good, what they actually cover, whether a
+green suite can be trusted, how to audit or stress-test the checks, whether there are tests that
+cannot fail, or how much of the code is really protected.
+
 A green test suite is evidence that nothing broke it. It is evidence of nothing else.
 
 This skill runs the other half: **plant a defect in the code a check claims to cover, run the
@@ -12,13 +16,18 @@ argument with whoever wrote the test.
 ## How to run it
 
 `audit.py` is bundled with this skill. It needs the command that runs the checks, and one or more
-sabotages:
+sabotages. **In Claude Code it is at `${CLAUDE_SKILL_DIR}/audit.py`** (pre-approved in this skill's
+frontmatter, so it runs without a prompt); elsewhere, run it from wherever the skill was unpacked.
 
 ```bash
-python audit.py --command "pytest -q" \
+python ${CLAUDE_SKILL_DIR}/audit.py --command "pytest -q" \
   --plant "src/cart.py::if total > limit::if total >= limit" \
   --label "boundary loosened by one"
 ```
+
+**It needs a repository on disk and a command that runs its checks** — so it belongs where your code
+lives (Claude Code, or any session with a working directory). On the web app it can only reach files
+you have uploaded into the sandbox.
 
 Or a plan file, which is the normal way once there is more than one:
 

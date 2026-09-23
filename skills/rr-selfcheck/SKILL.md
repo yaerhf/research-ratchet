@@ -1,13 +1,15 @@
 ---
 name: rr-selfcheck
-description: Attack your own result before shipping it. Write the attack list BEFORE you know whether the result survives, commit to a quota of attacks across named categories (the data, the arithmetic, the method, the known-wrong case, the frame, what you removed, the transfer, the rival), run them rather than imagine them, and report demonstrated failures plus the surfaces left untouched. Use when you have an analysis, a fix, a number or a claim you are about to hand over, or when asked to check your own work, stress-test a result, or find what is wrong with something you just produced. Produces demonstrated failures and a list of un-attacked surfaces; never independent confirmation.
+description: Attack your own result before shipping: attacks listed before you know if it survives, a quota by category, run not imagined. Use to check or stress-test your own work. Finds failures, never confirms.
 license: CC BY 4.0 (docs) / MIT (code)
 ---
 
 # Attack your own result before you ship it
 
-Use this when you have a result — an analysis, a fix, a number, a claim — and you are about to hand
-it over.
+**Use this when** you have a result — an analysis, a fix, a number, a claim — and you are about to
+hand it over. Also when somebody asks you to *check your own work*, *stress-test* a result, *poke
+holes* in it, *find what is wrong* with something you just produced, or *make sure this is right*
+before it goes out.
 
 **What this produces:** demonstrated failures, and a list of the surfaces you did not attack.
 **What it never produces:** independent agreement. You are checking your own work, and a clean pass

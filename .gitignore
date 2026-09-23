@@ -20,3 +20,6 @@ __pycache__/
 
 # Local render output.
 knowledge/corpus/pdf/
+
+# generated skill archives — build with: python scripts/gen_skills.py --package
+dist/

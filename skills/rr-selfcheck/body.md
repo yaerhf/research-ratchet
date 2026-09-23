@@ -1,7 +1,9 @@
 # Attack your own result before you ship it
 
-Use this when you have a result — an analysis, a fix, a number, a claim — and you are about to hand
-it over.
+**Use this when** you have a result — an analysis, a fix, a number, a claim — and you are about to
+hand it over. Also when somebody asks you to *check your own work*, *stress-test* a result, *poke
+holes* in it, *find what is wrong* with something you just produced, or *make sure this is right*
+before it goes out.
 
 **What this produces:** demonstrated failures, and a list of the surfaces you did not attack.
 **What it never produces:** independent agreement. You are checking your own work, and a clean pass

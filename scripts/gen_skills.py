@@ -72,12 +72,37 @@ def read(path):
 
 # ---- pure functions, so the demonstrations need no files ---------------------------------------
 
+MAX_DESCRIPTION = 200            # claude.ai's published limit; Claude Code states none — 200 travels
+
+
+def description_too_long(meta, limit=MAX_DESCRIPTION):
+    """'' when the description fits every surface this skill is published on.
+
+    ★ Measured 2026-09-23, before the first upload: both skills were written with rich multi-sentence
+    descriptions and **claude.ai caps the field at 200 characters**. A skill that cannot be uploaded
+    is not a shopfront. The trigger vocabulary that does not fit belongs in the body's opening lines,
+    where it still reaches the model."""
+    n = len(meta.get("description", ""))
+    if n <= limit:
+        return ""
+    return (f"{meta['name']}: description is {n} characters, over the {limit} that claude.ai "
+            f"accepts — shorten it and move the rest into the body's opening lines")
+
+
 def assemble(meta, body, source_stamp, home=HOME, footer=FOOTER):
     """The published SKILL.md, byte for byte. Frontmatter + body + footer, nothing improvised."""
+    tools = meta.get("allowed-tools")
     front = (f"---\nname: {meta['name']}\ndescription: {meta['description']}\n"
-             f"license: CC BY 4.0 (docs) / MIT (code)\n---\n\n")
+             + (f"allowed-tools: {tools}\n" if tools else "")
+             + f"license: CC BY 4.0 (docs) / MIT (code)\n---\n\n")
     return front + body.rstrip() + "\n" + footer.format(
         home=home, source=meta["source"], stamp=source_stamp)
+
+
+def zip_members(meta, files):
+    """What goes into the uploadable archive: the skill FOLDER as the zip's root, holding only the
+    published files. `body.md` and `meta.json` are build inputs and do not travel."""
+    return {f"{meta['name']}/{name}": text for name, text in files.items()}
 
 
 def provenance_drift(meta, source_text):
@@ -133,6 +158,8 @@ def main():
     ap.add_argument("--check", action="store_true", help="verify; write nothing")
     ap.add_argument("--bless", action="store_true",
                     help="re-record each source fingerprint (a human act, after re-reading)")
+    ap.add_argument("--package", action="store_true",
+                    help="write dist/<name>.zip, uploadable as-is (the folder is the zip's root)")
     ap.add_argument("--self-test", action="store_true", help="the demonstrations")
     a = ap.parse_args()
     if getattr(a, "self_test"):
@@ -157,9 +184,29 @@ def main():
             drift = ""
 
         want = expected_files(meta, body)
+        too_long = description_too_long(meta)
+
+        if a.package:
+            import zipfile
+            dist = ROOT / "dist"
+            dist.mkdir(exist_ok=True)
+            if too_long:
+                print(f"[skills] REFUSED to package {meta['name']}: {too_long}")
+                failures.append(too_long)
+                continue
+            out = dist / f"{meta['name']}.zip"
+            with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
+                for member, text in sorted(zip_members(meta, want).items()):
+                    z.writestr(member, text)
+            print(f"[skills] packaged {out.relative_to(ROOT).as_posix()} "
+                  f"({', '.join(sorted(want))}) — upload this file as it is")
+            continue
+
         if a.check:
             if drift:
                 failures.append(drift)
+            if too_long:
+                failures.append(too_long)
             got = actual_files(d, want)
             for name in sorted(want):
                 if got.get(name) != want[name]:
@@ -217,6 +264,19 @@ def self_test():
     built = assemble(META, BODY, META["source_sha"])
     demo("assembly: the published file carries the trigger description",
          "description: d" in built, True)
+    demo("limits: a description over claude.ai's 200 characters is refused before upload",
+         description_too_long({**META, "description": "x" * 201}), True)
+    demo("limits: CONTROL — exactly 200 characters travels",
+         description_too_long({**META, "description": "x" * 200}), False)
+    demo("limits: and the message says where the overflow belongs",
+         "body's opening lines" in description_too_long({**META, "description": "x" * 400}), True)
+    demo("package: the zip's root is the skill FOLDER, as the upload requires",
+         all(k.startswith("rr-x/") for k in zip_members(META, {"SKILL.md": built})), True)
+    demo("package: build inputs do not travel — only what was assembled",
+         any("meta.json" in k for k in zip_members(META, {"SKILL.md": built})), False)
+    demo("assembly: a pre-approved tool line reaches the frontmatter when declared",
+         "allowed-tools: Bash(x *)" in assemble({**META, "allowed-tools": "Bash(x *)"},
+                                                BODY, META["source_sha"]), True)
     demo("assembly: it points home, so the output can travel alone",
          HOME in built, True)
     demo("assembly: it says what the apparatus adds that a session cannot",
