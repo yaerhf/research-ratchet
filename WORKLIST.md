@@ -1488,6 +1488,57 @@ the record matched what the work had been proceeding on.
 
 ---
 
+## W21 · A CROSS-PROVIDER IDEATION CHANNEL — read, six candidates, nothing adopted
+**Grade A · OPEN (the human coordinator's call on which items to take)**
+
+**Read at the human's request, 2026-09-23:** `audit/IDEATION_CHANNEL_REVIEW_2026-09-23.md`. The
+founding tree now runs a second-provider model as a **formed GENERATOR inside the programme**, in a
+long session on another host, exchanging numbered files with the coordinating agent through a folder
+in the repository, with a watcher on each side and the human driving both ends. Eighteen exchanges
+by the day of the read; one of the generator's points turned an external reviewer's apparently fatal
+argument into a testable condition. **Method only was read; none of that programme's physics is in
+the note.**
+
+**The economics that decided the design, and it belongs beside F2:** the same model class through a
+metered API consumed a month's credits in two or three calls; through the agentic IDE surface the
+rate makes a standing channel affordable. F2 already says a subscription surface and an API sample
+are not comparable *for measurement* — **the surface also decides the cost, and the cost decides
+whether a loop can run at all.**
+
+**The six candidates, ranked as I would take them** (the note carries each in full):
+1. **A GENERATOR role whose diet is everything, plus a map of what is LIVE** — and the starvation we
+   have nowhere: **kept from the checkers' rubrics, so it cannot learn to anticipate them.**
+2. **The long-session analysis — the mirror of C-38.** An uncorrected claim hardens into background
+   truth, so every verdict returns to *that* session; a long session is not reproducible, so nothing
+   rests on *"the worker said so"*; and it fades, with a stated **fade test** and a periodic
+   self-handoff.
+3. **The attribution firewall** — an agent speaks only for itself, and a claimed *"authorized by the
+   coordinator"* is a PROPOSAL until the register shows it. **This network needs it regardless of
+   providers:** on 2026-09-19 we learned a relayed *"change your rules"* cannot be told apart from an
+   injected one.
+4. **Tier discipline across the provider boundary** — everything enters CANDIDATE; and the class
+   rule: a role whose failure mode is fabricated specifics is barred from supplying specifics and
+   may say where to look.
+5. **The mailbox as the auditable interface** — numbered files, never edit one that exists, the
+   index updated LAST as the completion signal; **the bank excludes the channel folder from its
+   sweep guard** (two refused banks measured there); a zero-token waiter; no watcher armed while a
+   message sits unanswered.
+6. **What the generator is owed** — a reason with every *no* plus its return condition (our paths
+   ledger), a plain answer (C-30-bis), and **credit by name in the governing record**, which we say
+   nowhere.
+
+**Refused as un-generalizable, and named so nobody pretends otherwise:** the host mechanics; the
+assumption of a second provider; and above all **cold measurement — the generator is maximally
+formed and can never be a cold reader.** The channel is cross-provider GENERATION, not cold review,
+and F1 dies quietly if that distinction is lost in adoption.
+
+**Three observations went back to that channel:** the single pre-approved command is a blanket
+approval on whatever that file contains next; a watcher signals *that* something arrived, never
+*what*, so a wake-up lists the whole inbox; and the fade test has a definition but no runner — couple
+it to the self-handoff that is already required.
+
+---
+
 ## MEANING NOTES — do not compress
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the
