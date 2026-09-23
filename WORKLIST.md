@@ -1726,6 +1726,18 @@ additions the brief makes on its own: **distinct equation FAMILIES, not distinct
 analogies that reduce to diffusion are one door in ten costumes, and that is the failure mode a
 "more is better" ask invites), and **dimensional coherence as the first gate** — one line per
 candidate, nearly free, and a decorative analogy dies there before a dispatch is spent on it.
+**And a third addition, from the human asking whether phrases like *"take the high ground"* or
+*"abstract the essence"* belonged in it (same day).** The intent named the step the brief was
+missing, so it became one: **the SKELETON, before any domain is named** — objects, relations, what
+is conserved, the boundary, and the question's TYPE, in five lines with no domain nouns, after which
+every candidate says which skeleton line its equations match. Without it the search matches on
+SUBJECT (*the problem mentions light, so bring optics*), which is the surface matching the pass
+exists to avoid. **The skeleton ends with the features it dropped**, and the second pass asks of each
+survivor whether a dropped feature is what kills it — a door that works only on the abstracted
+problem is a door into the easier problem. **The other phrase stays out, and the reason is the rule:
+*"take the high ground"* is a posture instruction, unfalsifiable, and it buys grand vagueness as
+easily as insight. A vivid phrase may LABEL a step; it cannot BE one.**
+
 **The starvation is enforced, not requested:** `rag/diet.py --role wide` refuses the formation
 prefix, the corpus, the derivation, the engine, verdicts, transcripts, adjudications **and every
 checker's role definition** — which discharges the first of W21's live imports. Seven

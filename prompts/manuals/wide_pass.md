@@ -32,7 +32,35 @@ because a diet bounds files and not what somebody pastes. Pinned as a blind spot
 
 ---
 
-## 2 · THE ASK — doors, not analogies
+## 2 · STEP 0 — THE SKELETON, BEFORE ANY DOMAIN IS NAMED
+
+**The pass opens by abstracting the problem, and the abstraction is an ARTIFACT, not a posture.**
+*(Human coordinator, 2026-09-23, asking whether phrases like "take the high ground" or "abstract
+the essence" belong in the brief. The intent is right and it was the missing step: without it the
+search matches on SUBJECT — the problem mentions light, so bring optics — which is the surface
+matching the whole pass exists to avoid.)*
+
+**Five lines, no domain nouns, before anything else:** the objects · the relations between them ·
+what is conserved and what is free · the boundary or the limit · **and the question's TYPE** —
+existence, uniqueness, stability, selection, transport, scaling, counting. **Then every candidate
+must say which line of the skeleton its equations match.** A door that matches no line is a door
+into another problem.
+
+**★ AND THE SKELETON CARRIES ITS OWN OMISSIONS.** Abstraction is where a problem gets lost: drop
+the feature that makes it hard and every door afterwards answers an easier question, convincingly.
+So the skeleton ends with **the two or three features it deliberately dropped**, and the second
+pass checks each survivor against them — *does the dropped feature kill this door?* That is the
+blind-spot discipline turned on the abstraction itself.
+
+**Why the step and not the phrase.** *"Take the high ground"* is a posture instruction: pleasant,
+unfalsifiable, and it buys grand vagueness as easily as insight — *"this is really a problem about
+information"* is what the high ground sounds like when it fails. The structural form of the same
+intent is what this section asks for: **name the question type, name the invariant, and say what
+you dropped.** A vivid phrase may LABEL a step; it cannot BE one.
+
+---
+
+## 3 · THE ASK — doors, not analogies
 
 **3 to 10 candidates, each from a domain whose behaviour is governed by equations**, and the point
 of that restriction is mechanical rather than aesthetic: **a formalism can be transplanted and
@@ -73,7 +101,7 @@ harder: k short generations and a triage beat one long answer, every time.
 
 ---
 
-## 3 · THE SECOND PASS — where the depth is allowed back in
+## 4 · THE SECOND PASS — where the depth is allowed back in
 
 The door list is the artifact between the two diets, and it is what makes this auditable rather
 than a mood. **An ordinary dispatch then takes the surviving doors and does what this class does
@@ -81,13 +109,17 @@ well:** write the mapped equation in the target's own variables and **run it thr
 instrument's own pipeline** — **the kill world first, the real case only after it behaves**
 (C-20-bis), with a planted failure showing the check can fail.
 
+**★ AND EACH SURVIVOR IS CHECKED AGAINST THE SKELETON'S OMISSIONS** (§2): *is one of the dropped
+features what kills this door?* **A door that works only on the abstracted problem is a door into
+the easier problem**, and it will read exactly like a door into this one.
+
 **Every door is CANDIDATE** until it has done that, and often after: **a formalism that maps is not
 a mechanism that is true.** The tier is not a judgement of worth — in the programme this manual was
 written from, the best work entered that way.
 
 ---
 
-## 4 · HOW YOU KNOW THE PASS WORKED
+## 5 · HOW YOU KNOW THE PASS WORKED
 
 Not by how it reads. Count:
 
@@ -100,7 +132,7 @@ worth recording: it prices what the outside instrument is buying (W23).
 
 ---
 
-## 5 · THE BRIEF, READY TO SEND
+## 6 · THE BRIEF, READY TO SEND
 
 *Fill the three slots, send it to k independent instances, triage the union. Nothing else is added
 — every line below is load-bearing, and the omissions are deliberate.*
@@ -115,8 +147,20 @@ THE PROBLEM, in plain words:
 DEAD ENDS ALREADY LOCATED (do not return these, in any costume):
   [the negatives index, or its rows near this problem]
 
-WHAT TO RETURN: between 3 and 10 candidates. Each candidate borrows the GOVERNING EQUATIONS of
-a domain that is not this one. More is better, on one condition:
+FIRST, THE SKELETON — before you name a single domain. Five lines, using NO domain nouns:
+  - the objects;
+  - the relations between them;
+  - what is conserved, and what is free;
+  - the boundary or the limit;
+  - the QUESTION TYPE: existence / uniqueness / stability / selection / transport / scaling /
+    counting.
+  Then one more line: THE TWO OR THREE FEATURES YOU DROPPED to write those five. Abstraction is
+  where a problem gets lost, and a door that answers the easier problem reads exactly like a
+  door that answers this one.
+
+THEN: between 3 and 10 candidates. Each candidate borrows the GOVERNING EQUATIONS of a domain
+that is not this one, and each must say WHICH LINE OF THE SKELETON its equations match. More is
+better, on one condition:
 
   ★ DISTINCT EQUATION FAMILIES, NOT DISTINCT SUBJECTS. Two domains that share a governing form
     count as ONE candidate. Ten analogies that all reduce to diffusion are one door in ten
@@ -125,6 +169,7 @@ a domain that is not this one. More is better, on one condition:
     thermodynamic, scaling. That is a spread to aim past, not a menu to fill.
 
 EACH CANDIDATE, IN THIS ORDER, AND NOTHING ELSE:
+  0. Which skeleton line it matches.
   1. Domain.
   2. Its governing equation(s) IN THEIR OWN SYMBOLS — the home domain's notation.
   3. The mapping: one line per symbol, what each becomes in the problem above.
@@ -143,11 +188,11 @@ step 4 has done its job. A list that is safe and familiar has not.
 ```
 
 **Then, and only then, a separate ordinary dispatch verifies the survivors** — mapped equation in
-the target's own variables, kill world first, real case after (§3).
+the target's own variables, kill world first, real case after (§4).
 
 ---
 
-## 6 · WHAT THIS MANUAL IS NOT FOR
+## 7 · WHAT THIS MANUAL IS NOT FOR
 
 A door that **cannot be written as an equation in the target's variables** is not a door for this
 pass. It may still be a good idea, and it goes to the docket as one — but it does not get to borrow
