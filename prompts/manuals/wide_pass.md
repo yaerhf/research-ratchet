@@ -52,6 +52,11 @@ So the skeleton ends with **the two or three features it deliberately dropped**,
 pass checks each survivor against them — *does the dropped feature kill this door?* That is the
 blind-spot discipline turned on the abstraction itself.
 
+**★ AND ONE OMISSION IS NOT AVAILABLE TO YOU.** The founding record names what a simpler version of
+this object would lose (C-39). **A skeleton that drops one of those has abstracted the object away
+and is describing a different problem** — every door that follows will be a door into the easier
+one. Check the list before you write the five lines, not after.
+
 **Why the step and not the phrase.** *"Take the high ground"* is a posture instruction: pleasant,
 unfalsifiable, and it buys grand vagueness as easily as insight — *"this is really a problem about
 information"* is what the high ground sounds like when it fails. The structural form of the same

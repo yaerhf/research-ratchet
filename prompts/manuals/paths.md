@@ -190,6 +190,13 @@ premise question, and this role is the one saturated with the alternatives.
 | **TRIED** | someone worked it; the outcome now lives in the negatives ledger (if it failed) or in the record (if it did not). **Leave the row, stamped, pointing there** |
 | **CLOSED** | no longer an alternative because the fork's question dissolved — name what dissolved it |
 
+**★ A PATH THAT DIED UNDER A SIMPLIFICATION IS NOT DEAD — IT IS UNTESTED (C-39, 2026-09-23).** If
+the work that killed it ran on a frozen, reduced or toy version of the object, **the row names that
+reduction, and the reduction becomes its promotion condition**: lift it, and the path is live again
+and owed a re-run. A reduction is otherwise a permanent verdict on branches it was never entitled
+to judge — measured in the founding tree, where a static treatment of a dynamic object killed valid
+branches repeatedly, and the fix had to be made a standing rule.
+
 **Retract by replacement, never by deletion** (the standing rule): a path that stops being a
 path keeps its row, stamped. The trail is the dataset — *how often does a second-choice route
 get promoted?* is a question about the programme's own judgment, and it is answerable only if

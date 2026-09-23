@@ -1752,6 +1752,50 @@ distinct fields named, and doors that survive verification — not "creativity".
 
 ---
 
+## W24 · C-39 — A SIMPLIFICATION IS A CONTROL, NEVER A STAND-IN
+**Grade A · DISCHARGED 2026-09-23**
+
+**The human coordinator brought the founding tree's most expensive lesson, 2026-09-23.** The path
+that mattered most there was unlocked by the outside generator thinking about the object
+**dynamically**, while this class kept thinking about it **statically — *"like a dead crystal"*** in
+a programme whose object is defined by a dynamic. *"Multiple times we had to prevent the entire
+apparatus from regressing to a static model and killed perfectly valid branches."* Their standing
+rule: **"no static models, no toy models, no dimensional reductions. Simplifications kill live leads
+and reduce the space of possible to what instinct and imagination could have suggested for free."**
+
+**Why the second sentence is the general one.** A reduced model **cannot surprise you** — it can
+only confirm what the reduction already assumed. The formalism stops doing work and becomes a
+restatement of intuition, which is the one thing a formalism was brought in to beat. That holds in
+any field, which is why it generalizes where the first sentence does not.
+
+**Generalized as a SPLIT rather than a ban, because this apparatus requires simplifications.** A
+kill world is a simplification; so is a control, a planted-defect fixture, and the smallest claim
+that can fail. **The line is not how simple — it is whether the simple thing is standing in for the
+object.** C-39 therefore reads: an instrument, always; a stand-in, never; and a reduction touching
+the object's constitution needs a **ruling** that says what it buys and **what may no longer be
+concluded** while it holds.
+
+**What it changes, in four places:**
+- **The founding record gains the list this rule reads** — *what a simpler version of this object
+  would lose* — asked as a small plain question at founding (`founding_interview.md` §4.1-bis:
+  *"If we studied a simpler version of this to get started, what would stop being visible?"*),
+  because later the reduction arrives wearing the clothes of good practice and nobody remembers
+  the simple case is not the object. **The records gate now warns when the record does not name
+  it**, with its own planted-defect demonstration.
+- **The paths ledger:** a path that died under a simplification **is not dead, it is untested** —
+  the row names the reduction, and lifting the reduction is its promotion condition.
+- **The checking manual** opens with it (§0-quinquies), because it invalidates work downstream
+  rather than weakening it, and it names the tell: prose that crosses from the reduced model to the
+  object without marking the step.
+- **The wide pass:** a skeleton may drop features, but **never one on the constitutive list** — that
+  abstraction has replaced the object, and every door after it is a door into the easier problem.
+
+**And it is named as this class's own reflex**, in the rule itself: reduce-first is trained in, it
+is right for verification, and it is wrong for discovery. **Expect it of yourself rather than of
+somebody else.**
+
+---
+
 ## MEANING NOTES — do not compress
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the

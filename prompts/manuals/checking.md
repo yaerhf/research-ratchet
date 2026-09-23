@@ -124,6 +124,28 @@ review. All fixed the same day, each with its failure shown and its remaining bl
 
 ---
 
+## 0-quinquies · ★ DID THE WORK REPLACE THE OBJECT WITH A SIMPLER ONE?
+
+**Ask it of every result, and ask it first, because it invalidates everything downstream rather
+than weakening it.** A frozen version of what moves, a dropped dimension, a toy case: each is
+legitimate as an INSTRUMENT and a breach as a STAND-IN (C-39). **The question is never *how
+simple*; it is *what is this standing in for*.**
+
+- **Read the founding record's constitutive list** — what a simpler version of this object would
+  lose. A reduction touching one of those needs a ruling, and the verdict says whether it has one.
+- **A negative found under a reduction is CONDITIONAL.** If the work kills a branch, the verdict
+  names the reduction the branch died under, or the death is not recorded as one. *Lifting the
+  reduction revives the row.*
+- **The tell:** prose that moves between the reduced model and the object without marking the
+  step — *"in the static case…"* and then a conclusion about the object.
+
+*(Adopted 2026-09-23 from the founding tree, which lost live branches this way for months and made
+it a standing rule: "no static models, no toy models, no dimensional reductions. Simplifications
+kill live leads and reduce the space of possible to what instinct and imagination could have
+suggested for free.")*
+
+---
+
 ## 0 · THE ONE THING TO GET RIGHT BEFORE ANYTHING ELSE
 
 **Your DIET is your instrument.** You were denied particular material on purpose, and what you

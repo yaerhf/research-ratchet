@@ -176,6 +176,11 @@ get — not a problem to manage.**
 You can stop once you have six things. Everything else can wait and be worked out later.
 
 1. **What the project is** — in their words, concrete enough that you could describe a day of work.
+   **And with it: what a SIMPLER version of it would lose.** The record names that list; C-39 turns
+   it into the line between a control and a stand-in, and every later *"let's start with the simple
+   case"* is measured against it. *(Added 2026-09-23. In the founding tree this was learned at
+   full cost: its object is defined by a dynamic, the apparatus kept modelling it statically, and
+   perfectly valid branches were killed by the reduction rather than by the problem.)*
 2. **What they want to end up with** — and roughly in what field.
 3. **One thing that would count as a win.**
 4. **One thing that would change their mind** — that they're on the wrong track.
@@ -223,6 +228,21 @@ never for them.
 - If that's very broad: *"What would you actually spend your days doing on it?"* — the baker:
   *"Measuring acidity and yeast in different starters, and trying to keep some alive on purpose."*
 - **File:** the object → `FORMATION_CORE` §1 — the concrete things the work is about.
+
+**4.1-bis · What a simpler version would lose** *(added 2026-09-23 — small question, large
+consequence)*
+- *"If we studied a simpler version of this to get started, what would stop being visible?"* — the
+  baker: *"If I only looked at one starter on one day, I'd miss the whole thing — what I'm after is
+  how it changes over weeks."*
+- If they are unsure, make it concrete: *"Say we froze it in time, or looked at one part instead of
+  the whole — would that still be your question?"*
+- **Why you ask it at founding and not later:** later, the simplification arrives wearing the
+  clothes of good practice — *let's start with the simple case* — and by then nobody remembers
+  that the simple case is not the object. **In the founding tree, valid branches were killed for
+  months by exactly that**, in a programme whose object is defined by a dynamic while the apparatus
+  kept modelling it statically.
+- **File:** the constitutive list → `FORMATION_CORE` §1, beside the object. It is what C-39 reads
+  to tell a control from a stand-in, and what the wide pass checks its own abstraction against.
 
 **4.2 · A win**
 - *"If this goes really well, what would you have at the end?"* — the baker: *"A simple rule anyone

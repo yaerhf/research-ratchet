@@ -254,6 +254,7 @@ FLOOR_ITEMS = (
     ("a falsifier",                                ("falsif", "abandon", "would end")),
     ("a CORE commitment with its kill condition",  ("kill condition",)),
     ("the first graded docket item",               ("docket",)),
+    ("what a SIMPLER version of the object would lose (C-39)", ("simplif",)),
 )
 
 
@@ -637,14 +638,19 @@ def self_test():
 
     RECORD = ("the object: the tempo field. the deliverable: a paper. success: a kernel "
               "family compatible with the data. falsifier: any measured drift. CORE, with "
-              "its kill condition: the invariance fails. first docket item, grade B.")
+              "its kill condition: the invariance fails. first docket item, grade B. "
+              "simplifying away the time dependence would lose the object itself.")
     demo("founding: a record that never asked for a falsifier or a kill condition",
          founding_floor_gaps("object, deliverable, success, docket — and nothing else"), True)
     demo("founding: CONTROL — a record naming every floor item",
          founding_floor_gaps(RECORD), False)
+    demo("founding: a record that never asked what a simpler version would lose (C-39)",
+         founding_floor_gaps(RECORD.replace("simplifying away the time dependence would lose "
+                                            "the object itself.", "")), True)
     demo("founding: BLIND SPOT (pinned) — a record naming the kill condition only to skip it",
          founding_floor_gaps("object: X. deliverable: Y. success: Z. falsifier: none agreed. "
-                             "kill condition: we skipped it. docket: item 1."), False)
+                             "kill condition: we skipped it. docket: item 1. no simplification "
+                             "was discussed."), False)
 
     VF = ["knowledge/candidates/R001/VERDICT_META_r001.md",
           "knowledge/candidates/R001/VERDICT_REV_r001.md"]

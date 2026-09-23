@@ -1,6 +1,6 @@
 <!-- DIET-CLASS: RULES -->
 <!-- GENERATED FILE — do not edit. Regenerate: python scripts/gen_role_packs.py
-     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 6620b3b99da8
+     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint e1fc77e80925
      check_records.py fails the bank if this pack is stale. -->
 # RULE PACK — CLERK
 
@@ -774,6 +774,42 @@ the budget.** So everything that matters reaches its durable home **in the turn 
   file did not happen; what it did not say is WHEN, and *"in the same session"* is not a time,
   because **nobody tells you when the window closes.** The turn is the unit that can be honoured.
 - <sub>added 2026-09-23 · adopted from the founding tree · binds all · enforcement: prose-only</sub>
+
+**C-39.** **A SIMPLIFICATION IS A CONTROL, NEVER A STAND-IN.** Freezing what moves, dropping a
+dimension, taking a toy version: **required** where it is an INSTRUMENT — a kill world, a control,
+a planted-defect fixture, the smallest claim that can fail. **A breach** the moment it becomes the
+OBJECT: when results about the reduced version are read as results about the programme's.
+
+**The test is the constitutive list.** The founding record names *what a simpler version of this
+object would lose* (`manuals/founding_interview.md` §3). **A reduction that touches one of those
+needs a RULING, not a preference** — and the ruling states what it buys and **what may no longer be
+concluded** while it holds.
+
+**★ WHAT IT COSTS WHEN IT GOES WRONG, in the founding tree's words (2026-09-23):** *"Simplifications
+kill live leads and reduce the space of possible to what instinct and imagination could have
+suggested for free."* **A model whose degrees of freedom have been removed can no longer surprise
+you.** It can only confirm what the reduction already assumed — the formalism stops doing work and
+becomes a restatement of intuition, which is the one thing a formalism was brought in to beat.
+
+**And the consequence for the record: a dead end found under a simplification is CONDITIONAL on
+it.** The negative names the reduction as its condition, and **lifting the reduction revives the
+row** (`manuals/paths.md`). Otherwise a reduction quietly becomes a permanent verdict on branches
+it was never entitled to judge.
+
+- **ABSOLUTE**
+- **WHY:** adopted 2026-09-23 from the founding tree's standing rule — *"no static models, no toy
+  models, no dimensional reductions"* — which is absolute THERE because all three touch that
+  object's constitution: it is defined by a dynamic, and a static model of it is a category error
+  wearing the clothes of a simplification. **Measured there, twice over:** the reduction is what the
+  outside generator's breakthrough had to break through, and *"multiple times we had to prevent the
+  entire apparatus from regressing to a static model and killed perfectly valid branches."*
+  **Generalized here as the control/stand-in split rather than as a ban,** because a kill world IS a
+  simplification and this apparatus requires them — the line is not *how simple*, it is *whether the
+  simple thing is standing in for the object*.
+- **AND IT IS THIS CLASS'S OWN REFLEX.** Reduce-first is trained in, it is right for verification,
+  and it is wrong for discovery. Expect it of yourself rather than of somebody else.
+- <sub>added 2026-09-23 · adopted from the founding tree · binds all · enforcement: prose-only
+  (the founding record's constitutive list is the checkable part)</sub>
 
 ---
 
