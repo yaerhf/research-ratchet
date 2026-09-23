@@ -1880,6 +1880,70 @@ candidate whose usefulness a stranger can judge in a single sitting. **The measu
 one this apparatus asks of everything else:** is it used, and does a pass produce doors that survive
 a second look — not how it reads.
 
+**★ THE EVALUATION ABOVE WAS RIGHT ABOUT SKILLS AND WRONG ABOUT THE ARTIFACT (same day).** The human
+read the recommendation and said *"It's not interesting enough."* He was right, and the reason is
+that *a skill refuses nothing* is true — while **the layer beside it does refuse**, and that is the
+half worth publishing. **Verified against the harness documentation rather than assumed:**
+
+- **`PreToolUse` is the one blocking hook**, and it blocks with exit code 2 or with
+  `permissionDecision: "deny"` plus a **`permissionDecisionReason` that reaches the model** — which
+  is this apparatus's own *a gate must name its remedy*, available as a field.
+- **It receives the tool's input**, so it can read `.tool_input.file_path` and
+  `.tool_input.command`: a diet refusal can be keyed on the FILE, and a bank gate on the COMMAND.
+- **★ HOOKS FIRE INSIDE SUBAGENTS.** *"Hooks from settings files, managed policy settings, and
+  plugins all apply inside subagents."* Plus `SubagentStart` / `SubagentStop`, whose matchers can
+  name the agent. **That is the diet's layer exactly** — the checker IS a subagent, and its
+  starvation stops being a promise the checker makes to itself.
+- **`SessionStart` with the `compact` matcher injects its stdout into the resumed context.** So
+  C-38's first step can be **fired by the harness** instead of remembered by the instance that has
+  just lost its memory — the one moment it is least able to remember anything. Keep the injected
+  window under ~10k characters, after which output goes to a file with a preview.
+- **A plugin bundles `hooks/hooks.json`** (never inside `.claude-plugin/`), auto-enabled on install
+  and listed on the install screen; its `skills/` are auto-discovered and namespaced.
+
+**So the interesting object is a PLUGIN, and its claim is measurable in this apparatus's own
+currency:** roughly 174 of 204 rules here have no mechanical enforcement. **A plugin moves a
+named handful into the enforced column, and publishes WHICH** — the diet on a checker's reads, the
+bank gate on a commit, the wake-up ritual on a compacted session. The advisory skills ride along in
+the same package, marked as what they are.
+
+**The risks change shape too, and they are supply-chain risks now, not documentation risks.** Hooks
+are code running on a stranger's machine that can refuse their work: **a denial that fires wrongly
+gets the whole thing uninstalled**, so every refusal names its remedy and ships an escape hatch; the
+scripts stay stdlib-only, tiny and readable; and the role that keys a diet refusal must **fail OPEN
+when no role is declared** — blocking an ordinary session's reads would break the tool for everyone
+while protecting nothing.
+
+**★ AND THEN THE HUMAN GAVE THE RATIONALE, WHICH IS THE THING A DESIGN REVIEW SHOULD HAVE ASKED FOR
+FIRST.** *"I wanted to use a small version of the apparatus in the form of a skill in order to shine
+a light on the full apparatus. Published skill on Claude are more visible than a github repo. like
+'if you like what this skill did, check out the full apparatus'. But if the skill is bad and useless
+it shines a bad light."* **The artifact is a shopfront, and the criterion is therefore not fidelity
+but the FIRST ENCOUNTER:** does a stranger, in one sitting, get something they could not have
+written themselves — and does it point truthfully at more?
+
+**Under that criterion the ranking above is wrong, and the reason is worth keeping.** *Advice does
+not travel; FINDINGS travel.* A skill that improves how somebody writes is felt slowly and screenshots
+badly. A skill that hands them a defect in their own work is felt at once, and it is the thing they
+paste to somebody else. **So the flagship is the apparatus's own signature move, turned on the
+visitor's repository: AUDIT YOUR CHECKS BY SABOTAGE.** Copy the tree, plant a defect in the region a
+check claims to cover, run the check, and report every sabotage that went unnoticed — *a check never
+shown able to fail verifies nothing*, demonstrated rather than asserted, on their code.
+
+**Why this one and not the wide pass:** it **finds** instead of suggesting · every finding is
+**executed, not inferred**, so it cannot be wrong in the way that would shine the bad light · it
+carries the apparatus's whole thesis in one result · and it has already been run by hand twice, with
+two real defects each time — in a sibling project's new guards (2026-09-20) and **in this apparatus's
+own pack gate the next day**. *The demonstration exists; the skill is its automation.*
+
+**Three things it must ship with, all of them ours already:** it sabotages a **copy**, never the tree
+(measured incident, 2026-09-03) · it states **what it did not try**, so its own silence is not read as
+a clean bill · and the pointer to the full apparatus goes **in the report's own footer**, not only in
+the README, because the artifact that travels is the output, not the page.
+
+**Sequence: the skill first, the plugin second.** A skill that finds something cannot break anybody's
+work; a hook that denies wrongly burns exactly the credibility the exercise exists to build.
+
 ---
 
 ## MEANING NOTES — do not compress
