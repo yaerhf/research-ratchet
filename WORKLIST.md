@@ -2096,6 +2096,21 @@ tool's constraint is not a finding about research.**
    text-level dedup of two big files yielded ≈1.7 KB; lossless compression ≈5 %; a core/depth split
    was superseded. **The saving is in CONTENT CLASS, not in bytes** — which is the finding.
 
+**★ THE NINE ARE ADOPTED, 2026-09-24, and the cap is REFUSED with its reason.** C-38 gains the
+boundary rule and the resume brief with its single-use rename; C-24-bis is the de-duplication rule,
+generalized past tokens (*when an instrument reports a running total per event, summing the events
+double-counts*); C-37-bis caps a design review at two rounds, then the human; `dispatching.md` gains
+§0-quinquies (a mechanical chain runs in a worker, because everything the coordinator reads is paid
+again in every later turn) and, in §3, the stated budget with **the bound on prose and never on
+findings**, plus the checker set chosen by claim class; `checking.md` §0-sexies is the checker's half
+of that bound; INSTALL.md's handoff step gains the live/archive split. **The cap on commits was
+refused by the human coordinator on a role distinction worth keeping:** *"You are not a research
+project coordinator. You're an apparatus developer. There are commonalities and differences."* A
+coordinator's reads are paid again in every later turn of its window; **an apparatus developer's
+commits never re-enter a context at all.** Same apparatus, different cost structure, different rule —
+and the general form is: **adopt another tree's reasoning, never its numbers, and ask first which
+role the rule was written for.**
+
 ### Adopt with care — each touches something we already decided
 10. **"Records once"** (their 7). The principle is right and **this session has been breaking it all
     week**: every bank message restates the docket entry that was just written. *But their caps

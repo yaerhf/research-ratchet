@@ -182,6 +182,24 @@ does not have a design review — it has a scheduling step.**
 
 ---
 
+## 0-quinquies · ★ A MECHANICAL CHAIN RUNS IN A WORKER, NEVER IN YOUR OWN CONTEXT
+
+**Sweeps, counts, greps, renames, file-by-file reads: dispatch them.** You already dispatch for
+independence; this is the second reason, and it was never written down. **Everything YOU read stays
+in your window and is paid again in every later turn of it.** The same twenty files read by a
+worker are paid once, and what comes back is one synthesis.
+
+**So the coordinator's context is the most expensive room in the building** — and mechanical work is
+exactly the work that does not need to be there. *(Adopted 2026-09-24 from the founding tree's
+measures, where moving mechanical chains to workers roughly halved the coordinating seat's cost.)*
+
+**The limit, stated so this does not become an excuse:** judgment does not delegate. A worker
+returns what it found; **deciding what it means is the thing you were saturated with state to do.**
+And a worker's brief is a file, so a worker that dies mid-run costs the remainder rather than the
+whole run.
+
+---
+
 ## 0 · WHAT A BRIEF IS
 
 **A brief is a research memo, not a task ticket — and its steer is a hypothesis the worker may
@@ -294,6 +312,24 @@ defect in its own prompt and dutifully "confirmed" it. If a defect is already kn
 and see whether the run finds it.
 
 **Cross-class on AUTHORSHIP** — not on who dispatches. Dispatch with an explicit model override.
+
+**★ STATE THE BUDGET — IT IS THE DIET, PRICED (2026-09-24, adopted from the founding tree).** Every
+checker brief names **how many files it may open and roughly how many calls it may make**. A
+checker with no budget reads everything it can reach, which is both the cost and the contamination:
+*a reader of everything has no diet, and a verdict from no diet is worth what an opinion is worth.*
+Measured there: a bounded run went from ≈90 calls to ≈25, and from ≈400k of context to ≈150k, and
+the verdicts did not get worse.
+
+**The bound is on PROSE, never on findings.** Cap the write-up, never the list: *"keep the
+reasoning to a page"* is a budget; *"report at most three findings"* is the measurement destroyed to
+save money. **If the findings will not fit, the brief was too big** — that is a dispatch defect, and
+it is the dispatcher's to fix, not the checker's to hide.
+
+**★ CHOOSE THE CHECKER SET BY CLAIM CLASS, not by ceremony.** The full set exists for a claim about
+the world. **A records-only pass, a rename, a prose re-grounding — these give the meta-observer's
+question nothing to bite on**, because there is no derivation whose aboutness could be wrong. Name
+the class in the dispatch plan and say which checkers it earns; the light path is not a discount,
+it is the right instrument. *(Their measure: one skipped premium run is ≈23 M cached tokens.)*
 
 ---
 

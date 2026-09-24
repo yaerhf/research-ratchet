@@ -362,6 +362,14 @@ verification is a rule, not a courtesy.
 
 ## Step 5 — the handoff
 
+**★ KEEP IT SMALL, AND ARCHIVE THE REST — this file is paid at every wake-up.** It is read at every
+session start and at every compaction (C-38), so **its size is a tax on every window, not a one-off
+cost.** Two files, from the beginning: the **live** handoff — the top block, what is in flight, what
+is owed — and `SESSION_HANDOFF_ARCHIVE.md`, which is **grepped on demand and never read whole**.
+When a head line is older than the current arc, it moves. *(Adopted 2026-09-24 from the founding
+tree, where the split took the handoff's wake-up read from ≈40k tokens to ≈4k. The archive is also
+what a historian role reads: same move, seen from the other end.)*
+
 Write `knowledge/audit/SESSION_HANDOFF.md`:
 
 ```markdown

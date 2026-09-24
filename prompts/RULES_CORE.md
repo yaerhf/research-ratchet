@@ -302,6 +302,11 @@ A design review **returns one of three words**, and each carries an obligation:
 - **A design review with no verdict vocabulary returns prose**, which cannot be routed, counted,
   logged or appealed — and which decays into approval by default, because nobody wrote the word
   that would have stopped anything.
+- **★ TWO ROUNDS, THEN THE HUMAN DECIDES (2026-09-24, from the founding tree's measures).** A
+  design that has been RETURNED twice does not go to a third review: it goes to the human
+  coordinator with both verdicts attached. **An unbounded review loop is a cost and a stall at
+  once**, and past the second round the disagreement is usually about what the programme wants,
+  which is not a question a checker is placed to answer.
 - **★ AMENDMENTS ARE FROZEN BEFORE THE RUN, as a rider on the design.** This is the
   freeze-is-a-solo-commit discipline pointed at the review's own output: an amendment that lives
   only in a conversation is quietly softened by the person it inconveniences, and the run then
@@ -497,6 +502,16 @@ checkers' summaries. Open the source.
 - **WHY:** three founding instances in one round, two about citations, one in a banked governing
   document.
 - <sub>binds all · enforcement: prose-only</sub>
+
+**C-24-bis.** **A usage count is de-duplicated by message id before it is quoted** (2026-09-24,
+adopted from the founding tree). Every turn re-reports the context it was handed, so **a naive sum
+over turns multiplies the same tokens many times over** and produces a number that is wrong in the
+flattering direction — a budget three times its true size, or a saving three times its true worth.
+The rule generalizes past tokens: **when an instrument reports a running total per event, summing
+the events double-counts.** De-duplicate on the event's own identifier, or quote nothing.
+
+- **ABSOLUTE** — a measurement rule, and it is what keeps every other number honest.
+- <sub>added 2026-09-24 · adopted from the founding tree · binds all · enforcement: prose-only</sub>
 
 **C-24.** Refresh every count by COUNTING (a suite run, an AST count, `ls`), never by
 incrementing.
@@ -702,6 +717,19 @@ announced it, treat it as unexpected**, and before touching the task:
 
 **A background task survives a compaction: check it before relaunching it**, or you run it twice
 and report the second run as the first.
+
+**★ AND COMPACT AT A BOUNDARY, RATHER THAN WHEN THE WINDOW FORCES IT (2026-09-24).** A forced
+compaction lands mid-thought and summarizes a half-finished state; **a chosen one lands where the
+state is already in files — which is the BANK.** So: at a bank, and before any long pause. *This is
+C-38-bis read from the cost side: if everything that matters is already written, a compaction costs
+only the conversation, and the conversation was the cheap part.*
+
+- **Before a PLANNED compaction, write the resume brief** — what you were doing, the next step, the
+  one thing a summary would drop — and **rename it when it has been consumed** (`RESUME_…` →
+  `RESUMED_…`). The rename is the whole trick: a resume brief read twice is a stale instruction
+  presented as current, and step 1 above reads one first.
+- *(Adopted from the founding tree's measures of 2026-09-24. **The trigger mechanism did not
+  travel:** theirs drives a first-party app's window, and no apparatus rule can rest on that.)*
 
 - **ABSOLUTE** — it is four reads, and the failure it prevents is silent.
 - **WHY:** adopted 2026-09-23 from the founding tree, directed there the same day. **A summary

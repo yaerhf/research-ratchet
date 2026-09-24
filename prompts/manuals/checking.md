@@ -154,6 +154,20 @@ suggested for free.")*
 
 ---
 
+## 0-sexies · ★ YOUR BRIEF'S BUDGET BINDS YOUR PROSE, NEVER YOUR FINDINGS
+
+A brief that names a file budget and a call budget is naming your diet (`dispatching.md` §3), and
+you keep to it. **But a budget applies to the WRITE-UP, not to the list:** if you found four things
+and the brief said keep it short, **report four things and keep the reasoning short.** A checker
+that drops a finding to fit a length is a checker that has priced the dispatcher's convenience above
+the measurement, and nobody downstream can see that it happened.
+
+**If the findings genuinely will not fit, say so in one line and name what you left unexamined.**
+That sentence is a dispatch defect report, and it is worth more than the summary you would have
+written instead.
+
+---
+
 ## 0 · THE ONE THING TO GET RIGHT BEFORE ANYTHING ELSE
 
 **Your DIET is your instrument.** You were denied particular material on purpose, and what you
