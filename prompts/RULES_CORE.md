@@ -674,15 +674,29 @@ compaction has happened when this context opens as the continuation of a convers
 of room, or when the system says the instruction files were re-read. **Unless the coordinator
 announced it, treat it as unexpected**, and before touching the task:
 
-1. **Read the record, not the summary.** `PYTHONUTF8=1 python scripts/tail_transcript.py` prints
-   the tail of this session's own transcript — what was said, decided and run. **This is C-23
-   applied to your own conversation:** never characterize anything from a summary of it, *including
-   your own*. A compaction hands you exactly that summary, written by the instance that was about
-   to lose the thread.
+1. **Read the record, not the summary — and read the CHEAPEST thing that answers the question.**
+   **This is C-23 applied to your own conversation:** never characterize anything from a summary of
+   it, *including your own*. A compaction hands you exactly that summary, written by the instance
+   that was about to lose the thread. **In order, stopping at the first that answers:**
+   - **a resume brief, if the turn before the compaction left one** — the cheapest and the most
+     exact, because the instance that wrote it knew what it was about to lose;
+   - otherwise **the tail of the transcript**: `PYTHONUTF8=1 python scripts/tail_transcript.py`,
+     which is what the summary was written FROM;
+   - and the tail **whenever the compaction was UNEXPECTED**, resume brief or not — an unannounced
+     compaction is exactly the case where nobody prepared for it.
+
+   **★ THE RITUAL IS NOT FREE, and it is paid at every compaction.** Its reads sit in the window for
+   every turn that follows, so a fat ritual is a tax on the whole next window — *measured on the
+   founding tree, 2026-09-24: an unbounded wake-up cost ≈86k tokens and a bounded one ≈20k.* **No
+   fixed budget is given here, because what these reads cost differs by an order of magnitude
+   between programmes** (human coordinator, same day). **The discipline is the ORDER and the STOP,
+   not a number.**
 2. **Re-read what forms you** — `packs/<your-role>.md`, and the formation prefix **only if your
    diet allows it**. Rule 92 is ABSOLUTE at a compaction as at any other moment: a checker never
    receives it, and "I had just been compacted" is not a carve-out.
-3. **Re-read the live state** — `SESSION_HANDOFF.md`, top block first.
+3. **Re-read the live state** — `SESSION_HANDOFF.md`, **the top block and no further unless it
+   fails to answer.** A handoff read whole at every compaction is the largest avoidable line in
+   the ritual.
 4. **Say it in one line** — that a compaction happened and the ritual ran — then resume the task
    the summary names.
 
