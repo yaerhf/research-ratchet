@@ -2057,7 +2057,65 @@ information (RUL-065), and the honest report says so in its own words: *N attack
 
 ---
 
-## MEANING NOTES — do not compress
+## W26 · THE FOUNDING TREE'S TOKEN MEASURES, SORTED — what is method and what is plumbing
+**Grade A · OPEN · the human's call on the four that touch existing conventions**
+
+**Source:** the founding tree's measures table, 2026-09-24, written after a day that took 40 % of one
+class's credits and 30 % overall. Twenty-two measures, a measured baseline, and honest labels on what
+is estimated. **Sorted here by the human's own rule of the previous day: a practice born of another
+tool's constraint is not a finding about research.**
+
+### Generalizes as METHOD — adopt
+1. **Compact at a BOUNDARY, never when the window forces it** (their 1, without its trigger
+   mechanism). A forced compaction lands mid-thought; a chosen one lands where the state is already
+   in files — **and the bank IS that moment**, which makes "compact at every bank" the same rule as
+   C-38-bis. *The self-triggering machinery does not travel: it is a GUI automation against a
+   first-party app, and the app exposes no compaction API.*
+2. **Write the resume brief BEFORE a planned compaction, and rename it when consumed** (their 4).
+   C-38 now reads a resume brief first; nothing yet says to WRITE one. The single-use rename
+   (`RESUME_` → `RESUMED_`) is the part that stops a stale brief being read twice.
+3. **The file read at every wake-up stays small; history moves to an archive that is GREPPED, not
+   read** (their 5 and 20). Our handoff grows without bound and is read at every session start and
+   every compaction. **The archive is also exactly what W22's historian reads** — the two items are
+   the same structural move seen from two ends.
+4. **Mechanical chains run in a dispatched worker, never in the coordinator's context** (their 6).
+   We already dispatch; what we never wrote down is WHY it is also the cheapest place: **everything
+   the coordinator reads stays in every later turn of its window**, so a mechanical read there is
+   paid many times and the same read in a worker is paid once.
+5. **A dispatch states the checker's budget** (their 8): how many files it may open, how many calls
+   it may make. That is the diet, priced. **The verdict's length bound applies to PROSE, never to
+   the finding list** — a cap that suppresses findings is the measurement destroyed to save money.
+6. **Design review: two rounds, then the human decides** (their 9). C-37 has no cap, and an
+   unbounded review loop is both a cost and a stall.
+7. **The checker set is chosen per CLAIM CLASS** (their 10): a records-only pass does not earn the
+   full ceremony, because the meta-observer's question has nothing to bite on. Name the criterion.
+8. **Measurement honesty: de-duplicate usage counts by message id** (their 22). A naive sum
+   multiplies, because each turn re-reports the same cached context. This is C-24 and C-20-bis
+   meeting a new instrument, and it is the rule that keeps every other number here honest.
+9. **Three MEASURED NEGATIVES worth keeping so nobody re-proposes them** (their 16, 17, 18):
+   text-level dedup of two big files yielded ≈1.7 KB; lossless compression ≈5 %; a core/depth split
+   was superseded. **The saving is in CONTENT CLASS, not in bytes** — which is the finding.
+
+### Adopt with care — each touches something we already decided
+10. **"Records once"** (their 7). The principle is right and **this session has been breaking it all
+    week**: every bank message restates the docket entry that was just written. *But their caps
+    (commits ≤ 10 lines) would delete this apparatus's commit voice, which carries reasoning
+    forward and — unlike a coordinator's reads — **never re-enters a context.*** Adopt the
+    principle, decline the caps, and say where the duplication actually costs.
+11. **Effort matched to the pass** (their 13) and **tool surfaces off when unused** (their 14). Both
+    are real and portable levers; both are practice notes rather than rules. **The caveat is the
+    rule: lowering effort on a JUDGMENT pass is exactly the wrong economy.**
+12. **Startup-file size discipline** (their 15): the auto-loaded canon carries rules and pointers,
+    the formation file carries content and is read whole, and both are paid at every startup.
+    INSTALL.md already says "keep the canon under ~90 lines"; nothing says it for the formation file.
+13. **A one-call wake-up printer** (their 19). We have `tail_transcript.py`; a `wakeup.py` that
+    prints the whole bounded ritual in one call removes three read round-trips from every compaction.
+
+### Does not generalize — plumbing, and named so nobody tries
+14. The self-compaction automation (1's mechanism), the watcher pairs (2's mechanism), a second
+    provider as a free drafting seat (12), a price-class seat change (21), and batched-call/section
+    -read hygiene (11), which is how any competent agent works rather than a rule this apparatus
+    can enforce.
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*
