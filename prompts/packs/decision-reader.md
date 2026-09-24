@@ -1,6 +1,6 @@
 <!-- DIET-CLASS: RULES -->
 <!-- GENERATED FILE — do not edit. Regenerate: python scripts/gen_role_packs.py
-     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint c171958f7e6d
+     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 87383304e5c1
      check_records.py fails the bank if this pack is stale. -->
 # RULE PACK — DECISION-READER
 
@@ -558,6 +558,26 @@ checkers' summaries. Open the source.
   document.
 - <sub>binds all · enforcement: prose-only</sub>
 
+**C-25-bis.** **ONE HOME PER FACT; everywhere else, a POINTER.** *(2026-09-24, the principle of the
+founding tree's "records once" — its line caps were declined here, see below.)* The same claim
+written in two places is a **drift pair in prose**: they will diverge, nothing will fail, and the
+reader who finds the stale one has no way to know. So **the normative text carries the rule and the
+shortest form of its ground; the docket carries the incident and the reasoning; neither retells the
+other in full**, and a ledger row points rather than restates.
+
+- **DEFEASIBLE** — **break when:** the duplicate is a QUOTE, kept deliberately as provenance
+  (`incidents stay labeled`), or when the second place is read by somebody who will never see the
+  first — a published skill, a message to another tree. **Mark it as a copy and name its source**,
+  which is what the skills' own provenance gate does mechanically.
+- **WHY — and the reason the caps were declined:** the duplication that costs is the one a reader
+  PAYS FOR, and who pays differs by role. A coordinator's reads sit in its window and are paid
+  again in every later turn, so restating in a brief is expensive there. **An apparatus developer's
+  commit messages never re-enter a context at all** — they are provenance, and their density is
+  the point (human coordinator, 2026-09-24: *"You are not a research project coordinator. You're an
+  apparatus developer. There are commonalities and differences."*). **Adopt another tree's
+  reasoning, never its numbers, and ask first which role the rule was written for.**
+- <sub>added 2026-09-24 · binds all · enforcement: prose-only</sub>
+
 **C-24-bis.** **A usage count is de-duplicated by message id before it is quoted** (2026-09-24,
 adopted from the founding tree). Every turn re-reports the context it was handed, so **a naive sum
 over turns multiplies the same tokens many times over** and produces a number that is wrong in the
@@ -752,6 +772,10 @@ announced it, treat it as unexpected**, and before touching the task:
      exact, because the instance that wrote it knew what it was about to lose;
    - otherwise **the tail of the transcript**: `PYTHONUTF8=1 python scripts/tail_transcript.py`,
      which is what the summary was written FROM;
+   - **or run the whole bounded ritual in ONE call — `PYTHONUTF8=1 python scripts/wakeup.py`**
+     (`--unexpected` when nobody announced it): it applies this order and its stop, prints the
+     handoff's top block with it, and keeps the whole thing under a stated ceiling. *Measured
+     on this repository, 2026-09-24: the full ritual, one call, ≈9k characters.*
    - and the tail **whenever the compaction was UNEXPECTED**, resume brief or not — an unannounced
      compaction is exactly the case where nobody prepared for it.
 

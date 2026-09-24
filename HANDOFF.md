@@ -9,8 +9,9 @@ This is research-ratchet's own. Rewrite the top block whenever the state moves.*
 ## ★ TOP BLOCK — rewritten 2026-09-23
 
 **★ IF THIS SESSION OPENED FROM A SUMMARY, RUN THE WAKE-UP RITUAL FIRST (C-38), unprompted:**
-`PYTHONUTF8=1 python scripts/tail_transcript.py` — the tail of this session's own transcript, which
-is the record the summary was written from — then your pack, then this top block, then one line
+`PYTHONUTF8=1 python scripts/wakeup.py` — one call: the resume brief if one exists, else the tail of
+this session's own transcript, plus this top block, under a stated ceiling. It is the record the
+summary was written from — then your pack, then this top block, then one line
 saying a compaction happened. **A summary keeps what it judged important, and what it dropped
 leaves no gap where it was.** And **nothing lives only in the transcript** (C-38-bis): what matters
 goes to its file in the turn it arises.

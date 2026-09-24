@@ -2126,6 +2126,31 @@ role the rule was written for.**
 13. **A one-call wake-up printer** (their 19). We have `tail_transcript.py`; a `wakeup.py` that
     prints the whole bounded ritual in one call removes three read round-trips from every compaction.
 
+**★ AND THE FOUR ARE IN TOO, 2026-09-24, each adapted rather than copied.** **C-25-bis** — one home
+per fact, a pointer everywhere else, because the same claim in two places is a drift pair in prose:
+they diverge, nothing fails, and the reader who finds the stale one cannot tell. Its break clause
+keeps deliberate copies (a quote as provenance, a published skill) provided they are marked and
+sourced. **The dispatching manual's two dials** — effort matched to the pass, tool surfaces off when
+unused — as PRACTICE rather than rule, since what they save depends on the harness, with the caveat
+that carries the weight: *lowering effort on a judgment pass is exactly the wrong economy.*
+**FORMATION_CORE's header** now says what it is for: read whole by every formed worker, so it holds
+the picture a worker must reason with and nothing that belongs in a ledger — it and the canon being
+the two files whose size is a standing tax rather than a one-off cost. And **`scripts/wakeup.py`**,
+the ritual in one call: the resume brief if one exists, otherwise the record, the handoff's top
+block with it, under a stated ceiling that names what it cut. Ten demonstrations, one blind spot
+pinned (it prints what is on disk; the rename is what keeps a brief honest), in CI.
+
+**★ MEASURED ON THIS TREE, THROUGH THE INSTRUMENT (C-20-bis).** The whole bounded ritual, one call:
+**≈9k characters**. The founding tree's unbounded ritual measured ≈86k tokens and its bounded one
+≈20k — different trees and different units, so the numbers are not comparable and are not compared.
+What is ours is ours, and it was counted rather than estimated.
+
+**★ AND THE BUILD FOUND A DEFECT IN ITSELF, LIVE.** The first run printed the handoff's *intro*
+instead of its top block: this repository's own intro says *"Rewrite the top block whenever the state
+moves"* two lines above the heading, and a matcher that took the first mention started in the wrong
+place. Fixed, and pinned as a demonstration. **Every tool built this week has had a defect that only
+running it found** — the transcript reader's zero-width window, the pack gate's stamp, and now this.
+
 ### Does not generalize — plumbing, and named so nobody tries
 14. The self-compaction automation (1's mechanism), the watcher pairs (2's mechanism), a second
     provider as a free drafting seat (12), a price-class seat change (21), and batched-call/section

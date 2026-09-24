@@ -9,6 +9,15 @@ this document describes what belongs in them and why.
 **They are filled in the FOUNDING INTERVIEW** — the coordinator's session zero, run with the
 human coordinator present, before any worker is dispatched (`manuals/founding_interview.md`).
 
+**★ AND IT IS READ WHOLE, BY EVERY FORMED WORKER, EVERY TIME — so what belongs here is CONTENT, and
+nothing that belongs in a ledger (2026-09-24).** This file is paid at every formation and again in
+every turn of that worker's window; the canon is paid at every session start. **They are the two
+files whose size is a standing tax rather than a one-off cost.** So: the picture a worker must hold
+to reason correctly, and not the history of how it was arrived at — that is what the ledgers, the
+audit folder and the docket are for, and a pointer costs a line. *(Adopted from the founding tree,
+which re-scoped both files the same day: rules and a short description in the canon, knowledge in
+the formation core, history in neither.)*
+
 **★ HOW A LAUNCHING COORDINATOR TELLS WHETHER THIS TREE HAS BEEN FOUNDED — and the check is the
 RECORD, never a word search.** The authoritative signal is: **does `audit/FOUNDING_INTERVIEW.md`
 exist?** A file either exists or it does not, and no description of it can be mistaken for it.

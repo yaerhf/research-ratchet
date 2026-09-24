@@ -198,6 +198,15 @@ returns what it found; **deciding what it means is the thing you were saturated 
 And a worker's brief is a file, so a worker that dies mid-run costs the remainder rather than the
 whole run.
 
+**★ TWO DIALS THAT COST NOTHING TO TURN, AND ONE THAT MUST NOT BE (practice, 2026-09-24).**
+- **Match the REASONING EFFORT to the pass.** An enactment, a sweep, a records pass and a rename do
+  not earn maximum effort; a judgment pass does. **Lowering effort on a judgment pass is exactly
+  the wrong economy** — it is the one place where the thinking was the deliverable.
+- **Turn off tool surfaces the programme does not use.** Every tool definition sits in the fixed
+  base of every turn, in every session, whether or not it is ever called.
+- *(Both are the founding tree's, 2026-09-24. Practice rather than rule: what they save depends on
+  the harness, and a rule that names a dial one harness does not have is a rule about nothing.)*
+
 ---
 
 ## 0 · WHAT A BRIEF IS

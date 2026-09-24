@@ -58,6 +58,9 @@ jobs:
       - name: wake-up reader self-test — the window and the finder (C-38 step 1)
         run: python scripts/tail_transcript.py --self-test
 
+      - name: wake-up ritual self-test — the order, the stop and the ceiling (C-38)
+        run: python scripts/wakeup.py --self-test
+
       - name: skills self-test — the assembler and the tie to each manual
         run: python scripts/gen_skills.py --self-test
 
