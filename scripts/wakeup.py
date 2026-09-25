@@ -43,6 +43,17 @@ for _stream in (sys.stdout, sys.stderr):
 ROOT = Path(__file__).resolve().parent.parent
 BUDGET = 12000          # characters printed before truncation — a ceiling, never a target
 
+# WHAT YOU STILL OWE, printed last. It is a REMINDER, and it must never assert live state this
+# script cannot observe. The first version ended "A background task from before it is still
+# running - check before relaunching", which was simply FALSE whenever nothing was running, and a
+# printer that states a fact it cannot know is the same defect as a gate whose name claims more
+# than it checks (checking.md 0-quater). Found by reading this script's own output, 2026-09-25.
+CLOSING = (
+    "STILL YOURS: your own packs/<role>.md, and ONE LINE to the coordinator saying a compaction "
+    "happened and the ritual ran. IF a background task was running before the compaction it may "
+    "still be running now - this script cannot see that; check before relaunching anything."
+)
+
 
 def audit_dir():
     for cand in ("knowledge/audit", "audit"):
@@ -177,9 +188,7 @@ def main():
     if cut:
         print(f"TRUNCATED at the {a.budget}-character ceiling: {', '.join(cut)} — raise --budget "
               f"deliberately if this one needed more.")
-    print("STILL YOURS: your own packs/<role>.md, and ONE LINE to the coordinator saying a "
-          "compaction happened and the ritual ran. A background task from before it is still "
-          "running — check before relaunching.")
+    print(CLOSING)
     return 0
 
 
@@ -227,6 +236,13 @@ def self_test():
     demo("wake-up: BLIND SPOT (pinned) — a stale brief nobody renamed is read as current",
          choose_source(True, False) == "tail", False)
 
+    # The closing line is OUTPUT, not a predicate, and it was wrong in exactly the way this
+    # apparatus watches for: it asserted that a background task was still running, on a tree where
+    # none was. A reminder may say IF; it may not say IS.
+    demo("closing: the reminder does NOT assert live state this script cannot observe (2026-09-25)",
+         "is still running" in CLOSING or "task from before it is still" in CLOSING, False)
+    demo("closing: it still says what is owed - the pack, the one line, and the standing check",
+         all(s in CLOSING for s in ("packs/<role>.md", "ONE LINE", "IF a background task")), True)
     bad = cases.count(False)
     print("  " + "-" * 70)
     if bad:
