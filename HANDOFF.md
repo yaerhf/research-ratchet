@@ -6,67 +6,53 @@ This is research-ratchet's own. Rewrite the top block whenever the state moves.*
 
 ---
 
-## ★ TOP BLOCK — rewritten 2026-09-23
+## ★ TOP BLOCK — rewritten 2026-09-25
 
-**★ IF THIS SESSION OPENED FROM A SUMMARY, RUN THE WAKE-UP RITUAL FIRST (C-38), unprompted:**
-`PYTHONUTF8=1 python scripts/wakeup.py` — one call: the resume brief if one exists, else the tail of
-this session's own transcript, plus this top block, under a stated ceiling. It is the record the
-summary was written from — then your pack, then this top block, then one line
-saying a compaction happened. **A summary keeps what it judged important, and what it dropped
-leaves no gap where it was.** And **nothing lives only in the transcript** (C-38-bis): what matters
-goes to its file in the turn it arises.
+**★ IF THIS SESSION OPENED FROM A SUMMARY, RUN THE RITUAL FIRST (C-38), unprompted:**
+`PYTHONUTF8=1 python scripts/wakeup.py` — one call: the resume brief if one exists, else the record
+the summary was written from, plus this block, under a ceiling that names what it cut. Then your
+pack, then **one line** saying a compaction happened. **A summary keeps what it judged important,
+and what it dropped leaves no gap where it was.** Nothing lives only in the transcript (C-38-bis).
 
-**What this repository is.** The generic edition of the apparatus: emptied of its founding
-object, MIT + CC BY 4.0, instantiable in one paste (`INSTALL.md`). Docket: `WORKLIST.md`. The
-account that travels: `WHY.md`. Everything is committed and pushed; **CI runs five gates and the
-install dry-run on every push**, and has been green on every commit since it was added.
+**What this repository is.** The generic edition of the apparatus: emptied of its founding object,
+MIT + CC BY 4.0, instantiable in one paste (`INSTALL.md`). Docket: `WORKLIST.md` — **read it for any
+detail this block compresses; this file stays small on purpose, because it is paid at every
+wake-up.** The account that travels: `WHY.md`. CI runs seven gates and the install dry-run on every
+push, green on every commit since it was added.
 
-**Where the work stands.** Discharged: W2, W4, W6, W7, **W9–W19**. W1's build shipped; its
-unmeasured items stand. **W18 owes one follow-up:** run INSTALL.md step 4 in the dry-run, with the
-`/coordinator` routine taken from INSTALL.md's own block (no run has ever executed it). W5's launch posts are the human's to send. **W3 is
-grade A and runnable today** (re-graded from D on 2026-09-02; nothing blocks it). **W8 — design
-v2, externally reviewed (twelve findings, all confirmed), not started.** F5 deferred.
+**Where the work stands.** Discharged: W2, W4, W6, W7, **W9–W21, W24, W26**. **Open: W22** (the
+historian and the event spine — design settled: a GENERATED view, two tiers, arc rollups always read
+plus a slice keyed to today's step; **nothing built**), **W23** (breadth measured, three regimes
+drafted), **W25** (the skills; two built, none published), and **W18's follow-up** (execute
+INSTALL.md step 4 in the dry-run — no run has ever executed the launch routine). W3 is grade A and
+runnable. **W8 not started**; F5 deferred.
 
-**Rules added since the last top block — read them before changing anything they touch:**
-**C-37** (a task expected to take more than twenty minutes has its DESIGN reviewed before it runs)
-with **C-37-bis** (verdicts APPROVED / APPROVED-WITH-AMENDMENTS / RETURNED; amendments frozen
-before the run; RETURNED holds the work) · **C-20-bis** (every registered comparandum computed
-through the instrument's own pipeline before the freeze; the freeze prints the call; a failed
-control is ruled *instrument or yardstick*, never defaulted). **The freeze now protects the REAL
-CASE'S OUTPUT**, not "before any script exists" — that letter was a proxy and is retired.
-**C-30-bis** (talk to humans in human language: questions and asks plain throughout and explicit
-about what is needed; reports end with a `[PLAIN TERM SUMMARY]`, every line labelled Good news /
-Bad news / Next / Needed from you) · **`manuals/updating.md`** (how a
-founded tree takes a newer apparatus without erasing its own content; the human confirms every
-update and the human's hand applies it) · **checks, 2026-09-22** (a gate's name claims no more
-than it verifies; every check writes down its blind spot and pins it — `manuals/checking.md`
-§0-quater. Turned on our own gates the same day, it found the pack gate reading a stamp instead of
-the packs, now fixed) · **C-38 + C-38-bis, 2026-09-23** (the compaction wake-up ritual, with
-`scripts/tail_transcript.py` as its first step; and nothing lives only in the transcript — what
-matters is written in the turn it arises, which sharpens C-25 from *session* to *turn*).
+**Built since the last block.** `scripts/tail_transcript.py`, `scripts/wakeup.py`,
+`scripts/sabotage_audit.py`, `scripts/gen_skills.py` · manuals `wide_pass.md`, `self_review.md`,
+`sabotage_audit.md`, `updating.md` · skills `rr-selfcheck` and `rr-sabotage` (assembled, tied to
+their manuals by a gate, **not yet uploaded anywhere**; `--package` builds the zips).
 
-**★ THE APPARATUS IS NOW A NETWORK, and that is where most recent findings came from.**
-**Opticalc** — a live optical-computing programme, founded 2026-09-10 — runs current core
-byte-identical; its founding interview was run with a human and **held** (W9 is measured). **The
-founding tree** implemented C-37 *independently* as its RUL-134 and adopted C-20-bis. It also
-adopted C-30-bis's labelled summary as its RUL-136 and **corrected it on adoption**: artificial doubt
-goes, but a claim's real condition and tier always stay. Rules now move both directions. **Keep future rules independent across trees where possible**: a directive
-given to two trees separately shows what is forced by the problem and what was one author's
-choice, and that comparison produced C-37-bis.
+**Rules added since the last block** — read them before touching what they govern: **C-38** (the
+compaction ritual, bounded by order and stop, not by a number) · **C-38-bis** (nothing lives only in
+the transcript; write it in the turn it arises) · **C-39** (a simplification is a control, never a
+stand-in — **every simplification is a projection: which axis did you remove?**) · **C-24-bis**
+(de-duplicate a usage count by message id; summing per-event totals multiplies) · **C-25-bis** (one
+home per fact, a pointer elsewhere) · **C-37-bis** gains a two-round cap on design review ·
+`dispatching.md` §0-quinquies (mechanical chains run in a worker: what the coordinator reads is paid
+again in every later turn) and §3's stated budget (**the bound is on prose, never on findings**) ·
+`checking.md` §0-quater (a gate's name is a claim; every check writes and pins its blind spot),
+§0-quinquies (did the work replace the object with a simpler one?), §0-sexies (the checker's half of
+the budget) · `manuals/updating.md` (**the human confirms every update and the human's hand applies
+it** — the harness refuses an agent editing its own instructions).
 
-**★ WHAT IS IN FLIGHT.** W8's prerequisites before rung 0 — build `WITHHELD`, **covering the
-apparatus's own docket as well as the literature**; install benchmark trees from a **stripped
-source**; give the **scorer a demonstrated failure mode**; the human's approval of the proposed
-**third role** (the instruction author); the human's calls on the rung and the second problem.
-**A candidate target has been identified by the human. Its field is known to the modifier and is
-deliberately written nowhere in this repository — this file is public, and the mirror is being
-cloned by machines nobody can identify (31 clones, 0 page views, in the 14 days to 2026-09-18).
-Never name the target here, in any commit message, or in any file that ships. Do not ask for the
-mathematics.**
+**★ THE NETWORK IS WHERE THE FINDINGS COME FROM.** Opticalc runs current core; the founding tree
+(TWT, renamed from Time-Wave Theory 2026-09-22) sent C-30-bis's correction, the compaction ritual,
+C-39 and a 22-measure token table (W26: nine adopted as method, four adapted, five refused as
+plumbing). **The standing filter, the human's own: a practice born of another tool's constraint is
+not a finding about research — and adopt another tree's reasoning, never its numbers.**
 
 **The one thing that must never be broken:** the tag `twt-apparatus-20260827` is a permanent
-citation anchor — four citations in the founding programme's paper resolve through it (RUL-112).
-Never delete, move, or rewrite it.
+citation anchor (RUL-112). Never delete, move or rewrite it.
 
 ---
 
