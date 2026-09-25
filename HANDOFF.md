@@ -74,6 +74,13 @@ context; it cannot reconstruct having-not-read-the-article.**
 - If the transcript ever appears to contain the answer, **treat the measurement as void and say
   so plainly** rather than continuing. A contaminated run reported honestly is recoverable; one
   reported clean is not.
+- **★ VOIDED FOR THIS SESSION, 2026-09-25.** Session `6b6d1cb6` read the founding tree's canon
+  (`CLAUDE.md` §0), attached by the human for an unrelated token audit, and that paragraph states
+  the cited result. **This session, and any compaction-continuation of it, is no longer blind and
+  must never be W8's modifier; a fresh session still can.** And the finding that outlives it: **the
+  statement now lives in the founding tree's CANON, which the harness auto-loads for every session
+  and subagent opened there** — so W8's "no founding tree" means its canon and its directory, not
+  only its formation prefix.
 
 **What the modifier does:** changes the apparatus from written instructions, keeping every
 change GENERAL — justifiable for a programme in any field, with no reference to any target.

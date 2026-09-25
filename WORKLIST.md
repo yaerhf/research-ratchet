@@ -2157,6 +2157,40 @@ running it found** — the transcript reader's zero-width window, the pack gate'
     -read hygiene (11), which is how any competent agent works rather than a rule this apparatus
     can enforce.
 
+## W27 · WHERE A WAKE-UP'S TOKENS ACTUALLY GO — measured on the founding tree, 2026-09-25
+
+**Asked:** which of the four files the founding tree's coordinator ingests at restart could be
+avoided (the human's estimate: ≈100k of a ≈175k wake-up). **Measured from its transcript, metadata
+only, usage de-duplicated by message id (C-24-bis):** the context stood at **≈108k on the first turn
+after the compaction, before the ritual ran**, and at ≈175k seven turns later. The ritual's own
+output was ≈18k characters. **The four files were not where the tokens were.** Findings that
+generalize, each method rather than plumbing:
+
+1. **Measure the wake-up from the record; do not estimate it from the file list.** The first
+   assistant turn's usage IS the floor; everything after is ritual plus work, and they separate
+   cleanly by tool call. *(The yardstick here failed, not the instrument: the files are large,
+   they were simply not all being read.)*
+2. **The reader truncated the ritual and nothing said so.** The coordinator ran it as
+   `wakeup.py | head -80`, which printed ≈18k of ≈56k characters and cut most of the formation file — the
+   one piece the canon calls the guard against the programme's central failure. A ceiling the
+   script names (ours does) is defeated by a pipe the script cannot see. **Candidate rule for
+   C-38: never pipe the ritual; change its ceiling, which names what it cut.**
+3. **The harness re-attaches recently read files after a compaction** — observed in both trees
+   the same day: five files (≈39k characters, two of them scratch scripts) there; the resume brief
+   and the handoff here, which `wakeup.py` then printed again. **What the seat reads last before a
+   planned compaction comes back unasked, so read the brief last and nothing large after it.**
+4. **The auto-loaded canon is the most expensive text in any tree**: it is paid at every session,
+   every compaction, and by every subagent (rule 102 records that a spawned agent inherits it).
+   Its test is not "is this true" but **"does EVERY reader, every time, need this?"** — detail a
+   role needs before one activity belongs in that activity's pack or manual.
+5. **The memory index is paid the same way** — ≈18.6k characters there, loaded at every start.
+   An index is one line per memory; paragraphs in it are memories living in the wrong file.
+6. **A file's description of itself is a claim** (W18, again): a handoff introduced as "compact"
+   and "small by design" at ≈85k characters, 36 head lines above its state table.
+
+**Status: RECORDED; nothing here adopted.** Items 2 and 3 are candidate C-38 amendments for the
+human's word.
+
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*
 
