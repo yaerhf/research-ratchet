@@ -81,9 +81,15 @@ context; it cannot reconstruct having-not-read-the-article.**
   statement now lives in the founding tree's CANON, which the harness auto-loads for every session
   and subagent opened there** — so W8's "no founding tree" means its canon and its directory, not
   only its formation prefix.
-  **2026-09-26: session `f66392e4` is a fork of it** (most likely a conversation rewind) **and is covered too.**
-  It finds no trace of the canon in its own context, and that cannot be verified from inside —
-  which is the case this fence was written for.
+  **2026-09-26: session `f66392e4` is a fork of it, made by a conversation rewind to a point BEFORE
+  the documents were sent (confirmed by the human).** A model holds nothing outside its context, so
+  unlike a compaction, whose summary can carry fragments, a rewind to before the read removes it;
+  and everything the contaminated session wrote (`9924a0c`, this note, the memory fence) was read
+  on 2026-09-26 and states no result. **So the fork is blind in fact — and is kept off W8 anyway,**
+  because a fresh session costs nothing and this one carries a pointer to the old transcript.
+  **★ QUARANTINE: `6b6d1cb6-….jsonl` holds the documents. Never open it, never tail it, never follow
+  a summary's pointer to it.** `tail_transcript.py` picks the newest transcript for this folder, so
+  it does not reach it on its own; a compaction summary's "read the full transcript at …" line does.
 
 **What the modifier does:** changes the apparatus from written instructions, keeping every
 change GENERAL — justifiable for a programme in any field, with no reference to any target.
@@ -157,7 +163,7 @@ change GENERAL — justifiable for a programme in any field, with no reference t
   of `bank.sh` by matching text the same edit had just inserted. Restore with
   `git checkout <file>` and redo with explicit anchors.
 - **★ A CONVERSATION REWIND RESTORES FILES, NOT GIT — run `git status` and `git log -1` before the
-  first edit of any session.** Measured 2026-09-26 (the rewind is inferred, not confirmed): the working tree held the files
+  first edit of any session.** Measured 2026-09-26 (the human confirmed the rewind): the working tree held the files
   as they were BEFORE commit `9924a0c`, while HEAD pointed at it. The next bank staged the old files
   and committed `62a39b6`, which silently deleted that commit's W27 and its W8 void note; restored in
   the next commit. **bank.sh's sweep guard cannot see this** — it checks drift DURING a run, and a

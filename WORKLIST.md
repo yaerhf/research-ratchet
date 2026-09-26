@@ -2230,12 +2230,27 @@ canon line.
 6. **A starved role should be CHEAP by construction.** A meta-observer carrying a 40–60k prefix is
    not starved, and the founding message lists in that prefix *"the formation core read whole"*.
    **In this repository that file is outside every checker's diet** (rule 92, ABSOLUTE; `rag/diet.py`
-   refuses it to meta-observer, keeper and reviewer — run 2026-09-26). Either the founding tree's diet
-   table differs from ours on this point, or the pairing is being priced on a breach. That is a
-   question for the founding coordinator, not a verdict: this seat does not read that tree's
-   formation file. And the proposal's own stated motive — the referent question *"runs on every
-   round … instead of being skipped to save a dispatch"* — is the real signal: **a starved role
-   skipped for cost is a diet that has grown, and the repair is the diet, not the pairing.**
+   refuses it to meta-observer, keeper and reviewer — run 2026-09-26).
+   **ANSWERED the same day, by the human:** the founding tree gives its checkers the formation core
+   BY RULING, because *"without it a reviewer would have to apply standard model of physics
+   references and risk dragging everything into an SM-retreat."* So it is not a breach; it is a
+   reasoned break of rule 92, made for a real failure — C-27's measured retreat to the incumbent
+   framework. The cost signal still stands: **a starved role skipped for cost is a diet that has
+   grown, and the repair is the diet, not the pairing.**
+7. **★ THE TWO FAILURES, AND THE SPLIT THAT AVOIDS BOTH.** A checker with no frame judges the
+   programme by the incumbent's references and drags it back (the retreat). A checker handed the
+   formation prefix is formed by it and judges from inside the programme's persuasion (capture:
+   rule 92's measured case). **What prevents the retreat is the FRAME — the ontological invariants,
+   the premises taken as given, the forbidden moves, and what a retreat to the incumbent looks like
+   in this field — not the FORMATION**: the worked examples, the history, the confidence, and in
+   the founding tree's case a cited result. **In this edition the frame's home is already the core's
+   §A (C-1 to C-4), which every checker's pack carries.** So if a programme's checkers need the
+   formation prefix to stay out of the incumbent, its §A is too thin: the frame facts are living in
+   the wrong file. **Candidate, for the human's word:** §A's slot text says this explicitly, and
+   the founding tree tries a frame card for its checkers in place of the formation core. The
+   measurement that would settle it: do frame-card checkers retreat more often than formation-fed
+   ones, and do formation-fed ones overturn less? It would also shrink the meta-observer's prefix,
+   which is where this whole item started.
 
 ### Where it stands
 Nothing adopted. If the founding tree runs the pairing, the measurement worth asking for is phase 2's
