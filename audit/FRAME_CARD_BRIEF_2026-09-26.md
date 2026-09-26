@@ -100,6 +100,10 @@ is right? Only WHERE goes on the card.**
 
 ## 6. The proposed fold (meta-observer, then the same agent as keeper)
 
+*(Corrected 2026-09-26 by the founding tree's reply, W28 item 9: the formation core is about a tenth of
+a checker's spend there, so the card does not make the meta-observer cheap, and the cached opening is
+already built for workers. The card's case is capture alone.)*
+
 Evaluated in research-ratchet's `WORKLIST.md` W28, item 8. In short:
 - **Build the card first.** It shrinks exactly the prefix the fold was reusing, so it removes most
   of the fold's saving.
@@ -123,7 +127,7 @@ right to attack a premise, and it does not touch the reviewer's independence.
 - **Good news:** the reason you gave for feeding the formation core to checkers is kept. The card
   carries exactly the part that stops a checker sliding back into Standard Model thinking.
 - **Good news:** the card leaves out the part that persuades a checker before it checks, and it makes
-  every checker much cheaper to run.
+  every checker somewhat cheaper to run (about a tenth, on the founding tree: W28 item 9).
 - **Bad news:** it has not been tried. It could miss something a checker needs. The test in §5 is
   built to show that, and each miss tells you exactly which line to add.
 - **Next:** the founding tree's coordinator drafts the card and has it reviewed; then the side-by-side

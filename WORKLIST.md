@@ -2282,6 +2282,40 @@ canon line.
    - **Verdict: build the card first and measure; expect the fold to stop paying afterwards.** If it
      still pays, it pays only for short keeper phases sent inside the cache window, and that
      remainder is what its independence cost has to be weighed against.
+9. **THE FOUNDING TREE'S ANSWER TO THE BRIEF, 2026-09-26 — three corrections, all accepted.**
+   - **The cost claim was overstated for that tree.** By its own measurement the formation core is
+     ≈15k tokens of a checker's 130–190k; the spend is the checker's own diet and its 20–30 shell
+     calls. **So the card saves perhaps a tenth per checker, and item 8's "the card removes the
+     fold's motive" does not hold there:** the meta-observer is not made cheap by losing the
+     formation core. **The card's case is capture alone.** *(Lesson for a blind brief: the cost of a
+     file is its share of the reader's total, which the writer of the brief could not see. State
+     the cost claim as conditional on that share.)*
+   - **The cross-agent cached opening is already built — for workers** (its RUL-079(vi): a generator
+     embeds the formation core in the worker's agent definition, so every dispatch shares a
+     byte-identical prefix). The checkers read it mid-conversation instead. **Refinement offered
+     back:** a prefix is shared only up to its first differing byte, so the shared block goes FIRST
+     in every checker's definition and the role text after it. Otherwise each checker type caches
+     only against itself, and since rounds are hours apart the cache has usually expired by the next
+     round. **Shared-first is what lets the reviewer, the meta-observer and the keeper of ONE round
+     share it.**
+   - **Two paragraphs added to the formation core the day before (its RUL-176) are formation under
+     the brief's test**, and would come off a card. Noted, not judged: this seat cannot see them.
+   - **On the fold, the tree holds that it "costs nothing to run meanwhile".** In tokens, yes. **Not
+     in independence:** the keeper's anchoring is the cost it named itself in its first reply. And
+     the cached opening competes for the fold's remaining saving too, because a fresh keeper
+     dispatched inside the window gets the fixed overhead from the cache. **Measure the opening
+     first, then the fold's remaining margin.** If the fold runs meanwhile, it runs as a
+     measurement: the same-agent mark on the dispatch rows, and a count of how often phase 2
+     overturns phase 1.
+   - **Its recommendations:** (a) a PREMISE-CHALLENGE label in the reviewer's vocabulary now.
+     **Endorsed, with its other half:** a labelled challenge is ROUTED to where premises are ruled
+     (the ruling register, the human), never closed by the checker's coordinator. A label that only
+     marks an objection for dismissal is a quarantine. (b) the cached opening for the three checkers
+     now: endorsed, shared block first. (c) the card and its test as a designed item later, budgeted
+     at 1.5–2M tokens. **A cheaper first look exists:** the calibration ledger before and after the
+     ruling that fed checkers the formation core (RUL-165, for the meta-observer) can be read for retreat and overturn
+     rates. That comparison is confounded, but free, and it tells the design review whether the
+     campaign is worth its budget.
 
 ### Where it stands
 Nothing adopted. If the founding tree runs the pairing, the measurement worth asking for is phase 2's
