@@ -74,6 +74,16 @@ context; it cannot reconstruct having-not-read-the-article.**
 - If the transcript ever appears to contain the answer, **treat the measurement as void and say
   so plainly** rather than continuing. A contaminated run reported honestly is recoverable; one
   reported clean is not.
+- **★ VOIDED FOR THIS SESSION, 2026-09-25.** Session `6b6d1cb6` read the founding tree's canon
+  (`CLAUDE.md` §0), attached by the human for an unrelated token audit, and that paragraph states
+  the cited result. **This session, and any compaction-continuation of it, is no longer blind and
+  must never be W8's modifier; a fresh session still can.** And the finding that outlives it: **the
+  statement now lives in the founding tree's CANON, which the harness auto-loads for every session
+  and subagent opened there** — so W8's "no founding tree" means its canon and its directory, not
+  only its formation prefix.
+  **2026-09-26: session `f66392e4` is a fork of it** (most likely a conversation rewind) **and is covered too.**
+  It finds no trace of the canon in its own context, and that cannot be verified from inside —
+  which is the case this fence was written for.
 
 **What the modifier does:** changes the apparatus from written instructions, keeping every
 change GENERAL — justifiable for a programme in any field, with no reference to any target.
@@ -146,6 +156,13 @@ change GENERAL — justifiable for a programme in any field, with no reference t
 - **Never `sed -i` a Python file with regex containing `|`** — one such edit clobbered a region
   of `bank.sh` by matching text the same edit had just inserted. Restore with
   `git checkout <file>` and redo with explicit anchors.
+- **★ A CONVERSATION REWIND RESTORES FILES, NOT GIT — run `git status` and `git log -1` before the
+  first edit of any session.** Measured 2026-09-26 (the rewind is inferred, not confirmed): the working tree held the files
+  as they were BEFORE commit `9924a0c`, while HEAD pointed at it. The next bank staged the old files
+  and committed `62a39b6`, which silently deleted that commit's W27 and its W8 void note; restored in
+  the next commit. **bank.sh's sweep guard cannot see this** — it checks drift DURING a run, and a
+  tree that reverts HEAD looks exactly like a deliberate revert. Read the staged diff's deletions
+  before every bank.
 - **★ NEVER `git checkout <file>` TO UNDO A SABOTAGE — sabotage a COPY.** Measured 2026-09-03:
   a planted defect was reverted with `git checkout scripts/honesty_telemetry.py`, which also
   silently discarded ~130 lines of uncommitted work in the same file. Recoverable only because
