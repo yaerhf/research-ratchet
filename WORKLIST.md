@@ -2219,6 +2219,7 @@ canon line.
    per turn.** Whether the pairing saves or costs depends on phase 2's call count, which the
    estimate does not state. And the part it would have read anyway (system prompt, canon) may already
    be cached for a FRESH keeper, since caching matches a prefix, not an agent.
+   *(Corrected by item 8: under the founding tree's ruling most of that prefix IS in the keeper's diet.)*
 4. **The cache expires.** A phase-2 message sent after the prefix has lapsed pays a fresh cache write
    on all of it. The pairing saves only if phase 2 follows within the window.
 5. **Two dispatch rows, one agent, one model class.** Any count of independent checks and any
@@ -2251,6 +2252,36 @@ canon line.
    measurement that would settle it: do frame-card checkers retreat more often than formation-fed
    ones, and do formation-fed ones overturn less? It would also shrink the meta-observer's prefix,
    which is where this whole item started.
+8. **★ THE FRAME CARD AND THE FOLD OVERLAP — and the card comes first** (evaluated 2026-09-26 at the
+   human's request; the brief is `audit/FRAME_CARD_BRIEF_2026-09-26.md`).
+   - **They compete for the same saving.** The fold earns by reusing a prefix the keeper would read
+     anyway. Under the founding tree's ruling that prefix includes the formation core, so the fold
+     genuinely saves it. **This corrects item 3's example:** the ≈100k of dead weight assumed the
+     whole prefix was outside the keeper's diet, and under that ruling most of it is inside. The
+     dead weight is only the meta-observer's own reads (the situation, the referent files). Roughly,
+     with **P** the shared prefix the keeper needs, **D** the meta-observer-only remainder and **n**
+     the keeper's calls: a fresh keeper pays one cache write on P (≈1.25 P, once), and a folded one
+     pays ≈0.1 D on every call. **The fold wins while 1.15 P > 0.1 n D** (the write, net of the 0.1 P both pay). *(Assumes a cache write at
+     1.25 times the input price and a cache read at 0.1, with phase 2 sent inside the cache window.)*
+     **The card shrinks P**, and with it the fold's whole margin.
+   - **The card restores what the fold's argument assumes.** "The cold read was genuinely cold"
+     holds only if the meta-observer was starved. Fed the formation core — if that carries worked
+     derivations, as this edition's does — phase 1 was partly formed before it began. **The card is
+     the precondition for the meta-observer's measurement, fold or no fold.**
+   - **The card removes the fold's motive.** The stated gain was discipline: the referent question
+     runs every round instead of being skipped. A meta-observer on the card is cheap enough to run
+     every round as its own agent.
+   - **What the card does not touch is the fold's cost.** Anchoring comes from the verdict, not the
+     diet: phase 2 still searches from inside its own phase-1 reading, and the log must still show
+     one agent. Under the current ruling the two risks compound: two checkers formed by the same
+     formation core AND run as one agent make correlated errors twice over.
+   - **The fold's saving without the fold — a hypothesis to measure, not a fact:** give every checker
+     the SAME opening (same agent type, the card read first, the role brief after), so the shared
+     prefix is byte-identical across agents and may be cached across them. The keeper's first-call
+     cache-read total, de-duplicated by message id, answers it in one round.
+   - **Verdict: build the card first and measure; expect the fold to stop paying afterwards.** If it
+     still pays, it pays only for short keeper phases sent inside the cache window, and that
+     remainder is what its independence cost has to be weighed against.
 
 ### Where it stands
 Nothing adopted. If the founding tree runs the pairing, the measurement worth asking for is phase 2's
