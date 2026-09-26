@@ -2157,39 +2157,56 @@ running it found** — the transcript reader's zero-width window, the pack gate'
     -read hygiene (11), which is how any competent agent works rather than a rule this apparatus
     can enforce.
 
-## W27 · WHERE A WAKE-UP'S TOKENS ACTUALLY GO — measured on the founding tree, 2026-09-25
+## W27 · ONE AGENT, TWO DIETS IN SEQUENCE — the founding tree's proposed pairing, read
+**OPEN · nothing adopted · the reasoning sorted, the numbers not carried**
 
-**Asked:** which of the four files the founding tree's coordinator ingests at restart could be
-avoided (the human's estimate: ≈100k of a ≈175k wake-up). **Measured from its transcript, metadata
-only, usage de-duplicated by message id (C-24-bis):** the context stood at **≈108k on the first turn
-after the compaction, before the ritual ran**, and at ≈175k seven turns later. The ritual's own
-output was ≈18k characters. **The four files were not where the tokens were.** Findings that
-generalize, each method rather than plumbing:
+**Source:** a founding-tree exchange of 2026-09-26, relayed by the human coordinator. The human
+proposed dispatching the meta-observer starved, taking its verdict, then sending the SAME agent the
+keeper's diet and taking the keeper's verdict, for the cache. The founding coordinator agreed,
+estimated a cached prefix of 40–60k tokens billed at a tenth, and asked for the human's word on a
+canon line.
 
-1. **Measure the wake-up from the record; do not estimate it from the file list.** The first
-   assistant turn's usage IS the floor; everything after is ritual plus work, and they separate
-   cleanly by tool call. *(The yardstick here failed, not the instrument: the files are large,
-   they were simply not all being read.)*
-2. **The reader truncated the ritual and nothing said so.** The coordinator ran it as
-   `wakeup.py | head -80`, which printed ≈18k of ≈56k characters and cut most of the formation file — the
-   one piece the canon calls the guard against the programme's central failure. A ceiling the
-   script names (ours does) is defeated by a pipe the script cannot see. **Candidate rule for
-   C-38: never pipe the ritual; change its ceiling, which names what it cut.**
-3. **The harness re-attaches recently read files after a compaction** — observed in both trees
-   the same day: five files (≈39k characters, two of them scratch scripts) there; the resume brief
-   and the handoff here, which `wakeup.py` then printed again. **What the seat reads last before a
-   planned compaction comes back unasked, so read the brief last and nothing large after it.**
-4. **The auto-loaded canon is the most expensive text in any tree**: it is paid at every session,
-   every compaction, and by every subagent (rule 102 records that a spawned agent inherits it).
-   Its test is not "is this true" but **"does EVERY reader, every time, need this?"** — detail a
-   role needs before one activity belongs in that activity's pack or manual.
-5. **The memory index is paid the same way** — ≈18.6k characters there, loaded at every start.
-   An index is one line per memory; paragraphs in it are memories living in the wrong file.
-6. **A file's description of itself is a claim** (W18, again): a handoff introduced as "compact"
-   and "small by design" at ≈85k characters, 36 head lines above its state table.
+### What is right, and generalizes
+1. **A starvation is a property of what a verdict was written FROM, so it is a matter of ORDER.** A
+   starved verdict persisted to a file before the next diet arrives was genuinely starved, and
+   nothing later can reach back into it. True of every starved → saturated pair (re-derivation →
+   reviewer, meta-observer → keeper); never of the reverse.
 
-**Status: RECORDED; nothing here adopted.** Items 2 and 3 are candidate C-38 amendments for the
-human's word.
+### What it costs that the proposal does not count
+2. **Rule 91 protects the SECOND role, and that is the one the pairing spends.** Phase 1's verdict
+   is safe; phase 2's is not. The keeper now looks for collisions from inside a referent reading it
+   wrote itself and has an interest in keeping. *"It may overturn its own phase-1 reading"* is an
+   instrument reviewing its own verdict — the configuration this apparatus says produces agreement.
+   The independence lost is the keeper's.
+3. **The saving is priced as if the prefix were paid once. It is paid on EVERY turn of phase 2** —
+   C-24-bis's own mechanism, which the same tree taught us. 50k at a tenth is ≈5k per call, so a
+   keeper that makes twenty calls pays ≈100k of cached reads for context outside its diet. **Only the
+   part of the prefix the keeper would have read anyway is saved; the rest is dead weight re-billed
+   per turn.** Whether the pairing saves or costs depends on phase 2's call count, which the
+   estimate does not state. And the part it would have read anyway (system prompt, canon) may already
+   be cached for a FRESH keeper, since caching matches a prefix, not an agent.
+4. **The cache expires.** A phase-2 message sent after the prefix has lapsed pays a fresh cache write
+   on all of it. The pairing saves only if phase 2 follows within the window.
+5. **Two dispatch rows, one agent, one model class.** Any count of independent checks and any
+   cross-class accounting (RUL-065) must read the "phase 2 of the same agent" mark, or the log
+   manufactures an independence that did not happen — the defect `same_class()` was fixed for on
+   2026-09-24.
+
+### ★ The finding under the proposal
+6. **A starved role should be CHEAP by construction.** A meta-observer carrying a 40–60k prefix is
+   not starved, and the founding message lists in that prefix *"the formation core read whole"*.
+   **In this repository that file is outside every checker's diet** (rule 92, ABSOLUTE; `rag/diet.py`
+   refuses it to meta-observer, keeper and reviewer — run 2026-09-26). Either the founding tree's diet
+   table differs from ours on this point, or the pairing is being priced on a breach. That is a
+   question for the founding coordinator, not a verdict: this seat does not read that tree's
+   formation file. And the proposal's own stated motive — the referent question *"runs on every
+   round … instead of being skipped to save a dispatch"* — is the real signal: **a starved role
+   skipped for cost is a diet that has grown, and the repair is the diet, not the pairing.**
+
+### Where it stands
+Nothing adopted. If the founding tree runs the pairing, the measurement worth asking for is phase 2's
+actual cached-read total, de-duplicated by message id, against a fresh keeper on the same round — and
+how often phase 2 overturns phase 1. Never is the number to worry about.
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*
