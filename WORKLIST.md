@@ -2323,7 +2323,7 @@ actual cached-read total, de-duplicated by message id, against a fresh keeper on
 how often phase 2 overturns phase 1. Never is the number to worry about.
 
 ## W29 · THE BUREAU — an independent orchestration system, read for what it has that we do not
-**OPEN · nothing adopted · six candidates, ranked**
+**OPEN · 1 and 2 BUILT 2026-09-28 · 3–6 candidates**
 
 **Source:** `github.com/Novadiem-Studio/bureau` (Novadiem Studio), found by the human on Anthropic's
 Discord, 2026-09-28. **Read:** its README, `docs/checkpoint-review-tour.md`, the first part of
@@ -2389,8 +2389,29 @@ enforcement.** Its separations are checked by scripts; ours are about 85 % prose
 spinning). **Same finding as W27 and as the founding tree's own reply in W28:** the tokens are not
 where the file list says. Measure from the record.
 
-**Status:** nothing adopted. 1 and 2 are the strongest, and both are mechanizable with
-demonstrations. 3 changes what the telemetry records. All wait for the human's word.
+**★ 1 AND 2 ARE BUILT, 2026-09-28, on the human's word** — `scripts/verdict_binding.py`, one tool for
+both. The dispatcher `stage`s the verdict file with each artifact's hash (and the tool refuses to
+stage anything outside the role's diet); the checker declares its reads with `read`, and an
+out-of-diet read is refused unless declared `--outside-diet "why"`; an edit after review is
+excused only by `accept … --reason`. The records gate's new family 9b fails a stale verdict and an
+undeclared or missing read, and counts unbound verdicts without checking them. Rules 56 and 205
+point at it; `dispatching.md` §0-ter and `checking.md` §0-septies carry the procedure.
+- **24 demonstrations, 3 blind spots pinned** (the read list is an assertion; a forbidden file
+  opened and not listed passes; a meaning change accepted as a "typo" passes).
+- **The hash normalizes CRLF to LF**, because this repository runs `core.autocrlf=input`: a raw
+  hash would have reported every verdict stamped on Windows stale on CI.
+- **Run end to end on a scratch tree** (stage, read, edit, accept, a meta-observer staged the
+  derivation, an undeclared read, a declared one, a read line deleted by hand): each behaved.
+- **Sabotage-audited with our own tool:** 13 plausible regressions planted in a copy, **3 MISSED on
+  the first pass** — two refusals had no demonstration at all, and a third was MASKED because its
+  demo also tripped a neighbouring check. Fixed; 13/13 caught. The plan is kept at
+  `audit/SABOTAGE_PLAN_verdict_binding_2026-09-28.json` for a re-run.
+- **One inconsistency it surfaced, for the human:** `meta_observer.md` step 3 opens the derivation
+  after the referent sentence is written, while `rag/diet.py` denies the meta-observer every
+  derivation. The binding handles it as a DECLARED read with that reason, which is honest but
+  treats a role's own procedure as an exception. Either the diet table learns ORDER, or step 3 is
+  by design a declared access — the human's call.
+- **3 (independence counted by evidence), 4, 5 and 6 remain candidates.**
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*

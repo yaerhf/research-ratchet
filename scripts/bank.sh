@@ -152,6 +152,21 @@ if ! echo "$xc_out" | grep -qE "CROSS-CLASS SELF-TEST: [0-9]+/[0-9]+ demonstrati
 fi
 echo "$xc_out" | tail -1
 
+# ★ THE VERDICT-BINDING SELF-TEST (W29, 2026-09-28). The records gate below trusts
+# verdict_binding.tree_report() to say whether a verdict still describes what it judged; that
+# predicate's demonstrations live in its own file, so they run here, before the gate that uses it.
+if ! vb_out="$(python scripts/verdict_binding.py --self-test 2>&1)"; then
+  echo "$vb_out" | tail -30
+  echo ">>> VERDICT-BINDING SELF-TEST FAILED — a stale or undeclared verdict could read as current."
+  echo ">>> Fix scripts/verdict_binding.py before banking."; exit 1
+fi
+if ! echo "$vb_out" | grep -qE "VERDICT-BINDING SELF-TEST: [0-9]+/[0-9]+ demonstrations behaved"; then
+  echo "$vb_out" | tail -30
+  echo ">>> VERDICT-BINDING SELF-TEST did not print its all-behaved-as-specified line — not banking."
+  exit 1
+fi
+echo "$vb_out" | tail -1
+
 # Counts are passed ONLY when an engine actually printed them — a gate told "0 checks"
 # by a tree that has no harness would be checking prose against a number nobody counted.
 if [ -n "$CHECKS" ]; then set -- --main "$CHECKS" --companion "${CHECKSC:-0}"; else set --; fi

@@ -168,6 +168,32 @@ written instead.
 
 ---
 
+## 0-septies · ★ YOUR VERDICT FILE IS STAGED — DECLARE WHAT YOU READ (W29, 2026-09-28)
+
+**The dispatcher staged your verdict file with the artifacts you were given and a hash of each
+(`manuals/dispatching.md` §0-ter).** Write your verdict into that file, and before you return it,
+declare every file you opened:
+
+```
+python scripts/verdict_binding.py read VERDICT.md FILE [FILE...]
+```
+
+- **MISSING is a finding about you.** An artifact you were given and never declared read fails
+  the records gate: a verdict on a packet its checker did not open is a verdict on something else.
+- **A read outside your diet is refused unless you DECLARE it, with its reason:**
+  `read VERDICT.md FILE --outside-diet "why"`. That is rule 205 made cheap: **declared is
+  recoverable, hidden is not.** The gate passes a declared read and lists it for the reader to
+  judge; an undeclared one fails. *(The meta-observer's step 3 — opening the derivation only
+  after the referent sentence is written — is declared this way, with that reason.)*
+- **The hash records the version you read.** If the artifact moved between staging and your
+  read, the gate says you judged a different text than the one you were given.
+- **What it cannot prove, and you should know it:** the list is YOUR ASSERTION. It shows the
+  evidence set you claimed, never the care you took; and a file you opened without listing it is
+  invisible to it (both pinned in `verdict_binding.py --self-test`). The declaration is only as
+  good as the checker making it — which is why the diet asks you to say so when you breached it.
+
+---
+
 ## 0 · THE ONE THING TO GET RIGHT BEFORE ANYTHING ELSE
 
 **Your DIET is your instrument.** You were denied particular material on purpose, and what you

@@ -1,6 +1,6 @@
 <!-- DIET-CLASS: RULES -->
 <!-- GENERATED FILE — do not edit. Regenerate: python scripts/gen_role_packs.py
-     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint 87383304e5c1
+     sources: RULES_CORE.md + RULES_BY_ROLE.md · fingerprint fddf0cc723b8
      check_records.py fails the bank if this pack is stale. -->
 # RULE PACK — EXTERNAL-LOOP
 

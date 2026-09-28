@@ -51,6 +51,9 @@ WHAT THIS GATE CANNOT SEE
   * A WRONG GENERATOR. The packs family proves every pack is exactly what gen_role_packs.py
     builds from the current sources. A bug in the builder, reproduced faithfully in every pack,
     passes (pinned).
+  * WHAT A CHECKER ACTUALLY READ. The verdict family checks the checker's DECLARED read list: a
+    file listed and never opened passes, and so does a forbidden file opened and never listed
+    (both pinned in `scripts/verdict_binding.py --self-test`, where that family's demos live).
 
 RUN
     python scripts/check_records.py                             # structural invariants
@@ -533,6 +536,35 @@ def main():
                 f"         fix: write the verdict file, or correct the row's path. A row may "
                 f"carry PENDING\n"
                 f"         while a dispatch is open — it may not point at a file nobody wrote.")
+
+    # 9b — VERDICT BINDING (W29, 2026-09-28): a verdict still describes the bytes it judged, and
+    # its checker read what it was given and nothing outside its diet undeclared. Runs in every
+    # tree: a binding is recognized by its own block, not by where the file sits. The predicates
+    # and their demonstrations live in scripts/verdict_binding.py (one home).
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import verdict_binding
+    vb_fails, vb_notes, vb_bound, vb_unbound = verdict_binding.tree_report(ROOT)
+    stale_f = [f for f in vb_fails if "changed since" in f or "no longer exists" in f]
+    other_f = [f for f in vb_fails if f not in stale_f]
+    _ck("verdicts: every bound verdict still describes the bytes it judged",
+        not stale_f,
+        "\n         ".join(stale_f[:5]) + "\n"
+        "         fix: re-review and supersede the old verdict "
+        "(verdict_binding.py supersede OLD --by NEW),\n"
+        "         or, when the change cannot touch the verdict, accept it WITH its reason:\n"
+        "         python scripts/verdict_binding.py accept VERDICT ARTIFACT --reason \"why\"")
+    _ck("verdicts: every bound verdict read what it was given, and nothing outside its diet "
+        "undeclared",
+        not other_f,
+        "\n         ".join(other_f[:5]) + "\n"
+        "         fix: the checker declares its reads (verdict_binding.py read VERDICT FILE...),\n"
+        "         and a read outside its diet with --outside-diet \"why\" — declared is "
+        "recoverable, hidden is not (rule 205)")
+    for n in vb_notes:
+        NOTES.append(f"verdict read outside its diet, DECLARED — {n}")
+    if vb_unbound:
+        NOTES.append(f"verdicts carrying no binding: {len(vb_unbound)} — counted, never checked "
+                     f"(stage new dispatches: manuals/dispatching.md)")
 
     # 10 — OBJECT-SLOT ACCOUNTING (informational; a slot is a docket item, not a defect)
     slots = sum((_read(f"{ap_dir}/{p.name}") or "").count("[OBJECT-SLOT]")

@@ -17,20 +17,20 @@ and what it dropped leaves no gap where it was.** Nothing lives only in the tran
 **What this repository is.** The generic edition of the apparatus: emptied of its founding object,
 MIT + CC BY 4.0, instantiable in one paste (`INSTALL.md`). Docket: `WORKLIST.md` — **read it for any
 detail this block compresses; this file stays small on purpose, because it is paid at every
-wake-up.** The account that travels: `WHY.md`. CI runs seven gates and the install dry-run on every
+wake-up.** The account that travels: `WHY.md`. CI runs nine gates and the install dry-run (counted from `gates.yml`, 2026-09-28) on every
 push, green on every commit since it was added.
 
 **Where the work stands.** Discharged: W2, W4, W6, W7, **W9–W21, W24, W26**. **Open: W22** (the
 historian and the event spine — design settled: a GENERATED view, two tiers, arc rollups always read
 plus a slice keyed to today's step; **nothing built**), **W23** (breadth measured, three regimes
-drafted), **W25** (the skills; two built, none published), and **W18's follow-up** (execute
+drafted), **W25** (the skills; two built, none published), **W27–W29** (the founding tree's wake-up measurement, its checker pairing and the frame card, and the Bureau — candidates for the human; **W29's 1 and 2 built**), and **W18's follow-up** (execute
 INSTALL.md step 4 in the dry-run — no run has ever executed the launch routine). W3 is grade A and
 runnable. **W8 not started**; F5 deferred.
 
 **Built since the last block.** `scripts/tail_transcript.py`, `scripts/wakeup.py`,
 `scripts/sabotage_audit.py`, `scripts/gen_skills.py` · manuals `wide_pass.md`, `self_review.md`,
 `sabotage_audit.md`, `updating.md` · skills `rr-selfcheck` and `rr-sabotage` (assembled, tied to
-their manuals by a gate, **not yet uploaded anywhere**; `--package` builds the zips).
+their manuals by a gate, **not yet uploaded anywhere**; `--package` builds the zips) · **`scripts/verdict_binding.py`** (2026-09-28: a verdict bound to the bytes it judged and to what its checker declares it read; records-gate family 9b; stage at dispatch, declare at verdict).
 
 **Rules added since the last block** — read them before touching what they govern: **C-38** (the
 compaction ritual, bounded by order and stop, not by a number) · **C-38-bis** (nothing lives only in

@@ -61,6 +61,9 @@ jobs:
       - name: wake-up ritual self-test — the order, the stop and the ceiling (C-38)
         run: python scripts/wakeup.py --self-test
 
+      - name: verdict-binding self-test — the bytes a verdict judged, and what its checker read
+        run: python scripts/verdict_binding.py --self-test
+
       - name: skills self-test — the assembler and the tie to each manual
         run: python scripts/gen_skills.py --self-test
 

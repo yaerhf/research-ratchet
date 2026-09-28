@@ -74,6 +74,35 @@ which model held which role on a given day.** Written at dispatch, or lost.
 **Reconstructed at consolidation it is worthless** — a stale-sync note, the C-24 class, with the
 added defect that the thing it reconstructs is unknowable by then. **Per-dispatch or not at all.**
 
+### ★ AND STAGE THE VERDICT FILE — what the checker is given, bound by hash (W29, 2026-09-28)
+
+**For every checker dispatch, stage its verdict file before the checker starts:**
+
+```
+python scripts/verdict_binding.py stage knowledge/candidates/R042/VERDICT_REV_r001.md \
+    --role reviewer knowledge/candidates/R042/DERIVATION.md
+```
+
+That writes the file with a binding block naming each artifact under review and the hash of its
+bytes **now**; its path goes in the dispatch row's `verdict_path` at once, not when the verdict
+lands. The checker writes its verdict into that file and declares what it read (`manuals/
+checking.md` §0-septies).
+
+- **Why at dispatch.** The manifest says what the checker was GIVEN, and only the dispatcher
+  knows that. A manifest written by the checker would make "never declared read" impossible by
+  construction — it would list what it read and call that the packet.
+- **The tool refuses to stage an artifact outside the role's diet.** Rule 92 used to be checked
+  only if the checker thought to run `rag/diet.py`; now it is checked where the breach begins,
+  in the packet.
+- **What it buys later.** When an artifact changes after its review, the records gate names the
+  verdict that no longer describes it. The remedy is a re-review (then `supersede`), or, when the
+  change cannot touch the verdict, `accept … --reason "why"` — the break clause, on the record.
+- **What it cannot do.** It binds bytes, not meaning: a change accepted as a "typo" that was not
+  one passes (pinned). The reason is written for the reader who will doubt it.
+
+*(Adopted from an independent orchestration system, the Bureau by Novadiem Studio, whose
+reviewers return the hash of each artifact they judged; credited, not copied.)*
+
 ---
 
 ## 0-quater · ★ OVER TWENTY MINUTES? THE DESIGN GOES OUT FIRST
