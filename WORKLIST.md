@@ -2322,6 +2322,76 @@ Nothing adopted. If the founding tree runs the pairing, the measurement worth as
 actual cached-read total, de-duplicated by message id, against a fresh keeper on the same round — and
 how often phase 2 overturns phase 1. Never is the number to worry about.
 
+## W29 · THE BUREAU — an independent orchestration system, read for what it has that we do not
+**OPEN · nothing adopted · six candidates, ranked**
+
+**Source:** `github.com/Novadiem-Studio/bureau` (Novadiem Studio), found by the human on Anthropic's
+Discord, 2026-09-28. **Read:** its README, `docs/checkpoint-review-tour.md`, the first part of
+`docs/run-accounting.md`, and its essay *Who Checks the Checker?* (thebureau.dev). **Not read:** the
+agent contracts, the scripts, the regression fixtures. **It carries NO licence**, so nothing here
+is copied: ideas are credited, and code or text is not reused.
+
+**What it is.** A multi-agent SOFTWARE-engineering system: specialists in fresh contexts, handoffs
+written to files, cold reviewers who see an evidence packet rather than the discussion, a run
+directory another coordinator can resume from, human gates for product decisions and external
+actions, and regression fixtures made from repeated failures.
+
+**★ CONVERGENCE, and why it matters.** Its reviewer sees *"controlled evidence instead of the
+discussion that produced it"* (our diets); its resumability is from files, never from the transcript
+(C-38-bis); its tour ends with a section headed *"What the checks cannot establish"* (our pinned
+blind spots, W18); its lessons become fixtures (rule 64). **A second independent project arriving at
+the same structures** (after `rimi.convention`; the founding tree is our origin, not independent of us) is the C-37-bis argument again:
+what separate builders converge on is forced by the problem.
+
+**Where the two differ.** Its object is CODE, where tests and CI are an oracle; ours is a CLAIM,
+which has none. So it has one kind of cold ("no discussion"), where we have several starvations,
+each a different instrument; and it has nothing like the tiers, the two-sided correction or the
+paths and negatives ledgers, because its domain does not need them. **Where it is ahead: mechanical
+enforcement.** Its separations are checked by scripts; ours are about 85 % prose.
+
+### Candidates, ranked
+1. **★ A VERDICT IS BOUND TO THE BYTES IT REVIEWED.** Its reviewer response names each artifact with
+   its hash, a verdict whose hash no longer matches is discarded, and a regression fixture changes a
+   file after review and expects the gate to refuse the old verdict. **We have no such binding
+   (checked 2026-09-28: our hashes fingerprint generated packs and skills only).** A verdict file on
+   a claim edited after review reads as current, which is the stale-probe class of rule 94 on the
+   verdict side. **Mechanizable in `check_records.py`:** each verdict records `path + sha256` for
+   what it judged, the gate recomputes, and a mismatch is reported as a verdict no longer
+   applying, with a planted-defect demonstration.
+2. **★ COVERAGE DECLARED, AND CHECKED IN BOTH DIRECTIONS.** Its reviewer returns an `Artifacts-read`
+   list, checked against the packet's manifest for MISSING entries and UNEXPECTED ones. **That is
+   rule 205 mechanized after the fact:** unexpected = a diet breach, missing = a checker that never
+   opened part of what it was given. Its own stated limit transfers whole: *the list is the
+   reviewer's assertion*, so it proves the evidence set, never the care. Pin that as the blind spot.
+3. **★ INDEPENDENCE LIVES IN THE INPUTS, NOT ONLY IN THE MODEL.** The essay's measured case: five
+   reviewers from different models approved a design; the sixth, the only one with the repository
+   and the telemetry, took it apart. *"Route to ground truth, not to a vote."* Five classes on one
+   document are one blind spot five times. **Our cross-class rule (RUL-065) keys on model class; the
+   telemetry should also record each verdict's DIET, and count agreement as independent only across
+   different evidence.** This is the diet principle confirmed from outside, and a gap in how we
+   COUNT it.
+4. **EVERY NUMBER CARRIES ITS EVIDENCE CLASS:** exact / estimated / inferred / partial / unavailable,
+   and **missing is recorded as unavailable, never as zero.** Its accounting found a run that lost 4
+   of 22 attempts and so reported no rework at all — wrong in the flattering direction, the same
+   shape as C-24-bis. C-24 has one such stamp (`uncounted`); this is the general form.
+5. **SOMEBODY CHECKS THAT "FIXED" WAS FIXED.** In the essay, a second reviewer earned its place by
+   checking how the first reviewer's findings were HANDLED, and found twenty build-breaking defects
+   the first had passed. **I found no rule of ours that re-verifies a claimed fix** — rule 79
+   iterates to consensus, which is agreement, not verification. Candidate: a claimed fix is re-checked
+   against the finding it answers before the finding is closed.
+6. **Physical starvation.** It copies the packet into a read-only snapshot and denies the reviewer
+   the live repository. That is the strongest form of a diet: bounded by what is within reach, not
+   by instruction (rule 205 concedes our file tool is unbounded). **Mostly plumbing, and
+   host-dependent;** recorded as the direction, not adopted.
+
+**Also confirmed from outside:** its cost diagnosis was wrong until measured from the record: 96 % of
+52M input tokens were cached, and the cost was mechanism (round trips, compactions, a session
+spinning). **Same finding as W27 and as the founding tree's own reply in W28:** the tokens are not
+where the file list says. Measure from the record.
+
+**Status:** nothing adopted. 1 and 2 are the strongest, and both are mechanizable with
+demonstrations. 3 changes what the telemetry records. All wait for the human's word.
+
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*
 
