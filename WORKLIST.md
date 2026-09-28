@@ -2411,6 +2411,8 @@ point at it; `dispatching.md` §0-ter and `checking.md` §0-septies carry the pr
   derivation. The binding handles it as a DECLARED read with that reason, which is honest but
   treats a role's own procedure as an exception. Either the diet table learns ORDER, or step 3 is
   by design a declared access — the human's call.
+  **Ruled 2026-09-28, human coordinator, verbatim:** *"Leave the meta-observer alone for now please."*
+  Step 3 stays a declared read; neither the diet table nor the role file changes.
 - **3 (independence counted by evidence), 4, 5 and 6 remain candidates.**
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the
