@@ -76,4 +76,4 @@ Free and open: code under MIT, documents under CC BY 4.0. Repo: https://github.c
   giving it a chance."* The ground: the README links that tree as the reference instantiation,
   and its cold reviews have often answered *"we need to see the kernel finished to say if it's
   any good"*. **Until then, nothing here is posted.**
-- [ ] **The README's new opening (§1) awaits the human's approval.** Not applied.
+- [x] **The README's new opening (§1): approved and applied 2026-09-30** (*"You can push it"*).

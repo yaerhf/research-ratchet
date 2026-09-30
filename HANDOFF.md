@@ -27,8 +27,8 @@ drafted), **W25** (the skills; two built, none published), **W27–W29** (the fo
 INSTALL.md step 4 in the dry-run — no run has ever executed the launch routine). W3 is grade A and
 runnable. **W8 not started**; F5 deferred.
 
-**The launch is drafted and HELD by ruling** (`audit/LAUNCH_POST_DRAFT_2026-09-30.md`: a plain README
-opening, not applied, and a Discord post): it goes out when the founding tree's kernel candidate
+**The launch is drafted and HELD by ruling** (`audit/LAUNCH_POST_DRAFT_2026-09-30.md`; the README's plain
+opening is applied, the Discord post is not): it goes out when the founding tree's kernel candidate
 comes back, positive or negative. Nothing is posted before then.
 
 **Built since the last block.** `scripts/tail_transcript.py`, `scripts/wakeup.py`,

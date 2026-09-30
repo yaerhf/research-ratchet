@@ -1,6 +1,21 @@
 <!-- DIET-CLASS: PUBLIC -->
 # research-ratchet
 
+**An agent that checks its own research agrees with itself.** research-ratchet is a set of rules
+and roles for Claude Code that keeps a claim from being checked by the mind that made it — and
+gives every claim several checkers, each deliberately kept from seeing something different. One
+reads the derivation and argues against it. One never sees it, and asks whether the claim is
+about what it says. One holds every other result and looks for collisions. One gets only the bare
+statement and has to reach it alone.
+
+Every claim carries an honest label — derived, assumed, fitted, or still a candidate. Every dead
+end is recorded with what would reopen it. Nothing enters the record except through a gate that
+checks it, and a human rules on what no check can decide.
+
+**Try it:** your agent sets it up from [one paste, in about 15 minutes](#try-it--one-paste-about-15-minutes).
+**It suits** open-ended research, where being quietly wrong is the real risk. It is heavy for a
+quick task.
+
 **An operating system for AI-agent-driven research under a human coordinator — built, measured,
 and repeatedly corrected inside the [Theory of Wave-Time programme](https://github.com/yaerhf/TWT),
 and published here in its GENERIC EDITION: emptied of its founding object, awaiting yours.**
