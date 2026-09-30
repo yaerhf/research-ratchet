@@ -197,8 +197,8 @@ tests for (every new check ships with a demonstrated failure mode).
 
 The apparatus was built, run, and measured inside the Theory of Wave-Time programme — its founding
 instantiation, and the reference one: the TWT tree remains the apparatus *as it runs with an
-object*, at **[github.com/yaerhf/TWT](https://github.com/yaerhf/TWT)** (503+ inline-checked
-engine primitives). This repository is the same apparatus with the object removed — the
+object*, at **[github.com/yaerhf/TWT](https://github.com/yaerhf/TWT)** (it works on hundreds of
+engine-checked primitives). This repository is the same apparatus with the object removed — the
 **emptyability** goal stated at first publication, now executed. *(The tag
 `twt-apparatus-20260827` pins the last TWT-sited state and is a permanent citation anchor for
 that programme's paper — never delete or move it.)* Worked examples, incident

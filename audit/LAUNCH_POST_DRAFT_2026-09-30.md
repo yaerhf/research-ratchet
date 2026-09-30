@@ -63,13 +63,17 @@ Free and open: code under MIT, documents under CC BY 4.0. Repo: https://github.c
 - [x] **No hooks, no GitHub operations, no push** in the install or the bank — checked in
   `INSTALL.md` and `scripts/*.sh`, 2026-09-30.
 - [x] **The benchmark target is not mentioned** anywhere in either draft.
-- [ ] **The README's provenance line carries a count forward** ("503+ inline-checked engine
-  primitives" in the founding tree). Recount it or drop the number before a stranger reads it
-  (C-24: never carry a recorded number forward).
+- [x] **The README's provenance line carried a count forward** ("503+ inline-checked engine
+  primitives" in the founding tree). **Replaced 2026-09-30 on the human's wording:** "it works on
+  hundreds of engine-checked primitives" — true without a number that can go stale (C-24). The
+  dated external review that quotes 503+ is a record of its day and is left as it is.
 - [ ] **The README's first screen after the new opening is still the apparatus's own idiom** (the
   diagram). Acceptable once the opening has told the reader why to care; worth a second look.
-- [ ] **Timing — the human's call.** The founding tree's cold reviews have often answered *"we need
-  to see the kernel finished to say if it's any good"*, and the README links that tree as the
-  reference instantiation. Proposed trigger: **post when the kernel candidate lands, whether it
-  holds or not.** The apparatus's claim is that it keeps research honest, not that one programme
-  is right, and a clean negative reported honestly demonstrates it as well as a success does.
+- [x] **Timing — RULED 2026-09-30 by the human coordinator: post when the founding tree's kernel
+  candidate comes back, positive or negative.** Verbatim: *"I just wanna wait until TWT's kernel
+  comes back in the case it comes back positive. If it comes back negative we'll also post it at
+  that time. But if we post it now, we get about the same impact as a negative kernel without
+  giving it a chance."* The ground: the README links that tree as the reference instantiation,
+  and its cold reviews have often answered *"we need to see the kernel finished to say if it's
+  any good"*. **Until then, nothing here is posted.**
+- [ ] **The README's new opening (§1) awaits the human's approval.** Not applied.
