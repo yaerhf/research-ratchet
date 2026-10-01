@@ -2458,6 +2458,12 @@ generated index and the paths ledger, and the re-derivation agent is refused it.
 earlier mark those files `LEDGER`,** so a known route-ledger name narrows a `LEDGER` marker to ROUTES —
 the one place a name overrides a marker, and only in the closing direction (every role that denies
 LEDGER denies ROUTES too). 7 new demonstrations, 42/42; sabotage-audited, 6/6 plants caught.
+**THE INDEX'S SAVING, MEASURED on the optical tree (2026-10-01, sizes only, `wc`):** ledger 121,027
+bytes / 1,843 lines; generated index 18,815 bytes / 275 lines, carrying all 51 would-change-ifs
+verbatim and dated after the ledger's last change — **6.4× smaller, ≈ 25k tokens saved per read**
+(characters ÷ 4: an ESTIMATE, not a tokenizer count). Paid again on every later turn while it sits
+in context, so the session saving is a multiple of that. The founding tree was not measured: its
+working tree is not under this Windows user, and this seat does not open it.
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*
