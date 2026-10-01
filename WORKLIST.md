@@ -2451,6 +2451,13 @@ diet table denies the LEDGER class only to the decision-reader.** So the field w
 workers dispatched from a brief alone. **Open question, for the human:** the re-derivation agent
 "must arrive with no route", yet its diet does not deny ledgers — and a negative on the same claim
 records how a route was tried.
+**★ CLOSED 2026-10-01, on the human's word:** *"Close the gap for the re-derivation agent."* Closed
+NARROWLY, because its role file grants "the ledgers" on purpose (rulings and imports are legitimate
+material for rebuilding a result): a new diet class **ROUTES** covers the negatives ledger, its
+generated index and the paths ledger, and the re-derivation agent is refused it. **Trees founded
+earlier mark those files `LEDGER`,** so a known route-ledger name narrows a `LEDGER` marker to ROUTES —
+the one place a name overrides a marker, and only in the closing direction (every role that denies
+LEDGER denies ROUTES too). 7 new demonstrations, 42/42; sabotage-audited, 6/6 plants caught.
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*

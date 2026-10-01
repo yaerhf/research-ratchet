@@ -115,7 +115,9 @@ CLASSES = {
     "CORPUS":      "the paper and companion prose",
     "ENGINE":      "executable ground truth: the engines and their harnesses",
     "LEDGER":      "a standing ledger",
-    "CLAIM":       "the BARE STATEMENT of a claim — the re-derivation agent's whole diet",
+    "ROUTES":      "a ledger of ROUTES — tried and failed (the negatives ledger and its index) or "
+                   "not taken (the paths ledger)",
+    "CLAIM":      "the BARE STATEMENT of a claim — the re-derivation agent's whole diet",
     "DERIVATION":  "a worker's derivation, probe, or report — the thing checkers are starved of",
     "VERDICT":     "a persisted checker verdict",
     "GOVERNING":   "an adjudication or governing record",
@@ -160,6 +162,9 @@ ROLES = {
         "CORPUS": "the paper may contain the derivation you are re-proving",
         "GOVERNING": "an adjudication records the route and the verdicts",
         "TRANSCRIPT": "a session transcript carries the derivation inside it",
+        "ROUTES": "a dead end on this claim records how a route was tried and where it broke, and "
+                  "a ranked path is a route offered; you must arrive with none. The other ledgers "
+                  "(rulings, imports) stay yours (human coordinator, 2026-10-01)",
     },
     "wide": {                     # the wide pass (manuals/wide_pass.md), added 2026-09-23
         "FORMATION": "the programme's own picture is exactly what this pass exists to leave — "
@@ -194,6 +199,7 @@ ROLES = {
     },
     "decision-reader": {
         "LEDGER": "you model a stranger holding the RELEASE ARTIFACT and nothing else",
+        "ROUTES": "a stranger does not have the ledgers",
         "GOVERNING": "a stranger does not have the audit tree",
         "DERIVATION": "a stranger does not have the round directories",
         "VERDICT": "a stranger does not have the verdicts",
@@ -204,6 +210,7 @@ ROLES = {
         "FORMATION": "a stranger does not have the apparatus",
     },
 }
+ROUTE_LEDGERS = {"NEGATIVES_LEDGER.MD", "NEGATIVES_INDEX.MD", "PATHS_LEDGER.MD"}
 ROLE_ALIASES = {
     "meta_observer": "meta-observer", "metaobserver": "meta-observer",
     "re-derivation": "rederivation", "re_derivation": "rederivation",
@@ -238,7 +245,7 @@ def _heuristic(rel):
             return "BRIEF"
         return "RULES"
     if "ledgers" in parts:
-        return "LEDGER"
+        return "ROUTES" if name in ROUTE_LEDGERS else "LEDGER"
     if "corpus" in parts:
         return "ENGINE" if p.endswith(".py") else "CORPUS"
     if "scripts" in parts or p.startswith("rag/"):
@@ -275,7 +282,15 @@ def classify(path, text=None):
     m = MARKER.search(text[:MARKER_SCAN_CHARS])
     if m:
         cls = m.group(1).upper()
-        return (cls if cls in CLASSES else "UNCLASSIFIED"), "marker"
+        cls = cls if cls in CLASSES else "UNCLASSIFIED"
+        # ★ THE ONE PLACE A NAME OVERRIDES A MARKER, and only to NARROW. Trees founded before
+        # 2026-10-01 mark their route ledgers LEDGER, and the rule "marker always wins" would
+        # serve them to the re-derivation agent forever. The roster names are gate-pinned
+        # (FORMATION_CORE §5), so the name IS the identity here. Every role that denies LEDGER
+        # also denies ROUTES, so this never opens anything — it only closes.
+        if cls == "LEDGER" and rel.rsplit("/", 1)[-1].upper() in ROUTE_LEDGERS:
+            cls = "ROUTES"
+        return cls, "marker"
     return _heuristic(rel), "heuristic"
 
 
@@ -405,6 +420,25 @@ def self_test():
     _demo("rederivation: CONTROL — the bare CLAIM passes",
           _denied("rederivation", "x.md", "<!-- DIET-CLASS: CLAIM -->\n"), False)
 
+    # -- the route ledgers (2026-10-01): a dead end on the claim is a route ---------
+    NEG, IDX, PTH = ("knowledge/ledgers/NEGATIVES_LEDGER.md", "knowledge/ledgers/NEGATIVES_INDEX.md",
+                     "knowledge/ledgers/PATHS_LEDGER.md")
+    _demo("rederivation: FORBIDDEN the negatives ledger (unmarked)",
+          _denied("rederivation", NEG, "# NEGATIVES\ntried X, failed because Y\n"), True)
+    _demo("rederivation: FORBIDDEN the negatives ledger EVEN MARKED LEDGER (a tree founded earlier)",
+          _denied("rederivation", NEG, "<!-- DIET-CLASS: LEDGER -->\n# NEGATIVES\n"), True)
+    _demo("rederivation: FORBIDDEN the generated negatives index (it carries no marker)",
+          _denied("rederivation", IDX, "# NEGATIVES INDEX\n"), True)
+    _demo("rederivation: FORBIDDEN the paths ledger (a ranked path is a route offered)",
+          _denied("rederivation", PTH, "<!-- DIET-CLASS: LEDGER -->\n# PATHS\n"), True)
+    _demo("rederivation: CONTROL — the other ledgers stay its own (the ruling register)",
+          _denied("rederivation", "knowledge/ledgers/RULING_REGISTER.md",
+                  "<!-- DIET-CLASS: LEDGER -->\n# RULINGS\n"), False)
+    _demo("decision-reader: the narrowing opened nothing — still denied the negatives",
+          _denied("decision-reader", NEG, "<!-- DIET-CLASS: LEDGER -->\n"), True)
+    _demo("reviewer: CONTROL — reads the negatives first (adversarial_review.md step 1)",
+          _denied("reviewer", NEG, "<!-- DIET-CLASS: LEDGER -->\n"), False)
+
     _demo("auditor: starved of the authoring TRANSCRIPT",
           _denied("auditor", "x.md", "<!-- DIET-CLASS: TRANSCRIPT -->\n"), True)
     _demo("archivist: starved of DERIVATION content (shape, never semantics)",
@@ -423,8 +457,8 @@ def self_test():
           _denied("wide", "x.md", "<!-- DIET-CLASS: ROLE -->\n"), True)
     _demo("wide: starved of the formation prefix",
           _denied("wide", "knowledge/prompts/FORMATION_CORE.md"), True)
-    _demo("wide: CONTROL — the negatives ledger, its guard against a dead end in costume",
-          _denied("wide", "x.md", "<!-- DIET-CLASS: LEDGER -->\n"), False)
+    _demo("wide: CONTROL — the negatives index, its guard against a dead end in costume",
+          _denied("wide", "knowledge/ledgers/NEGATIVES_INDEX.md", "# NEGATIVES INDEX\n"), False)
     _demo("wide: CONTROL — the bare CLAIM is its problem statement",
           _denied("wide", "x.md", "<!-- DIET-CLASS: CLAIM -->\n"), False)
     _demo("wide: BLIND SPOT (pinned) — a derivation QUOTED INSIDE ITS BRIEF is served",

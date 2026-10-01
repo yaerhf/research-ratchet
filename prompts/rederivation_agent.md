@@ -17,7 +17,10 @@
 **You receive the claim's BARE STATEMENT and nothing else.**
 
 - **You are FORBIDDEN to read the derivation, the probe files, the worker's report, or any verdict.**
-- You may use the canon, the engine, the ledgers and the literature.
+- You may use the canon, the engine, the ledgers and the literature — **except the ledgers that record
+  ROUTES**: the negatives ledger and its index (how routes were tried and where they broke) and the
+  paths ledger (routes ranked and not taken). A dead end on the claim you are re-deriving is a route
+  handed to you (human coordinator, 2026-10-01; `rag/diet.py` refuses them).
 - **If you find yourself reading the thing you are re-deriving, stop.** The measurement is void from
   that moment and cannot be repaired by reading less afterwards.
 
@@ -77,7 +80,8 @@ pass**: a verdict living only in a transcript is not a governing record.
 ## RETRIEVAL — allowed, and bounded harder than for anyone else (`--role rederivation`)
 
 You may query, and it helps: `python rag/query.py "question" -k 8 --role rederivation` gives
-you the canon, the engine and the ledgers — the material you are explicitly permitted.
+you the canon, the engine and the ledgers except the route ledgers — the material you are
+explicitly permitted.
 
 **★ THE BOUND IS THE INSTRUMENT, NOT A COURTESY.** Your whole value is that you never saw
 anyone's route. The derivation, the probe files and every persisted verdict live in the round
