@@ -211,6 +211,14 @@ ROLES = {
     },
 }
 ROUTE_LEDGERS = {"NEGATIVES_LEDGER.MD", "NEGATIVES_INDEX.MD", "PATHS_LEDGER.MD"}
+
+
+def is_route_ledger(name):
+    """Matched on the name's ENDING, not the whole name: the founding tree prefixes every ledger
+    with its programme (`TWT_NEGATIVES_LEDGER.md`), and the first version of this check matched
+    the generic names exactly — found the same day by listing that tree's ledgers (2026-10-01)."""
+    name = name.upper()
+    return any(name.endswith(s) for s in ROUTE_LEDGERS)
 ROLE_ALIASES = {
     "meta_observer": "meta-observer", "metaobserver": "meta-observer",
     "re-derivation": "rederivation", "re_derivation": "rederivation",
@@ -245,7 +253,7 @@ def _heuristic(rel):
             return "BRIEF"
         return "RULES"
     if "ledgers" in parts:
-        return "ROUTES" if name in ROUTE_LEDGERS else "LEDGER"
+        return "ROUTES" if is_route_ledger(name) else "LEDGER"
     if "corpus" in parts:
         return "ENGINE" if p.endswith(".py") else "CORPUS"
     if "scripts" in parts or p.startswith("rag/"):
@@ -288,7 +296,7 @@ def classify(path, text=None):
         # serve them to the re-derivation agent forever. The roster names are gate-pinned
         # (FORMATION_CORE §5), so the name IS the identity here. Every role that denies LEDGER
         # also denies ROUTES, so this never opens anything — it only closes.
-        if cls == "LEDGER" and rel.rsplit("/", 1)[-1].upper() in ROUTE_LEDGERS:
+        if cls == "LEDGER" and is_route_ledger(rel.rsplit("/", 1)[-1]):
             cls = "ROUTES"
         return cls, "marker"
     return _heuristic(rel), "heuristic"
@@ -431,6 +439,14 @@ def self_test():
           _denied("rederivation", IDX, "# NEGATIVES INDEX\n"), True)
     _demo("rederivation: FORBIDDEN the paths ledger (a ranked path is a route offered)",
           _denied("rederivation", PTH, "<!-- DIET-CLASS: LEDGER -->\n# PATHS\n"), True)
+    _demo("rederivation: FORBIDDEN a PREFIXED negatives ledger (the founding tree's TWT_ names)",
+          _denied("rederivation", "knowledge/ledgers/TWT_NEGATIVES_LEDGER.md",
+                  "<!-- DIET-CLASS: LEDGER -->\n# NEGATIVES\n"), True)
+    _demo("rederivation: FORBIDDEN a PREFIXED, UNMARKED negatives index",
+          _denied("rederivation", "knowledge/ledgers/TWT_NEGATIVES_INDEX.md", "# INDEX\n"), True)
+    _demo("rederivation: CONTROL — a prefixed ruling register stays its own",
+          _denied("rederivation", "knowledge/ledgers/TWT_RULING_REGISTER.md",
+                  "<!-- DIET-CLASS: LEDGER -->\n# RULINGS\n"), False)
     _demo("rederivation: CONTROL — the other ledgers stay its own (the ruling register)",
           _denied("rederivation", "knowledge/ledgers/RULING_REGISTER.md",
                   "<!-- DIET-CLASS: LEDGER -->\n# RULINGS\n"), False)

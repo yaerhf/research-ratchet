@@ -2464,6 +2464,18 @@ verbatim and dated after the ledger's last change — **6.4× smaller, ≈ 25k t
 (characters ÷ 4: an ESTIMATE, not a tokenizer count). Paid again on every later turn while it sits
 in context, so the session saving is a multiple of that. The founding tree was not measured: its
 working tree is not under this Windows user, and this seat does not open it.
+**★ AND THE FOUNDING TREE, MEASURED THE SAME DAY** once the human gave its path (sizes and counts
+only; no content opened): ledger 528,265 bytes / 2,396 lines (≈ 132k tokens, estimated); index
+168,710 bytes / 579 lines (≈ 42k). **Only 3.1× smaller** (the optical tree: 6.4×), so the index saves
+≈ 90k per read but is itself ≈ 42k at every bootstrap — the verbatim would-change-ifs, kept whole on
+purpose, are now most of it. **The fix that keeps them verbatim is W22's keyed slice:** read the
+index rows near today's step, the whole index only on a sweep.
+**★ AND LISTING THAT TREE FOUND A DEFECT IN THE SAME DAY'S FIX.** The founding tree prefixes its
+ledgers (`TWT_NEGATIVES_LEDGER.md`), and the route-ledger match was on the exact generic names, so
+its route ledgers would have been served to the re-derivation agent. Now matched on the name's
+ending; 3 demonstrations added (45/45), the old exact match planted in a copy turns 2 red, and on
+that tree's real files the re-derivation agent is refused the negatives ledger, its index and the
+paths ledger and keeps the ruling register and the wins ledger. **Run the thing — on the real tree.**
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*
