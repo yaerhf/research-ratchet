@@ -2415,6 +2415,33 @@ point at it; `dispatching.md` §0-ter and `checking.md` §0-septies carry the pr
   Step 3 stays a declared read; neither the diet table nor the role file changes.
 - **3 (independence counted by evidence), 4, 5 and 6 remain candidates.**
 
+## W30 · DEV-MEM — an automated memory for coding agents, read for what it teaches W22
+**RECORDED · nothing to adopt · one confirmation, one negative example**
+
+**Source:** `github.com/HarsH-1877/Dev-Mem` (MIT), read 2026-10-01 at the human's request: README,
+`eval/results/eval-corrected-2026-09-18…`, `docs/dev-memo-e2e-report.md`, `core/graph/types.ts`,
+`core/capture/index.ts`, `core/extraction/index.ts`, `adapters/claude-code/hook.ts`.
+
+**What it is.** Hooks record every tool call; at session end ONE LLM call turns the log into typed
+nodes (Decision, FailedApproach, Constraint, …) with commit-and-file evidence; at the next session
+start the most relevant nodes are injected as context. Deterministic everywhere except extraction.
+
+**For W22 (the historian), two lessons:**
+1. **A memory written by an LLM summarizing its own session is C-23's forbidden source, made
+   permanent.** Its nodes carry a CONFIDENCE the extractor assigns itself (1.00 in its own end-to-end
+   report), and the next session receives them as context. W22's settled design — a GENERATED view
+   of commitment changes from the record, never an extraction from transcripts — is confirmed by
+   contrast.
+2. **A failure stored without its condition becomes a permanent false verdict.** A FailedApproach
+   is a title, free text and evidence; nothing records why it failed or what would reopen it, and a
+   node goes stale only when its cited files are DELETED. That is C-10's shape exactly (tried X →
+   failed because Y → would change if Z), missing its last two parts. And the staleness fix is the
+   one W29 just built: hash the cited files at write time, flag the node when the hash moves.
+
+**Its evaluation is a simulation by construction** (the cost of rediscovery is text written into
+each task; tokens are characters ÷ 4; extraction is mocked), and the one real-model test is a single
+hand-crafted event log. A worked example of C-19: nothing in that harness could have disagreed.
+
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*
 
