@@ -2442,6 +2442,16 @@ start the most relevant nodes are injected as context. Deterministic everywhere 
 each task; tokens are characters ÷ 4; extraction is mocked), and the one real-model test is a single
 hand-crafted event log. A worked example of C-19: nothing in that harness could have disagreed.
 
+**★ A BRIEF FIELD FOR RECORDED DEAD ENDS — proposed the same day, not built.** Who already receives
+the negatives (checked 2026-10-01): every full-chain agent at bootstrap (C-29, through the generated
+`NEGATIVES_INDEX.md`), the adversarial reviewer (`adversarial_review.md` step 1), the keeper (rule 87),
+the wide pass as one of its only three inputs (`wide_pass.md`), the coordinator at consolidation
+(step 0: would-change-ifs read as candidate briefs), and the external loop's release mirror. **The
+diet table denies the LEDGER class only to the decision-reader.** So the field would serve only
+workers dispatched from a brief alone. **Open question, for the human:** the re-derivation agent
+"must arrive with no route", yet its diet does not deny ledgers — and a negative on the same claim
+records how a route was tried.
+
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*
 
