@@ -155,7 +155,7 @@ knowledge/
 │
 ├── ledgers/                 THE STANDING LEDGERS — all indexed by RAG; roster gate-pinned
 │   ├── NEGATIVES_LEDGER.md      tried → failed because → would change if
-│   ├── NEGATIVES_INDEX.md       GENERATED — one line per entry, would-change-ifs VERBATIM
+│   ├── NEGATIVES_INDEX.md       GENERATED — one line per entry, would-change-ifs VERBATIM; read KEYED at a step (C-40)
 │   ├── WINS_LEDGER.md           wins recorded AS wins (a row here never upgrades a tier)
 │   ├── RULING_REGISTER.md       rulings in force + GROUNDS + revert lists
 │   ├── FAMILY_TREE.md           commitment levels: the pick register, with revert clauses
@@ -183,7 +183,7 @@ scripts/     bank.sh (the only way in) · gen_role_packs.py (per-role rule packs
              · check_records_founding.py (the founding gate, kept as the worked example of a
                mature one — ~98 pins onto its own corpus; not run by bank.sh)
              · honesty_telemetry.py
-             · gen_worker_agent.py · gen_negatives_index.py · release tooling
+             · gen_worker_agent.py · gen_negatives_index.py · negatives_slice.py · release tooling
 rag/         ingest.py · query.py — the retrieval layer. INSTALLED BY DEFAULT, OPTIONAL by
              ruling (2026-08-27): bank gate [3/4] re-indexes at every bank and prints a loud
              SKIP if the layer is absent; `knowledge/audit/` is never indexed (a diet at the

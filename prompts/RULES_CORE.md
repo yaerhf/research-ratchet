@@ -607,7 +607,7 @@ restrained nobody, because it was simply untrue.
 
 ## G. HOW YOU START, HOW YOU WRITE
 
-**C-29.** Follow the bootstrap order: canon → SESSION_HANDOFF → strategic map + negatives ledger
+**C-29.** Follow the bootstrap order: canon → SESSION_HANDOFF → strategic map + the negatives (their keyed slice, C-40)
 → retrieval for specifics → engine verification → bank.
 
 - **DEFEASIBLE** — **break when:** a narrowly scoped DISPATCHED sub-task works from the
@@ -835,6 +835,44 @@ it was never entitled to judge.
   and it is wrong for discovery. Expect it of yourself rather than of somebody else.
 - <sub>added 2026-09-23 · adopted from the founding tree · binds all · enforcement: prose-only
   (the founding record's constitutive list is the checkable part)</sub>
+
+**C-40.** **A RECORD THAT GROWS WITH HISTORY IS READ KEYED TO THE STEP, AND READ WHOLE AT A NAMED
+SWEEP.** At a step, an agent reads the entries of a growing record that bear on the step in hand —
+never the whole record at every start — and the whole record is read on a schedule, by roles whose
+job is breadth. **The first instance is the negatives index:** a step reads its KEYED SLICE
+(`scripts/negatives_slice.py --key "…"`, or `--key-file BRIEF.md`), the entries sharing the step's
+own words, **copied whole**; the whole index is read at the sweep. *The handoff's top block (C-38
+step 3) is the same move on another record, and W22's event spine is the next.*
+
+- **THE FOUR GUARDS — each answers a way a slice can mislead:**
+  1. **The slice COPIES, never summarizes.** Each entry arrives byte for byte, every
+     would-change-if verbatim: it is the way back into a dead end, and a summary is what loses it.
+  2. **The KEY travels with the slice** — into the brief, the verdict, wherever it is used — so a
+     reader can see what was searched for and judge what a miss means.
+  3. **An empty slice says "nothing matched this key"**, never "nothing was tried here". An empty
+     field read as a clear route is the failure this rule must not create.
+  4. **BREADTH ROLES READ WHOLE:** the wide pass (its job is the dead end returning in OTHER
+     WORDS, which no key matches), the keeper (saturated with the result set by construction), and
+     the coordinator's consolidation sweep (`coordinator_agent.md`, consolidation step 0). **A slice
+     is never the only read a record gets.**
+- **DEFEASIBLE** — **break when:** the record is small enough that the slice saves nothing, or the
+  step is new ground with no words to key on: read whole, and say so where the work lands.
+- **WHY:** *measured 2026-10-01, sizes only (tokens estimated as characters ÷ 4).* The founding
+  tree's negatives index is ≈ 41k tokens at every bootstrap and only 3.1× smaller than its ledger,
+  because the verbatim conditions — kept whole on purpose — are most of it; a twelve-entry slice of
+  it is ≈ 10 %. The optical tree's index is 6.4× smaller than its ledger, and a slice keyed on one
+  step's words is ≈ 25 % of it. The index itself was the first cut at this cost (a worker's first
+  hour measured at ≈ 75k tokens, mostly the full ledger); **a record that grows with history
+  outgrows any fixed compression, and only keying scales.** Adopted on the human coordinator's word,
+  2026-10-01: *"build the keyed slice for the negatives index as a principle in research-ratchet."*
+- **WHAT IT CANNOT SEE — and why the sweep is not optional:** matching is on WORDS. The same dead end
+  recorded in other words is not selected, and neither is one whose matching word survives only in
+  the full ledger entry (both pinned in `--self-test`). **That is the reason guard 4 exists.**
+- **WHAT IT DOES NOT DO:** it removes no record and shortens no entry; it changes what a step
+  READS, never what the programme KEEPS. And it is not a diet: a role refused the route ledgers
+  (the re-derivation agent, `rag/diet.py`) receives no slice of them either.
+- <sub>added 2026-10-01 · human coordinator directive · binds all · enforcement: prose-only (the
+  tool exists; reading the slice rather than the whole is discipline)</sub>
 
 ---
 

@@ -296,6 +296,13 @@ could pick wrong. Retrieval reaches the round directories, so an unbounded query
 role destroys the measurement it was dispatched to make. Say so even when retrieval is not
 installed, and name what the instance must read instead.
 
+**`[NEGATIVES]`** on every WORKER brief — **the dead ends near this step, as its keyed slice
+(C-40):** `python scripts/negatives_slice.py --key-file THIS_BRIEF.md`, pasted with its KEY line.
+It carries each entry whole, would-change-if included, so it is a map of what died here and what
+would reopen it — never a fence. **An empty slice is pasted as it prints** ("nothing matched this
+key"), because an empty field reads as a clear route. **Never in a brief to a role refused the
+route ledgers** (the re-derivation agent); the wide pass gets the WHOLE index instead (C-40, guard 4).
+
 **`[KILL-TEST]`** on every research brief — **name an object where the answer is KNOWN AND
 NEGATIVE, and state what the method must return on it.** If the method "succeeds" there, the
 method is broken and the result is void *however good it looks on the real target*. **A brief

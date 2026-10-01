@@ -2477,6 +2477,51 @@ ending; 3 demonstrations added (45/45), the old exact match planted in a copy tu
 that tree's real files the re-derivation agent is refused the negatives ledger, its index and the
 paths ledger and keeps the ruling register and the wins ledger. **Run the thing — on the real tree.**
 
+## W31 · C-40 — A GROWING RECORD IS READ KEYED TO THE STEP, AND WHOLE AT A SWEEP
+**BUILT 2026-10-01 on the human's word · its first instance, the negatives slice · to be imported by
+the optical tree and the founding tree**
+
+*"Build the keyed slice for the negatives index as a principle in research-ratchet. I'll ask
+opticalc and TWT to import the concept."* — human coordinator, 2026-10-01. **Design review (C-37)
+broken, with its reason:** the design is W22's settled tier 2 (a slice keyed to today's step, the
+whole record on a sweep), and this is its first instance; the RESULT was audited instead — by
+execution on both real trees and by the sabotage tool.
+
+**What exists.** `RULES_CORE.md` **C-40**, with four guards (the slice copies and never summarizes;
+the key travels with it; an empty slice says "nothing matched this key"; breadth roles read whole —
+the wide pass, the keeper, the consolidation sweep). `scripts/negatives_slice.py`: named IDs always
+in, then entries ranked by how many RARE words they share with the step's key, plurals folded, each
+entry copied byte for byte; `--stats` prints sizes and no content. Wired into C-29's bootstrap line,
+the brief's new **`[NEGATIVES]`** field (`dispatching.md` §2: worker briefs only, never a role
+refused the route ledgers), `wide_pass.md` (WHOLE, never a slice), `adversarial_review.md` step 1,
+the coordinator's consolidation step 0 (named as C-40's sweep), `FORMATION_CORE.md` §5 and the map.
+Its self-test runs in `bank.sh` and CI.
+
+**What running it found — three defects, each invisible to reading:**
+1. **It selected nothing at all.** Chosen entries were tracked by object identity while the scorer
+   rebuilt each tuple, so every key came back empty — caught by its own first demonstration.
+2. **On the optical tree, the key `lenslet` missed the entry about `lenslets`** — the dead end that
+   step most needed (N-009, the condition on N-001). Plurals are folded now; heavier stemming is
+   refused, because a false match costs attention and a missed one costs the dead end.
+3. **The sabotage audit cut every PRINTED entry to its heading and every demonstration stayed
+   green** — the copy was checked in `select()`, not where it is read. A demo on the printed slice
+   added; 8 plants, 8 caught; plan kept at `audit/SABOTAGE_PLAN_negatives_slice_2026-10-01.json`.
+
+**Measured on the real trees (tokens estimated as characters ÷ 4).** Optical tree: 51 entries,
+≈ 4.6k tokens; a slice keyed on one step's words takes 12 entries, ≈ 25 % — and they were the right
+twelve (the emitter-geometry family, N-001/002/009/010). Founding tree, **sizes only, no content
+read**: 95 entries, ≈ 41k tokens; a 12-entry slice is ≈ 10 %, ≈ 37k tokens saved per read. **Entry
+sizes vary widely there** (30 entries are 52 % of the index), and a one-word key like "kernel"
+matches most of a programme about a kernel — **the key that works is the step's own description**,
+which is why `--key-file BRIEF.md` exists.
+
+**For the importing trees.** The tool runs unchanged on both: it finds a prefixed index
+(`TWT_NEGATIVES_INDEX.md`) and parsed all 95 of the founding tree's entries. What each imports is the
+CONCEPT, through its own update path (`manuals/updating.md`: the human confirms, the human applies):
+the rule with its four guards, the tool, the `[NEGATIVES]` brief field, the whole-index reads for
+breadth roles and the sweep, and the self-test in its bank. The founding tree numbers its own rules;
+the content is what travels.
+
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*
 

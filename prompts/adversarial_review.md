@@ -18,7 +18,7 @@ THE RESULT UNDER REVIEW: <paste the claim, the file/section, the relevant engine
 name(s), and the developer's reasoning here>.
 
 Procedure:
-1. Read the canon and the relevant entries of the negatives ledger. Work only from the files
+1. Read the canon and the relevant entries of the negatives ledger — its keyed slice (C-40), with the key stated in your verdict. Work only from the files
    and the engine — assume nothing.
 2. Attack along: (1) banned moves — the canon's §A forbidden-import list; (2) no-toy — was
    anything load-bearing established by a posited-and-cranked model; (3) derived-vs-generic —

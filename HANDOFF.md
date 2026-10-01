@@ -17,7 +17,7 @@ and what it dropped leaves no gap where it was.** Nothing lives only in the tran
 **What this repository is.** The generic edition of the apparatus: emptied of its founding object,
 MIT + CC BY 4.0, instantiable in one paste (`INSTALL.md`). Docket: `WORKLIST.md` — **read it for any
 detail this block compresses; this file stays small on purpose, because it is paid at every
-wake-up.** The account that travels: `WHY.md`. CI runs nine gates and the install dry-run (counted from `gates.yml`, 2026-09-28) on every
+wake-up.** The account that travels: `WHY.md`. CI runs ten gates and the install dry-run (counted from `gates.yml`, 2026-10-01) on every
 push, green on every commit since it was added.
 
 **Where the work stands.** Discharged: W2, W4, W6, W7, **W9–W21, W24, W26**. **Open: W22** (the
@@ -34,12 +34,12 @@ comes back, positive or negative. Nothing is posted before then.
 **Built since the last block.** `scripts/tail_transcript.py`, `scripts/wakeup.py`,
 `scripts/sabotage_audit.py`, `scripts/gen_skills.py` · manuals `wide_pass.md`, `self_review.md`,
 `sabotage_audit.md`, `updating.md` · skills `rr-selfcheck` and `rr-sabotage` (assembled, tied to
-their manuals by a gate, **not yet uploaded anywhere**; `--package` builds the zips) · **`scripts/verdict_binding.py`** (2026-09-28: a verdict bound to the bytes it judged and to what its checker declares it read; records-gate family 9b; stage at dispatch, declare at verdict).
+their manuals by a gate, **not yet uploaded anywhere**; `--package` builds the zips) · **`scripts/verdict_binding.py`** (2026-09-28: a verdict bound to the bytes it judged and to what its checker declares it read; records-gate family 9b; stage at dispatch, declare at verdict) · **`scripts/negatives_slice.py`** (2026-10-01: C-40's first instance — the dead ends near a step, copied whole; W31).
 
 **Rules added since the last block** — read them before touching what they govern: **C-38** (the
 compaction ritual, bounded by order and stop, not by a number) · **C-38-bis** (nothing lives only in
 the transcript; write it in the turn it arises) · **C-39** (a simplification is a control, never a
-stand-in — **every simplification is a projection: which axis did you remove?**) · **C-24-bis**
+stand-in — **every simplification is a projection: which axis did you remove?**) · **C-40** (a record that grows with history is read KEYED to the step and WHOLE at a named sweep; four guards) · **C-24-bis**
 (de-duplicate a usage count by message id; summing per-event totals multiplies) · **C-25-bis** (one
 home per fact, a pointer elsewhere) · **C-37-bis** gains a two-round cap on design review ·
 `dispatching.md` §0-quinquies (mechanical chains run in a worker: what the coordinator reads is paid

@@ -167,6 +167,20 @@ if ! echo "$vb_out" | grep -qE "VERDICT-BINDING SELF-TEST: [0-9]+/[0-9]+ demonst
 fi
 echo "$vb_out" | tail -1
 
+# ★ THE NEGATIVES-SLICE SELF-TEST (C-40, 2026-10-01). A slice that dropped a would-change-if, or
+# printed an empty result as a clear route, would mislead every step that reads it — silently.
+if ! ns_out="$(python scripts/negatives_slice.py --self-test 2>&1)"; then
+  echo "$ns_out" | tail -30
+  echo ">>> NEGATIVES-SLICE SELF-TEST FAILED — a slice could drop a dead end or claim a clear route."
+  echo ">>> Fix scripts/negatives_slice.py before banking."; exit 1
+fi
+if ! echo "$ns_out" | grep -qE "NEGATIVES-SLICE SELF-TEST: [0-9]+/[0-9]+ demonstrations behaved"; then
+  echo "$ns_out" | tail -30
+  echo ">>> NEGATIVES-SLICE SELF-TEST did not print its all-behaved-as-specified line — not banking."
+  exit 1
+fi
+echo "$ns_out" | tail -1
+
 # Counts are passed ONLY when an engine actually printed them — a gate told "0 checks"
 # by a tree that has no harness would be checking prose against a number nobody counted.
 if [ -n "$CHECKS" ]; then set -- --main "$CHECKS" --companion "${CHECKSC:-0}"; else set --; fi

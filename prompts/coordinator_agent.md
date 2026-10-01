@@ -581,7 +581,7 @@ both the corpus and the prefix version move together.
    recent would-change-ifs and asks of each: *has anything landed since that satisfies this
    condition?* **A `would change if` whose condition is now met is a brief, not a
    tombstone** — and nobody will notice that it is met unless someone deliberately looks,
-   because the ledger's own framing points the other way.
+   because the ledger's own framing points the other way. **This is C-40's SWEEP: the whole negatives index, never a slice** — the reads at each step are keyed, and this is what catches what their keys missed.
 0b. **★ RE-RANK THE PATHS LEDGER — and check the death trigger actually fired.** Step 0 reads
    the negatives' would-change-ifs; this reads the paths' promotion conditions, and asks the
    same question of each LIVE row: *has anything landed since that makes this first choice?*

@@ -64,6 +64,9 @@ jobs:
       - name: verdict-binding self-test — the bytes a verdict judged, and what its checker read
         run: python scripts/verdict_binding.py --self-test
 
+      - name: negatives-slice self-test — entries copied whole, the key printed, no clear-route lie
+        run: python scripts/negatives_slice.py --self-test
+
       - name: skills self-test — the assembler and the tie to each manual
         run: python scripts/gen_skills.py --self-test
 

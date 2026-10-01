@@ -24,7 +24,7 @@ transcripts, governing adjudications, **and every checker's role definition** �
 measurement destroyed from the inside.
 
 **It receives three things and no more:** its brief · **the problem stated in plain words, stripped
-of the programme's formalism** · the negatives index, so a located dead end does not come back.
+of the programme's formalism** · the negatives index **WHOLE, never a slice** (C-40: a dead end in costume shares no word with any key), so a located dead end does not come back.
 
 **The hole in every starvation is the brief itself** — a derivation quoted inside a brief is served,
 because a diet bounds files and not what somebody pastes. Pinned as a blind spot in
