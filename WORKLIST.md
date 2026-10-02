@@ -2521,6 +2521,9 @@ CONCEPT, through its own update path (`manuals/updating.md`: the human confirms,
 the rule with its four guards, the tool, the `[NEGATIVES]` brief field, the whole-index reads for
 breadth roles and the sweep, and the self-test in its bank. The founding tree numbers its own rules;
 the content is what travels.
+**Sent 2026-10-02:** the optical tree received the import message as drafted. **The founding tree
+was asked separately, in its own terms, because it now runs a divergent version of the apparatus**
+(human coordinator) — the network has two kinds of member: one on current core, one that adapts.
 
 *(The founding worklist carried a region kept verbatim and never summarized, because the
 compression pass is exactly what loses the reasoning behind a decision. This is that region.)*
